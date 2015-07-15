@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<quickLaunch>
+  <set name="default">
+    <!--e1ab5db7-2244-4074-897d-985823c67296-->
+    <item type="application" packageName="com.htc.contacts" className="com.htc.contacts.DialerTabActivity" position="0" container="-101" />
+    <!--3c0e09d7-b4cb-4a92-84bf-df1d41442aec-->
+    <item type="application" packageName="com.htc.sense.mms" className="com.htc.sense.mms.ui.ConversationList" position="1" container="-101" />
+    <!--431842f9-6c45-4515-847e-ab211a8fab64-->
+    <item type="application" packageName="com.htc.sense.browser" className="com.htc.sense.browser.BrowserActivity" position="3" container="-101" />
+    <!--43e5d417-6b25-4b21-b4d4-b70713ce7036-->
+    <item type="application" packageName="com.htc.camera" className="com.htc.camera.CameraEntry" position="4" container="-101" />
+    <!--d52e1e92-cefe-4b2d-a5b8-14b93e703e83-->
+    <item type="application" packageName="com.google.android.GoogleCamera" className="com.android.camera.CameraLauncher" position="4" container="-101" />
+  </set>
+</quickLaunch>

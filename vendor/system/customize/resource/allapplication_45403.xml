@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<allApplication>
+  <customize_sort>
+    <!--72ae716b-b544-4120-ba39-be3c099d815f-->
+    <item type="application" packageName="com.htc.android.mail" className="com.htc.android.mail.MultipleActivitiesMain" display_order="10" display_hide="0" />
+    <!--e6611f20-91bb-486b-ba6b-92720ae20dca-->
+    <item type="application" packageName="com.htc.calendar" className="com.htc.calendar.CalendarActivityMain" display_order="20" display_hide="0" />
+    <!--9b4f93bd-f272-437e-ba48-1826f48914cf-->
+    <item type="application" packageName="com.google.android.apps.maps" className="com.google.android.maps.MapsActivity" display_order="30" display_hide="0" />
+    <!--0b3e4580-e4dd-4e99-80f6-5ef3005eb00f-->
+    <item type="application" packageName="com.htc.videohub.ui" className="com.htc.videohub.ui.MainForwardingActivity" display_order="40" display_hide="0" />
+    <!--050f4a20-aaf5-4a38-af22-b67dfab639f2-->
+    <item type="application" packageName="com.htc.album" className="com.htc.album.AlbumMain.ActivityMainTabHost" display_order="50" display_hide="0" />
+    <!--ff7c4d32-5d30-46d7-aca9-35f2ae54e490-->
+    <item type="application" packageName="com.google.android.gallery3d" className="com.android.gallery3d.app.GalleryActivity" display_order="50" display_hide="0" />
+    <!--638ae594-ff6e-4ef1-b59b-9eadff5f4ed2-->
+    <item type="application" packageName="com.htc.zero" className="com.htc.zero.activity.ZeroMainActivity" display_order="60" display_hide="0" />
+    <!--8bff6f23-6bd6-44f7-9aa0-a008005dd68e-->
+    <item type="application" packageName="com.facebook.katana" className="com.facebook.katana.LoginActivity" display_order="100" display_hide="0" />
+    <!--d0d3308f-8d6f-4a35-99e2-8ebe8fd1249a-->
+    <item type="application" packageName="com.twitter.android" className="com.twitter.android.StartActivity" display_order="110" display_hide="0" />
+    <!--07b09cfa-b1b1-4bec-85d2-079004e63f32-->
+    <item type="application" packageName="com.fitbit.FitbitMobile" className="com.fitbit.onboarding.landing.LandingActivity_" display_order="120" display_hide="0" />
+    <!--c27868fd-2336-4400-a6d3-b55f15315063-->
+    <item type="application" packageName="com.htc.AutoMotive" className="com.htc.AutoMotive.carousel.MainActivity" display_order="130" display_hide="0" />
+    <!--ec497fc7-07f4-49fb-a1c3-716bbd938a3d-->
+    <item type="application" packageName="com.htc.android.worldclock" className="com.htc.android.worldclock.WorldClockTabControl" display_order="140" display_hide="0" />
+    <!--91ca434b-91c1-4e2e-8afa-3cf45070d9f3-->
+    <item type="application" packageName="com.htc.guide" className="com.htc.guide.MainActivity" display_order="150" display_hide="0" />
+    <!--302bb5b3-f5d2-4fd9-a9cc-627da58d740a-->
+    <item type="application" packageName="com.zoodles.kidmode" className="com.zoodles.kidmode.activity.LauncherActivity" display_order="160" display_hide="0" />
+    <!--e057ad2e-4398-4e38-aa13-7f81462adb3a-->
+    <item type="application" packageName="com.htc.contacts" className="com.htc.contacts.BrowseLayerCarouselActivity" display_order="170" display_hide="0" />
+    <!--f605eb7d-838c-4268-bc27-3ceb8690563c-->
+    <item type="application" packageName="com.android.vending" className="com.android.vending.AssetBrowserActivity" display_order="180" display_hide="0" />
+    <!--306ae11f-c2aa-4f2a-80d6-1a33622ccae5-->
+    <item type="application" packageName="com.android.settings" className="com.android.settings.Settings" display_order="200" display_hide="0" />
+    <!--4205ee4f-71a0-4a39-864d-3e86267d9bbe-->
+    <item type="application" packageName="com.htc.stock" className="com.htc.stock.ui.HomeActivity" display_order="210" display_hide="0" />
+    <!--6d758a99-d97b-4d61-b7d6-4b949eb17f00-->
+    <item type="application" packageName="com.htc.showme" className="com.htc.showme.ui.MainPage" display_order="220" display_hide="0" />
+    <!--d084d1d1-d66b-4309-83fe-dff89fc8053a-->
+    <item type="application" packageName="com.htc.camera" className="com.htc.camera.CameraEntry" display_order="5" container="Media" />
+    <!--641d27ab-52c2-4e75-997f-fe76040f3825-->
+    <item type="application" packageName="com.google.android.GoogleCamera" className="com.android.camera.CameraLauncher" display_order="5" container="Media" />
+    <!--cae33bb6-7cb6-44d0-bc6a-90a2a964e065-->
+    <item type="application" packageName="com.htc.music" className="com.htc.music.browserlayer.MusicBrowserTabActivity" display_order="15" container="Media" />
+    <!--78425e2e-21c6-4660-8c72-0e3514ec4ce5-->
+    <item type="application" packageName="com.google.android.youtube" className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity" display_order="35" container="Media" />
+    <!--8d5633e4-74e5-45e7-9752-4fe5a6452621-->
+    <item type="application" packageName="com.google.android.videos" className="com.google.android.youtube.videos.EntryPoint" display_order="45" container="Media" />
+    <!--915f13f0-cf56-4eca-bc71-743011fd103b-->
+    <item type="application" packageName="com.google.android.music" className="com.android.music.activitymanagement.TopLevelActivity" display_order="55" container="Media" />
+    <!--6c064072-8723-49de-8b32-e6967d6acf3b-->
+    <item type="application" packageName="com.melodis.midomiMusicIdentifier.freemium" className="com.soundhound.android.appcommon.activity.SoundHound" display_order="65" container="Media" />
+    <!--a81b36b6-f569-483f-b499-65bd36641596-->
+    <item type="application" packageName="com.htc.fm" className="com.htc.fm.ap.activity.FMRadioMain" display_order="75" container="Media" />
+    <!--b9c9bb0d-c294-41a9-8a37-2e4b8df517fe-->
+    <item type="application" packageName="com.google.android.apps.books" className="com.google.android.apps.books.app.BooksActivity" display_order="85" container="Media" />
+    <!--d4f0338f-0035-4b88-a415-78160b04a016-->
+    <item type="application" packageName="com.google.android.apps.magazines" className="com.google.apps.dots.android.app.activity.CurrentsStartActivity" display_order="95" container="Media" />
+    <!--61764074-c857-4223-ab0c-f04af7c4821c-->
+    <item type="application" packageName="com.google.android.apps.photos" className="com.google.android.apps.photos.home.HomeActivity" display_order="105" container="Media" />
+    <!--6ea54a6b-a317-41be-9679-f18706c4be0b-->
+    <item type="application" packageName="com.google.android.apps.plus" className="com.google.android.apps.plus.phone.ConversationListActivity" display_order="105" container="Media" />
+    <!--c0156359-9520-43ab-9271-1a0fb3cac1d9-->
+    <item type="application" packageName="uk.co.sevendigital.android" className="uk.co.sevendigital.android.library.ui.SDIStartActivity" display_order="115" container="Media" />
+    <!--4ccc3c9d-f48b-44c9-b496-95cbd3e69981-->
+    <item type="application" packageName="com.skysoft.kkbox.android" className="com.skysoft.kkbox.android.HomeActivity" display_order="125" container="Media" />
+    <!--496d72cc-efe7-407a-a8f6-7ce766285564-->
+    <item type="application" packageName="com.kkbox.alc.android" className="com.kkbox.alc.android.tab.MainTab" display_order="135" container="Media" />
+    <!--29f29b11-3b3a-4a76-95b6-1a624ae5d945-->
+    <item type="application" packageName="com.android.chrome" className="com.google.android.apps.chrome.Main" display_order="5" container="Google" />
+    <!--3c39059f-7140-46f2-9e8f-eefca5ed9ac8-->
+    <item type="application" packageName="com.google.android.gm" className="com.google.android.gm.ConversationListActivityGmail" display_order="15" container="Google" />
+    <!--ab292483-f16d-4625-9144-0ee0a959cd11-->
+    <item type="application" packageName="com.google.android.googlequicksearchbox" className="com.google.android.googlequicksearchbox.SearchActivity" display_order="25" container="Google" />
+    <!--08048e84-3f4f-4b86-9194-8842ed4a3230-->
+    <item type="application" packageName="com.google.android.apps.plus" className="com.google.android.apps.plus.phone.HomeActivity" display_order="35" container="Google" />
+    <!--c145883e-9d14-4b43-a451-fca007dc403e-->
+    <item type="application" packageName="com.google.android.talk" className="com.google.android.talk.SigningInActivity" display_order="45" container="Google" />
+    <!--cd2da8d3-08a2-4469-8d6d-be21528f155c-->
+    <item type="application" packageName="com.google.android.apps.genie.geniewidget" className="com.google.android.apps.genie.geniewidget.activities.NewsActivity" display_order="85" container="Google" />
+    <!--75c0acb2-a5da-43b1-b768-7df2cbce33a5-->
+    <item type="application" packageName="com.google.android.googlequicksearchbox" className="com.google.android.googlequicksearchbox.VoiceSearchActivity" display_order="95" container="Google" />
+    <!--f916e8fa-d11d-4298-9d21-d4fdf059472f-->
+    <item type="application" packageName="com.google.android.play.games" className="com.google.android.gms.games.ui.destination.main.MainActivity" display_order="105" container="Google" />
+    <!--d702f120-0fb6-4e6a-bba3-4b794df80a95-->
+    <item type="application" packageName="com.google.android.gms" className="com.google.android.gms.app.settings.GoogleSettingsActivity" display_order="115" container="Google" />
+    <!--33ba57b4-f1bf-4c0f-9e76-df4a6190aa3d-->
+    <item type="application" packageName="com.htc.lucy" className="com.htc.lucy.editor.LandingActivity" display_order="5" container="Productivity" />
+    <!--8a96dba2-8256-4e4b-bf18-cc2d386534ee-->
+    <item type="application" packageName="com.htc.contacts" className="com.htc.contacts.DialerTabActivity" display_order="15" container="Productivity" />
+    <!--6f103f5a-8acc-4afb-87a3-3d96dde7621a-->
+    <item type="application" packageName="com.htc.sense.mms" className="com.htc.sense.mms.ui.ConversationList" display_order="25" container="Productivity" />
+    <!--edcdfb37-1b03-4450-952c-ee247db6e000-->
+    <item type="application" packageName="com.google.android.apps.docs" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="35" container="Productivity" />
+    <!--5957d1f3-e405-4414-9e92-7b8936605b19-->
+    <item type="application" packageName="com.infraware.docmaster" className="com.infraware.polarisoffice5.OfficeHomeActivity" display_order="45" container="Productivity" />
+    <!--ca03085c-c0f6-4864-a938-46bcf1f1af20-->
+    <item type="application" packageName="com.htc.sense.browser" className="com.htc.sense.browser.BrowserActivity" display_order="55" container="Productivity" />
+    <!--859a6c9e-83f9-4455-a1e1-8f3354ce8308-->
+    <item type="application" packageName="com.htc.task" className="com.htc.task.TaskListViewActivity" display_order="65" container="Productivity" />
+    <!--04e78edf-c85f-4bd7-b9e4-41476fbf2cae-->
+    <item type="application" packageName="com.htc.pdfviewer" className="com.htc.pdfviewer.ActPDFReader" display_order="75" container="Productivity" />
+    <!--3c5f15a7-aa35-4332-a561-1834712f4d22-->
+    <item type="application" packageName="com.inventec.dreye.htc" className="com.inventec.dreye.htc.DreEntryView" display_order="85" container="Productivity" />
+    <!--c508ffb3-71aa-4d58-a962-565bfd09e754-->
+    <item type="application" packageName="com.htc.notes" className="com.htc.notes.collection.NoteCollectionActivity" display_order="95" container="Productivity" />
+    <!--85bd557c-4828-450b-bde7-cac7173dccd6-->
+    <item type="application" packageName="com.dropbox.android" className="com.dropbox.android.activity.DropboxBrowser" display_order="105" container="Productivity" />
+    <!--d980757a-74d9-4feb-b9b5-bf10b9adb682-->
+    <item type="application" packageName="com.htc.calculator" className="com.htc.calculator.Calculator" display_order="5" container="Tools" />
+    <!--ad8f2c72-db45-494f-9c19-b968e5001019-->
+    <item type="application" packageName="com.htc.flashlight" className="com.htc.flashlight.FlashlightActivity" display_order="15" container="Tools" />
+    <!--b12ab714-f7fe-46a5-8fee-26001fab1a8c-->
+    <item type="application" packageName="com.htc.Weather" className="com.htc.Weather.WeatherEntry" display_order="25" container="Tools" />
+    <!--dc25cdd3-e9fd-4639-bbcb-d835bd31e52b-->
+    <item type="application" packageName="com.android.providers.downloads.ui" className="com.android.providers.downloads.ui.DownloadList" display_order="35" container="Tools" />
+    <!--bc37092e-125f-47fc-9ca5-afb1c44e5476-->
+    <item type="application" packageName="com.htc.android.htcsetupwizard" className="com.htc.android.htcsetupwizard.SetupWizardActivity" display_order="45" container="Tools" />
+    <!--b8160352-b35e-4007-a712-6f46b9a80aa4-->
+    <item type="application" packageName="com.htc.soundrecorder" className="com.htc.soundrecorder.SoundRecorderBG" display_order="55" container="Tools" />
+    <!--2177c6ee-0dbd-422b-ab13-9ab16e714daa-->
+    <item type="application" packageName="com.zoodles.kidmode" className="com.zoodles.kidmode.activity.parent.ParentDashboardLauncherActivity" display_order="65" container="Tools" />
+    <!--1ebab83d-39d1-4e55-b196-364e2e0e9b01-->
+    <item type="application" packageName="com.adobe.flashplayer" className="com.adobe.flashplayer.SettingsManager" display_order="75" container="Tools" />
+    <!--55d2aeed-7453-4e91-b2b1-9144a90df3b0-->
+    <item type="application" packageName="com.htc.updater" className="com.htc.updater.ui.UpdaterMainActivity" display_order="85" container="Tools" />
+    <!--965c36a0-298c-40ab-ade4-0a35f5873c16-->
+    <item type="application" packageName="com.htc.backup" className="com.htc.backup.oobe.Launcher" display_order="95" container="Tools" />
+    <!--87b7ad31-2f0e-4fba-997a-8744e85e48c8-->
+    <item type="application" packageName="com.google.android.apps.docs.editors.docs" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="106" container="Productivity" />
+    <!--1d4899d7-4b85-49bc-9fe8-9d18a4ec5c11-->
+    <item type="application" packageName="com.google.android.apps.docs.editors.slides" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="107" container="Productivity" />
+    <!--2722f2b6-b370-4529-b926-2d1f0b24bfd3-->
+    <item type="application" packageName="com.google.android.apps.docs.editors.sheets" className="com.google.android.apps.docs.app.NewMainProxyActivity" display_order="108" container="Productivity" />
+    <!--be4cd2f6-2c74-48eb-989f-02adfb807a7b-->
+    <item type="application" packageName="com.nextmedia" className="com.nextmedia.apple.hk.Loading" display_order="145" container="Media" />
+    <!--d18848e9-9bac-405e-97b2-8defed65c045-->
+    <item type="application" packageName="com.mt.mtxx.mtxx" className="com.mt.mtxx.mtxx.TopViewActivity" display_order="155" container="Media" />
+    <!--db02d264-03d2-4fed-ab23-af8aa7952831-->
+    <item type="application" packageName="com.quickplay.tvbmytv" className="com.quickplay.tvbmytv.activity.StartUpActivity" display_order="165" container="Media" />
+    <!--39da4e4d-7980-4152-aae1-676377dbb96e-->
+    <item type="application" packageName="com.tvb.iNews" className="com.tvb.iNews.Activity.iNews_splash" display_order="175" container="Media" />
+    <!--426f0e17-def5-47f0-83f2-348b0587f4b9-->
+    <item type="application" packageName="com.reader24.android" className="com.reader24.android.Loading" display_order="5" container="3" />
+    <!--46571451-0a0b-4d29-b6d1-d93163e5bce0-->
+    <item type="application" packageName="com.anyplex.hls.wish" className="com.anyplex.hls.wish.AnyplexNewActivity" display_order="15" container="3" />
+    <!--db5b2791-9fde-4c6a-a8e4-1b01c5ffdeda-->
+    <item type="application" packageName="com.hkjc.bet" className="com.hkjc.bet.MainPageActivity" display_order="25" container="3" />
+    <!--0343e488-6237-4827-87ef-1241870c76cb-->
+    <item type="folder" folder_id="Media" folder_title="Media" display_order="70" />
+    <!--c85ce91b-1c89-4b87-8d61-bd53f3a22c26-->
+    <item type="folder" folder_id="Google" folder_title="Google" display_order="80" />
+    <!--f17e4f3e-3b11-4104-bce5-4ddbae654dda-->
+    <item type="folder" folder_id="Productivity" folder_title="Productivity" display_order="190" />
+    <!--488949b3-266f-4694-b44b-247ff81d681c-->
+    <item type="folder" folder_id="Tools" folder_title="Tools" display_order="230" />
+    <!--24fd063a-37c9-4fb1-8aeb-dc9242cdc9b4-->
+    <item type="folder" folder_id="3" folder_title="3" display_order="90" />
+  </customize_sort>
+</allApplication>

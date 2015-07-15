@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="system">
+    <module name="defaultLocale">
+      <function>
+        <set name="single">
+          <item name="auto_detect">false</item>
+          <item name="defeault">zh_HK</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultInputMethod">
+      <function name="default_IME_prediction_set">
+        <set name="single">
+          <item name="qwerty">yes</item>
+        </set>
+      </function>
+      <function name="default_IME_keyboard_type">
+        <set name="single">
+          <item name="default">2</item>
+        </set>
+      </function>
+      <function name="default_IKB_settings_checked">
+        <set name="single">
+          <item name="checked_list">Handwriting;CangJie;PinYin;Stroke;</item>
+          <item name="checked_list_latin">English;</item>
+        </set>
+      </function>
+      <function name="default_IKB_init_value">
+        <set name="single">
+          <item name="default">English</item>
+        </set>
+      </function>
+      <function name="custom_locale_sip_mapping">
+        <set name="single">
+          <item name="total_list">en_HK;zh_CN;zh_TW;zh_HK;</item>
+          <item name="en_HK">English</item>
+          <item name="zh_CN">English</item>
+          <item name="zh_TW">English</item>
+          <item name="zh_HK">Handwriting</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultTimeFormatSetting">
+      <function>
+        <set name="single">
+          <item name="default">yyyy MMM d, EE</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultTimeFormatSettingShort">
+      <function>
+        <set name="single">
+          <item name="default">MMM d, EE</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="application">
+    <module name="Settings">
+      <function name="resource_path">
+        <set name="single" max="1">
+          <item name="path">/system/customize/resource/</item>
+        </set>
+      </function>
+    </module>
+    <module name="Launcher">
+      <function name="1_app_widgets">
+        <set name="plenty" max="19">
+          <!--d4e17e8f-b6d9-4023-90cf-09138fc5f88d-->
+          <item name="package_name">com.htc.widget.weatherclock</item>
+          <item name="app_widget_provider">com.htc.widget.weatherclock.WeatherClock4x1</item>
+          <item name="screen">1</item>
+          <item name="cell_x">0</item>
+          <item name="cell_y">0</item>
+          <item name="span_x">4</item>
+          <item name="span_y">1</item>
+        </set>
+        <set name="plenty" max="19">
+          <!--e40541eb-d809-4a3b-b049-c158eb44f45d-->
+          <item name="package_name">com.google.android.googlequicksearchbox</item>
+          <item name="app_widget_provider">com.google.android.googlequicksearchbox.SearchWidgetProvider</item>
+          <item name="screen">1</item>
+          <item name="cell_x">0</item>
+          <item name="cell_y">1</item>
+          <item name="span_x">4</item>
+          <item name="span_y">1</item>
+        </set>
+      </function>
+      <function name="applications_hide">
+        <set name="plenty" max="7">
+          <item name="package">com.lmi.htc.rescue</item>
+          <item name="class">com.lmi.htc.rescue.RescueApp</item>
+          <item name="flags">0</item>
+        </set>
+      </function>
+      <function name="quick_launch_customization">
+        <set name="single" max="1">
+          <item name="file">system/customize/resource/quicklaunch.xml</item>
+        </set>
+      </function>
+      <function name="all_applications_customization">
+        <set name="single" max="1">
+          <item name="file">system/customize/resource/allapplication_45419.xml</item>
+        </set>
+      </function>
+      <function name="extra_wallpapers">
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_00.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_01.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_02.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_03.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_04.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_05.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_06.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_07.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_08.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_09.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_10.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_11.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_12.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_13.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_14.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_15.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_16.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_17.jpg</item>
+          <!--%%Extra_Preveiw_image_landscape_Mode%%-->
+          <!--%%Extra_Normal_image_landscape_Mode%%-->
+        </set>
+      </function>
+      <function name="1_shortcuts">
+        <set name="plenty">
+          <!--5cd8d529-92a7-4a6e-b474-3b953c53157d-->
+          <item name="package">com.android.vending</item>
+          <item name="class">com.android.vending.AssetBrowserActivity</item>
+          <item name="screen">1</item>
+          <item name="x">3</item>
+          <item name="y">3</item>
+          <item name="itemtype">0</item>
+        </set>
+      </function>
+      <function name="scene_list">
+        <set name="plenty" max="1">
+          <item name="scenename">HTC</item>
+          <item name="pages_count">3</item>
+          <item name="home_index">1</item>
+          <item name="feed_index">0</item>
+        </set>
+      </function>
+    </module>
+    <module name="MessageConfig">
+      <function name="setting">
+        <set name="single">
+          <item name="SMS_Delivery_Report">false</item>
+          <item name="MMS_Delivery_Report">false</item>
+          <item name="MMS_Read_Report">false</item>
+          <item name="MMS_Auto_Retrieve">true</item>
+          <item name="MMS_Roaming_Auto_Retrieve">false</item>
+          <item name="MMS_Priority">Normal</item>
+          <item name="MMS_Msg_Size1">100K</item>
+          <item name="MMS_Msg_Size2">200K</item>
+          <item name="MMS_Msg_Size3">300K</item>
+          <item name="MMS_Msg_Size_Choose">300K</item>
+          <item name="MMS_Received_Notify">true</item>
+          <item name="MMS_Play_Received_Notify">true</item>
+          <item name="MMS_Received_Viberation">true</item>
+          <item name="MMS_Sent_Notify">false</item>
+          <item name="MMS_Fail_Notify">true</item>
+          <item name="MMS_Play_Notify">true</item>
+          <item name="MMS_Notify_Sound">Default Ringtone</item>
+          <item name="MMS_Viberation">true</item>
+          <item name="MMS_Max_Recipient_Number">10</item>
+          <item name="SMS_Max_Recipient_Number">250</item>
+          <item name="SMS_Max_Concatenated_Number">5</item>
+          <item name="MMS_Max_Slide_Number">10</item>
+          <item name="MMS_Default_Slide_Duration">5000</item>
+          <item name="RECIPT_Show_Sent_Msg_History">true</item>
+          <item name="RECIPT_Show_Call_History">true</item>
+          <item name="RECIPT_Show_Email_Address">false</item>
+          <item name="MSG_Preview_Line">1</item>
+          <item name="STORAGE_Del_Old_Msg">false</item>
+          <item name="STORAGE_Text_Msg_Limit">200</item>
+          <item name="STORAGE_MMS_Msg_Limit">20</item>
+          <item name="SMS_Wap_Push_Support">true</item>
+          <item name="SMS_Empty_Draft_Support">false</item>
+          <item name="SMS_To_Email_Support">false</item>
+          <item name="SMS_Class_Zero_Save_Support">true</item>
+          <item name="SMS_Concatenated_Email_SMS">false</item>
+          <item name="SMS_Subject_Support">false</item>
+          <item name="SMS_SMSC_Editable">true</item>
+          <item name="SMS_Empty_SMS_Support">true</item>
+          <item name="SMS_Use_Device_Time">false</item>
+          <item name="SMS_Characters">true</item>
+          <item name="MMS_Retry_Policy">15,15,15,15,15,15</item>
+          <item name="MSG_General_CMAS_Support">false</item>
+          <item name="MSG_Use_Signature">false</item>
+          <item name="Display_message_on_screen">success_and_failure</item>
+          <item name="MMS_Show_All_Mixed_Text">false</item>
+          <item name="RECIPT_Input_Type_Number">false</item>
+          <item name="MMS_Force_Display_In_Slideshow">false</item>
+          <item name="MMS_Show_Restricted_Mode">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="weather_sync_provider">
+      <function name="settings">
+        <set name="single">
+          <item name="temprature_unit">c</item>
+          <item name="update_interval">3600000</item>
+        </set>
+      </function>
+    </module>
+    <module name="weather_provider">
+      <function name="default_city">
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Hong Kong</item>
+          <item name="country">Hong Kong</item>
+          <item name="code">ASI|HK|HK---|HONG KONG</item>
+          <item name="timezone">-480</item>
+          <item name="timezoneid">Asia/Hong_Kong</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Macao</item>
+          <item name="country">Macau</item>
+          <item name="code">ASI|MO|MC---|MACAO</item>
+          <item name="timezone">-480</item>
+          <item name="timezoneid">Asia/Hong_Kong</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Tokyo</item>
+          <item name="country">Japan</item>
+          <item name="code">ASI|JP|JA041|TOKYO</item>
+          <item name="timezone">-540</item>
+          <item name="timezoneid">Asia/Tokyo</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Taipei</item>
+          <item name="country">Taiwan</item>
+          <item name="code">ASI|TW|TW018|TAIPEI</item>
+          <item name="timezone">-480</item>
+          <item name="timezoneid">Asia/Taipei</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Bangkok</item>
+          <item name="country">Thailand</item>
+          <item name="code">ASI|TH|TH017|BANGKOK</item>
+          <item name="timezone">-420</item>
+          <item name="timezoneid">Asia/Bangkok</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Shenzhen</item>
+          <item name="country">China</item>
+          <item name="code">58194</item>
+          <item name="timezone">-480</item>
+          <item name="timezoneid">Asia/Hong_Kong</item>
+        </set>
+      </function>
+    </module>
+    <module name="Stocks">
+      <function name="settings">
+        <set name="single">
+          <item name="raisecolor">Green</item>
+          <item name="interval">240</item>
+        </set>
+      </function>
+      <function name="default_stocks">
+        <set name="plenty" max="30">
+          <item name="symbol">0005.HK</item>
+        </set>
+        <set name="plenty" max="30">
+          <item name="symbol">0388.HK</item>
+        </set>
+        <set name="plenty" max="30">
+          <item name="symbol">^HSI</item>
+        </set>
+        <set name="plenty" max="30">
+          <item name="symbol">^DJI</item>
+        </set>
+        <set name="plenty" max="30">
+          <item name="symbol">^IXIC</item>
+        </set>
+      </function>
+    </module>
+    <module name="Browser">
+      <function name="bookmark">
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">HTC</item>
+          <item name="url">http://www.htc.com</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">Google</item>
+          <item name="url">http://www.google.com</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">Yahoo</item>
+          <item name="url">http://www.yahoo.com</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">Wiki</item>
+          <item name="url">http://www.wikipedia.org</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">Twitter</item>
+          <item name="url">http://twitter.com</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">Facebook</item>
+          <item name="url">http://touch.facebook.com</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">The New York Times</item>
+          <item name="url">http://mobile.nytimes.com</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">AccuWeather</item>
+          <item name="url">http://www.accuweather.com/m/default.aspx?p=htcand&amp;loc</item>
+        </set>
+        <set name="plenty">
+          <!--%%File%%-->
+          <item name="title">Lonely Planet</item>
+          <item name="url">http://www.lonelyplanet.com</item>
+        </set>
+      </function>
+      <function name="homepage">
+        <set name="single" max="15">
+          <item name="url">http://www.google.com</item>
+        </set>
+      </function>
+    </module>
+    <module name="Mail">
+      <function name="provider">
+        <set name="plenty" max="10">
+          <!--%%File%%-->
+          <item name="provider">Microsoft Exchange ActiveSync</item>
+          <item name="inprotocol">EAS</item>
+          <item name="description">exchangeAccountDesc</item>
+          <item name="resid">icon_launcher_active_sync</item>
+        </set>
+        <set name="plenty" max="10">
+          <!--%%File%%-->
+          <item name="provider">Hotmail</item>
+          <item name="domain">hotmail.com</item>
+          <item name="inprotocol">POP</item>
+          <item name="description">hotmailAccountDesc</item>
+          <item name="resid">icon_launcher_hotmail</item>
+        </set>
+        <set name="plenty" max="10">
+          <!--%%File%%-->
+          <item name="provider">Other</item>
+          <item name="description">otherAccountDesc</item>
+          <item name="resid">icon_launcher_mail</item>
+        </set>
+      </function>
+      <function name="provider_setting">
+        <set name="plenty" max="10">
+          <item name="provider">YahooTW</item>
+          <item name="domain">yahoo.com.tw</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Yahoo</item>
+          <item name="domain">yahoo.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooHK</item>
+          <item name="domain">yahoo.com.hk</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooUK</item>
+          <item name="domain">yahoo.co.uk</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooFR</item>
+          <item name="domain">yahoo.fr</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooIT</item>
+          <item name="domain">yahoo.it</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Yahoo</item>
+          <item name="domain">yahoo.de</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooES</item>
+          <item name="domain">yahoo.es</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Ymail</item>
+          <item name="domain">ymail.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">RocketMail</item>
+          <item name="domain">rocketmail.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Ovi</item>
+          <item name="domain">ovi.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Rogers</item>
+          <item name="domain">rogers.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Hotmail</item>
+          <item name="domain">hotmail.com</item>
+          <item name="inserver">pop3.live.com</item>
+          <item name="inport">995</item>
+          <item name="outserver">smtp.live.com</item>
+          <item name="outport">587</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">2</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="ulog_policy">
+    <module name="com.htc.reportagent">
+      <function name="common">
+        <set name="single">
+          <item name="retry">1</item>
+        </set>
+      </function>
+      <function name="policy">
+        <set name="single">
+          <item name="freq">168</item>
+        </set>
+      </function>
+      <function name="log">
+        <set name="single">
+          <item name="cache">2</item>
+        </set>
+      </function>
+    </module>
+    <module name="com.htc.feedback">
+      <function name="HTC_APP_CRASH">
+        <set name="single">
+          <item name="enable">1</item>
+        </set>
+      </function>
+      <function name="SYSTEM_CRASH">
+        <set name="single">
+          <item name="enable">1</item>
+        </set>
+      </function>
+      <function name="HTC_APP_ANR">
+        <set name="single">
+          <item name="enable">1</item>
+        </set>
+      </function>
+      <function name="LASTKMSG">
+        <set name="single">
+          <item name="enable">1</item>
+        </set>
+      </function>
+      <function name="extra">
+        <set name="single">
+          <item name="bugreport">0</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="CustomAppInstaller">
+    <module name="resource">
+      <function>
+        <set name="plenty">
+          <item name="file">PCCW_Kingking.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">PCCW_Myaccount.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">PCCW_SmartTIPs.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">PCCW_WiFi.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">HK_AppleNews.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">HK_MyTV.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">HK_TVBnews.apk</item>
+        </set>
+        <set name="plenty">
+          <item name="file">HK_MTXX.apk</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="force_change">
+    <module name="Browser">
+      <!-- Web Browser UA string -->
+      <function name="ua_string">
+        <set name="single">
+          <item name="value">HTC_One</item>
+        </set>
+      </function>
+      <function name="ua_string_mobile">
+        <set name="single" />
+      </function>
+      <function name="ua_string_desktop">
+        <set name="single" />
+      </function>
+      <function name="ua_string_short_desktop">
+        <set name="single" />
+      </function>
+      <!-- UA profile URL -->
+      <function name="ua_profile">
+        <set name="single">
+          <item name="value">http://www.htcmms.com.tw/Android/Common/PN071/ua-profile.xml</item>
+        </set>
+      </function>
+      <!-- Enable gif animation -->
+      <function name="enable_gif_anim">
+        <set name="single" />
+      </function>
+      <!-- Mobile_view -->
+      <function name="mobile_view">
+        <set name="single">
+          <item name="value">true</item>
+        </set>
+      </function>
+      <!-- Default text encoding -->
+      <function name="default_text_encoding">
+        <set name="single">
+          <item name="value">Big5</item>
+        </set>
+      </function>
+      <!-- Location_Setting -->
+      <function name="geolocation">
+        <set name="single" />
+      </function>
+      <!-- Open pages in overview -->
+      <function name="overview">
+        <set name="single" />
+      </function>
+      <!-- Max tabs count -->
+      <function name="max_tabs">
+        <set name="single" />
+      </function>
+      <!-- full screen mode (show/hide status bar) -->
+      <function name="always_show_statusbar">
+        <set name="single" />
+      </function>
+      <!-- Bookmark View Setting -->
+      <function name="bookmark_view_mode">
+        <set name="single" />
+      </function>
+      <!-- Most Visit Bookmark View Setting -->
+      <function name="mostvisited_view_mode">
+        <set name="single" />
+      </function>
+      <!-- Default Search Engine -->
+      <function name="search_engine">
+        <set name="single" />
+      </function>
+      <!-- download_dialog -->
+      <function name="download">
+        <set name="single">
+          <item name="download_dialog">0</item>
+        </set>
+      </function>
+      <!-- normal_layout -->
+      <function name="normal_layout">
+        <set name="single" />
+      </function>
+      <!-- autofit_pages -->
+      <function name="autofit_pages">
+        <set name="single" />
+      </function>
+      <!-- mobile_proxy_host -->
+      <function name="mobile_proxy_host">
+        <set name="single" />
+      </function>
+      <!-- mobile_proxy_port -->
+      <function name="mobile_proxy_port">
+        <set name="single" />
+      </function>
+      <!-- Bookmark enable_plugin-->
+      <function name="enable_plugin">
+        <set name="single" />
+      </function>
+    </module>
+    <!-- MMS UA string -->
+    <module name="MMS">
+      <function name="ua_string">
+        <set name="single">
+          <item name="value">HTC_One/1.0</item>
+        </set>
+      </function>
+      <function name="ua_profile">
+        <set name="single" />
+      </function>
+    </module>
+    <!--  J2ME UA string  -->
+    <module name="J2ME">
+      <function name="ua_string">
+        <set name="single" />
+      </function>
+    </module>
+  </category>
+</customization_form>

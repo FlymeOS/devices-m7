@@ -1,0 +1,46 @@
+<config>
+    <category name="CATEGORY_POWER">
+        <module name="MODULE_FRAMEWORK">
+            <function name="FUNCTION_ALARM" version="4">
+                <set name="CUSTOM_SET_ALARM_NIGHT_QUEUE_LIST">
+                    <item name="ITEM_1">com.google.android.apps.maps</item>
+                    <item name="ITEM_2">com.google.android.gsf</item>
+                    <item name="ITEM_3">com.google.android.location</item>
+                    <item name="ITEM_4">com.htc.CruiserPwrExpert</item>
+                    <item name="ITEM_5">com.facebook.katana</item>
+                    <item name="ITEM_6">jp.naver.line.android</item>
+                    <item name="ITEM_7">com.viber.voip</item>
+                    <item name="ITEM_8">com.tencent.mm</item>
+                    <item name="ITEM_9">com.htc.android.mail</item>
+                    <item name="ITEM_10">com.sina.weibo</item>
+                    <item name="ITEM_11">com.facebook.orca</item>                    
+                </set>
+                <set name="CUSTOM_SET_ALARM_DAY_TRIGGER_LIST">
+                    <item name="ITEM_1">com.viber.voip</item>
+                    <item name="ITEM_2">com.google.android.gsf</item>
+                    <item name="ITEM_3">com.google.android.location</item>
+                    <item name="ITEM_4">com.htc.android.mail</item>
+                    <item name="ITEM_5">jp.naver.line.android</item>
+                </set>
+                <set name="CUSTOM_SET_ALARM_DAY_QUEUE_LIST">
+                    <item name="ITEM_1">jp.naver.line.android</item>
+                </set>
+                <set name="CUSTOM_SET_ALARM_DAY_GROUP_LIST">
+                    <item name="ITEM_1">com.viber.voip</item>
+                    <item name="ITEM_2">com.tencent.mm</item>
+                    <item name="ITEM_3">com.whatsapp</item>
+                    <item name="ITEM_4">jp.naver.line.android</item>
+                </set>
+                <set name="CUSTOM_ALARM_DAY_DYNAMIC_INTERVAL_LIST">
+                    <item name="ITEM_1">jp.naver.line.android</item>
+                </set>
+                <set name="CUSTOM_ALARM_DAY_ALIGN_LIST">
+                    <item name="ITEM_1">com.viber.voip</item>
+                    <item name="ITEM_2">com.tencent.mm</item>
+                    <item name="ITEM_3">com.whatsapp</item>
+                </set>
+            </function>
+        </module>
+    </category>
+
+</config>

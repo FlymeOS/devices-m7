@@ -1,0 +1,15 @@
+[PARTIALS]
+brank = 1
+fp_mbits = 10
+fp_ebias = -1
+rank = 1
+rr = partials_A_rr.csv
+bb = partials_A_bb.csv
+length = 6
+version = 1.0.0
+rrank = 1
+grank = 1
+fp_ebits = 3
+gb = partials_A_gb.csv
+gr = partials_A_gr.csv
+

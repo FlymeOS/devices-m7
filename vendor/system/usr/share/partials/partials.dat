@@ -1,0 +1,36 @@
+[GLOBAL]
+version = 1.0.0
+ticklist = ticklist.csv
+redEnergy = 950 
+greenEnergy = 850
+blueEnergy = 750
+redNormGain = 0.4
+blueNormGain = 0.45
+colorTempK = 4950 
+
+[CW]
+redEnergy = 900
+greenEnergy = 800
+blueEnergy = 700
+redNormGain = 0.3
+blueNormGain = 0.35
+colorTempK = 3940
+partials = partials_CW.dat
+
+[A]
+redEnergy = 600
+greenEnergy = 500
+blueEnergy = 400
+redNormGain = 0.2
+blueNormGain = 0.25
+colorTempK = 2800
+partials = partials_A.dat
+
+[H]
+redEnergy = 300
+greenEnergy = 200
+blueEnergy = 100
+redNormGain = 0.1
+blueNormGain = 0.15
+colorTempK = 2300
+partials = partials_H.dat

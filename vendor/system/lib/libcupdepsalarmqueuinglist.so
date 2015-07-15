@@ -1,0 +1,25 @@
+<config>
+    <category name="CATEGORY_EPS">
+        <module name="MODULE_FRAMEWORK">
+            <function name="FUNCTION_ALARM" version="1">
+                <set name="CUSTOM_ALARM_EPS_QUEUE_LIST">
+                    <item name="ITEM_1">
+                        <value name="KEY_PACKAGE_NAME">com.google.android.gms</value>
+                        <value name="KEY_INTENT_NAME">com.google.android.intent.action.GCM_RECONNECT</value>
+                    </item>
+                    <item name="ITEM_2">
+                        <value name="KEY_PACKAGE_NAME">com.google.android.gms</value>
+                        <value name="KEY_INTENT_NAME">com.google.android.gms.nlp.ALARM_WAKEUP_LOCATOR</value>
+                    </item>
+                </set>
+                <set name="CUSTOM_ALARM_EPS_SCREEN_OFF_QUEUE_LIST">
+                    <item name="ITEM_1">
+                        <value name="KEY_PACKAGE_NAME">android</value>
+                        <value name="KEY_INTENT_NAME">android.appwidget.action.APPWIDGET_UPDATE</value>
+                    </item>
+                </set>
+            </function>
+        </module>
+    </category>
+
+</config>

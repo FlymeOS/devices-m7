@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map>
+  <profiles>
+	<MCCMNC name="45400">
+    	<item GID1="01010000" operator="1O1O" displayname="1O1O" Menu="N" mapfile="45400_1.xml" />
+    	<item GID1="01020000" operator="csl" displayname="csl"  Menu="N" mapfile="45400_2.xml" />
+    	<item GID1="01030000" operator="SUN Mobile" displayname="SUN Mobile"  Menu="N" mapfile="45400_5.xml" />
+    	<item GID1="01040000" operator="Global Call" displayname="Global Call" Menu="N" mapfile="45400_5.xml" />
+		<item GID1="02020001" operator="csl prepaid p1" displayname="csl prepaid p1" Menu="N" mapfile="45400_5.xml" />
+    	<item GID1="02030001" operator="CSL prepaid" displayname="CSL prepaid" Menu="N" mapfile="45400_5.xml" />
+		<item GID1="02020002" operator="csl prepaid p3" displayname="csl prepaid p3" Menu="N" mapfile="45400_5.xml" />
+	</MCCMNC>
+	<MCCMNC name="45402">
+    	<item GID1="01010000" operator="1O1O" displayname="1O1O" Menu="N" mapfile="45400_1.xml" />
+    	<item GID1="01020000" operator="csl" displayname="csl"  Menu="N" mapfile="45400_2.xml" />
+    	<item GID1="01030000" operator="SUN Mobile" displayname="SUN Mobile"  Menu="N" mapfile="45400_5.xml" />
+    	<item GID1="01040000" operator="Global Call" displayname="Global Call" Menu="N" mapfile="45400_5.xml" />
+		<item GID1="02020001" operator="csl prepaid p1" displayname="csl prepaid p1" Menu="N" mapfile="45400_5.xml" />
+    	<item GID1="02030001" operator="CSL prepaid" displayname="CSL prepaid" Menu="N" mapfile="45400_5.xml" />
+		<item GID1="02020002" operator="csl prepaid p3" displayname="csl prepaid p3" Menu="N" mapfile="45400_5.xml" />
+	</MCCMNC>
+	<MCCMNC name="45418">
+    	<item GID1="01010000" operator="1O1O" displayname="1O1O" Menu="N" mapfile="45400_1.xml" />
+    	<item GID1="01020000" operator="csl" displayname="csl"  Menu="N" mapfile="45400_2.xml" />
+    	<item GID1="01030000" operator="SUN Mobile" displayname="SUN Mobile"  Menu="N" mapfile="45400_5.xml" />
+    	<item GID1="01040000" operator="Global Call" displayname="Global Call" Menu="N" mapfile="45400_5.xml" />
+		<item GID1="02020001" operator="csl prepaid p1" displayname="csl prepaid p1" Menu="N" mapfile="45400_5.xml" />
+    	<item GID1="02030001" operator="CSL prepaid" displayname="CSL prepaid" Menu="N" mapfile="45400_5.xml" />
+		<item GID1="02020002" operator="csl prepaid p3" displayname="csl prepaid p3" Menu="N" mapfile="45400_5.xml" />
+	</MCCMNC>
+  </profiles>
+</map>

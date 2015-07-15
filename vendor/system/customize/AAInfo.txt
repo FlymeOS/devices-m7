@@ -1,0 +1,6 @@
+TaskID : 420559
+Project : M7_UL_L50_SENSE60_MR
+SKU : hTC Asia HK CHT[708]
+ROM Ver : 7.18.708.2
+Customization Id : 1039128
+RCMS Id : 450

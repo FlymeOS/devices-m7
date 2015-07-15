@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="system">
+    <module name="locale">
+      <function>
+        <set name="single">
+          <item name="total_list">zh_HK;zh_TW;zh_CN;en_HK;en_US;ja_JP;ko_KR;th_TH;vi_VN;cs_CZ;da_DK;de_DE;es_ES;fr_FR;it_IT;nl_NL;nb_NO;pl_PL;pt_PT;fi_FI;sv_SE;tr_TR;ru_RU;el_GR;</item>
+          <item type="boolean" name="zh_HK">yes</item>
+          <item type="boolean" name="zh_TW">yes</item>
+          <item type="boolean" name="zh_CN">yes</item>
+          <item type="boolean" name="en_HK">yes</item>
+          <item type="boolean" name="en_US">yes</item>
+          <item type="boolean" name="ja_JP">yes</item>
+          <item type="boolean" name="ko_KR">yes</item>
+          <item type="boolean" name="th_TH">yes</item>
+          <item type="boolean" name="vi_VN">yes</item>
+          <item type="boolean" name="cs_CZ">yes</item>
+          <item type="boolean" name="da_DK">yes</item>
+          <item type="boolean" name="de_DE">yes</item>
+          <item type="boolean" name="es_ES">yes</item>
+          <item type="boolean" name="fr_FR">yes</item>
+          <item type="boolean" name="it_IT">yes</item>
+          <item type="boolean" name="nl_NL">yes</item>
+          <item type="boolean" name="nb_NO">yes</item>
+          <item type="boolean" name="pl_PL">yes</item>
+          <item type="boolean" name="pt_PT">yes</item>
+          <item type="boolean" name="fi_FI">yes</item>
+          <item type="boolean" name="sv_SE">yes</item>
+          <item type="boolean" name="tr_TR">yes</item>
+          <item type="boolean" name="ru_RU">yes</item>
+          <item type="boolean" name="el_GR">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="customized_value">
+        <set name="single">
+          <item name="single_usb_tethering">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultAutoTime">
+      <function>
+        <set name="single">
+          <item name="default">1</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultAutoTimeZone">
+      <function>
+        <set name="single">
+          <item name="default">1</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData">
+      <function>
+        <set name="single">
+          <item name="device_name">HTC One</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData1">
+      <function>
+        <set name="single">
+          <item name="sw_number">NA</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="application">
+    <module name="Crash_Report">
+      <function name="setting">
+        <set name="single">
+          <item name="turn_off_report" type="boolean">no</item>
+          <item name="turn_off_application_log" type="boolean">no</item>
+        </set>
+      </function>
+    </module>
+    <module name="FOTA">
+      <function name="settings">
+        <set name="single">
+          <item name="Enable_FOTA_UI" type="boolean">yes</item>
+          <item name="Enable_Manual_Check" type="boolean">yes</item>
+          <item name="Default_Scheduled_Ckeck" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Drm_Provider">
+      <function name="Drm_Support">
+        <set name="single">
+          <item name="CD">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Phone">
+      <function name="dialer">
+        <set name="single">
+          <item name="hk_sku">true</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <BootConfiguration>
+    <BootAnimation animation="/system/customize/resource/hTC_bootup_one.zip" audio="/system/customize/resource/HTC_Sense5_Boot.mp3" />
+  </BootConfiguration>
+  <ShutdownConfiguration>
+    <ShutdownAnimation image_png="/system/customize/resource/hTC_downanimation.zip" image="" fps="10" />
+  </ShutdownConfiguration>
+  <category name="SettingsProvider">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="def_screen_off_timeout">-2</item>
+          <item name="def_2g_on">3</item>
+          <item name="def_powersaver_connectivity">1</item>
+          <item name="def_hide_ui_powersaver_connectivity">0</item>
+          <item name="def_smartsync_sleep_mode">0</item>
+          <item name="def_hide_ui_smartsync_sleep_mode">1</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="Settings">
+    <module name="properties">
+      <function>
+        <set name="single">
+          <item name="market_name">HTC One</item>
+        </set>
+      </function>
+    </module>
+    <module name="list">
+      <function name="hide_application_list">
+        <set name="single">
+          <item name="0">com.lmi.htc.rescuesecurity</item>
+          <item name="1">com.lmi.htc.rescue</item>
+        </set>
+      </function>
+      <function name="uninstall_button_disabled_list">
+        <set name="single">
+          <item name="1">com.inventec.dreye.htc</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="AutomotiveHome">
+    <module name="setting">
+      <function>
+        <set name="single">
+          <item name="default_Location">Google Maps Navigation</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="AudioService">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="enable_listen_notify">true</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="ACC">
+    <module name="Settings-Wireless_+_network-USB_tethering_">
+      <function name="settings">
+        <set>
+          <item name="Single_USB_tethering" type="boolean">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="Android_Core_Framework">
+      <function name="settings">
+        <set>
+          <item name="support_ep_url" type="boolean">false</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>
