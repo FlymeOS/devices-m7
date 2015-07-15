@@ -1,0 +1,10 @@
+kernel=zImage
+ramdisk=RAMDISK
+page_size=2048
+kernel_size=6065280
+ramdisk_size=1125357
+base_addr=0x80600000
+kernel_offset=0x00008000
+ramdisk_offset=0x01800000
+tags_offset=0x00000100
+cmd_line="console=ttyHSL0,115200,n8 androidboot.hardware=m7 user_debug=31"
