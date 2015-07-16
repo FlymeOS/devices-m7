@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/app/ApplicationPackageManager$FlymeInjector;,
         Landroid/app/ApplicationPackageManager$ResourceName;
     }
 .end annotation
@@ -190,10 +191,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 1771
-    const v1, 0x1080356
+    const v1, #android:drawable@ic_corp_icon_badge#t
 
-    .line 1773
     :goto_0
     return v1
 
@@ -2737,9 +2736,11 @@
 
     move-result-object v0
 
-    const v1, 0x1080093
+    const v1, #android:drawable@sym_def_app_icon#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    invoke-static {}, Landroid/app/ApplicationPackageManager$FlymeInjector;->getDefaultFlymeActivityIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -2755,32 +2756,33 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 729
     new-instance v2, Landroid/app/ApplicationPackageManager$ResourceName;
 
     invoke-direct {v2, p1, p2}, Landroid/app/ApplicationPackageManager$ResourceName;-><init>(Ljava/lang/String;I)V
 
-    .line 730
     .local v2, "name":Landroid/app/ApplicationPackageManager$ResourceName;
     invoke-direct {p0, v2}, Landroid/app/ApplicationPackageManager;->getCachedIcon(Landroid/app/ApplicationPackageManager$ResourceName;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 731
     .local v0, "dr":Landroid/graphics/drawable/Drawable;
+    invoke-static/range {p1 .. p1}, Landroid/app/ApplicationPackageManager$FlymeInjector;->isFlymeCalendarPkg(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_flyme_0
+
     if-eqz v0, :cond_0
 
     move-object v4, v0
 
-    .line 778
     :goto_0
     return-object v4
 
-    .line 734
     :cond_0
+    :cond_flyme_0
     if-nez p3, :cond_1
 
-    .line 736
     const/16 v5, 0x400
 
     :try_start_0
@@ -2790,42 +2792,34 @@
 
     move-result-object p3
 
-    .line 742
     :cond_1
     :try_start_1
     invoke-virtual {p0, p3}, Landroid/app/ApplicationPackageManager;->getResourcesForApplication(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;
 
     move-result-object v3
 
-    .line 743
     .local v3, "r":Landroid/content/res/Resources;
-    invoke-virtual {v3, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-static/range {p0 .. p3}, Landroid/app/ApplicationPackageManager$FlymeInjector;->getFlymeThemeDrawable(Landroid/app/ApplicationPackageManager;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 758
     if-eqz v0, :cond_3
 
-    .line 759
     invoke-direct {p0, v2, v0}, Landroid/app/ApplicationPackageManager;->putCachedIcon(Landroid/app/ApplicationPackageManager$ResourceName;Landroid/graphics/drawable/Drawable;)V
 
     :cond_2
     :goto_1
     move-object v4, v0
 
-    .line 764
     goto :goto_0
 
-    .line 737
     .end local v3    # "r":Landroid/content/res/Resources;
     :catch_0
     move-exception v1
 
-    .line 738
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     goto :goto_0
 
-    .line 760
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .restart local v3    # "r":Landroid/content/res/Resources;
     :cond_3
@@ -5098,7 +5092,7 @@
 
     move-result-object v1
 
-    const v2, 0x1080354
+    const v2, #android:drawable@ic_corp_badge#t
 
     invoke-virtual {v1, v2, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -5223,7 +5217,7 @@
 
     move-result-object v1
 
-    const v2, 0x104066d
+    const v2, #android:string@managed_profile_label_badge#t
 
     const/4 v3, 0x1
 

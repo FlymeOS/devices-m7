@@ -315,7 +315,7 @@
 
     .line 1492
     .local v1, "r":Landroid/content/res/Resources;
-    const v2, 0x112007b
+    const v2, #android:bool@config_sms_force_7bit_encoding#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -5045,14 +5045,14 @@
 
     iput-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/gsm/GsmSmsAddress;
 
+    invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/gsm/SmsMessage;->mzSetDestinationAddress()V
+
     iput-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mDestinationAddress:Lcom/android/internal/telephony/SmsAddress;
 
-    .line 1940
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/gsm/GsmSmsAddress;
 
     if-eqz v4, :cond_0
 
-    .line 1945
     :cond_0
     invoke-virtual {p1}, Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->getByte()I
 
@@ -5709,7 +5709,7 @@
 
     .line 2044
     .local v15, "r":Landroid/content/res/Resources;
-    const v17, 0x1120076
+    const v17, #android:bool@config_sms_decode_gsm_8bit_data#t
 
     move/from16 v0, v17
 
@@ -6970,7 +6970,7 @@
 
     .line 2285
     .restart local v15    # "r":Landroid/content/res/Resources;
-    const v17, 0x1120076
+    const v17, #android:bool@config_sms_decode_gsm_8bit_data#t
 
     move/from16 v0, v17
 
@@ -7662,4 +7662,15 @@
     iget-boolean v0, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->kddiDiscard:Z
 
     return v0
+.end method
+
+.method private mzSetDestinationAddress()V
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/gsm/GsmSmsAddress;
+
+    iput-object v0, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->destinationAddress:Lcom/android/internal/telephony/SmsAddress;
+
+    return-void
 .end method

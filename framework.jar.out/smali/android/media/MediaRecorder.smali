@@ -59,6 +59,8 @@
 
 
 # instance fields
+.field private mIsVideoRecord:Z
+
 .field private mEventHandler:Landroid/media/MediaRecorder$EventHandler;
 
 .field private mFd:Ljava/io/FileDescriptor;
@@ -932,25 +934,20 @@
 
     invoke-direct/range {v0 .. v5}, Landroid/media/MediaRecorder;->_setOutputFile(Ljava/io/FileDescriptor;JJ)V
 
-    .line 877
     iget-object v7, p0, Landroid/media/MediaRecorder;->mPath:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 880
     invoke-virtual {v6}, Ljava/io/RandomAccessFile;->close()V
 
-    .line 891
     .end local v6    # "file":Ljava/io/RandomAccessFile;
     :goto_0
     if-eqz v7, :cond_0
 
-    .line 892
     const/4 v0, 0x1
 
     new-array v8, v0, [J
 
-    .line 893
     .local v8, "size":[J
     invoke-direct {p0, v7, v8}, Landroid/media/MediaRecorder;->getMaxAllowedFileSizeByPath(Ljava/lang/String;[J)Z
 
@@ -958,22 +955,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 894
     const/4 v0, 0x0
 
     aget-wide v0, v8, v0
 
     invoke-direct {p0, v0, v1}, Landroid/media/MediaRecorder;->setMaxAllowedFileSize(J)V
 
-    .line 897
     .end local v8    # "size":[J
     :cond_0
-    invoke-direct {p0}, Landroid/media/MediaRecorder;->_prepare()V
+    invoke-direct {p0}, Landroid/media/MediaRecorder;->hook_prepare()V
 
-    .line 898
     return-void
 
-    .line 880
     .restart local v6    # "file":Ljava/io/RandomAccessFile;
     :catchall_0
     move-exception v0
@@ -2326,13 +2319,16 @@
 
     throw v0
 
-    .line 742
     :cond_0
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/media/MediaRecorder;->mIsVideoRecord:Z
+
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v1, "video-param-encoding-bitrate="
+    const-string v1, "video-param-encoding-bitrate="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2420,4 +2416,57 @@
             Ljava/lang/IllegalStateException;
         }
     .end annotation
+.end method
+
+.method private hook_prepare()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/IllegalStateException;,
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    iget-boolean v0, p0, Landroid/media/MediaRecorder;->mIsVideoRecord:Z
+
+    if-eqz v0, :cond_1
+
+    const/16 v0, 0x4c
+
+    :goto_0
+    invoke-static {v0}, Lmeizu/security/FlymePermissionManager;->isFlymePermissionGranted(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0}, Landroid/media/MediaRecorder;->_prepare()V
+
+    :cond_0
+    return-void
+
+    :cond_1
+    const/16 v0, 0x1b
+
+    goto :goto_0
+.end method
+
+.method public hook_setVideoSource(I)V
+    .locals 1
+    .param p1, "video_source"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/IllegalStateException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/media/MediaRecorder;->mIsVideoRecord:Z
+
+    invoke-virtual {p0, p1}, Landroid/media/MediaRecorder;->setVideoSource(I)V
+
+    return-void
 .end method

@@ -311,7 +311,6 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 355
     # getter for: Landroid/app/WallpaperManager;->DEBUG_HTC:Z
     invoke-static {}, Landroid/app/WallpaperManager;->access$000()Z
 
@@ -329,29 +328,24 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 359
     :cond_0
-    invoke-static {p1}, Landroid/app/WallpaperManager;->openDefaultWallpaper(Landroid/content/Context;)Ljava/io/InputStream;
+    invoke-static {p1}, Landroid/app/WallpaperManager$FlymeInject;->mzOpenDefaultWallpaper(Landroid/content/Context;)Ljava/io/InputStream;
 
     move-result-object v1
 
-    .line 360
     .local v1, "is":Ljava/io/InputStream;
     if-eqz v1, :cond_2
 
-    .line 362
     :try_start_0
     new-instance v2, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v2}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 364
     .local v2, "options":Landroid/graphics/BitmapFactory$Options;
     const/4 v4, 0x1
 
     iput-boolean v4, v2, Landroid/graphics/BitmapFactory$Options;->inNativeAlloc:Z
 
-    .line 366
     const/4 v4, 0x0
 
     invoke-static {v1, v4, v2}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;

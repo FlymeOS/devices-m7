@@ -6,6 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/LocationManagerService$MzNetworkStateReceiver;,
+        Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;,
         Lcom/android/server/LocationManagerService$LocationWorkerHandler;,
         Lcom/android/server/LocationManagerService$UpdateRecord;,
         Lcom/android/server/LocationManagerService$Receiver;
@@ -14,6 +16,24 @@
 
 
 # static fields
+.field private static final AUTO_MODE:Ljava/lang/String; = "auto"
+
+.field public static final BAIDU_LOCATION_PACKAGENAME:Ljava/lang/String; = "com.baidu.map.location"
+
+.field private static final BAIDU_MODE:Ljava/lang/String; = "baidu"
+
+.field private static final CAMPED_NETWORK_STATE_CHANGED:Ljava/lang/String; = "android.intent.action.CAMPED_NETWORK_STATE_CHANGED"
+
+.field public static final GOOGLE_LOCATION_PACKAGENAME:Ljava/lang/String; = "com.google.android.gms"
+
+.field private static final GOOGLE_MODE:Ljava/lang/String; = "google"
+
+.field private static final PROPERTY_CAMPED_KEY:Ljava/lang/String; = "gsm.camped.operator.number"
+
+.field private static final PROPERTY_OPERATOR_NUMBER_KEY:Ljava/lang/String; = "gsm.operator.numeric"
+
+.field private static final SIM_STATE_CHANGED:Ljava/lang/String; = "android.intent.action.SIM_STATE_CHANGED"
+
 .field private static final ACCESS_LOCATION_EXTRA_COMMANDS:Ljava/lang/String; = "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"
 
 .field private static final ACCESS_MOCK_LOCATION:Ljava/lang/String; = "android.permission.ACCESS_MOCK_LOCATION"
@@ -68,6 +88,8 @@
 
 
 # instance fields
+.field private mMzModeObserver:Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;
+
 .field private final mAppOps:Landroid/app/AppOpsManager;
 
 .field private mBlacklist:Lcom/android/server/location/LocationBlacklist;
@@ -4375,7 +4397,7 @@
 
     .line 480
     .local v25, "providerPackageNames":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
-    const v3, 0x1070026
+    const v3, #android:array@config_locationProviderPackageNames#t
 
     move-object/from16 v0, v27
 
@@ -4422,15 +4444,15 @@
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 486
     :cond_1
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/LocationManagerService;->initSettingProvider()V
+
     move-object/from16 v0, p0
 
     move-object/from16 v1, v25
 
     invoke-direct {v0, v1}, Lcom/android/server/LocationManagerService;->ensureFallbackFusedProviderPresentLocked(Ljava/util/ArrayList;)V
 
-    .line 489
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -4439,11 +4461,11 @@
 
     const-string v4, "com.android.location.service.v3.NetworkLocationProvider"
 
-    const v5, 0x1120039
+    const v5, #android:bool@config_enableNetworkLocationOverlay#t
 
-    const v6, 0x1040020
+    const v6, #android:string@config_networkLocationProviderPackageName#t
 
-    const v7, 0x1070026
+    const v7, #android:array@config_locationProviderPackageNames#t
 
     move-object/from16 v0, p0
 
@@ -4453,11 +4475,9 @@
 
     move-result-object v21
 
-    .line 497
     .local v21, "networkProvider":Lcom/android/server/location/LocationProviderProxy;
     if-eqz v21, :cond_6
 
-    .line 498
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mRealProviders:Ljava/util/HashMap;
@@ -4468,7 +4488,6 @@
 
     invoke-virtual {v3, v4, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 499
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mProxyProviders:Ljava/util/ArrayList;
@@ -4477,14 +4496,12 @@
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 500
     move-object/from16 v0, p0
 
     move-object/from16 v1, v21
 
     invoke-direct {v0, v1}, Lcom/android/server/LocationManagerService;->addProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
 
-    .line 506
     :goto_0
     move-object/from16 v0, p0
 
@@ -4494,11 +4511,11 @@
 
     const-string v4, "com.android.location.service.FusedLocationProvider"
 
-    const v5, 0x112003a
+    const v5, #android:bool@config_enableFusedLocationOverlay#t
 
-    const v6, 0x1040021
+    const v6, #android:string@config_fusedLocationProviderPackageName#t
 
-    const v7, 0x1070026
+    const v7, #android:array@config_locationProviderPackageNames#t
 
     move-object/from16 v0, p0
 
@@ -4508,23 +4525,19 @@
 
     move-result-object v15
 
-    .line 514
     .local v15, "fusedLocationProvider":Lcom/android/server/location/LocationProviderProxy;
     if-eqz v15, :cond_7
 
-    .line 515
     move-object/from16 v0, p0
 
     invoke-direct {v0, v15}, Lcom/android/server/LocationManagerService;->addProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
 
-    .line 516
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mProxyProviders:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 517
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
@@ -4535,7 +4548,6 @@
 
     invoke-interface {v3, v4}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 518
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mRealProviders:Ljava/util/HashMap;
@@ -4544,17 +4556,16 @@
 
     invoke-virtual {v3, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 525
     :goto_1
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
-    const v4, 0x112003c
+    const v4, #android:bool@config_enableGeocoderOverlay#t
 
-    const v5, 0x1040023
+    const v5, #android:string@config_geocoderProviderPackageName#t
 
-    const v6, 0x1070026
+    const v6, #android:array@config_locationProviderPackageNames#t
 
     move-object/from16 v0, p0
 
@@ -4568,21 +4579,18 @@
 
     iput-object v3, v0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
-    .line 530
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
     if-nez v3, :cond_2
 
-    .line 531
     const-string v3, "LocationManagerService"
 
     const-string v4, "no geocoder provider found"
 
     invoke-static {v3, v4}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 538
     :cond_2
     invoke-static {}, Lcom/android/server/location/FlpHardwareProvider;->isSupported()Z
 
@@ -4590,7 +4598,6 @@
 
     if-eqz v3, :cond_8
 
-    .line 539
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -4599,7 +4606,6 @@
 
     move-result-object v13
 
-    .line 540
     .local v13, "flpHardwareProvider":Lcom/android/server/location/FlpHardwareProvider;
     move-object/from16 v0, p0
 
@@ -4613,28 +4619,25 @@
 
     move-result-object v4
 
-    const v5, 0x112003b
+    const v5, #android:bool@config_enableHardwareFlpOverlay#t
 
-    const v6, 0x1040022
+    const v6, #android:string@config_hardwareFlpPackageName#t
 
-    const v7, 0x1070026
+    const v7, #android:array@config_locationProviderPackageNames#t
 
     invoke-static/range {v2 .. v7}, Lcom/android/server/location/FusedProxy;->createAndBind(Landroid/content/Context;Landroid/os/Handler;Landroid/hardware/location/IFusedLocationHardware;III)Lcom/android/server/location/FusedProxy;
 
     move-result-object v16
 
-    .line 547
     .local v16, "fusedProxy":Lcom/android/server/location/FusedProxy;
     if-nez v16, :cond_3
 
-    .line 548
     const-string v3, "LocationManagerService"
 
     const-string v4, "Unable to bind FusedProxy."
 
     invoke-static {v3, v4}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 556
     .end local v16    # "fusedProxy":Lcom/android/server/location/FusedProxy;
     :cond_3
     :goto_2
@@ -4642,11 +4645,11 @@
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x112003d
+    const v3, #android:bool@config_enableGeofenceOverlay#t
 
-    const v4, 0x1040024
+    const v4, #android:string@config_geofenceProviderPackageName#t
 
-    const v5, 0x1070026
+    const v5, #android:array@config_locationProviderPackageNames#t
 
     move-object/from16 v0, p0
 
@@ -4667,18 +4670,15 @@
 
     move-result-object v24
 
-    .line 563
     .local v24, "provider":Lcom/android/server/location/GeofenceProxy;
     if-nez v24, :cond_4
 
-    .line 564
     const-string v3, "LocationManagerService"
 
     const-string v4, "Unable to bind FLP Geofence proxy."
 
     invoke-static {v3, v4}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 568
     :cond_4
     invoke-static {}, Landroid/hardware/location/ActivityRecognitionHardware;->isSupported()Z
 
@@ -4686,7 +4686,6 @@
 
     if-eqz v3, :cond_a
 
-    .line 569
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -4703,32 +4702,29 @@
 
     move-result-object v4
 
-    const v5, 0x112003e
+    const v5, #android:bool@config_enableActivityRecognitionHardwareOverlay#t
 
-    const v6, 0x1040025
+    const v6, #android:string@config_activityRecognitionHardwarePackageName#t
 
-    const v7, 0x1070026
+    const v7, #android:array@config_locationProviderPackageNames#t
 
     invoke-static/range {v2 .. v7}, Lcom/android/server/location/ActivityRecognitionProxy;->createAndBind(Landroid/content/Context;Landroid/os/Handler;Landroid/hardware/location/ActivityRecognitionHardware;III)Lcom/android/server/location/ActivityRecognitionProxy;
 
     move-result-object v26
 
-    .line 577
     .local v26, "proxy":Lcom/android/server/location/ActivityRecognitionProxy;
     if-nez v26, :cond_5
 
-    .line 578
     const-string v3, "LocationManagerService"
 
     const-string v4, "Unable to bind ActivityRecognitionProxy."
 
     invoke-static {v3, v4}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 584
     .end local v26    # "proxy":Lcom/android/server/location/ActivityRecognitionProxy;
     :cond_5
     :goto_4
-    const v3, 0x1070027
+    const v3, #android:array@config_testLocationProviders#t
 
     move-object/from16 v0, v27
 
@@ -4736,7 +4732,6 @@
 
     move-result-object v29
 
-    .line 586
     .local v29, "testProviderStrings":[Ljava/lang/String;
     move-object/from16 v12, v29
 
@@ -4758,7 +4753,6 @@
 
     aget-object v28, v12, v18
 
-    .line 587
     .local v28, "testProviderString":Ljava/lang/String;
     const-string v3, ","
 
@@ -4768,7 +4762,6 @@
 
     move-result-object v14
 
-    .line 588
     .local v14, "fragments":[Ljava/lang/String;
     const/4 v3, 0x0
 
@@ -4778,7 +4771,6 @@
 
     move-result-object v20
 
-    .line 589
     .local v20, "name":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -4792,7 +4784,6 @@
 
     if-eqz v3, :cond_b
 
-    .line 590
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -4825,7 +4816,6 @@
 
     throw v3
 
-    .line 502
     .end local v12    # "arr$":[Ljava/lang/String;
     .end local v13    # "flpHardwareProvider":Lcom/android/server/location/FlpHardwareProvider;
     .end local v14    # "fragments":[Ljava/lang/String;
@@ -4845,7 +4835,6 @@
 
     goto/16 :goto_0
 
-    .line 520
     .restart local v15    # "fusedLocationProvider":Lcom/android/server/location/LocationProviderProxy;
     :cond_7
     const-string v3, "LocationManagerService"
@@ -4862,11 +4851,9 @@
 
     goto/16 :goto_1
 
-    .line 551
     :cond_8
     const/4 v13, 0x0
 
-    .line 552
     .restart local v13    # "flpHardwareProvider":Lcom/android/server/location/FlpHardwareProvider;
     const-string v3, "LocationManagerService"
 
@@ -4876,13 +4863,11 @@
 
     goto/16 :goto_2
 
-    .line 556
     :cond_9
     const/4 v8, 0x0
 
     goto/16 :goto_3
 
-    .line 581
     .restart local v24    # "provider":Lcom/android/server/location/GeofenceProxy;
     :cond_a
     const-string v3, "LocationManagerService"
@@ -4893,7 +4878,6 @@
 
     goto/16 :goto_4
 
-    .line 592
     .restart local v12    # "arr$":[Ljava/lang/String;
     .restart local v14    # "fragments":[Ljava/lang/String;
     .restart local v18    # "i$":I
@@ -4978,7 +4962,6 @@
 
     invoke-direct/range {v2 .. v11}, Lcom/android/internal/location/ProviderProperties;-><init>(ZZZZZZZII)V
 
-    .line 602
     .local v2, "properties":Lcom/android/internal/location/ProviderProperties;
     move-object/from16 v0, p0
 
@@ -4986,12 +4969,10 @@
 
     invoke-direct {v0, v1, v2}, Lcom/android/server/LocationManagerService;->addTestProviderLocked(Ljava/lang/String;Lcom/android/internal/location/ProviderProperties;)V
 
-    .line 586
     add-int/lit8 v18, v18, 0x1
 
     goto/16 :goto_5
 
-    .line 604
     .end local v2    # "properties":Lcom/android/internal/location/ProviderProperties;
     .end local v14    # "fragments":[Ljava/lang/String;
     .end local v20    # "name":Ljava/lang/String;
@@ -5005,7 +4986,6 @@
     .param p1, "log"    # Ljava/lang/String;
 
     .prologue
-    .line 2739
     const-string v0, "LocationManagerService"
 
     const/4 v1, 0x2
@@ -5016,12 +4996,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2740
     const-string v0, "LocationManagerService"
 
     invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2742
     :cond_0
     return-void
 .end method
@@ -5040,7 +5018,6 @@
     .end annotation
 
     .prologue
-    .line 1298
     .local p1, "providers":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     const-string v0, "gps"
 
@@ -5050,14 +5027,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 1299
     const-string v0, "gps"
 
-    .line 1303
     :goto_0
     return-object v0
 
-    .line 1300
     :cond_0
     const-string v0, "network"
 
@@ -5067,12 +5041,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 1301
     const-string v0, "network"
 
     goto :goto_0
 
-    .line 1303
+    .line 486
     :cond_1
     const/4 v0, 0x0
 
@@ -5090,15 +5063,12 @@
     .param p1, "provider"    # Lcom/android/server/location/LocationProviderInterface;
 
     .prologue
-    .line 1005
     invoke-interface {p1}, Lcom/android/server/location/LocationProviderInterface;->disable()V
 
-    .line 1006
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 1007
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
     invoke-interface {p1}, Lcom/android/server/location/LocationProviderInterface;->getName()Ljava/lang/String;
@@ -5107,7 +5077,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1008
     return-void
 .end method
 
@@ -5118,7 +5087,6 @@
     .prologue
     const/4 v9, 0x0
 
-    .line 1777
     const-string v6, "LocationManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -5161,7 +5129,6 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1780
     iget-object v6, p0, Lcom/android/server/LocationManagerService;->mReceivers:Ljava/util/HashMap;
 
     iget-object v7, p1, Lcom/android/server/LocationManagerService$Receiver;->mKey:Ljava/lang/Object;
@@ -5178,7 +5145,6 @@
 
     if-eqz v6, :cond_0
 
-    .line 1784
     :try_start_0
     invoke-virtual {p1}, Lcom/android/server/LocationManagerService$Receiver;->getListener()Landroid/location/ILocationListener;
 
@@ -5194,37 +5160,29 @@
     :try_end_0
     .catch Ljava/util/NoSuchElementException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1790
     :goto_0
     monitor-enter p1
 
-    .line 1791
     :try_start_1
     invoke-virtual {p1}, Lcom/android/server/LocationManagerService$Receiver;->clearPendingBroadcastsLocked()V
 
-    .line 1792
     monitor-exit p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1795
     :cond_0
     invoke-virtual {p1, v9}, Lcom/android/server/LocationManagerService$Receiver;->updateMonitoring(Z)V
 
-    .line 1798
     new-instance v4, Ljava/util/HashSet;
 
     invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
 
-    .line 1799
     .local v4, "providers":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     iget-object v2, p1, Lcom/android/server/LocationManagerService$Receiver;->mUpdateRecords:Ljava/util/HashMap;
 
-    .line 1800
     .local v2, "oldRecords":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     if-eqz v2, :cond_2
 
-    .line 1802
     invoke-virtual {v2}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object v6
@@ -5247,13 +5205,11 @@
 
     check-cast v5, Lcom/android/server/LocationManagerService$UpdateRecord;
 
-    .line 1804
     .local v5, "record":Lcom/android/server/LocationManagerService$UpdateRecord;
     invoke-virtual {v5, v9}, Lcom/android/server/LocationManagerService$UpdateRecord;->disposeLocked(Z)V
 
     goto :goto_1
 
-    .line 1786
     .end local v1    # "i$":Ljava/util/Iterator;
     .end local v2    # "oldRecords":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     .end local v4    # "providers":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
@@ -5261,7 +5217,6 @@
     :catch_0
     move-exception v0
 
-    .line 1787
     .local v0, "e":Ljava/util/NoSuchElementException;
     const-string v6, "LocationManagerService"
 
@@ -5271,7 +5226,6 @@
 
     goto :goto_0
 
-    .line 1792
     .end local v0    # "e":Ljava/util/NoSuchElementException;
     :catchall_0
     move-exception v6
@@ -5283,7 +5237,6 @@
 
     throw v6
 
-    .line 1807
     .restart local v1    # "i$":Ljava/util/Iterator;
     .restart local v2    # "oldRecords":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     .restart local v4    # "providers":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
@@ -5294,7 +5247,6 @@
 
     invoke-virtual {v4, v6}, Ljava/util/HashSet;->addAll(Ljava/util/Collection;)Z
 
-    .line 1811
     .end local v1    # "i$":Ljava/util/Iterator;
     :cond_2
     invoke-virtual {v4}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
@@ -5316,7 +5268,6 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 1813
     .local v3, "provider":Ljava/lang/String;
     invoke-direct {p0, v3}, Lcom/android/server/LocationManagerService;->isAllowedByCurrentUserSettingsLocked(Ljava/lang/String;)Z
 
@@ -5324,12 +5275,10 @@
 
     if-eqz v6, :cond_3
 
-    .line 1817
     invoke-direct {p0, v3}, Lcom/android/server/LocationManagerService;->applyRequirementsLocked(Ljava/lang/String;)V
 
     goto :goto_2
 
-    .line 1819
     .end local v3    # "provider":Ljava/lang/String;
     :cond_4
     return-void
@@ -5346,22 +5295,18 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 1715
     if-nez p1, :cond_0
 
     sget-object p1, Lcom/android/server/LocationManagerService;->DEFAULT_LOCATION_REQUEST:Landroid/location/LocationRequest;
 
-    .line 1716
     :cond_0
     invoke-virtual {p1}, Landroid/location/LocationRequest;->getProvider()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1717
     .local v1, "name":Ljava/lang/String;
     if-nez v1, :cond_1
 
-    .line 1718
     new-instance v5, Ljava/lang/IllegalArgumentException;
 
     const-string v6, "provider name must not be null"
@@ -5370,7 +5315,6 @@
 
     throw v5
 
-    .line 1721
     :cond_1
     const-string v5, "LocationManagerService"
 
@@ -5448,7 +5392,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1723
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
     invoke-virtual {v5, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -5457,11 +5400,9 @@
 
     check-cast v3, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1724
     .local v3, "provider":Lcom/android/server/location/LocationProviderInterface;
     if-nez v3, :cond_2
 
-    .line 1725
     new-instance v5, Ljava/lang/IllegalArgumentException;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -5486,11 +5427,9 @@
 
     throw v5
 
-    .line 1728
     :cond_2
     if-nez p2, :cond_3
 
-    .line 1729
     new-instance v5, Ljava/lang/IllegalArgumentException;
 
     const-string v6, "receiver must not be null"
@@ -5499,13 +5438,11 @@
 
     throw v5
 
-    .line 1733
     :cond_3
     new-instance v4, Lcom/android/server/LocationManagerService$UpdateRecord;
 
     invoke-direct {v4, p0, v1, p1, p2}, Lcom/android/server/LocationManagerService$UpdateRecord;-><init>(Lcom/android/server/LocationManagerService;Ljava/lang/String;Landroid/location/LocationRequest;Lcom/android/server/LocationManagerService$Receiver;)V
 
-    .line 1734
     .local v4, "record":Lcom/android/server/LocationManagerService$UpdateRecord;
     iget-object v5, p2, Lcom/android/server/LocationManagerService$Receiver;->mUpdateRecords:Ljava/util/HashMap;
 
@@ -5515,36 +5452,28 @@
 
     check-cast v2, Lcom/android/server/LocationManagerService$UpdateRecord;
 
-    .line 1735
     .local v2, "oldRecord":Lcom/android/server/LocationManagerService$UpdateRecord;
     if-eqz v2, :cond_4
 
-    .line 1736
     invoke-virtual {v2, v8}, Lcom/android/server/LocationManagerService$UpdateRecord;->disposeLocked(Z)V
 
-    .line 1739
     :cond_4
     invoke-direct {p0, v1, p4}, Lcom/android/server/LocationManagerService;->isAllowedByUserSettingsLocked(Ljava/lang/String;I)Z
 
     move-result v0
 
-    .line 1740
     .local v0, "isProviderEnabled":Z
     if-eqz v0, :cond_5
 
-    .line 1741
     invoke-direct {p0, v1}, Lcom/android/server/LocationManagerService;->applyRequirementsLocked(Ljava/lang/String;)V
 
-    .line 1748
     :goto_0
     const/4 v5, 0x1
 
     invoke-virtual {p2, v5}, Lcom/android/server/LocationManagerService$Receiver;->updateMonitoring(Z)V
 
-    .line 1749
     return-void
 
-    .line 1744
     :cond_5
     invoke-virtual {p2, v1, v8}, Lcom/android/server/LocationManagerService$Receiver;->callProviderEnabledLocked(Ljava/lang/String;Z)Z
 
@@ -5558,16 +5487,12 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1177
     if-eqz p0, :cond_1
 
-    .line 1178
     if-ne p0, v0, :cond_0
 
-    .line 1179
     const/4 v0, 0x0
 
-    .line 1184
     :cond_0
     :goto_0
     return v0
@@ -5586,17 +5511,13 @@
     .param p3, "now"    # J
 
     .prologue
-    .line 2220
     if-nez p1, :cond_0
 
-    .line 2221
     const/4 v6, 0x1
 
-    .line 2250
     :goto_0
     return v6
 
-    .line 2225
     :cond_0
     iget-object v6, p2, Lcom/android/server/LocationManagerService$UpdateRecord;->mRequest:Landroid/location/LocationRequest;
 
@@ -5604,7 +5525,6 @@
 
     move-result-wide v4
 
-    .line 2226
     .local v4, "minTime":J
     invoke-virtual {p0}, Landroid/location/Location;->getElapsedRealtimeNanos()J
 
@@ -5620,7 +5540,6 @@
 
     div-long v0, v6, v8
 
-    .line 2228
     .local v0, "delta":J
     const-wide/16 v6, 0x64
 
@@ -5630,12 +5549,10 @@
 
     if-gez v6, :cond_1
 
-    .line 2229
     const/4 v6, 0x0
 
     goto :goto_0
 
-    .line 2233
     :cond_1
     iget-object v6, p2, Lcom/android/server/LocationManagerService$UpdateRecord;->mRequest:Landroid/location/LocationRequest;
 
@@ -5645,7 +5562,6 @@
 
     float-to-double v2, v6
 
-    .line 2234
     .local v2, "minDistance":D
     const-wide/16 v6, 0x0
 
@@ -5653,7 +5569,6 @@
 
     if-lez v6, :cond_2
 
-    .line 2235
     invoke-virtual {p0, p1}, Landroid/location/Location;->distanceTo(Landroid/location/Location;)F
 
     move-result v6
@@ -5664,12 +5579,10 @@
 
     if-gtz v6, :cond_2
 
-    .line 2236
     const/4 v6, 0x0
 
     goto :goto_0
 
-    .line 2241
     :cond_2
     iget-object v6, p2, Lcom/android/server/LocationManagerService$UpdateRecord;->mRequest:Landroid/location/LocationRequest;
 
@@ -5679,12 +5592,10 @@
 
     if-gtz v6, :cond_3
 
-    .line 2242
     const/4 v6, 0x0
 
     goto :goto_0
 
-    .line 2246
     :cond_3
     iget-object v6, p2, Lcom/android/server/LocationManagerService$UpdateRecord;->mRequest:Landroid/location/LocationRequest;
 
@@ -5696,12 +5607,10 @@
 
     if-gez v6, :cond_4
 
-    .line 2247
     const/4 v6, 0x0
 
     goto :goto_0
 
-    .line 2250
     :cond_4
     const/4 v6, 0x1
 
@@ -5713,45 +5622,37 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 611
     iget v2, p0, Lcom/android/server/LocationManagerService;->mCurrentUserId:I
 
     if-ne v2, p1, :cond_0
 
-    .line 626
     :goto_0
     return-void
 
-    .line 614
     :cond_0
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mBlacklist:Lcom/android/server/location/LocationBlacklist;
 
     invoke-virtual {v2, p1}, Lcom/android/server/location/LocationBlacklist;->switchUser(I)V
 
-    .line 615
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
     const/4 v3, 0x1
 
     invoke-virtual {v2, v3}, Lcom/android/server/LocationManagerService$LocationWorkerHandler;->removeMessages(I)V
 
-    .line 616
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 617
     :try_start_0
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLastLocation:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
 
-    .line 618
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLastLocationCoarseInterval:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
 
-    .line 619
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -5772,7 +5673,6 @@
 
     check-cast v1, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 620
     .local v1, "p":Lcom/android/server/location/LocationProviderInterface;
     invoke-interface {v1}, Lcom/android/server/location/LocationProviderInterface;->getName()Ljava/lang/String;
 
@@ -5784,7 +5684,6 @@
 
     goto :goto_1
 
-    .line 625
     .end local v0    # "i$":Ljava/util/Iterator;
     .end local v1    # "p":Lcom/android/server/location/LocationProviderInterface;
     :catchall_0
@@ -5796,19 +5695,15 @@
 
     throw v2
 
-    .line 622
     .restart local v0    # "i$":Ljava/util/Iterator;
     :cond_1
     :try_start_1
     iput p1, p0, Lcom/android/server/LocationManagerService;->mCurrentUserId:I
 
-    .line 623
     invoke-virtual {p0, p1}, Lcom/android/server/LocationManagerService;->updateUserProfiles(I)V
 
-    .line 624
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
-    .line 625
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -5822,10 +5717,8 @@
     .param p2, "enabled"    # Z
 
     .prologue
-    .line 1393
     const/4 v3, 0x0
 
-    .line 1395
     .local v3, "listeners":I
     iget-object v7, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -5835,20 +5728,16 @@
 
     check-cast v4, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1396
     .local v4, "p":Lcom/android/server/location/LocationProviderInterface;
     if-nez v4, :cond_1
 
-    .line 1432
     :cond_0
     :goto_0
     return-void
 
-    .line 1398
     :cond_1
     const/4 v1, 0x0
 
-    .line 1400
     .local v1, "deadReceivers":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$Receiver;>;"
     iget-object v7, p0, Lcom/android/server/LocationManagerService;->mRecordsByProvider:Ljava/util/HashMap;
 
@@ -5858,16 +5747,13 @@
 
     check-cast v6, Ljava/util/ArrayList;
 
-    .line 1401
     .local v6, "records":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;"
     if-eqz v6, :cond_5
 
-    .line 1402
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 1403
     .local v0, "N":I
     const/4 v2, 0x0
 
@@ -5875,14 +5761,12 @@
     :goto_1
     if-ge v2, v0, :cond_5
 
-    .line 1404
     invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Lcom/android/server/LocationManagerService$UpdateRecord;
 
-    .line 1405
     .local v5, "record":Lcom/android/server/LocationManagerService$UpdateRecord;
     iget-object v7, v5, Lcom/android/server/LocationManagerService$UpdateRecord;->mReceiver:Lcom/android/server/LocationManagerService$Receiver;
 
@@ -5898,7 +5782,6 @@
 
     if-eqz v7, :cond_4
 
-    .line 1407
     iget-object v7, v5, Lcom/android/server/LocationManagerService$UpdateRecord;->mReceiver:Lcom/android/server/LocationManagerService$Receiver;
 
     invoke-virtual {v7, p1, p2}, Lcom/android/server/LocationManagerService$Receiver;->callProviderEnabledLocked(Ljava/lang/String;Z)Z
@@ -5907,40 +5790,33 @@
 
     if-nez v7, :cond_3
 
-    .line 1408
     if-nez v1, :cond_2
 
-    .line 1409
     new-instance v1, Ljava/util/ArrayList;
 
     .end local v1    # "deadReceivers":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$Receiver;>;"
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1411
     .restart local v1    # "deadReceivers":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$Receiver;>;"
     :cond_2
     iget-object v7, v5, Lcom/android/server/LocationManagerService$UpdateRecord;->mReceiver:Lcom/android/server/LocationManagerService$Receiver;
 
     invoke-virtual {v1, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1413
     :cond_3
     add-int/lit8 v3, v3, 0x1
 
-    .line 1403
     :cond_4
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 1418
     .end local v0    # "N":I
     .end local v2    # "i":I
     .end local v5    # "record":Lcom/android/server/LocationManagerService$UpdateRecord;
     :cond_5
     if-eqz v1, :cond_6
 
-    .line 1419
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v7
@@ -5951,7 +5827,6 @@
     :goto_2
     if-ltz v2, :cond_6
 
-    .line 1420
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -5960,28 +5835,22 @@
 
     invoke-direct {p0, v7}, Lcom/android/server/LocationManagerService;->removeUpdatesLocked(Lcom/android/server/LocationManagerService$Receiver;)V
 
-    .line 1419
     add-int/lit8 v2, v2, -0x1
 
     goto :goto_2
 
-    .line 1424
     .end local v2    # "i":I
     :cond_6
     if-eqz p2, :cond_7
 
-    .line 1425
     invoke-interface {v4}, Lcom/android/server/location/LocationProviderInterface;->enable()V
 
-    .line 1426
     if-lez v3, :cond_0
 
-    .line 1427
     invoke-direct {p0, p1}, Lcom/android/server/LocationManagerService;->applyRequirementsLocked(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1430
     :cond_7
     invoke-interface {v4}, Lcom/android/server/location/LocationProviderInterface;->disable()V
 
@@ -5996,14 +5865,11 @@
 
     const/4 v10, 0x1
 
-    .line 1321
     const/4 v1, 0x0
 
-    .line 1325
     .local v1, "changesMade":Z
     const/4 v0, 0x0
 
-    .line 1327
     .local v0, "changePrivacyLock":Z
     const-string v8, "gps"
 
@@ -6021,26 +5887,21 @@
 
     if-eqz v8, :cond_4
 
-    .line 1334
     :cond_0
     iget v8, p0, Lcom/android/server/LocationManagerService;->mPrivacyLock:I
 
     if-eqz v8, :cond_1
 
-    .line 1335
     iput v11, p0, Lcom/android/server/LocationManagerService;->mPrivacyLock:I
 
-    .line 1336
     const/4 v0, 0x1
 
-    .line 1337
     const-string v8, "LocationManagerService"
 
     const-string v9, "##### updateProvidersLocked #####: enable_lock: 0 (Enable)"
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1347
     :cond_1
     :goto_0
     if-eqz v0, :cond_2
@@ -6049,12 +5910,10 @@
 
     if-nez v8, :cond_2
 
-    .line 1348
     new-instance v2, Landroid/os/Bundle;
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 1349
     .local v2, "extra":Landroid/os/Bundle;
     const-string v8, "enable_lock"
 
@@ -6062,14 +5921,12 @@
 
     invoke-virtual {v2, v8, v9}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 1350
     const-string v8, "gps"
 
     const-string v9, "set_privacy_lock"
 
     invoke-virtual {p0, v8, v9, v2}, Lcom/android/server/LocationManagerService;->sendExtraCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z
 
-    .line 1355
     .end local v2    # "extra":Landroid/os/Bundle;
     :cond_2
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
@@ -6084,7 +5941,6 @@
     :goto_1
     if-ltz v3, :cond_6
 
-    .line 1356
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -6093,54 +5949,44 @@
 
     check-cast v6, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1357
     .local v6, "p":Lcom/android/server/location/LocationProviderInterface;
     invoke-interface {v6}, Lcom/android/server/location/LocationProviderInterface;->isEnabled()Z
 
     move-result v4
 
-    .line 1358
     .local v4, "isEnabled":Z
     invoke-interface {v6}, Lcom/android/server/location/LocationProviderInterface;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 1359
     .local v5, "name":Ljava/lang/String;
     invoke-direct {p0, v5}, Lcom/android/server/LocationManagerService;->isAllowedByCurrentUserSettingsLocked(Ljava/lang/String;)Z
 
     move-result v7
 
-    .line 1360
     .local v7, "shouldBeEnabled":Z
     if-eqz v4, :cond_5
 
     if-nez v7, :cond_5
 
-    .line 1361
     invoke-direct {p0, v5, v11}, Lcom/android/server/LocationManagerService;->updateProviderListenersLocked(Ljava/lang/String;Z)V
 
-    .line 1365
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mLastLocation:Ljava/util/HashMap;
 
     invoke-virtual {v8}, Ljava/util/HashMap;->clear()V
 
-    .line 1366
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mLastLocationCoarseInterval:Ljava/util/HashMap;
 
     invoke-virtual {v8}, Ljava/util/HashMap;->clear()V
 
-    .line 1367
     const/4 v1, 0x1
 
-    .line 1355
     :cond_3
     :goto_2
     add-int/lit8 v3, v3, -0x1
 
     goto :goto_1
 
-    .line 1340
     .end local v3    # "i":I
     .end local v4    # "isEnabled":Z
     .end local v5    # "name":Ljava/lang/String;
@@ -6151,13 +5997,10 @@
 
     if-eq v8, v10, :cond_1
 
-    .line 1341
     iput v10, p0, Lcom/android/server/LocationManagerService;->mPrivacyLock:I
 
-    .line 1342
     const/4 v0, 0x1
 
-    .line 1343
     const-string v8, "LocationManagerService"
 
     const-string v9, "##### updateProvidersLocked #####: enable_lock: 1 (Disable)"
@@ -6166,7 +6009,6 @@
 
     goto :goto_0
 
-    .line 1368
     .restart local v3    # "i":I
     .restart local v4    # "isEnabled":Z
     .restart local v5    # "name":Ljava/lang/String;
@@ -6177,15 +6019,12 @@
 
     if-eqz v7, :cond_3
 
-    .line 1369
     invoke-direct {p0, v5, v10}, Lcom/android/server/LocationManagerService;->updateProviderListenersLocked(Ljava/lang/String;Z)V
 
-    .line 1370
     const/4 v1, 0x1
 
     goto :goto_2
 
-    .line 1376
     .end local v4    # "isEnabled":Z
     .end local v5    # "name":Ljava/lang/String;
     .end local v6    # "p":Lcom/android/server/location/LocationProviderInterface;
@@ -6197,12 +6036,10 @@
 
     if-ne v8, v10, :cond_7
 
-    .line 1377
     new-instance v2, Landroid/os/Bundle;
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 1378
     .restart local v2    # "extra":Landroid/os/Bundle;
     const-string v8, "enable_lock"
 
@@ -6210,19 +6047,16 @@
 
     invoke-virtual {v2, v8, v9}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 1379
     const-string v8, "gps"
 
     const-string v9, "set_privacy_lock"
 
     invoke-virtual {p0, v8, v9, v2}, Lcom/android/server/LocationManagerService;->sendExtraCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z
 
-    .line 1384
     .end local v2    # "extra":Landroid/os/Bundle;
     :cond_7
     if-eqz v1, :cond_8
 
-    .line 1385
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     new-instance v9, Landroid/content/Intent;
@@ -6235,7 +6069,6 @@
 
     invoke-virtual {v8, v9, v10}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 1387
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     new-instance v9, Landroid/content/Intent;
@@ -6248,7 +6081,6 @@
 
     invoke-virtual {v8, v9, v10}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 1390
     :cond_8
     return-void
 .end method
@@ -6261,29 +6093,24 @@
     .param p2, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1984
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v0
 
-    .line 1985
     .local v0, "allowedResolutionLevel":I
     const-string v5, "gps"
 
     invoke-direct {p0, v0, v5}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 1989
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v4
 
-    .line 1990
     .local v4, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 1993
     .local v2, "identity":J
     :try_start_0
     invoke-virtual {p0, v4, p2, v0}, Lcom/android/server/LocationManagerService;->checkLocationAccess(ILjava/lang/String;I)Z
@@ -6292,21 +6119,16 @@
 
     move-result v1
 
-    .line 1995
     .local v1, "hasLocationAccess":Z
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1998
     if-nez v1, :cond_0
 
-    .line 1999
     const/4 v5, 0x0
 
-    .line 2001
     :goto_0
     return v5
 
-    .line 1995
     .end local v1    # "hasLocationAccess":Z
     :catchall_0
     move-exception v5
@@ -6315,7 +6137,6 @@
 
     throw v5
 
-    .line 2001
     .restart local v1    # "hasLocationAccess":Z
     :cond_0
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mGpsMeasurementsProvider:Lcom/android/server/location/GpsMeasurementsProvider;
@@ -6333,29 +6154,24 @@
     .param p2, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 2013
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v0
 
-    .line 2014
     .local v0, "allowedResolutionLevel":I
     const-string v5, "gps"
 
     invoke-direct {p0, v0, v5}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 2018
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v4
 
-    .line 2019
     .local v4, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 2022
     .local v2, "identity":J
     :try_start_0
     invoke-virtual {p0, v4, p2, v0}, Lcom/android/server/LocationManagerService;->checkLocationAccess(ILjava/lang/String;I)Z
@@ -6364,21 +6180,16 @@
 
     move-result v1
 
-    .line 2024
     .local v1, "hasLocationAccess":Z
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2027
     if-nez v1, :cond_0
 
-    .line 2028
     const/4 v5, 0x0
 
-    .line 2030
     :goto_0
     return v5
 
-    .line 2024
     .end local v1    # "hasLocationAccess":Z
     :catchall_0
     move-exception v5
@@ -6387,7 +6198,6 @@
 
     throw v5
 
-    .line 2030
     .restart local v1    # "hasLocationAccess":Z
     :cond_0
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mGpsNavigationMessageProvider:Lcom/android/server/location/GpsNavigationMessageProvider;
@@ -6407,39 +6217,32 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 1943
     iget-object v6, p0, Lcom/android/server/LocationManagerService;->mGpsStatusProvider:Landroid/location/IGpsStatusProvider;
 
     if-nez v6, :cond_0
 
-    .line 1966
     :goto_0
     return v5
 
-    .line 1946
     :cond_0
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v0
 
-    .line 1947
     .local v0, "allowedResolutionLevel":I
     const-string v6, "gps"
 
     invoke-direct {p0, v0, v6}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 1950
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v4
 
-    .line 1951
     .local v4, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 1953
     .local v2, "ident":J
     :try_start_0
     invoke-virtual {p0, v4, p2, v0}, Lcom/android/server/LocationManagerService;->checkLocationAccess(ILjava/lang/String;I)Z
@@ -6450,7 +6253,6 @@
 
     if-nez v6, :cond_1
 
-    .line 1957
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
@@ -6458,7 +6260,6 @@
     :cond_1
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1961
     :try_start_1
     iget-object v6, p0, Lcom/android/server/LocationManagerService;->mGpsStatusProvider:Landroid/location/IGpsStatusProvider;
 
@@ -6466,12 +6267,10 @@
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 1966
     const/4 v5, 0x1
 
     goto :goto_0
 
-    .line 1957
     :catchall_0
     move-exception v5
 
@@ -6479,11 +6278,9 @@
 
     throw v5
 
-    .line 1962
     :catch_0
     move-exception v1
 
-    .line 1963
     .local v1, "e":Landroid/os/RemoteException;
     const-string v6, "LocationManagerService"
 
@@ -6500,10 +6297,8 @@
     .param p2, "properties"    # Lcom/android/internal/location/ProviderProperties;
 
     .prologue
-    .line 2584
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2586
     const-string v3, "passive"
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6512,7 +6307,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 2587
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     const-string v4, "Cannot mock the passive location provider"
@@ -6521,19 +6315,16 @@
 
     throw v3
 
-    .line 2590
     :cond_0
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v0
 
-    .line 2591
     .local v0, "identity":J
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 2593
     :try_start_0
     const-string v3, "gps"
 
@@ -6559,7 +6350,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 2596
     :cond_1
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -6569,33 +6359,25 @@
 
     check-cast v2, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2597
     .local v2, "p":Lcom/android/server/location/LocationProviderInterface;
     if-eqz v2, :cond_2
 
-    .line 2598
     invoke-direct {p0, v2}, Lcom/android/server/LocationManagerService;->removeProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
 
-    .line 2601
     .end local v2    # "p":Lcom/android/server/location/LocationProviderInterface;
     :cond_2
     invoke-direct {p0, p1, p2}, Lcom/android/server/LocationManagerService;->addTestProviderLocked(Ljava/lang/String;Lcom/android/internal/location/ProviderProperties;)V
 
-    .line 2602
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
-    .line 2603
     monitor-exit v4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2604
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2605
     return-void
 
-    .line 2603
     :catchall_0
     move-exception v3
 
@@ -6614,16 +6396,13 @@
     .param p3, "allowedResolutionLevel"    # I
 
     .prologue
-    .line 1198
     invoke-static {p3}, Lcom/android/server/LocationManagerService;->resolutionLevelToOp(I)I
 
     move-result v0
 
-    .line 1199
     .local v0, "op":I
     if-ltz v0, :cond_0
 
-    .line 1200
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mAppOps:Landroid/app/AppOpsManager;
 
     invoke-virtual {v1, v0, p1, p2}, Landroid/app/AppOpsManager;->checkOp(IILjava/lang/String;)I
@@ -6632,10 +6411,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 1201
     const/4 v1, 0x0
 
-    .line 1204
     :goto_0
     return v1
 
@@ -6650,15 +6427,12 @@
     .param p1, "provider"    # Ljava/lang/String;
 
     .prologue
-    .line 2700
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2701
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 2702
     :try_start_0
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
@@ -6668,11 +6442,9 @@
 
     check-cast v2, Lcom/android/server/location/MockProvider;
 
-    .line 2703
     .local v2, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v2, :cond_0
 
-    .line 2704
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -6703,7 +6475,6 @@
 
     throw v3
 
-    .line 2711
     .end local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v3
@@ -6714,7 +6485,6 @@
 
     throw v3
 
-    .line 2706
     .restart local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
@@ -6722,29 +6492,23 @@
 
     move-result-wide v0
 
-    .line 2707
     .local v0, "identity":J
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
 
     invoke-interface {v3, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 2708
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mDisabledProviders:Ljava/util/Set;
 
     invoke-interface {v3, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 2709
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
-    .line 2710
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2711
     monitor-exit v4
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2712
     return-void
 .end method
 
@@ -6753,15 +6517,12 @@
     .param p1, "provider"    # Ljava/lang/String;
 
     .prologue
-    .line 2665
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2666
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 2667
     :try_start_0
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
@@ -6771,11 +6532,9 @@
 
     check-cast v0, Lcom/android/server/location/MockProvider;
 
-    .line 2668
     .local v0, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v0, :cond_0
 
-    .line 2669
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -6806,7 +6565,6 @@
 
     throw v1
 
-    .line 2672
     .end local v0    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v1
@@ -6817,18 +6575,15 @@
 
     throw v1
 
-    .line 2671
     .restart local v0    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
     invoke-virtual {v0}, Lcom/android/server/location/MockProvider;->clearLocation()V
 
-    .line 2672
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2673
     return-void
 .end method
 
@@ -6837,15 +6592,12 @@
     .param p1, "provider"    # Ljava/lang/String;
 
     .prologue
-    .line 2728
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2729
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 2730
     :try_start_0
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
@@ -6855,11 +6607,9 @@
 
     check-cast v0, Lcom/android/server/location/MockProvider;
 
-    .line 2731
     .local v0, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v0, :cond_0
 
-    .line 2732
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -6890,7 +6640,6 @@
 
     throw v1
 
-    .line 2735
     .end local v0    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v1
@@ -6901,18 +6650,15 @@
 
     throw v1
 
-    .line 2734
     .restart local v0    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
     invoke-virtual {v0}, Lcom/android/server/location/MockProvider;->clearStatus()V
 
-    .line 2735
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2736
     return-void
 .end method
 
@@ -6923,7 +6669,6 @@
     .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 2746
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -6938,7 +6683,6 @@
 
     if-eqz v18, :cond_0
 
-    .line 2748
     new-instance v18, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
@@ -6981,11 +6725,9 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2832
     :goto_0
     return-void
 
-    .line 2754
     :cond_0
     move-object/from16 v0, p0
 
@@ -6995,7 +6737,6 @@
 
     monitor-enter v19
 
-    .line 2755
     :try_start_0
     const-string v18, "Current Location Manager state:"
 
@@ -7005,7 +6746,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2756
     const-string v18, "  Location Listeners:"
 
     move-object/from16 v0, p2
@@ -7014,7 +6754,7 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2757
+    .line 489
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mReceivers:Ljava/util/HashMap;
@@ -7043,7 +6783,6 @@
 
     check-cast v15, Lcom/android/server/LocationManagerService$Receiver;
 
-    .line 2758
     .local v15, "receiver":Lcom/android/server/LocationManagerService$Receiver;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7077,7 +6816,6 @@
 
     goto :goto_1
 
-    .line 2831
     .end local v9    # "i$":Ljava/util/Iterator;
     .end local v15    # "receiver":Lcom/android/server/LocationManagerService$Receiver;
     :catchall_0
@@ -7089,7 +6827,6 @@
 
     throw v18
 
-    .line 2760
     .restart local v9    # "i$":Ljava/util/Iterator;
     :cond_1
     :try_start_1
@@ -7101,7 +6838,7 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2761
+    .line 499
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mRecordsByProvider:Ljava/util/HashMap;
@@ -7130,7 +6867,6 @@
 
     check-cast v6, Ljava/util/Map$Entry;
 
-    .line 2762
     .local v6, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;>;"
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7180,7 +6916,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2763
     invoke-interface {v6}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v18
@@ -7205,7 +6940,6 @@
 
     check-cast v16, Lcom/android/server/LocationManagerService$UpdateRecord;
 
-    .line 2764
     .local v16, "record":Lcom/android/server/LocationManagerService$UpdateRecord;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7241,7 +6975,6 @@
 
     goto :goto_2
 
-    .line 2767
     .end local v6    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/ArrayList<Lcom/android/server/LocationManagerService$UpdateRecord;>;>;"
     .end local v10    # "i$":Ljava/util/Iterator;
     .end local v16    # "record":Lcom/android/server/LocationManagerService$UpdateRecord;
@@ -7254,7 +6987,7 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2769
+    .line 518
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mRequestStatistics:Lcom/android/server/location/LocationRequestStatistics;
@@ -7289,7 +7022,6 @@
 
     check-cast v4, Ljava/util/Map$Entry;
 
-    .line 2770
     .local v4, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Lcom/android/server/location/LocationRequestStatistics$PackageProviderKey;Lcom/android/server/location/LocationRequestStatistics$PackageStatistics;>;"
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -7297,7 +7029,6 @@
 
     check-cast v11, Lcom/android/server/location/LocationRequestStatistics$PackageProviderKey;
 
-    .line 2771
     .local v11, "key":Lcom/android/server/location/LocationRequestStatistics$PackageProviderKey;
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -7305,7 +7036,6 @@
 
     check-cast v17, Lcom/android/server/location/LocationRequestStatistics$PackageStatistics;
 
-    .line 2772
     .local v17, "stats":Lcom/android/server/location/LocationRequestStatistics$PackageStatistics;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7385,7 +7115,6 @@
 
     goto :goto_3
 
-    .line 2774
     .end local v4    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Lcom/android/server/location/LocationRequestStatistics$PackageProviderKey;Lcom/android/server/location/LocationRequestStatistics$PackageStatistics;>;"
     .end local v11    # "key":Lcom/android/server/location/LocationRequestStatistics$PackageProviderKey;
     .end local v17    # "stats":Lcom/android/server/location/LocationRequestStatistics$PackageStatistics;
@@ -7398,7 +7127,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2775
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mLastLocation:Ljava/util/HashMap;
@@ -7426,7 +7154,6 @@
 
     check-cast v5, Ljava/util/Map$Entry;
 
-    .line 2776
     .local v5, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Landroid/location/Location;>;"
     invoke-interface {v5}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -7434,7 +7161,6 @@
 
     check-cast v13, Ljava/lang/String;
 
-    .line 2777
     .local v13, "provider":Ljava/lang/String;
     invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -7442,7 +7168,6 @@
 
     check-cast v12, Landroid/location/Location;
 
-    .line 2778
     .local v12, "location":Landroid/location/Location;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7492,7 +7217,6 @@
 
     goto :goto_4
 
-    .line 2781
     .end local v5    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Landroid/location/Location;>;"
     .end local v12    # "location":Landroid/location/Location;
     .end local v13    # "provider":Ljava/lang/String;
@@ -7505,7 +7229,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2782
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mLastLocationCoarseInterval:Ljava/util/HashMap;
@@ -7533,7 +7256,6 @@
 
     check-cast v5, Ljava/util/Map$Entry;
 
-    .line 2783
     .restart local v5    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Landroid/location/Location;>;"
     invoke-interface {v5}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -7541,7 +7263,6 @@
 
     check-cast v13, Ljava/lang/String;
 
-    .line 2784
     .restart local v13    # "provider":Ljava/lang/String;
     invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -7549,7 +7270,6 @@
 
     check-cast v12, Landroid/location/Location;
 
-    .line 2785
     .restart local v12    # "location":Landroid/location/Location;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7599,7 +7319,6 @@
 
     goto :goto_5
 
-    .line 2788
     .end local v5    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Landroid/location/Location;>;"
     .end local v12    # "location":Landroid/location/Location;
     .end local v13    # "provider":Ljava/lang/String;
@@ -7616,7 +7335,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/location/GeofenceManager;->dump(Ljava/io/PrintWriter;)V
 
-    .line 2790
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
@@ -7629,7 +7347,6 @@
 
     if-lez v18, :cond_7
 
-    .line 2791
     const-string v18, "  Enabled Providers:"
 
     move-object/from16 v0, p2
@@ -7638,7 +7355,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2792
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
@@ -7662,7 +7378,6 @@
 
     check-cast v7, Ljava/lang/String;
 
-    .line 2793
     .local v7, "i":Ljava/lang/String;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7696,7 +7411,6 @@
 
     goto :goto_6
 
-    .line 2797
     .end local v7    # "i":Ljava/lang/String;
     :cond_7
     move-object/from16 v0, p0
@@ -7711,7 +7425,6 @@
 
     if-lez v18, :cond_8
 
-    .line 2798
     const-string v18, "  Disabled Providers:"
 
     move-object/from16 v0, p2
@@ -7720,7 +7433,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2799
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mDisabledProviders:Ljava/util/Set;
@@ -7744,7 +7456,6 @@
 
     check-cast v7, Ljava/lang/String;
 
-    .line 2800
     .restart local v7    # "i":Ljava/lang/String;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -7778,7 +7489,6 @@
 
     goto :goto_7
 
-    .line 2803
     .end local v7    # "i":Ljava/lang/String;
     :cond_8
     const-string v18, "  "
@@ -7789,7 +7499,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->append(Ljava/lang/CharSequence;)Ljava/io/PrintWriter;
 
-    .line 2804
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mBlacklist:Lcom/android/server/location/LocationBlacklist;
@@ -7802,7 +7511,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/location/LocationBlacklist;->dump(Ljava/io/PrintWriter;)V
 
-    .line 2805
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
@@ -7815,7 +7523,6 @@
 
     if-lez v18, :cond_9
 
-    .line 2806
     const-string v18, "  Mock Providers:"
 
     move-object/from16 v0, p2
@@ -7824,7 +7531,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2807
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
@@ -7852,7 +7558,6 @@
 
     check-cast v8, Ljava/util/Map$Entry;
 
-    .line 2808
     .local v8, "i":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/location/MockProvider;>;"
     invoke-interface {v8}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -7872,7 +7577,6 @@
 
     goto :goto_8
 
-    .line 2812
     .end local v8    # "i":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/location/MockProvider;>;"
     :cond_9
     const-string v18, "  fudger: "
@@ -7883,7 +7587,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->append(Ljava/lang/CharSequence;)Ljava/io/PrintWriter;
 
-    .line 2813
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/LocationManagerService;->mLocationFudger:Lcom/android/server/location/LocationFudger;
@@ -7900,7 +7603,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/server/location/LocationFudger;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
-    .line 2815
     move-object/from16 v0, p3
 
     array-length v0, v0
@@ -7925,12 +7627,10 @@
 
     if-eqz v18, :cond_a
 
-    .line 2816
     monitor-exit v19
 
     goto/16 :goto_0
 
-    .line 2818
     :cond_a
     move-object/from16 v0, p0
 
@@ -7955,7 +7655,6 @@
 
     check-cast v13, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2820
     .local v13, "provider":Lcom/android/server/location/LocationProviderInterface;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -8013,7 +7712,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2823
     new-instance v18, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
@@ -8050,21 +7748,18 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 2824
     instance-of v0, v13, Lcom/android/server/location/LocationProviderProxy;
 
     move/from16 v18, v0
 
     if-eqz v18, :cond_b
 
-    .line 2825
     move-object v0, v13
 
     check-cast v0, Lcom/android/server/location/LocationProviderProxy;
 
     move-object v14, v0
 
-    .line 2826
     .local v14, "proxy":Lcom/android/server/location/LocationProviderProxy;
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -8112,7 +7807,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 2828
     .end local v14    # "proxy":Lcom/android/server/location/LocationProviderProxy;
     :cond_b
     const-string v18, ":"
@@ -8123,7 +7817,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2829
     move-object/from16 v0, p1
 
     move-object/from16 v1, p2
@@ -8134,7 +7827,6 @@
 
     goto/16 :goto_9
 
-    .line 2831
     .end local v13    # "provider":Lcom/android/server/location/LocationProviderInterface;
     :cond_c
     monitor-exit v19
@@ -8148,7 +7840,6 @@
     .locals 1
 
     .prologue
-    .line 2534
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
     if-eqz v0, :cond_0
@@ -8177,12 +7868,10 @@
     .end annotation
 
     .prologue
-    .line 1215
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 1216
     :try_start_0
     new-instance v2, Ljava/util/ArrayList;
 
@@ -8194,7 +7883,6 @@
 
     invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1217
     .local v2, "out":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
 
@@ -8217,13 +7905,11 @@
 
     check-cast v3, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1218
     .local v3, "provider":Lcom/android/server/location/LocationProviderInterface;
     invoke-interface {v3}, Lcom/android/server/location/LocationProviderInterface;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1219
     .local v1, "name":Ljava/lang/String;
     const-string v4, "fused"
 
@@ -8233,12 +7919,10 @@
 
     if-nez v4, :cond_0
 
-    .line 1222
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1224
     .end local v0    # "i$":Ljava/util/Iterator;
     .end local v1    # "name":Ljava/lang/String;
     .end local v2    # "out":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
@@ -8260,7 +7944,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1226
     const-string v4, "LocationManagerService"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -8283,7 +7966,6 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1227
     return-object v2
 .end method
 
@@ -8295,16 +7977,13 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1278
     const/4 v1, 0x0
 
-    .line 1280
     .local v1, "result":Ljava/lang/String;
     invoke-virtual {p0, p1, p2}, Lcom/android/server/LocationManagerService;->getProviders(Landroid/location/Criteria;Z)Ljava/util/List;
 
     move-result-object v0
 
-    .line 1281
     .local v0, "providers":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -8312,12 +7991,10 @@
 
     if-nez v3, :cond_0
 
-    .line 1282
     invoke-direct {p0, v0}, Lcom/android/server/LocationManagerService;->pickBest(Ljava/util/List;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1283
     const-string v2, "LocationManagerService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -8362,29 +8039,24 @@
 
     move-object v2, v1
 
-    .line 1294
     :goto_0
     return-object v2
 
-    .line 1286
     :cond_0
     invoke-virtual {p0, v2, p2}, Lcom/android/server/LocationManagerService;->getProviders(Landroid/location/Criteria;Z)Ljava/util/List;
 
     move-result-object v0
 
-    .line 1287
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 1288
     invoke-direct {p0, v0}, Lcom/android/server/LocationManagerService;->pickBest(Ljava/util/List;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1289
     const-string v2, "LocationManagerService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -8429,10 +8101,8 @@
 
     move-object v2, v1
 
-    .line 1290
     goto :goto_0
 
-    .line 1293
     :cond_1
     const-string v3, "LocationManagerService"
 
@@ -8498,13 +8168,11 @@
     .end annotation
 
     .prologue
-    .line 2540
     .local p7, "addrs":Ljava/util/List;, "Ljava/util/List<Landroid/location/Address;>;"
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
     if-eqz v0, :cond_0
 
-    .line 2541
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
     move-wide v2, p1
@@ -8521,7 +8189,6 @@
 
     move-result-object v0
 
-    .line 2544
     :goto_0
     return-object v0
 
@@ -8555,13 +8222,11 @@
     .end annotation
 
     .prologue
-    .line 2554
     .local p12, "addrs":Ljava/util/List;, "Ljava/util/List<Landroid/location/Address;>;"
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
     if-eqz v0, :cond_0
 
-    .line 2555
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGeocodeProvider:Lcom/android/server/location/GeocoderProxy;
 
     move-object v1, p1
@@ -8584,7 +8249,6 @@
 
     move-result-object v0
 
-    .line 2559
     :goto_0
     return-object v0
 
@@ -8604,7 +8268,6 @@
 
     const/4 v8, 0x0
 
-    .line 1834
     const-string v9, "LocationManagerService"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -8627,40 +8290,33 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1835
     if-nez p1, :cond_0
 
     sget-object p1, Lcom/android/server/LocationManagerService;->DEFAULT_LOCATION_REQUEST:Landroid/location/LocationRequest;
 
-    .line 1836
     :cond_0
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v0
 
-    .line 1837
     .local v0, "allowedResolutionLevel":I
     invoke-direct {p0, p2}, Lcom/android/server/LocationManagerService;->checkPackageName(Ljava/lang/String;)V
 
-    .line 1838
     invoke-virtual {p1}, Landroid/location/LocationRequest;->getProvider()Ljava/lang/String;
 
     move-result-object v9
 
     invoke-direct {p0, v0, v9}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 1842
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v7
 
-    .line 1843
     .local v7, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 1845
     .local v2, "identity":J
     :try_start_0
     iget-object v9, p0, Lcom/android/server/LocationManagerService;->mBlacklist:Lcom/android/server/location/LocationBlacklist;
@@ -8671,7 +8327,6 @@
 
     if-eqz v9, :cond_1
 
-    .line 1846
     const-string v9, "LocationManagerService"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -8696,22 +8351,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     :goto_0
     return-object v8
 
-    .line 1851
     :cond_1
     :try_start_1
-    invoke-virtual {p0, v7, p2, v0}, Lcom/android/server/LocationManagerService;->reportLocationAccessNoThrow(ILjava/lang/String;I)Z
+    invoke-virtual {p0, v7, p2, v0}, Lcom/android/server/LocationManagerService;->hook_reportLocationAccessNoThrow(ILjava/lang/String;I)Z
 
     move-result v9
 
     if-nez v9, :cond_2
 
-    .line 1852
     const-string v9, "LocationManagerService"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -8736,12 +8388,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 1857
     :cond_2
     :try_start_2
     iget-object v9, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
@@ -8750,19 +8400,16 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 1860
     :try_start_3
     invoke-virtual {p1}, Landroid/location/LocationRequest;->getProvider()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1861
     .local v4, "name":Ljava/lang/String;
     if-nez v4, :cond_3
 
     const-string v4, "fused"
 
-    .line 1862
     :cond_3
     iget-object v10, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -8772,7 +8419,6 @@
 
     check-cast v6, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1863
     .local v6, "provider":Lcom/android/server/location/LocationProviderInterface;
     if-nez v6, :cond_4
 
@@ -8780,12 +8426,10 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 1865
     :cond_4
     :try_start_4
     invoke-direct {p0, v4, v7}, Lcom/android/server/LocationManagerService;->isAllowedByUserSettingsLocked(Ljava/lang/String;I)Z
@@ -8798,16 +8442,13 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 1868
     :cond_5
     if-ge v0, v12, :cond_6
 
-    .line 1871
     :try_start_5
     iget-object v10, p0, Lcom/android/server/LocationManagerService;->mLastLocationCoarseInterval:Ljava/util/HashMap;
 
@@ -8817,22 +8458,18 @@
 
     check-cast v1, Landroid/location/Location;
 
-    .line 1875
     .local v1, "location":Landroid/location/Location;
     :goto_1
     if-nez v1, :cond_7
 
-    .line 1876
     monitor-exit v9
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 1873
     .end local v1    # "location":Landroid/location/Location;
     :cond_6
     :try_start_6
@@ -8847,22 +8484,18 @@
     .restart local v1    # "location":Landroid/location/Location;
     goto :goto_1
 
-    .line 1878
     :cond_7
     if-ge v0, v12, :cond_8
 
-    .line 1879
     const-string v10, "noGPSLocation"
 
     invoke-virtual {v1, v10}, Landroid/location/Location;->getExtraLocation(Ljava/lang/String;)Landroid/location/Location;
 
     move-result-object v5
 
-    .line 1880
     .local v5, "noGPSLocation":Landroid/location/Location;
     if-eqz v5, :cond_9
 
-    .line 1881
     new-instance v8, Landroid/location/Location;
 
     iget-object v10, p0, Lcom/android/server/LocationManagerService;->mLocationFudger:Lcom/android/server/location/LocationFudger;
@@ -8877,12 +8510,10 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 1884
     .end local v5    # "noGPSLocation":Landroid/location/Location;
     :cond_8
     :try_start_7
@@ -8894,12 +8525,10 @@
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto/16 :goto_0
 
-    .line 1886
     .restart local v5    # "noGPSLocation":Landroid/location/Location;
     :cond_9
     :try_start_8
@@ -8907,12 +8536,10 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 1889
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto/16 :goto_0
 
-    .line 1886
     .end local v1    # "location":Landroid/location/Location;
     .end local v4    # "name":Ljava/lang/String;
     .end local v5    # "noGPSLocation":Landroid/location/Location;
@@ -8930,7 +8557,6 @@
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_1
 
-    .line 1889
     :catchall_1
     move-exception v8
 
@@ -8946,7 +8572,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2107
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -8955,12 +8580,10 @@
 
     if-nez v2, :cond_1
 
-    .line 2120
     :cond_0
     :goto_0
     return-object v1
 
-    .line 2111
     :cond_1
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
@@ -8968,12 +8591,10 @@
 
     invoke-direct {p0, v2, p1}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 2115
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 2116
     :try_start_0
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -8983,23 +8604,19 @@
 
     check-cast v0, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2117
     .local v0, "p":Lcom/android/server/location/LocationProviderInterface;
     monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2119
     if-eqz v0, :cond_0
 
-    .line 2120
     invoke-interface {v0}, Lcom/android/server/location/LocationProviderInterface;->getProperties()Lcom/android/internal/location/ProviderProperties;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 2117
     .end local v0    # "p":Lcom/android/server/location/LocationProviderInterface;
     :catchall_0
     move-exception v1
@@ -9029,24 +8646,20 @@
     .end annotation
 
     .prologue
-    .line 1237
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v0
 
-    .line 1239
     .local v0, "allowedResolutionLevel":I
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v7
 
-    .line 1240
     .local v7, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 1242
     .local v2, "identity":J
     :try_start_0
     iget-object v9, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
@@ -9055,7 +8668,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 1243
     :try_start_1
     new-instance v5, Ljava/util/ArrayList;
 
@@ -9067,7 +8679,6 @@
 
     invoke-direct {v5, v8}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1244
     .local v5, "out":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     iget-object v8, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
 
@@ -9090,13 +8701,11 @@
 
     check-cast v6, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1245
     .local v6, "provider":Lcom/android/server/location/LocationProviderInterface;
     invoke-interface {v6}, Lcom/android/server/location/LocationProviderInterface;->getName()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1246
     .local v4, "name":Ljava/lang/String;
     const-string v8, "fused"
 
@@ -9106,14 +8715,12 @@
 
     if-nez v8, :cond_0
 
-    .line 1249
     invoke-direct {p0, v4}, Lcom/android/server/LocationManagerService;->getMinimumResolutionLevelForProviderUse(Ljava/lang/String;)I
 
     move-result v8
 
     if-lt v0, v8, :cond_0
 
-    .line 1250
     if-eqz p2, :cond_1
 
     invoke-direct {p0, v4, v7}, Lcom/android/server/LocationManagerService;->isAllowedByUserSettingsLocked(Ljava/lang/String;I)Z
@@ -9122,7 +8729,6 @@
 
     if-eqz v8, :cond_0
 
-    .line 1253
     :cond_1
     if-eqz p1, :cond_2
 
@@ -9136,13 +8742,11 @@
 
     if-eqz v8, :cond_0
 
-    .line 1257
     :cond_2
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1260
     .end local v1    # "i$":Ljava/util/Iterator;
     .end local v4    # "name":Ljava/lang/String;
     .end local v5    # "out":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
@@ -9159,7 +8763,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 1262
     :catchall_1
     move-exception v8
 
@@ -9167,7 +8770,6 @@
 
     throw v8
 
-    .line 1260
     .restart local v1    # "i$":Ljava/util/Iterator;
     .restart local v5    # "out":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     :cond_3
@@ -9176,10 +8778,8 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 1262
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1265
     const-string v8, "LocationManagerService"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -9202,7 +8802,6 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1266
     return-object v5
 .end method
 
@@ -9213,7 +8812,6 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 2127
     const-string v5, "fused"
 
     invoke-virtual {v5, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -9222,23 +8820,19 @@
 
     if-eqz v5, :cond_0
 
-    .line 2139
     :goto_0
     return v4
 
-    .line 2129
     :cond_0
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v3
 
-    .line 2130
     .local v3, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v0
 
-    .line 2132
     .local v0, "identity":J
     :try_start_0
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
@@ -9247,7 +8841,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2133
     :try_start_1
     iget-object v6, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -9257,7 +8850,6 @@
 
     check-cast v2, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2134
     .local v2, "p":Lcom/android/server/location/LocationProviderInterface;
     if-nez v2, :cond_1
 
@@ -9265,12 +8857,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2139
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 2136
     :cond_1
     :try_start_2
     invoke-direct {p0, p1, v3}, Lcom/android/server/LocationManagerService;->isAllowedByUserSettingsLocked(Ljava/lang/String;I)Z
@@ -9281,12 +8871,10 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 2139
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
 
-    .line 2137
     .end local v2    # "p":Lcom/android/server/location/LocationProviderInterface;
     :catchall_0
     move-exception v4
@@ -9301,7 +8889,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 2139
     :catchall_1
     move-exception v4
 
@@ -9315,18 +8902,15 @@
     .param p1, "listener"    # Landroid/location/ILocationListener;
 
     .prologue
-    .line 985
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 986
     :try_start_0
     invoke-interface {p1}, Landroid/location/ILocationListener;->asBinder()Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 987
     .local v0, "binder":Landroid/os/IBinder;
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mReceivers:Ljava/util/HashMap;
 
@@ -9336,35 +8920,28 @@
 
     check-cast v1, Lcom/android/server/LocationManagerService$Receiver;
 
-    .line 988
     .local v1, "receiver":Lcom/android/server/LocationManagerService$Receiver;
     if-eqz v1, :cond_0
 
-    .line 989
     monitor-enter v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 991
     :try_start_1
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 992
     .local v2, "identity":J
     # invokes: Lcom/android/server/LocationManagerService$Receiver;->decrementPendingBroadcastsLocked()V
     invoke-static {v1}, Lcom/android/server/LocationManagerService$Receiver;->access$1500(Lcom/android/server/LocationManagerService$Receiver;)V
 
-    .line 993
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 994
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 996
     .end local v2    # "identity":J
     :cond_0
     :try_start_2
@@ -9372,10 +8949,8 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 997
     return-void
 
-    .line 994
     :catchall_0
     move-exception v4
 
@@ -9387,7 +8962,6 @@
     :try_start_4
     throw v4
 
-    .line 996
     .end local v0    # "binder":Landroid/os/IBinder;
     .end local v1    # "receiver":Lcom/android/server/LocationManagerService$Receiver;
     :catchall_1
@@ -9406,7 +8980,6 @@
     .param p2, "criteria"    # Landroid/location/Criteria;
 
     .prologue
-    .line 1309
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -9415,11 +8988,9 @@
 
     check-cast v0, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 1310
     .local v0, "p":Lcom/android/server/location/LocationProviderInterface;
     if-nez v0, :cond_0
 
-    .line 1311
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -9444,7 +9015,6 @@
 
     throw v2
 
-    .line 1314
     :cond_0
     invoke-interface {v0}, Lcom/android/server/location/LocationProviderInterface;->getName()Ljava/lang/String;
 
@@ -9458,7 +9028,6 @@
 
     move-result v1
 
-    .line 1316
     .local v1, "result":Z
     const-string v2, "LocationManagerService"
 
@@ -9502,7 +9071,6 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1317
     return v1
 .end method
 
@@ -9513,20 +9081,16 @@
     .param p3, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1925
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v2
 
     invoke-direct {p0, v2}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForGeofenceUse(I)V
 
-    .line 1926
     invoke-direct {p0, p2}, Lcom/android/server/LocationManagerService;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
-    .line 1927
     invoke-direct {p0, p3}, Lcom/android/server/LocationManagerService;->checkPackageName(Ljava/lang/String;)V
 
-    .line 1929
     const-string v2, "LocationManagerService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -9559,12 +9123,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1932
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v0
 
-    .line 1934
     .local v0, "identity":J
     :try_start_0
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mGeofenceManager:Lcom/android/server/location/GeofenceManager;
@@ -9573,13 +9135,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1936
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1938
     return-void
 
-    .line 1936
     :catchall_0
     move-exception v2
 
@@ -9593,7 +9152,6 @@
     .param p1, "listener"    # Landroid/location/IGpsMeasurementsListener;
 
     .prologue
-    .line 2006
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGpsMeasurementsProvider:Lcom/android/server/location/GpsMeasurementsProvider;
 
     invoke-virtual {v0, p1}, Lcom/android/server/location/GpsMeasurementsProvider;->removeListener(Landroid/os/IInterface;)Z
@@ -9608,7 +9166,6 @@
     .param p1, "listener"    # Landroid/location/IGpsNavigationMessageListener;
 
     .prologue
-    .line 2035
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGpsNavigationMessageProvider:Lcom/android/server/location/GpsNavigationMessageProvider;
 
     invoke-virtual {v0, p1}, Lcom/android/server/location/GpsNavigationMessageProvider;->removeListener(Landroid/os/IInterface;)Z
@@ -9623,12 +9180,10 @@
     .param p1, "listener"    # Landroid/location/IGpsStatusListener;
 
     .prologue
-    .line 1971
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 1973
     :try_start_0
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mGpsStatusProvider:Landroid/location/IGpsStatusProvider;
 
@@ -9637,19 +9192,15 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1977
     :goto_0
     :try_start_1
     monitor-exit v2
 
-    .line 1978
     return-void
 
-    .line 1974
     :catch_0
     move-exception v0
 
-    .line 1975
     .local v0, "e":Ljava/lang/Exception;
     const-string v1, "LocationManagerService"
 
@@ -9659,7 +9210,6 @@
 
     goto :goto_0
 
-    .line 1977
     .end local v0    # "e":Ljava/lang/Exception;
     :catchall_0
     move-exception v1
@@ -9676,25 +9226,19 @@
     .param p1, "provider"    # Ljava/lang/String;
 
     .prologue
-    .line 2620
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2621
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 2625
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/android/server/LocationManagerService;->clearTestProviderEnabled(Ljava/lang/String;)V
 
-    .line 2626
     invoke-virtual {p0, p1}, Lcom/android/server/LocationManagerService;->clearTestProviderLocation(Ljava/lang/String;)V
 
-    .line 2627
     invoke-virtual {p0, p1}, Lcom/android/server/LocationManagerService;->clearTestProviderStatus(Ljava/lang/String;)V
 
-    .line 2629
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
     invoke-virtual {v4, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -9703,11 +9247,9 @@
 
     check-cast v2, Lcom/android/server/location/MockProvider;
 
-    .line 2630
     .local v2, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v2, :cond_0
 
-    .line 2631
     new-instance v4, Ljava/lang/IllegalArgumentException;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -9738,7 +9280,6 @@
 
     throw v4
 
-    .line 2645
     .end local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v4
@@ -9749,7 +9290,6 @@
 
     throw v4
 
-    .line 2633
     .restart local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
@@ -9757,7 +9297,6 @@
 
     move-result-wide v0
 
-    .line 2634
     .local v0, "identity":J
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -9769,7 +9308,6 @@
 
     invoke-direct {p0, v4}, Lcom/android/server/LocationManagerService;->removeProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
 
-    .line 2637
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mRealProviders:Ljava/util/HashMap;
 
     invoke-virtual {v4, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -9778,14 +9316,11 @@
 
     check-cast v3, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2638
     .local v3, "realProvider":Lcom/android/server/location/LocationProviderInterface;
     if-eqz v3, :cond_1
 
-    .line 2639
     invoke-direct {p0, v3}, Lcom/android/server/LocationManagerService;->addProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
 
-    .line 2641
     :cond_1
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mLastLocation:Ljava/util/HashMap;
 
@@ -9793,25 +9328,20 @@
 
     invoke-virtual {v4, p1, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2642
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mLastLocationCoarseInterval:Ljava/util/HashMap;
 
     const/4 v6, 0x0
 
     invoke-virtual {v4, p1, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2643
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
-    .line 2644
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2645
     monitor-exit v5
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2646
     return-void
 .end method
 
@@ -9822,30 +9352,24 @@
     .param p3, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1754
     invoke-direct {p0, p3}, Lcom/android/server/LocationManagerService;->checkPackageName(Ljava/lang/String;)V
 
-    .line 1756
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v3
 
-    .line 1757
     .local v3, "pid":I
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v4
 
-    .line 1759
     .local v4, "uid":I
     iget-object v11, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v11
 
-    .line 1760
     const/4 v6, 0x0
 
-    .line 1761
     .local v6, "workSource":Landroid/os/WorkSource;
     const/4 v7, 0x0
 
@@ -9858,13 +9382,11 @@
 
     move-object v5, p3
 
-    .line 1762
     :try_start_0
     invoke-direct/range {v0 .. v7}, Lcom/android/server/LocationManagerService;->checkListenerOrIntentLocked(Landroid/location/ILocationListener;Landroid/app/PendingIntent;IILjava/lang/String;Landroid/os/WorkSource;Z)Lcom/android/server/LocationManagerService$Receiver;
 
     move-result-object v10
 
-    .line 1766
     .local v10, "receiver":Lcom/android/server/LocationManagerService$Receiver;
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
     :try_end_0
@@ -9872,24 +9394,19 @@
 
     move-result-wide v8
 
-    .line 1768
     .local v8, "identity":J
     :try_start_1
     invoke-direct {p0, v10}, Lcom/android/server/LocationManagerService;->removeUpdatesLocked(Lcom/android/server/LocationManagerService$Receiver;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1770
     :try_start_2
     invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1772
     monitor-exit v11
 
-    .line 1773
     return-void
 
-    .line 1770
     :catchall_0
     move-exception v0
 
@@ -9897,7 +9414,6 @@
 
     throw v0
 
-    .line 1772
     .end local v8    # "identity":J
     .end local v10    # "receiver":Lcom/android/server/LocationManagerService$Receiver;
     :catchall_1
@@ -9918,17 +9434,14 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 2204
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkCallerIsProvider()V
 
-    .line 2205
     invoke-virtual {p1}, Landroid/location/Location;->isComplete()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 2206
     const-string v1, "LocationManagerService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -9951,38 +9464,33 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2214
     :goto_0
     return-void
 
-    .line 2210
     :cond_0
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
     invoke-virtual {v2, v1, p1}, Lcom/android/server/LocationManagerService$LocationWorkerHandler;->removeMessages(ILjava/lang/Object;)V
 
-    .line 2211
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
     invoke-static {v2, v1, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 2212
     .local v0, "m":Landroid/os/Message;
     if-eqz p2, :cond_1
 
+    .line 525
     :goto_1
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 2213
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
     invoke-virtual {v1, v0}, Lcom/android/server/LocationManagerService$LocationWorkerHandler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 
     goto :goto_0
 
-    .line 2212
     :cond_1
     const/4 v1, 0x0
 
@@ -9996,16 +9504,13 @@
     .param p3, "allowedResolutionLevel"    # I
 
     .prologue
-    .line 1188
     invoke-static {p3}, Lcom/android/server/LocationManagerService;->resolutionLevelToOp(I)I
 
     move-result v0
 
-    .line 1189
     .local v0, "op":I
     if-ltz v0, :cond_0
 
-    .line 1190
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mAppOps:Landroid/app/AppOpsManager;
 
     invoke-virtual {v1, v0, p1, p2}, Landroid/app/AppOpsManager;->noteOpNoThrow(IILjava/lang/String;)I
@@ -10014,10 +9519,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 1191
     const/4 v1, 0x0
 
-    .line 1194
     :goto_0
     return v1
 
@@ -10035,40 +9538,32 @@
     .param p4, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1896
     if-nez p1, :cond_0
 
     sget-object p1, Lcom/android/server/LocationManagerService;->DEFAULT_LOCATION_REQUEST:Landroid/location/LocationRequest;
 
-    .line 1897
     :cond_0
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v4
 
-    .line 1898
     .local v4, "allowedResolutionLevel":I
     invoke-direct {p0, v4}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForGeofenceUse(I)V
 
-    .line 1899
     invoke-direct {p0, p3}, Lcom/android/server/LocationManagerService;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
-    .line 1900
     invoke-direct {p0, p4}, Lcom/android/server/LocationManagerService;->checkPackageName(Ljava/lang/String;)V
 
-    .line 1901
     invoke-virtual {p1}, Landroid/location/LocationRequest;->getProvider()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v4, v0}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 1903
     invoke-direct {p0, p1, v4}, Lcom/android/server/LocationManagerService;->createSanitizedRequest(Landroid/location/LocationRequest;I)Landroid/location/LocationRequest;
 
     move-result-object v1
 
-    .line 1905
     .local v1, "sanitizedRequest":Landroid/location/LocationRequest;
     const-string v0, "LocationManagerService"
 
@@ -10112,12 +9607,10 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1908
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v5
 
-    .line 1909
     .local v5, "uid":I
     invoke-static {v5}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -10125,24 +9618,20 @@
 
     if-eqz v0, :cond_1
 
-    .line 1911
     const-string v0, "LocationManagerService"
 
     const-string v2, "proximity alerts are currently available only to the primary user"
 
     invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1921
     :goto_0
     return-void
 
-    .line 1914
     :cond_1
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v8
 
-    .line 1916
     .local v8, "identity":J
     :try_start_0
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mGeofenceManager:Lcom/android/server/location/GeofenceManager;
@@ -10157,7 +9646,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1919
     invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto :goto_0
@@ -10178,12 +9666,10 @@
     .param p4, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1668
     if-nez p1, :cond_0
 
     sget-object p1, Lcom/android/server/LocationManagerService;->DEFAULT_LOCATION_REQUEST:Landroid/location/LocationRequest;
 
-    .line 1669
     :cond_0
     move-object/from16 v0, p0
 
@@ -10191,27 +9677,24 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/LocationManagerService;->checkPackageName(Ljava/lang/String;)V
 
-    .line 1670
     invoke-direct/range {p0 .. p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
     move-result v10
 
-    .line 1671
     .local v10, "allowedResolutionLevel":I
     invoke-virtual/range {p1 .. p1}, Landroid/location/LocationRequest;->getProvider()Ljava/lang/String;
 
     move-result-object v2
 
+    .line 539
     move-object/from16 v0, p0
 
     invoke-direct {v0, v10, v2}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 1673
     invoke-virtual/range {p1 .. p1}, Landroid/location/LocationRequest;->getWorkSource()Landroid/os/WorkSource;
 
     move-result-object v8
 
-    .line 1674
     .local v8, "workSource":Landroid/os/WorkSource;
     if-eqz v8, :cond_1
 
@@ -10221,23 +9704,18 @@
 
     if-lez v2, :cond_1
 
-    .line 1675
     invoke-direct/range {p0 .. p0}, Lcom/android/server/LocationManagerService;->checkDeviceStatsAllowed()V
 
-    .line 1677
     :cond_1
     invoke-virtual/range {p1 .. p1}, Landroid/location/LocationRequest;->getHideFromAppOps()Z
 
     move-result v9
 
-    .line 1678
     .local v9, "hideFromAppOps":Z
     if-eqz v9, :cond_2
 
-    .line 1679
     invoke-direct/range {p0 .. p0}, Lcom/android/server/LocationManagerService;->checkUpdateAppOpsAllowed()V
 
-    .line 1681
     :cond_2
     move-object/from16 v0, p0
 
@@ -10247,7 +9725,6 @@
 
     move-result-object v11
 
-    .line 1684
     .local v11, "sanitizedRequest":Landroid/location/LocationRequest;
     const-string v2, "gps"
 
@@ -10271,14 +9748,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 1686
     const-string v2, "LocationManagerService"
 
     const-string v3, "google,camera,30"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1687
     invoke-virtual {v11}, Landroid/location/LocationRequest;->getInterval()J
 
     move-result-wide v2
@@ -10289,30 +9764,25 @@
 
     if-gez v2, :cond_3
 
-    .line 1688
     const-wide/16 v2, 0x7530
 
     invoke-virtual {v11, v2, v3}, Landroid/location/LocationRequest;->setInterval(J)Landroid/location/LocationRequest;
 
-    .line 1692
     :cond_3
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v5
 
-    .line 1693
     .local v5, "pid":I
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v6
 
-    .line 1695
     .local v6, "uid":I
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v12
 
-    .line 1699
     .local v12, "identity":J
     :try_start_0
     move-object/from16 v0, p0
@@ -10321,7 +9791,7 @@
 
     invoke-virtual {v0, v6, v1, v10}, Lcom/android/server/LocationManagerService;->checkLocationAccess(ILjava/lang/String;I)Z
 
-    .line 1701
+    .line 569
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
@@ -10338,7 +9808,6 @@
 
     move-object/from16 v7, p4
 
-    .line 1702
     :try_start_1
     invoke-direct/range {v2 .. v9}, Lcom/android/server/LocationManagerService;->checkListenerOrIntentLocked(Landroid/location/ILocationListener;Landroid/app/PendingIntent;IILjava/lang/String;Landroid/os/WorkSource;Z)Lcom/android/server/LocationManagerService$Receiver;
 
@@ -10351,21 +9820,16 @@
 
     move-object/from16 v7, p4
 
-    .line 1704
     invoke-direct/range {v2 .. v7}, Lcom/android/server/LocationManagerService;->requestLocationUpdatesLocked(Landroid/location/LocationRequest;Lcom/android/server/LocationManagerService$Receiver;IILjava/lang/String;)V
 
-    .line 1705
     monitor-exit v14
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1707
     invoke-static {v12, v13}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1709
     return-void
 
-    .line 1705
     .end local v4    # "recevier":Lcom/android/server/LocationManagerService$Receiver;
     :catchall_0
     move-exception v2
@@ -10380,7 +9844,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 1707
     :catchall_1
     move-exception v2
 
@@ -10396,17 +9859,14 @@
     .param p3, "extras"    # Landroid/os/Bundle;
 
     .prologue
-    .line 2040
     if-nez p1, :cond_0
 
-    .line 2042
     new-instance v2, Ljava/lang/NullPointerException;
 
     invoke-direct {v2}, Ljava/lang/NullPointerException;-><init>()V
 
     throw v2
 
-    .line 2045
     :cond_0
     const-string v2, "LocationManagerService"
 
@@ -10444,7 +9904,6 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2046
     const-string v2, "htcMock"
 
     move-object/from16 v0, p1
@@ -10455,7 +9914,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 2047
     const-string v2, "addCarGpsProvider"
 
     move-object/from16 v0, p2
@@ -10466,21 +9924,18 @@
 
     if-eqz v2, :cond_1
 
-    .line 2048
     const-string v2, "LocationManagerService"
 
     const-string v3, "add Mock GpsProvider"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2049
     const/4 v2, 0x1
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/server/LocationManagerService;->skipMockLocationCheck:Z
 
-    .line 2050
     const-string v15, "gps"
 
     new-instance v2, Lcom/android/internal/location/ProviderProperties;
@@ -10509,14 +9964,11 @@
 
     invoke-virtual {v0, v15, v2}, Lcom/android/server/LocationManagerService;->addTestProvider(Ljava/lang/String;Lcom/android/internal/location/ProviderProperties;)V
 
-    .line 2052
     const/4 v2, 0x1
 
-    .line 2082
     :goto_0
     return v2
 
-    .line 2053
     :cond_1
     const-string v2, "removeCarGpsProvider"
 
@@ -10528,33 +9980,28 @@
 
     if-eqz v2, :cond_2
 
-    .line 2054
     const-string v2, "LocationManagerService"
 
     const-string v3, "remove Mock GpsProvider"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2055
     const-string v2, "gps"
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v2}, Lcom/android/server/LocationManagerService;->removeTestProvider(Ljava/lang/String;)V
 
-    .line 2056
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/android/server/LocationManagerService;->skipMockLocationCheck:Z
 
-    .line 2057
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 2058
     :cond_2
     const-string v2, "notifyNmea"
 
@@ -10568,12 +10015,10 @@
 
     if-eqz p3, :cond_3
 
-    .line 2059
     new-instance v12, Landroid/os/Bundle;
 
     invoke-direct {v12}, Landroid/os/Bundle;-><init>()V
 
-    .line 2060
     .local v12, "b":Landroid/os/Bundle;
     const-string v2, "nmea"
 
@@ -10587,7 +10032,6 @@
 
     invoke-virtual {v12, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2061
     const-string v2, "time"
 
     const-string v3, "time"
@@ -10600,7 +10044,6 @@
 
     invoke-virtual {v12, v2, v4, v5}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    .line 2062
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
@@ -10609,7 +10052,6 @@
 
     invoke-virtual {v2, v3, v12}, Lcom/android/server/LocationManagerService$LocationWorkerHandler;->removeMessages(ILjava/lang/Object;)V
 
-    .line 2063
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
@@ -10620,7 +10062,6 @@
 
     move-result-object v13
 
-    .line 2064
     .local v13, "m":Landroid/os/Message;
     move-object/from16 v0, p0
 
@@ -10628,12 +10069,10 @@
 
     invoke-virtual {v2, v13}, Lcom/android/server/LocationManagerService$LocationWorkerHandler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 
-    .line 2065
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 2069
     .end local v12    # "b":Landroid/os/Bundle;
     .end local v13    # "m":Landroid/os/Message;
     :cond_3
@@ -10647,7 +10086,6 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/LocationManagerService;->checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
 
-    .line 2073
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -10660,7 +10098,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 2075
     new-instance v2, Ljava/lang/SecurityException;
 
     const-string v3, "Requires ACCESS_LOCATION_EXTRA_COMMANDS permission"
@@ -10669,7 +10106,6 @@
 
     throw v2
 
-    .line 2078
     :cond_4
     move-object/from16 v0, p0
 
@@ -10677,7 +10113,6 @@
 
     monitor-enter v3
 
-    .line 2079
     :try_start_0
     move-object/from16 v0, p0
 
@@ -10691,7 +10126,6 @@
 
     check-cast v14, Lcom/android/server/location/LocationProviderInterface;
 
-    .line 2080
     .local v14, "p":Lcom/android/server/location/LocationProviderInterface;
     if-nez v14, :cond_5
 
@@ -10701,7 +10135,6 @@
 
     goto/16 :goto_0
 
-    .line 2083
     .end local v14    # "p":Lcom/android/server/location/LocationProviderInterface;
     :catchall_0
     move-exception v2
@@ -10712,7 +10145,6 @@
 
     throw v2
 
-    .line 2082
     .restart local v14    # "p":Lcom/android/server/location/LocationProviderInterface;
     :cond_5
     :try_start_1
@@ -10737,7 +10169,6 @@
     .param p2, "userResponse"    # I
 
     .prologue
-    .line 2088
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v1
@@ -10748,7 +10179,6 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 2089
     new-instance v1, Ljava/lang/SecurityException;
 
     const-string v2, "calling sendNiResponse from outside of the system is not allowed"
@@ -10757,7 +10187,6 @@
 
     throw v1
 
-    .line 2093
     :cond_0
     :try_start_0
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mNetInitiatedListener:Landroid/location/INetInitiatedListener;
@@ -10768,15 +10197,12 @@
 
     move-result v1
 
-    .line 2096
     :goto_0
     return v1
 
-    .line 2094
     :catch_0
     move-exception v0
 
-    .line 2095
     .local v0, "e":Landroid/os/RemoteException;
     const-string v1, "LocationManagerService"
 
@@ -10784,7 +10210,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2096
     const/4 v1, 0x0
 
     goto :goto_0
@@ -10796,15 +10221,12 @@
     .param p2, "enabled"    # Z
 
     .prologue
-    .line 2677
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2678
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 2679
     :try_start_0
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
@@ -10814,11 +10236,10 @@
 
     check-cast v2, Lcom/android/server/location/MockProvider;
 
-    .line 2680
     .local v2, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v2, :cond_0
 
-    .line 2681
+    .line 590
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -10849,7 +10270,6 @@
 
     throw v3
 
-    .line 2695
     .end local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v3
@@ -10860,7 +10280,6 @@
 
     throw v3
 
-    .line 2683
     .restart local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
@@ -10868,46 +10287,35 @@
 
     move-result-wide v0
 
-    .line 2684
     .local v0, "identity":J
     if-eqz p2, :cond_1
 
-    .line 2685
     invoke-virtual {v2}, Lcom/android/server/location/MockProvider;->enable()V
 
-    .line 2686
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
 
     invoke-interface {v3, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 2687
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mDisabledProviders:Ljava/util/Set;
 
     invoke-interface {v3, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 2693
     :goto_0
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
-    .line 2694
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2695
     monitor-exit v4
 
-    .line 2696
     return-void
 
-    .line 2689
     :cond_1
     invoke-virtual {v2}, Lcom/android/server/location/MockProvider;->disable()V
 
-    .line 2690
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
 
     invoke-interface {v3, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 2691
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mDisabledProviders:Ljava/util/Set;
 
     invoke-interface {v3, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -10923,15 +10331,12 @@
     .param p2, "loc"    # Landroid/location/Location;
 
     .prologue
-    .line 2650
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2651
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 2652
     :try_start_0
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
@@ -10941,11 +10346,9 @@
 
     check-cast v2, Lcom/android/server/location/MockProvider;
 
-    .line 2653
     .local v2, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v2, :cond_0
 
-    .line 2654
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -10976,7 +10379,6 @@
 
     throw v3
 
-    .line 2660
     .end local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v3
@@ -10987,7 +10389,6 @@
 
     throw v3
 
-    .line 2657
     .restart local v2    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
@@ -10995,19 +10396,15 @@
 
     move-result-wide v0
 
-    .line 2658
     .local v0, "identity":J
     invoke-virtual {v2, p2}, Lcom/android/server/location/MockProvider;->setLocation(Landroid/location/Location;)V
 
-    .line 2659
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2660
     monitor-exit v4
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2661
     return-void
 .end method
 
@@ -11019,15 +10416,12 @@
     .param p4, "updateTime"    # J
 
     .prologue
-    .line 2716
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
-    .line 2717
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 2718
     :try_start_0
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mMockProviders:Ljava/util/HashMap;
 
@@ -11037,11 +10431,9 @@
 
     check-cast v0, Lcom/android/server/location/MockProvider;
 
-    .line 2719
     .local v0, "mockProvider":Lcom/android/server/location/MockProvider;
     if-nez v0, :cond_0
 
-    .line 2720
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -11072,7 +10464,6 @@
 
     throw v1
 
-    .line 2723
     .end local v0    # "mockProvider":Lcom/android/server/location/MockProvider;
     :catchall_0
     move-exception v1
@@ -11083,18 +10474,16 @@
 
     throw v1
 
-    .line 2722
     .restart local v0    # "mockProvider":Lcom/android/server/location/MockProvider;
     :cond_0
     :try_start_1
     invoke-virtual {v0, p2, p3, p4, p5}, Lcom/android/server/location/MockProvider;->setStatus(ILandroid/os/Bundle;J)V
 
-    .line 2723
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2724
+    .line 1008
     return-void
 .end method
 
@@ -11106,12 +10495,11 @@
 
     const/4 v7, 0x1
 
-    .line 271
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 272
+    .line 1784
     :try_start_0
     const-string v0, "LocationManagerService"
 
@@ -11119,7 +10507,6 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 275
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -11128,7 +10515,6 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    .line 278
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     const-string v2, "power"
@@ -11141,7 +10527,6 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mPowerManager:Landroid/os/PowerManager;
 
-    .line 281
     new-instance v0, Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
     invoke-static {}, Lcom/android/internal/os/BackgroundThread;->get()Lcom/android/internal/os/BackgroundThread;
@@ -11156,7 +10541,6 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
-    .line 284
     new-instance v0, Lcom/android/server/location/LocationFudger;
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -11167,7 +10551,6 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mLocationFudger:Lcom/android/server/location/LocationFudger;
 
-    .line 285
     new-instance v0, Lcom/android/server/location/LocationBlacklist;
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -11178,12 +10561,10 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mBlacklist:Lcom/android/server/location/LocationBlacklist;
 
-    .line 286
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mBlacklist:Lcom/android/server/location/LocationBlacklist;
 
     invoke-virtual {v0}, Lcom/android/server/location/LocationBlacklist;->init()V
 
-    .line 287
     new-instance v0, Lcom/android/server/location/GeofenceManager;
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -11194,12 +10575,10 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mGeofenceManager:Lcom/android/server/location/GeofenceManager;
 
-    .line 290
     new-instance v6, Lcom/android/server/LocationManagerService$1;
 
     invoke-direct {v6, p0}, Lcom/android/server/LocationManagerService$1;-><init>(Lcom/android/server/LocationManagerService;)V
 
-    .line 301
     .local v6, "callback":Landroid/app/AppOpsManager$OnOpChangedListener;
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mAppOps:Landroid/app/AppOpsManager;
 
@@ -11209,7 +10588,6 @@
 
     invoke-virtual {v0, v2, v5, v6}, Landroid/app/AppOpsManager;->startWatchingMode(ILjava/lang/String;Landroid/app/AppOpsManager$OnOpChangedListener;)V
 
-    .line 303
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     const-string v2, "user"
@@ -11222,23 +10600,18 @@
 
     iput-object v0, p0, Lcom/android/server/LocationManagerService;->mUserManager:Landroid/os/UserManager;
 
-    .line 304
     iget v0, p0, Lcom/android/server/LocationManagerService;->mCurrentUserId:I
 
     invoke-virtual {p0, v0}, Lcom/android/server/LocationManagerService;->updateUserProfiles(I)V
 
-    .line 307
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->loadProvidersLocked()V
 
-    .line 308
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
-    .line 309
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 312
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -11261,7 +10634,6 @@
 
     invoke-virtual {v0, v1, v7, v2, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    .line 322
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mPackageMonitor:Lcom/android/internal/content/PackageMonitor;
 
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
@@ -11274,28 +10646,23 @@
 
     invoke-virtual {v0, v1, v2, v7}, Lcom/android/internal/content/PackageMonitor;->register(Landroid/content/Context;Landroid/os/Looper;Z)V
 
-    .line 325
     new-instance v3, Landroid/content/IntentFilter;
 
     invoke-direct {v3}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 326
     .local v3, "intentFilter":Landroid/content/IntentFilter;
     const-string v0, "android.intent.action.USER_SWITCHED"
 
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 327
     const-string v0, "android.intent.action.MANAGED_PROFILE_ADDED"
 
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 328
     const-string v0, "android.intent.action.MANAGED_PROFILE_REMOVED"
 
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 330
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
     new-instance v1, Lcom/android/server/LocationManagerService$3;
@@ -11308,10 +10675,8 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 342
     return-void
 
-    .line 309
     .end local v3    # "intentFilter":Landroid/content/IntentFilter;
     .end local v6    # "callback":Landroid/app/AppOpsManager$OnOpChangedListener;
     :catchall_0
@@ -11330,20 +10695,17 @@
     .param p1, "currentUserId"    # I
 
     .prologue
-    .line 352
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mUserManager:Landroid/os/UserManager;
 
     invoke-virtual {v2, p1}, Landroid/os/UserManager;->getProfiles(I)Ljava/util/List;
 
     move-result-object v1
 
-    .line 353
     .local v1, "profiles":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/UserInfo;>;"
     iget-object v3, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 354
     :try_start_0
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -11353,7 +10715,6 @@
 
     iput-object v2, p0, Lcom/android/server/LocationManagerService;->mCurrentUserProfiles:[I
 
-    .line 355
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -11364,7 +10725,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 356
     iget-object v4, p0, Lcom/android/server/LocationManagerService;->mCurrentUserProfiles:[I
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -11377,19 +10737,15 @@
 
     aput v2, v4, v0
 
-    .line 355
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 358
     :cond_0
     monitor-exit v3
 
-    .line 359
     return-void
 
-    .line 358
     .end local v0    # "i":I
     :catchall_0
     move-exception v2
@@ -11399,4 +10755,526 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v2
+.end method
+
+.method private initSettingProvider()V
+    .locals 10
+
+    .prologue
+    const/4 v4, 0x0
+
+    new-instance v3, Landroid/content/IntentFilter;
+
+    invoke-direct {v3}, Landroid/content/IntentFilter;-><init>()V
+
+    .local v3, "networkStateFilter":Landroid/content/IntentFilter;
+    const-string v0, "android.intent.action.CAMPED_NETWORK_STATE_CHANGED"
+
+    invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v0, "android.intent.action.SIM_STATE_CHANGED"
+
+    invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    new-instance v1, Lcom/android/server/LocationManagerService$MzNetworkStateReceiver;
+
+    invoke-direct {v1, p0, v4}, Lcom/android/server/LocationManagerService$MzNetworkStateReceiver;-><init>(Lcom/android/server/LocationManagerService;Lcom/android/server/LocationManagerService$1;)V
+
+    sget-object v2, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
+
+    move-object v5, v4
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "network_provider_package"
+
+    invoke-static {v0, v1}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    .local v9, "network_provider_packageName":Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "choose_network_provider_mode"
+
+    invoke-static {v0, v1}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .local v8, "network_provider_mode":Ljava/lang/String;
+    if-nez v8, :cond_0
+
+    const-string v7, "auto"
+
+    .local v7, "default_network_provider_mode":Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "choose_network_provider_mode"
+
+    invoke-static {v0, v1, v7}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-object v8, v7
+
+    .end local v7    # "default_network_provider_mode":Ljava/lang/String;
+    :cond_0
+    const/4 v6, 0x0
+
+    .local v6, "default_network_provider":Ljava/lang/String;
+    if-eqz v8, :cond_1
+
+    const-string v0, "auto"
+
+    invoke-virtual {v8, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 1721
+    :cond_1
+    if-nez v9, :cond_2
+
+    invoke-static {}, Landroid/os/BuildExt;->isProductInternational()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const-string v6, "com.google.android.gms"
+
+    :cond_2
+    :goto_0
+    if-eqz v6, :cond_3
+
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "network_provider_package"
+
+    invoke-static {v0, v1, v6}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    :cond_3
+    new-instance v0, Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;
+
+    iget-object v1, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
+
+    iget-object v2, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;-><init>(Lcom/android/server/LocationManagerService;Landroid/os/Handler;Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/android/server/LocationManagerService;->mMzModeObserver:Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;
+
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mMzModeObserver:Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;
+
+    invoke-virtual {v0}, Lcom/android/server/LocationManagerService$MzNetworkProviderModeSettingsObserver;->observer()V
+
+    return-void
+
+    :cond_4
+    const-string v6, "com.baidu.map.location"
+
+    goto :goto_0
+
+    :cond_5
+    const-string v0, "baidu"
+
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    const-string v6, "com.baidu.map.location"
+
+    goto :goto_0
+
+    :cond_6
+    const-string v0, "google"
+
+    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const-string v6, "com.google.android.gms"
+
+    goto :goto_0
+.end method
+
+.method private mayChangeSettingProvider(Ljava/lang/String;)V
+    .locals 4
+    .param p1, "mcc"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v1, 0x0
+
+    .local v1, "providerPackage":Ljava/lang/String;
+    if-eqz p1, :cond_0
+
+    const-string v2, ""
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    :cond_0
+    invoke-static {}, Landroid/os/BuildExt;->isProductInternational()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    const-string v1, "com.google.android.gms"
+
+    :goto_0
+    iget-object v2, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string v3, "network_provider_package"
+
+    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, "pkgName":Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string v3, "network_provider_package"
+
+    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    :cond_1
+    return-void
+
+    .end local v0    # "pkgName":Ljava/lang/String;
+    :cond_2
+    const-string v1, "com.baidu.map.location"
+
+    goto :goto_0
+
+    :cond_3
+    const-string v2, "460"
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    const-string v1, "com.baidu.map.location"
+
+    goto :goto_0
+
+    :cond_4
+    const-string v1, "com.google.android.gms"
+
+    goto :goto_0
+.end method
+
+.method public doCampedNetworkStateChanged(Landroid/content/Intent;)V
+    .locals 5
+    .param p1, "intent"    # Landroid/content/Intent;
+
+    .prologue
+    const-string v3, "operatornumber"
+
+    invoke-virtual {p1, v3}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .local v2, "operatornumber":Ljava/lang/String;
+    const/4 v1, 0x0
+
+    .local v1, "mcc":Ljava/lang/String;
+    if-eqz v2, :cond_0
+
+    :try_start_0
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    aget-char v3, v3, v4
+
+    const/16 v4, 0x2c
+
+    if-ne v3, v4, :cond_1
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x4
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v1
+
+    :cond_0
+    :goto_0
+    invoke-direct {p0, v1}, Lcom/android/server/LocationManagerService;->mayChangeSettingProvider(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_1
+    const/4 v3, 0x0
+
+    const/4 v4, 0x3
+
+    .line 1961
+    :try_start_1
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_0
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    .local v0, "e":Ljava/lang/IndexOutOfBoundsException;
+    const/4 v1, 0x0
+
+    goto :goto_0
+.end method
+
+.method public doSimStateChanged()V
+    .locals 5
+
+    .prologue
+    const-string v3, "gsm.camped.operator.number"
+
+    invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, "campedMcc":Ljava/lang/String;
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    :cond_0
+    const-string v3, "gsm.operator.numeric"
+
+    invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_1
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    :cond_2
+    iget-object v3, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-static {v3}, Landroid/telephony/TelephonyManager;->from(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
+
+    move-result-object v1
+
+    .local v1, "imsi":Ljava/lang/String;
+    const/4 v2, 0x0
+
+    .local v2, "mcc":Ljava/lang/String;
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x3
+
+    invoke-virtual {v1, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v2
+
+    :cond_3
+    invoke-direct {p0, v2}, Lcom/android/server/LocationManagerService;->mayChangeSettingProvider(Ljava/lang/String;)V
+
+    .end local v1    # "imsi":Ljava/lang/String;
+    .end local v2    # "mcc":Ljava/lang/String;
+    :cond_4
+    return-void
+.end method
+
+.method public findNetworkProviderWhenAutoMode()V
+    .locals 6
+
+    .prologue
+    const/4 v5, 0x3
+
+    const/4 v4, 0x0
+
+    const-string v3, "gsm.camped.operator.number"
+
+    invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, "campedMcc":Ljava/lang/String;
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    :cond_0
+    const-string v3, "gsm.operator.numeric"
+
+    invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2596
+    :cond_1
+    const/4 v2, 0x0
+
+    .local v2, "mcc":Ljava/lang/String;
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    invoke-virtual {v0, v4, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v2
+
+    :cond_2
+    :goto_0
+    invoke-direct {p0, v2}, Lcom/android/server/LocationManagerService;->mayChangeSettingProvider(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_3
+    iget-object v3, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    invoke-static {v3}, Landroid/telephony/TelephonyManager;->from(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
+
+    move-result-object v1
+
+    .local v1, "imsi":Ljava/lang/String;
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    invoke-virtual {v1, v4, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+.end method
+
+.method hook_reportLocationAccessNoThrow(ILjava/lang/String;I)Z
+    .locals 1
+    .param p1, "uid"    # I
+    .param p2, "packageName"    # Ljava/lang/String;
+    .param p3, "allowedResolutionLevel"    # I
+
+    .prologue
+    const/16 v0, 0x4b
+
+    invoke-static {v0}, Lmeizu/security/FlymePermissionManager;->isFlymePermissionGranted(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/LocationManagerService;->reportLocationAccessNoThrow(ILjava/lang/String;I)Z
+
+    move-result v0
+
+    .line 2544
+    :goto_0
+    return v0
+
+    .line 1314
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method mzGetFieldContext()Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method mzGetFieldLock()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
+
+    return-object v0
 .end method

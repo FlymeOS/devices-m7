@@ -4,6 +4,10 @@
 
 
 # static fields
+.field public static final CONTENT_TYPE_B_PUSH_SI:Ljava/lang/String; = "application/vnd.wap.sic"
+
+.field public static final CONTENT_TYPE_B_PUSH_SL:Ljava/lang/String; = "application/vnd.wap.slc"
+
 .field public static final CONTENT_MIME_CS_PUSH:Ljava/lang/String; = "application/vnd.csclient"
 
 .field public static final CONTENT_MIME_TMO_NAB_SYNC:Ljava/lang/String; = "application/vnd.syncml.ds.notification"

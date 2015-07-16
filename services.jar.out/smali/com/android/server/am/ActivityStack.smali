@@ -929,35 +929,29 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1113
     iget-object v1, p0, Lcom/android/server/am/ActivityStack;->mService:Lcom/android/server/am/ActivityManagerService;
 
     iput-object v0, v1, Lcom/android/server/am/ActivityManagerService;->mHomeProcess:Lcom/android/server/am/ProcessRecord;
 
-    .line 1117
     .end local v0    # "app":Lcom/android/server/am/ProcessRecord;
     :cond_0
     iget-boolean v1, p1, Lcom/android/server/am/ActivityRecord;->nowVisible:Z
 
     if-eqz v1, :cond_1
 
-    .line 1119
     iget-object v1, p0, Lcom/android/server/am/ActivityStack;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
 
-    invoke-virtual {v1}, Lcom/android/server/am/ActivityStackSupervisor;->notifyActivityDrawnForKeyguard()V
+    invoke-virtual {v1}, Lcom/android/server/am/ActivityStackSupervisor;->mzNotifyActivityDrawnForKeyguard()V
 
-    .line 1123
     :cond_1
     iget-object v1, p0, Lcom/android/server/am/ActivityStack;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
 
     invoke-virtual {v1, p1}, Lcom/android/server/am/ActivityStackSupervisor;->scheduleIdleTimeoutLocked(Lcom/android/server/am/ActivityRecord;)V
 
-    .line 1125
     iget-object v1, p0, Lcom/android/server/am/ActivityStack;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
 
     invoke-virtual {v1, p1}, Lcom/android/server/am/ActivityStackSupervisor;->reportResumedActivityLocked(Lcom/android/server/am/ActivityRecord;)Z
 
-    .line 1128
     sget-boolean v1, Lcom/android/server/am/ActivityManagerService;->DEBUG_AM:Z
 
     if-eqz v1, :cond_2

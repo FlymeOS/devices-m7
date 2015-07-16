@@ -15,6 +15,10 @@
 
 
 # static fields
+.field public static final WAPI_CERT:I = 0x9
+
+.field public static final WAPI_PSK:I = 0x8
+
 .field public static final CCKM:I = 0x7
 
 .field public static final IEEE8021X:I = 0x3
@@ -43,6 +47,8 @@
     .prologue
     .line 125
     const/16 v0, 0x8
+
+    add-int/lit8 v0, v0, 0x2
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -91,6 +97,18 @@
     const/4 v1, 0x7
 
     const-string v2, "CCKM"
+
+    aput-object v2, v0, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    const-string v2, "WAPI_PSK"
+
+    aput-object v2, v0, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    const-string v2, "WAPI_CERT"
 
     aput-object v2, v0, v1
 

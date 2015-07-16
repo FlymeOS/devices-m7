@@ -208,7 +208,7 @@
 
     move-result-object v0
 
-    const/high16 v1, 0x10e0000
+    const/high16 v1, #android:integer@config_shortAnimTime#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -216,8 +216,7 @@
 
     iput v0, p0, Lcom/android/server/wm/AppTransition;->mConfigShortAnimTime:I
 
-    .line 184
-    const v0, 0x10c0003
+    const v0, #android:interpolator@decelerate_cubic#t
 
     invoke-static {p1, v0}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -225,8 +224,7 @@
 
     iput-object v0, p0, Lcom/android/server/wm/AppTransition;->mDecelerateInterpolator:Landroid/view/animation/Interpolator;
 
-    .line 186
-    const v0, 0x10c000d
+    const v0, #android:interpolator@fast_out_slow_in#t
 
     invoke-static {p1, v0}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -854,43 +852,33 @@
     .param p2, "resId"    # I
 
     .prologue
-    .line 367
     const/4 v0, 0x0
 
-    .line 368
     .local v0, "anim":I
     iget-object v1, p0, Lcom/android/server/wm/AppTransition;->mContext:Landroid/content/Context;
 
-    .line 369
     .local v1, "context":Landroid/content/Context;
     if-ltz p2, :cond_0
 
-    .line 370
     invoke-direct {p0, p1, p2}, Lcom/android/server/wm/AppTransition;->getCachedAnimations(Ljava/lang/String;I)Lcom/android/server/AttributeCache$Entry;
 
     move-result-object v2
 
-    .line 371
     .local v2, "ent":Lcom/android/server/AttributeCache$Entry;
     if-eqz v2, :cond_0
 
-    .line 372
     iget-object v1, v2, Lcom/android/server/AttributeCache$Entry;->context:Landroid/content/Context;
 
-    .line 373
     move v0, p2
 
-    .line 376
     .end local v2    # "ent":Lcom/android/server/AttributeCache$Entry;
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 377
-    invoke-static {v1, v0}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+    invoke-static {v1, v0}, Lcom/android/server/wm/InjectorWMS;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
     move-result-object v3
 
-    .line 379
     :goto_0
     return-object v3
 
@@ -3304,7 +3292,7 @@
     :cond_0
     if-eqz p3, :cond_2
 
-    const v5, 0x10a0075
+    const v5, #android:anim@voice_activity_open_enter#t
 
     :goto_0
     move-object/from16 v0, p0
@@ -3315,25 +3303,21 @@
 
     move-result-object v14
 
-    .line 823
     .local v14, "a":Landroid/view/animation/Animation;
     sget-boolean v5, Lcom/android/server/wm/AppTransition;->DEBUG_APP_TRANSITIONS:Z
 
     if-nez v5, :cond_3
 
-    .line 952
     :cond_1
     :goto_1
     return-object v14
 
-    .line 820
     .end local v14    # "a":Landroid/view/animation/Animation;
     :cond_2
-    const v5, 0x10a0076
+    const v5, #android:anim@voice_activity_open_exit#t
 
     goto :goto_0
 
-    .line 823
     .restart local v14    # "a":Landroid/view/animation/Animation;
     :cond_3
     const-string v5, "AppTransition"
@@ -3427,7 +3411,7 @@
     :cond_5
     if-eqz p3, :cond_6
 
-    const v5, 0x10a0073
+    const v5, #android:anim@voice_activity_close_enter#t
 
     :goto_2
     move-object/from16 v0, p0
@@ -3508,14 +3492,12 @@
 
     goto/16 :goto_1
 
-    .line 830
     .end local v14    # "a":Landroid/view/animation/Animation;
     :cond_6
-    const v5, 0x10a0074
+    const v5, #android:anim@voice_activity_close_exit#t
 
     goto :goto_2
 
-    .line 839
     :cond_7
     if-eqz p11, :cond_8
 
@@ -4440,17 +4422,14 @@
 
     move-result v0
 
-    .line 348
     .end local v2    # "ent":Lcom/android/server/AttributeCache$Entry;
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 349
-    invoke-static {v1, v0}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+    invoke-static {v1, v0}, Lcom/android/server/wm/InjectorWMS;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
     move-result-object v3
 
-    .line 351
     :goto_0
     return-object v3
 
@@ -4466,32 +4445,25 @@
     .param p2, "resId"    # I
 
     .prologue
-    .line 355
     iget-object v0, p0, Lcom/android/server/wm/AppTransition;->mContext:Landroid/content/Context;
 
-    .line 356
     .local v0, "context":Landroid/content/Context;
     if-ltz p2, :cond_1
 
-    .line 357
     invoke-direct {p0, p1}, Lcom/android/server/wm/AppTransition;->getCachedAnimations(Landroid/view/WindowManager$LayoutParams;)Lcom/android/server/AttributeCache$Entry;
 
     move-result-object v1
 
-    .line 358
     .local v1, "ent":Lcom/android/server/AttributeCache$Entry;
     if-eqz v1, :cond_0
 
-    .line 359
     iget-object v0, v1, Lcom/android/server/AttributeCache$Entry;->context:Landroid/content/Context;
 
-    .line 361
     :cond_0
-    invoke-static {v0, p2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+    invoke-static {v0, p2}, Lcom/android/server/wm/InjectorWMS;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
     move-result-object v2
 
-    .line 363
     .end local v1    # "ent":Lcom/android/server/AttributeCache$Entry;
     :goto_0
     return-object v2
