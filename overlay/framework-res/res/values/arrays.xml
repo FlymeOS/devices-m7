@@ -1,0 +1,32 @@
+<resources>
+    <string-array name="config_statusBarIcons">
+        <item>beats_effect</item>
+        <item>signal_doctor</item>
+        <item>felica_lock</item>
+        <item>hac_status</item>
+        <item>headset_plug</item>
+        <item>ime</item>
+        <item>sync_failing</item>
+        <item>sync_active</item>
+        <item>cast</item>
+        <item>location</item>
+        <item>gpsone</item>
+        <item>gps</item>
+        <item>bluetooth</item>
+        <item>nfc</item>
+        <item>tty</item>
+        <item>speakerphone</item>
+        <item>zen</item>
+        <item>mute</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>cdma_eri</item>
+        <item>data_connection</item>
+        <item>phone_evdo_signal</item>
+        <item>phone_signal</item>
+        <item>battery</item>
+        <item>alarm_clock</item>
+        <item>secure</item>
+        <item>clock</item>
+    </string-array>
+</resources>
