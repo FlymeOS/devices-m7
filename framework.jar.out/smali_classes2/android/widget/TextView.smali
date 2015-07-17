@@ -23784,7 +23784,7 @@
 
     if-eqz v19, :cond_flyme_0
 
-    const/4 v18, 0x1
+    const/16 v18, 0x1
 
     return v18
 
@@ -24644,7 +24644,7 @@
 
     iget-object v8, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    invoke-virtual {v8, p1}, Landroid/widget/Editor;->Landroid/widget/Editor;->onTouchEventMz(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v8, p1}, Landroid/widget/Editor;->onTouchEventMz(Landroid/view/MotionEvent;)Z
 
     :cond_0
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
