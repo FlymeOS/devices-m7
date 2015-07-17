@@ -1636,13 +1636,13 @@
 
     .prologue
     .line 165
-    const v2, 0x2030067
+    const v2, #android:style@Theme#t
 
-    const v3, 0x2030068
+    const v3, #android:style@Theme.Holo#t
 
-    const v4, 0x2030063
+    const v4, #android:style@Theme.DeviceDefault#t
 
-    const v5, 0x2030064
+    const v5, #android:style@Theme.DeviceDefault.Light.DarkActionBar#t
 
     move v0, p0
 
