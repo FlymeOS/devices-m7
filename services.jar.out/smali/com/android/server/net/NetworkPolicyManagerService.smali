@@ -1792,7 +1792,7 @@
 .end method
 
 .method private enqueueNotification(Landroid/net/NetworkPolicy;IJ)V
-    .locals 23
+    .locals 29
     .param p1, "policy"    # Landroid/net/NetworkPolicy;
     .param p2, "type"    # I
     .param p3, "totalBytes"    # J
@@ -1856,17 +1856,17 @@
 
     .line 1196
     :goto_0
-    move-object/from16 v12, p0
+    move-object/from16 v23, p0
 
-    move-object v13, v11
+    move-object/from16 v24, v12
 
-    move-object/from16 v14, p1
+    move-object/from16 v25, p1
 
-    move/from16 v15, p2
+    move/from16 v26, p2
 
-    move-wide/from16 v16, p3
+    move-wide/from16 v27, p3
 
-    invoke-static/range {v12 .. v17}, Lcom/android/server/net/NetworkPolicyManagerService$MzInjector;->hookEnqueueNotification(Lcom/android/server/net/NetworkPolicyManagerService;Landroid/app/Notification$Builder;Landroid/net/NetworkPolicy;IJ)V
+    invoke-static/range {v23 .. v28}, Lcom/android/server/net/NetworkPolicyManagerService$MzInjector;->hookEnqueueNotification(Lcom/android/server/net/NetworkPolicyManagerService;Landroid/app/Notification$Builder;Landroid/net/NetworkPolicy;IJ)V
 
     :try_start_0
     move-object/from16 v0, p0
