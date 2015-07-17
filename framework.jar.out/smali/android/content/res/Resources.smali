@@ -7304,17 +7304,17 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/content/res/Resources;->mDrawableCache:Landroid/util/ArrayMap;
+    iget-object v0, p0, Landroid/content/res/Resources;->mDrawableCache:Landroid/content/res/Resources$ArrayMap;
 
     iget v1, p0, Landroid/content/res/Resources;->mFlymeThemeChanges:I
 
-    invoke-direct {p0, v0, v1}, Landroid/content/res/Resources;->clearDrawableCachesLocked(Landroid/util/ArrayMap;I)V
+    invoke-direct {p0, v0, v1}, Landroid/content/res/Resources;->clearDrawableCachesLocked(Landroid/content/res/Resources$ArrayMap;I)V
 
-    iget-object v0, p0, Landroid/content/res/Resources;->mColorDrawableCache:Landroid/util/ArrayMap;
+    iget-object v0, p0, Landroid/content/res/Resources;->mColorDrawableCache:Landroid/content/res/Resources$ArrayMap;
 
     iget v1, p0, Landroid/content/res/Resources;->mFlymeThemeChanges:I
 
-    invoke-direct {p0, v0, v1}, Landroid/content/res/Resources;->clearDrawableCachesLocked(Landroid/util/ArrayMap;I)V
+    invoke-direct {p0, v0, v1}, Landroid/content/res/Resources;->clearDrawableCachesLocked(Landroid/content/res/Resources$ArrayMap;I)V
 
     sget-object v0, Landroid/content/res/Resources;->sPreloadedColorDrawables:Landroid/util/LongSparseArray;
 
