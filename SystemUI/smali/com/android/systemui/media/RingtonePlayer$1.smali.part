@@ -1,0 +1,13 @@
+.method public playAsyncWithBundle(Landroid/net/Uri;Landroid/os/UserHandle;ZLandroid/media/AudioAttributes;Landroid/os/Bundle;)V
+    .locals 0
+    .param p1, "uri"    # Landroid/net/Uri;
+    .param p2, "user"    # Landroid/os/UserHandle;
+    .param p3, "looping"    # Z
+    .param p4, "aa"    # Landroid/media/AudioAttributes;
+    .param p5, "info"    # Landroid/os/Bundle;
+
+    .prologue
+    invoke-virtual/range {p0 .. p4}, Lcom/android/systemui/media/RingtonePlayer$1;->playAsync(Landroid/net/Uri;Landroid/os/UserHandle;ZLandroid/media/AudioAttributes;)V
+
+    return-void
+.end method

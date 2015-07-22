@@ -1,0 +1,25 @@
+.method public setParameters(Ljava/util/Map;)V
+    .locals 0
+    .param p1, "parameters"    # Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .prologue
+    return-void
+.end method
+
+.method public postDisplayDisableDndRequest(I)V
+    .locals 0
+    .param p1, "flags"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .prologue
+    return-void
+.end method
