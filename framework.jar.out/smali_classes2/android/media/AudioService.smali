@@ -12257,6 +12257,8 @@
 
     move-result v5
 
+    const/4 v5, 0x0
+
     iput-boolean v5, p0, Landroid/media/AudioService;->mEnableListenNotify:Z
 
     .line 7425
