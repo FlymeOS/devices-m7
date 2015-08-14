@@ -1,0 +1,102 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_51 (Oracle Corporation)
+
+Name: res/layout/screenshot.xml
+SHA1-Digest: bx+DYC5PqgDEgNx9FtvJRAorDkc=
+
+Name: res/drawable-xhdpi-v4/stat_sys_nfc.png
+SHA1-Digest: erqJT3Rpfky/+VY/23rDUH6aAKg=
+
+Name: res/layout/cardemu_resolver.xml
+SHA1-Digest: A+KWvTUMQ5tfSHV2G6DQn/B1QZE=
+
+Name: res/drawable-xxhdpi-v4/tap_again.png
+SHA1-Digest: JcnOR+GsS+0esL6rAcJ9GL3HrKU=
+
+Name: res/drawable-hdpi-v4/tap_again.png
+SHA1-Digest: EvQORU3TTvqncFbId98kEtL7hE4=
+
+Name: resources.arsc
+SHA1-Digest: Oy8IDEvpScta/2sN/ABIVpwctu0=
+
+Name: res/drawable-hdpi-v4/stat_sys_nfc.png
+SHA1-Digest: sP1nxOGnCF3Mwqry2trOE6W5cGM=
+
+Name: res/drawable-xxhdpi-v4/ic_menu_cancel_holo_dark.png
+SHA1-Digest: RWDMy1xs2kuRoXPlU2gCdVKUe6Y=
+
+Name: res/layout/tapagain.xml
+SHA1-Digest: mxAMvNqPD/VOdRJDk+zU3ZTQio8=
+
+Name: AndroidManifest.xml
+SHA1-Digest: o5JaCIbfhHcTbBSrF86y6SAptB8=
+
+Name: res/drawable-xxhdpi-v4/stat_sys_phoneremote.png
+SHA1-Digest: 9fqB4L4HYi9RV5R3goHX7zzzUVA=
+
+Name: res/layout/cardemu_item.xml
+SHA1-Digest: aGTu27Vsc8tWKV8WEcE9KSdX/pw=
+
+Name: res/drawable-xxhdpi-v4/stat_sys_nfc_vzw.png
+SHA1-Digest: t7i2DNDBYxexi4yNBwinnEmo6WE=
+
+Name: res/drawable-xhdpi-v4/tap_again.png
+SHA1-Digest: o9C7mkcDJ+4UOk3c8xr1qw4fp7Q=
+
+Name: res/drawable-hdpi-v4/stat_sys_phoneremote.png
+SHA1-Digest: 9fqB4L4HYi9RV5R3goHX7zzzUVA=
+
+Name: res/drawable-hdpi-v4/stat_sys_nfc_vzw.png
+SHA1-Digest: EtMpTdWmOUOKBL96OaIh0+/OrQU=
+
+Name: res/drawable-xhdpi-v4/stat_notify_phoneremote.png
+SHA1-Digest: WMn1G7P4iQc9udNyv9EsVM8Yq1A=
+
+Name: res/drawable-xhdpi-v4/stat_sys_nfc_vzw.png
+SHA1-Digest: FbfXKG6JA6Kn9niLvRRgA0/+pCg=
+
+Name: res/layout/cardemu_payment_item.xml
+SHA1-Digest: yDkfeKZAcLEXwUHjs5/DDkmCjAk=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: IxJdcJXCIEmVZYBZNRDN+GJSFAo=
+
+Name: res/raw/start.ogg
+SHA1-Digest: v28yflF9sEdyZG/vxFycl7YOCkg=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA1-Digest: NuIrIka/8uPGf0Pfc6WmQJvb6as=
+
+Name: res/drawable-hdpi-v4/stat_notify_phoneremote.png
+SHA1-Digest: Skzw1WnmLgYnKM0NcgTlFbCXzEk=
+
+Name: assets/star.png
+SHA1-Digest: Fro9qbIdO6h/7qiYdtxF8u2beSA=
+
+Name: res/drawable-xxhdpi-v4/stat_notify_phoneremote.png
+SHA1-Digest: iOo7V/AFrP2vlm5cDbwLnsby3g4=
+
+Name: classes.dex
+SHA1-Digest: Q64rcAf1KOQ1b2Am4I27d9EWEDQ=
+
+Name: res/drawable-xxhdpi-v4/stat_notify_nfc.png
+SHA1-Digest: P1WpgzcNTQaCEtCvVE9DV4N0mEw=
+
+Name: res/raw/end.ogg
+SHA1-Digest: bib2igpVVHanOnj/8nenHmvxoI0=
+
+Name: res/drawable-hdpi-v4/nfc.png
+SHA1-Digest: BZFzC6WdceYcRASi8XsP4y+xeh0=
+
+Name: res/drawable-hdpi-v4/ic_menu_cancel_holo_dark.png
+SHA1-Digest: UdOJ2DW28YLSbPekCSvVrBePtvg=
+
+Name: res/drawable-xxhdpi-v4/icon.png
+SHA1-Digest: GdYBWmrrXy51V+gQKqdCIvMR9Ls=
+
+Name: res/drawable-xhdpi-v4/stat_sys_phoneremote.png
+SHA1-Digest: lkF1UWN0qZbcnCTK20ZGj5Tt7fI=
+
+Name: res/raw/error.ogg
+SHA1-Digest: db6LQrE1Ejvrk80VC3M4iWslRtA=
+

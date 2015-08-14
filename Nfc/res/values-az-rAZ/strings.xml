@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nfc Xidməti</string>
+    <string name="nfcUserLabel">Nfc</string>
+    <string name="inbound_me_profile_title">Kontakt NFC üzərindən alınıb</string>
+    <string name="inbound_me_profile_text">Bu şəxsi kontakt kimi əlavə etmək üçün toxunun.</string>
+    <string name="outbound_me_profile_title">NFC qarşılıqlı əlaqə tamamlandı</string>
+    <string name="outbound_me_profile_text">Bu şəxsə kontakt məlumatınızı vermək üçün toxunun.</string>
+    <string name="accessibility_nfc_enabled">NFC aktivləşdirilib.</string>
+    <string name="touch">Beam üçün toxunun</string>
+    <string name="beam_progress">Gələn beam...</string>
+    <string name="beam_outgoing">Beaming...</string>
+    <string name="beam_complete">Beam tamamlandı</string>
+    <string name="beam_failed">Beam tamamlanmadı</string>
+    <string name="beam_canceled">Beam ləğv edilib</string>
+    <string name="cancel">Ləğv et</string>
+    <string name="beam_touch_to_view">Görüntüləmək üçün toxunun</string>
+    <string name="beam_handover_not_supported">Qəbul edənin cihazı beam vasitəsilə böyük fayl ötürülməsini dəstəkləmir.</string>
+    <string name="beam_try_again">Cihazları yenidən bir yerə gətir</string>
+    <string name="failed_to_enable_bt">Bluetooth aktiv edilə bilmədi</string>
+    <string name="confirm_pairing">%1$s Bluetooth cihazını qoşalamaq istədiyinizdən əminsiniz?</string>
+    <string name="pair_yes">Bəli</string>
+    <string name="pair_no">Xeyr</string>
+    <string name="connecting_headset">Qoşulur...</string>
+    <string name="connected_headset">Qoşulu</string>
+    <string name="connect_headset_failed">Qoşula bilmədi</string>
+    <string name="disconnecting_headset">Əlaqə kəsilir</string>
+    <string name="disconnected_headset">Əlaqə kəsilib</string>
+    <string name="pairing_headset">Qoşalama</string>
+    <string name="pairing_headset_failed">Qoşalaya bilmədi</string>
+</resources>
