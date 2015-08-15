@@ -1907,6 +1907,8 @@
     .line 195
     const/4 v0, 0x0
 
+    return v0
+
     .line 196
     .local v0, "iconId":I
     invoke-static {}, Lcom/android/nfc/HtcUtils;->getAccReader()Lcom/htc/customization/HtcCustomizationReader;
