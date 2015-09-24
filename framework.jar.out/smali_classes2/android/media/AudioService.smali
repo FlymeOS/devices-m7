@@ -4910,14 +4910,30 @@
     :pswitch_0
     if-ne p2, v3, :cond_1
 
+    iget-boolean v2, p0, Landroid/media/AudioService;->mHasVibrator:Z
+
+    if-eqz v2, :cond_flyme_0
+
+    if-gt p3, p1, :cond_0
+
+    mul-int/lit8 v2, p3, 0x2
+
+    if-ge p1, v2, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_flyme_0
+
     .line 3595
     if-gt p1, p3, :cond_1
 
     .line 3596
-    const/4 v1, 0x0
+    #const/4 v1, 0x0
 
     .line 3597
-    and-int/lit8 v0, v0, -0x2
+    #and-int/lit8 v0, v0, -0x2
 
     .line 3603
     :cond_1
@@ -4945,13 +4961,27 @@
 
     .line 3625
     :pswitch_1
+    iget-boolean v2, p0, Landroid/media/AudioService;->mHasVibrator:Z
+
+    if-nez v2, :cond_flyme_1
+
+    goto :goto_0
+
+    :cond_flyme_1
+
     and-int/lit8 v0, v0, -0x2
+
+    if-ne p2, v3, :cond_flyme_2
+
+    goto :goto_0
+
+    :cond_flyme_2
 
     .line 3628
     if-ne p2, v4, :cond_0
 
     .line 3629
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     goto :goto_0
 
@@ -4962,8 +4992,10 @@
     .line 3649
     if-ne p2, v4, :cond_2
 
+    or-int/lit16 v0, v0, 0x80
+
     .line 3650
-    const/4 v1, 0x2
+    #const/4 v1, 0x2
 
     .line 3651
     :cond_2
@@ -4974,7 +5006,7 @@
     if-ne p2, v3, :cond_0
 
     .line 3652
-    const/4 v1, 0x1
+    #const/4 v1, 0x1
 
     goto :goto_0
 
@@ -11519,8 +11551,12 @@
     :cond_3
     if-nez p2, :cond_4
 
+    iget-boolean v1, p0, Landroid/media/AudioService;->mHasVibrator:Z
+
+    if-eqz v1, :cond_4
+
     .line 1397
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 1402
     .local v0, "newRingerMode":I
