@@ -4165,6 +4165,16 @@
     .param p1, "sc"    # Ljava/lang/String;
 
     .prologue
+    iget-object v0, p0, Lcom/android/internal/telephony/gsm/GsmMmiCode;->mContext:Landroid/content/Context;
+
+    const v1, 0x1040096
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    return-object v0
+
     .line 474
     if-nez p1, :cond_0
 
