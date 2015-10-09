@@ -162,12 +162,14 @@
 
     iput-object v1, p0, Lcom/android/server/SystemServer;->mSystemContext:Landroid/content/Context;
 
+    .line 372
     iget-object v1, p0, Lcom/android/server/SystemServer;->mSystemContext:Landroid/content/Context;
 
-    const v2, #android:style@Theme.DeviceDefault.Light.DarkActionBar#t
+    const v2, 0x103013f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->setTheme(I)V
 
+    .line 373
     return-void
 .end method
 
@@ -1593,6 +1595,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 635
     new-instance v67, Lcom/android/server/MzInputMethodManagerService;
 
     move-object/from16 v0, v67
@@ -1730,7 +1733,7 @@
 
     move-result-object v5
 
-    const v8, #android:string@android_upgrading_starting_apps#t
+    const v8, 0x1040487
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1902,10 +1905,12 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 730
     invoke-static {v3}, Lcom/android/server/NetworkManagementService;->create(Landroid/content/Context;)Lcom/android/server/NetworkManagementService;
 
     move-result-object v7
 
+    .line 731
     const-string v4, "network_management"
 
     invoke-static {v4, v7}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
@@ -1915,10 +1920,12 @@
     :try_end_17
     .catch Ljava/lang/Throwable; {:try_start_17 .. :try_end_17} :catch_b
 
+    .line 737
     :cond_7
     :goto_e
     if-nez v59, :cond_8
 
+    .line 739
     :try_start_18
     const-string v4, "SystemServer"
 
@@ -2122,6 +2129,7 @@
 
     invoke-virtual {v4, v5}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/String;)Lcom/android/server/SystemService;
 
+    .line 787
     :cond_9
     invoke-static/range {p0 .. p0}, Lcom/android/server/SystemServer$FlymeInjector;->addFlymePppoeAndSambaService(Lcom/android/server/SystemServer;)V
 
@@ -2514,7 +2522,7 @@
 
     move-result-object v4
 
-    const v5, #android:bool@config_enableWallpaperService#t
+    const v5, 0x1120038
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -3009,6 +3017,8 @@
     :cond_1f
     if-nez v59, :cond_20
 
+    goto :goto_flyme_0
+
     .line 1054
     :try_start_3a
     const-string v4, "SystemServer"
@@ -3045,6 +3055,7 @@
     .restart local v38    # "atlas":Lcom/android/server/AssetAtlasService;
     :cond_20
     :goto_26
+    :goto_flyme_0
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/server/SystemServer;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -3310,6 +3321,7 @@
     .end local v81    # "mmsService":Lcom/android/server/MmsServiceBroker;
     check-cast v81, Lcom/android/server/MmsServiceBroker;
 
+    .line 1145
     .restart local v81    # "mmsService":Lcom/android/server/MmsServiceBroker;
     move-object/from16 v0, p0
 
@@ -3324,14 +3336,17 @@
     :try_end_41
     .catch Ljava/lang/Throwable; {:try_start_41 .. :try_end_41} :catch_28
 
+    .line 1150
     :goto_2d
     if-eqz v74, :cond_27
 
+    .line 1152
     :try_start_42
     invoke-virtual/range {v74 .. v74}, Lcom/android/server/LockSettingsService;->systemReady()V
     :try_end_42
     .catch Ljava/lang/Throwable; {:try_start_42 .. :try_end_42} :catch_29
 
+    .line 1159
     :cond_27
     :goto_2e
     move-object/from16 v0, p0
