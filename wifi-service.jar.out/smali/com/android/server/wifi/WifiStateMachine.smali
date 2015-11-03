@@ -54159,7 +54159,7 @@
     .line 15906
     iget-object v3, p0, Lcom/android/server/wifi/WifiStateMachine;->mWifiAuthErrorNotification:Landroid/app/Notification;
 
-    const v4, #android:drawable@stat_notify_wifi_in_range#t
+    const v4, 0x302009e
 
     iput v4, v3, Landroid/app/Notification;->icon:I
 
