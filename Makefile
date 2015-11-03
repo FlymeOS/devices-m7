@@ -57,7 +57,7 @@ vendor_remove_files := customize/resource/HTC_Sense5_Boot.mp3
 vendor_saved_apps := Bluetooth KeyChain Tag HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
                      ProxyHandler Shell DefaultContainerService FMRadioService NfceeService WifiRouter FM_Radio \
-                     Stk
+                     Stk HTC_CIR
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
