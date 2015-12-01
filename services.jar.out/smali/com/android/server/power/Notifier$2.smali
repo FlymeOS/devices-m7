@@ -131,7 +131,10 @@
 
     invoke-virtual {v1}, Landroid/app/ActivityManagerInternal;->goingToSleep()V
 
-    .line 365
+    iget-object v1, p0, Lcom/android/server/power/Notifier$2;->this$0:Lcom/android/server/power/Notifier;
+
+    invoke-static {v1, v0}, Lcom/android/server/power/Notifier$FlymeInjector;->mzNotifyAccessControlGotoSleep(Lcom/android/server/power/Notifier;I)V
+
     iget-object v1, p0, Lcom/android/server/power/Notifier$2;->this$0:Lcom/android/server/power/Notifier;
 
     const-string v2, "goingToSleep"
@@ -139,23 +142,18 @@
     # invokes: Lcom/android/server/power/Notifier;->endMonitorFunction(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lcom/android/server/power/Notifier;->access$400(Lcom/android/server/power/Notifier;Ljava/lang/String;)V
 
-    .line 367
     return-void
 
-    .line 351
     :pswitch_0
     const/4 v0, 0x1
 
-    .line 352
     goto :goto_0
 
-    .line 354
     :pswitch_1
     const/4 v0, 0x3
 
     goto :goto_0
 
-    .line 349
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
