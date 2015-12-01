@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.HtcRadioButton android:id="@id/radio" android:focusable="false" android:clickable="false" />
+    <com.htc.lib1.cc.widget.HtcListItem2LineText android:gravity="right" android:id="@id/title" android:layout_width="fill_parent" />
+</com.htc.lib1.cc.widget.HtcListItem>

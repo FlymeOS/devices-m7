@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/panorama_plus_shutter_bar" android:visibility="gone" android:layout_width="@dimen/capture_bar_primary_button_width" android:layout_height="@dimen/capture_bar_primary_button_height" android:layout_marginRight="@dimen/capture_bar_primary_button_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.htc.camera.widget.CaptureBarButton android:id="@id/panorama_plus_cancel_btn" android:background="@drawable/camera_btn_base" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</com.htc.camera.rotate.RotateRelativeLayout>

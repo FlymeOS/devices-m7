@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="tab_customize_flag">0x15</integer>
+    <integer name="min_dropdown_width">941</integer>
+    <integer name="listview_border_height">3</integer>
+    <integer name="listview_blade_padding">3</integer>
+    <integer name="listview_fastscroller_big_height">342</integer>
+    <integer name="listview_fastscroller_big_width">342</integer>
+    <integer name="listview_fastscroller_big_textsize">300</integer>
+    <integer name="listview_fastscroller_big_textmargin">44</integer>
+    <integer name="listview_fastscroller_height">94</integer>
+    <integer name="listview_fastscroller_width">408</integer>
+    <integer name="listview_fastscroller_textsize">90</integer>
+    <integer name="listview_fastscroller_textmargin">30</integer>
+    <integer name="listview_scalex_difference">14</integer>
+    <integer name="listview_scaley_difference">14</integer>
+    <integer name="listview_fastscroller_automotive_big_height">492</integer>
+    <integer name="listview_fastscroller_automotive_big_width">492</integer>
+    <integer name="listview_fastscroller_automotive_big_textsize">452</integer>
+    <integer name="listview_fastscroller_automotive_textsize">90</integer>
+    <integer name="actionBar_activeItemPMax">3</integer>
+    <integer name="actionBar_activeItemLMax">3</integer>
+    <integer name="toggle_out_shift">18</integer>
+    <integer name="toggle_triangle_width">22</integer>
+    <integer name="htc_list_item_center_gap_rate">10</integer>
+</resources>

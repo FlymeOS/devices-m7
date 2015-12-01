@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="networkAttributes">
+        <item>wifi,1,1,4,wan,0</item>
+        <item>wimax,6,6,3,wan,0</item>
+        <item>mobile,0,0,0,wan,0</item>
+        <item>usbnet,15,15,5,wan,0</item>
+        <item>mobile_mms,2,0,6,apn,420</item>
+        <item>mobile_supl,3,0,6,apn,0</item>
+        <item>mobile_dun,4,0,1,apn,60</item>
+        <item>mobile_hipri,5,0,7,apn,60</item>
+        <item>mobile_wapgateway,10,0,6,apn,0</item>
+        <item>mobile_httpproxy,11,0,6,apn,0</item>
+        <item>mobile_fota,12,0,6,apn,infinite</item>
+        <item>mobile_admin,13,0,8,apn,600</item>
+        <item>mobile_internet,16,0,5,apn,0</item>
+        <item>mobile_mobilemarket,17,0,6,apn,0</item>
+        <item>mobile_cmmail,18,0,6,apn,infinite</item>
+        <item>mobile_vzwapp,19,0,6,apn,infinite</item>
+        <item>mobile_ims,20,0,6,apn,infinite</item>
+        <item>mobile_cmail,21,0,7,apn,600</item>
+    </string-array>
+    <string-array name="radioAttributes">
+        <item>1,1</item>
+        <item>0,1</item>
+        <item>6,1</item>
+        <item>15,1</item>
+    </string-array>
+    <string-array name="config_tether_usb_regexs">
+        <item>usb0</item>
+    </string-array>
+    <string-array name="config_tether_wifi_regexs">
+        <item>wl0.1</item>
+        <item>tiap0</item>
+    </string-array>
+    <array name="config_tether_dhcp_range" />
+    <string-array name="config_tether_upstream_regexs">
+        <item>eth0</item>
+        <item>wimax0</item>
+        <item>rmnet[0-9]</item>
+        <item>rmnet_sdio[0-9]</item>
+        <item>gprs</item>
+        <item>ppp[0-9]</item>
+    </string-array>
+    <array name="htcfastscroller_drawables">
+        <item>@drawable/common_scroller</item>
+        <item>@drawable/common_scroller_grip</item>
+        <item>@drawable/common_dialogbox_full_dark</item>
+    </array>
+    <string-array name="status_bar_icon_order">
+        <item>clock</item>
+        <item>alarm_clock</item>
+        <item>battery</item>
+        <item>phone_signal</item>
+        <item>phone_evdo_signal</item>
+        <item>data_connection</item>
+        <item>cdma_eri</item>
+        <item>tty</item>
+        <item>volume</item>
+        <item>mute</item>
+        <item>speakerphone</item>
+        <item>wifi</item>
+        <item>hotspot</item>
+        <item>tty</item>
+        <item>bluetooth</item>
+        <item>wimax</item>
+        <item>gpsone</item>
+        <item>gps</item>
+        <item>sync_active</item>
+        <item>sync_failing</item>
+        <item>ime</item>
+        <item>headset_plug</item>
+        <item>hac</item>
+        <item>hw_meta_fn</item>
+        <item>hw_meta_caps</item>
+    </string-array>
+    <string-array name="shareOrederlist">
+        <item>com.android.mms</item>
+        <item>com.htc.android.mail</item>
+        <item>com.htc.socialnetwork.facebook</item>
+        <item>com.google.android.gm</item>
+        <item>com.htc.htctwitter</item>
+        <item>com.android.bluetooth</item>
+        <item>com.htc.socialnetwork.flickr</item>
+        <item>com.google.android.apps.uploader</item>
+    </string-array>
+    <array name="autocompletetextview_backgrounds">
+        <item>@drawable/common_b_inputfield_pressed</item>
+        <item>@drawable/common_b_inputfield_rest</item>
+        <item>@drawable/common_inputfield_pressed</item>
+        <item>@drawable/common_inputfield_rest</item>
+        <item>@drawable/common_inputfield_full_pressed</item>
+        <item>@drawable/common_inputfield_full_rest</item>
+    </array>
+    <array name="htcbutton_drawables">
+        <item>@drawable/common_button_rest</item>
+        <item>@drawable/common_b_button_rest</item>
+        <item>@drawable/common_circle_outer</item>
+        <item>@drawable/common_b_circle_outer</item>
+        <item>@drawable/common_circle_pressed</item>
+        <item>@drawable/common_checkbox_on</item>
+        <item>@drawable/common_checkbox_rest</item>
+        <item>@drawable/common_checkbox_rest</item>
+        <item>@drawable/common_radio_rest_light</item>
+        <item>@drawable/common_radio_rest_dark</item>
+        <item>@drawable/common_delete_on</item>
+        <item>@drawable/common_delete_on</item>
+        <item>@drawable/common_collect_rest</item>
+        <item>@drawable/common_rating_rest</item>
+        <item>@drawable/common_flag_rest</item>
+        <item>@drawable/common_flag_on</item>
+        <item>@drawable/common_b_checkbox_rest</item>
+    </array>
+    <array name="skinProgressBarArray">
+        <item>@drawable/htcprogress</item>
+        <item>@drawable/htcprogress_b</item>
+    </array>
+    <array name="categoryOneProgressBarArray">
+        <item>@drawable/htcprogress_category_one</item>
+        <item>@drawable/htcprogress_b_category_one</item>
+    </array>
+    <array name="categoryTwoProgressBarArray">
+        <item>@drawable/htcprogress_category_two</item>
+        <item>@drawable/htcprogress_b_category_two</item>
+    </array>
+    <array name="categoryThreeProgressBarArray">
+        <item>@drawable/htcprogress_category_three</item>
+        <item>@drawable/htcprogress_b_category_three</item>
+    </array>
+    <array name="categoryFourProgressBarArray">
+        <item>@drawable/htcprogress_category_four</item>
+        <item>@drawable/htcprogress_b_category_four</item>
+    </array>
+    <array name="togglebutton_backgrounds">
+        <item>@drawable/common_toggle_outer_dark</item>
+        <item>@drawable/common_toggle_on</item>
+        <item>@drawable/common_toggle_rest_dark</item>
+        <item>@drawable/common_toggle_outer</item>
+        <item>@drawable/common_toggle_on</item>
+        <item>@drawable/common_toggle_rest</item>
+    </array>
+    <array name="multipleColorThemes">
+        <item>@array/HtcDeviceDefault</item>
+        <item>@array/ThemeOne</item>
+        <item>@array/ThemeTwo</item>
+        <item>@array/ThemeThree</item>
+        <item>@array/ThemeFour</item>
+        <item>@array/ThemeFive</item>
+        <item>@array/ThemeSix</item>
+        <item>@array/ThemeSeven</item>
+        <item>@array/ThemeEight</item>
+        <item>@array/ThemeNine</item>
+    </array>
+    <array name="HtcDeviceDefault">
+        <item>@style/HtcDeviceDefault</item>
+        <item>@style/HtcDeviceDefault.CategoryOne</item>
+        <item>@style/HtcDeviceDefault.CategoryTwo</item>
+        <item>@style/HtcDeviceDefault.CategoryThree</item>
+        <item>@style/HtcDeviceDefault.CategoryFour</item>
+    </array>
+    <array name="ThemeOne">
+        <item>@style/ThemeOne</item>
+        <item>@style/ThemeOne.CategoryOne</item>
+        <item>@style/ThemeOne.CategoryTwo</item>
+        <item>@style/ThemeOne.CategoryThree</item>
+        <item>@style/ThemeOne.CategoryFour</item>
+    </array>
+    <array name="ThemeTwo">
+        <item>@style/ThemeTwo</item>
+        <item>@style/ThemeTwo.CategoryOne</item>
+        <item>@style/ThemeTwo.CategoryTwo</item>
+        <item>@style/ThemeTwo.CategoryThree</item>
+        <item>@style/ThemeTwo.CategoryFour</item>
+    </array>
+    <array name="ThemeThree">
+        <item>@style/ThemeThree</item>
+        <item>@style/ThemeThree.CategoryOne</item>
+        <item>@style/ThemeThree.CategoryTwo</item>
+        <item>@style/ThemeThree.CategoryThree</item>
+        <item>@style/ThemeThree.CategoryFour</item>
+    </array>
+    <array name="ThemeFour">
+        <item>@style/ThemeFour</item>
+        <item>@style/ThemeFour.CategoryOne</item>
+        <item>@style/ThemeFour.CategoryTwo</item>
+        <item>@style/ThemeFour.CategoryThree</item>
+        <item>@style/ThemeFour.CategoryFour</item>
+    </array>
+    <array name="ThemeFive">
+        <item>@style/ThemeFive</item>
+        <item>@style/ThemeFive.CategoryOne</item>
+        <item>@style/ThemeFive.CategoryTwo</item>
+        <item>@style/ThemeFive.CategoryThree</item>
+        <item>@style/ThemeFive.CategoryFour</item>
+    </array>
+    <array name="ThemeSix">
+        <item>@style/ThemeSix</item>
+        <item>@style/ThemeSix.CategoryOne</item>
+        <item>@style/ThemeSix.CategoryTwo</item>
+        <item>@style/ThemeSix.CategoryThree</item>
+        <item>@style/ThemeSix.CategoryFour</item>
+    </array>
+    <array name="ThemeSeven">
+        <item>@style/ThemeSeven</item>
+        <item>@style/ThemeSeven.CategoryOne</item>
+        <item>@style/ThemeSeven.CategoryTwo</item>
+        <item>@style/ThemeSeven.CategoryThree</item>
+        <item>@style/ThemeSeven.CategoryFour</item>
+    </array>
+    <array name="ThemeEight">
+        <item>@style/ThemeEight</item>
+        <item>@style/ThemeEight.CategoryOne</item>
+        <item>@style/ThemeEight.CategoryTwo</item>
+        <item>@style/ThemeEight.CategoryThree</item>
+        <item>@style/ThemeEight.CategoryFour</item>
+    </array>
+    <array name="ThemeNine">
+        <item>@style/ThemeNine</item>
+        <item>@style/ThemeNine.CategoryOne</item>
+        <item>@style/ThemeNine.CategoryTwo</item>
+        <item>@style/ThemeNine.CategoryThree</item>
+        <item>@style/ThemeNine.CategoryFour</item>
+    </array>
+    <array name="tabbar_drawables">
+        <item>@drawable/common_app_bkg</item>
+        <item>@drawable/common_app_bkg_down_src</item>
+        <item>@drawable/common_app_bkg_down_land_src</item>
+        <item>@drawable/common_app_bkg_top_src</item>
+        <item>@drawable/zero_dummy_asset</item>
+        <item>@drawable/common_b_div</item>
+        <item>@drawable/common_b_div_land</item>
+        <item>@drawable/common_popupmenu</item>
+        <item>@drawable/zero_dummy_asset</item>
+        <item>@drawable/zero_dummy_asset</item>
+        <item>@drawable/zero_dummy_asset</item>
+        <item>@drawable/zero_dummy_asset</item>
+        <item>@drawable/zero_dummy_asset</item>
+    </array>
+    <array name="tabbar_colors">
+        <item>@color/overlay_color</item>
+    </array>
+    <array name="click_vibration">
+        <item>0.0dip</item>
+        <item>-0.6700001dip</item>
+        <item>-3.669983dip</item>
+        <item>-8.669983dip</item>
+        <item>-13.0dip</item>
+        <item>-15.669983dip</item>
+        <item>-17.669983dip</item>
+        <item>-18.669983dip</item>
+        <item>-19.669983dip</item>
+        <item>-20.0dip</item>
+        <item>-20.0dip</item>
+        <item>-20.0dip</item>
+        <item>-20.0dip</item>
+        <item>-20.0dip</item>
+        <item>-19.669983dip</item>
+        <item>-19.329987dip</item>
+        <item>-18.669983dip</item>
+        <item>-18.0dip</item>
+        <item>-16.669983dip</item>
+        <item>-15.329987dip</item>
+        <item>-13.329987dip</item>
+        <item>-12.0dip</item>
+        <item>-5.669983dip</item>
+        <item>0.6700001dip</item>
+        <item>1.3299866dip</item>
+        <item>2.0dip</item>
+        <item>0.0dip</item>
+        <item>-2.0dip</item>
+        <item>-1.0dip</item>
+        <item>0.0dip</item>
+    </array>
+    <string-array name="st_font_size_levels">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra large</item>
+        <item>Huge</item>
+    </string-array>
+    <array name="progressBarArrayThemeOne">
+        <item>@drawable/htcprogress_themeone</item>
+        <item>@drawable/htcprogress_b_themeone</item>
+    </array>
+    <array name="progressBarArrayThemeOneCategoryOne">
+        <item>@drawable/htcprogress_themeone_category_one</item>
+        <item>@drawable/htcprogress_b_themeone_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeOneCategoryTwo">
+        <item>@drawable/htcprogress_themeone_category_two</item>
+        <item>@drawable/htcprogress_b_themeone_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeOneCategoryThree">
+        <item>@drawable/htcprogress_themeone_category_three</item>
+        <item>@drawable/htcprogress_b_themeone_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeOneCategoryFour">
+        <item>@drawable/htcprogress_themeone_category_four</item>
+        <item>@drawable/htcprogress_b_themeone_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeTwo">
+        <item>@drawable/htcprogress_themetwo</item>
+        <item>@drawable/htcprogress_b_themetwo</item>
+    </array>
+    <array name="progressBarArrayThemeTwoCategoryOne">
+        <item>@drawable/htcprogress_themetwo_category_one</item>
+        <item>@drawable/htcprogress_b_themetwo_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeTwoCategoryTwo">
+        <item>@drawable/htcprogress_themetwo_category_two</item>
+        <item>@drawable/htcprogress_b_themetwo_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeTwoCategoryThree">
+        <item>@drawable/htcprogress_themetwo_category_three</item>
+        <item>@drawable/htcprogress_b_themetwo_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeTwoCategoryFour">
+        <item>@drawable/htcprogress_themetwo_category_four</item>
+        <item>@drawable/htcprogress_b_themetwo_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeThree">
+        <item>@drawable/htcprogress_themethree</item>
+        <item>@drawable/htcprogress_b_themethree</item>
+    </array>
+    <array name="progressBarArrayThemeThreeCategoryOne">
+        <item>@drawable/htcprogress_themethree_category_one</item>
+        <item>@drawable/htcprogress_b_themethree_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeThreeCategoryTwo">
+        <item>@drawable/htcprogress_themethree_category_two</item>
+        <item>@drawable/htcprogress_b_themethree_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeThreeCategoryThree">
+        <item>@drawable/htcprogress_themethree_category_three</item>
+        <item>@drawable/htcprogress_b_themethree_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeThreeCategoryFour">
+        <item>@drawable/htcprogress_themethree_category_four</item>
+        <item>@drawable/htcprogress_b_themethree_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeFour">
+        <item>@drawable/htcprogress_themefour</item>
+        <item>@drawable/htcprogress_b_themefour</item>
+    </array>
+    <array name="progressBarArrayThemeFourCategoryOne">
+        <item>@drawable/htcprogress_themefour_category_one</item>
+        <item>@drawable/htcprogress_b_themefour_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeFourCategoryTwo">
+        <item>@drawable/htcprogress_themefour_category_two</item>
+        <item>@drawable/htcprogress_b_themefour_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeFourCategoryThree">
+        <item>@drawable/htcprogress_themefour_category_three</item>
+        <item>@drawable/htcprogress_b_themefour_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeFourCategoryFour">
+        <item>@drawable/htcprogress_themefour_category_four</item>
+        <item>@drawable/htcprogress_b_themefour_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeFive">
+        <item>@drawable/htcprogress_themefive</item>
+        <item>@drawable/htcprogress_b_themefive</item>
+    </array>
+    <array name="progressBarArrayThemeFiveCategoryOne">
+        <item>@drawable/htcprogress_themefive_category_one</item>
+        <item>@drawable/htcprogress_b_themefive_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeFiveCategoryTwo">
+        <item>@drawable/htcprogress_themefive_category_two</item>
+        <item>@drawable/htcprogress_b_themefive_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeFiveCategoryThree">
+        <item>@drawable/htcprogress_themefive_category_three</item>
+        <item>@drawable/htcprogress_b_themefive_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeFiveCategoryFour">
+        <item>@drawable/htcprogress_themefive_category_four</item>
+        <item>@drawable/htcprogress_b_themefive_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeSix">
+        <item>@drawable/htcprogress_themesix</item>
+        <item>@drawable/htcprogress_b_themesix</item>
+    </array>
+    <array name="progressBarArrayThemeSixCategoryOne">
+        <item>@drawable/htcprogress_themesix_category_one</item>
+        <item>@drawable/htcprogress_b_themesix_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeSixCategoryTwo">
+        <item>@drawable/htcprogress_themesix_category_two</item>
+        <item>@drawable/htcprogress_b_themesix_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeSixCategoryThree">
+        <item>@drawable/htcprogress_themesix_category_three</item>
+        <item>@drawable/htcprogress_b_themesix_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeSixCategoryFour">
+        <item>@drawable/htcprogress_themesix_category_four</item>
+        <item>@drawable/htcprogress_b_themesix_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeSeven">
+        <item>@drawable/htcprogress_themeseven</item>
+        <item>@drawable/htcprogress_b_themeseven</item>
+    </array>
+    <array name="progressBarArrayThemeSevenCategoryOne">
+        <item>@drawable/htcprogress_themeseven_category_one</item>
+        <item>@drawable/htcprogress_b_themeseven_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeSevenCategoryTwo">
+        <item>@drawable/htcprogress_themeseven_category_two</item>
+        <item>@drawable/htcprogress_b_themeseven_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeSevenCategoryThree">
+        <item>@drawable/htcprogress_themeseven_category_three</item>
+        <item>@drawable/htcprogress_b_themeseven_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeSevenCategoryFour">
+        <item>@drawable/htcprogress_themeseven_category_four</item>
+        <item>@drawable/htcprogress_b_themeseven_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeEight">
+        <item>@drawable/htcprogress_themeeight</item>
+        <item>@drawable/htcprogress_b_themeeight</item>
+    </array>
+    <array name="progressBarArrayThemeEightCategoryOne">
+        <item>@drawable/htcprogress_themeeight_category_one</item>
+        <item>@drawable/htcprogress_b_themeeight_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeEightCategoryTwo">
+        <item>@drawable/htcprogress_themeeight_category_two</item>
+        <item>@drawable/htcprogress_b_themeeight_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeEightCategoryThree">
+        <item>@drawable/htcprogress_themeeight_category_three</item>
+        <item>@drawable/htcprogress_b_themeeight_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeEightCategoryFour">
+        <item>@drawable/htcprogress_themeeight_category_four</item>
+        <item>@drawable/htcprogress_b_themeeight_category_four</item>
+    </array>
+    <array name="progressBarArrayThemeNine">
+        <item>@drawable/htcprogress_themenine</item>
+        <item>@drawable/htcprogress_b_themenine</item>
+    </array>
+    <array name="progressBarArrayThemeNineCategoryOne">
+        <item>@drawable/htcprogress_themenine_category_one</item>
+        <item>@drawable/htcprogress_b_themenine_category_one</item>
+    </array>
+    <array name="progressBarArrayThemeNineCategoryTwo">
+        <item>@drawable/htcprogress_themenine_category_two</item>
+        <item>@drawable/htcprogress_b_themenine_category_two</item>
+    </array>
+    <array name="progressBarArrayThemeNineCategoryThree">
+        <item>@drawable/htcprogress_themenine_category_three</item>
+        <item>@drawable/htcprogress_b_themenine_category_three</item>
+    </array>
+    <array name="progressBarArrayThemeNineCategoryFour">
+        <item>@drawable/htcprogress_themenine_category_four</item>
+        <item>@drawable/htcprogress_b_themenine_category_four</item>
+    </array>
+    <string-array name="pref_review_duration_choices">
+        <item>@string/pref_review_duration_no_review</item>
+        <item>@string/time_5_seconds</item>
+        <item>@string/time_10_seconds</item>
+        <item>@string/no_limit</item>
+    </string-array>
+    <string-array name="pref_review_duration_values">
+        <item>0s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>infinite</item>
+    </string-array>
+    <string-array name="pref_3D_file_format_choices">
+        <item>@string/mpo_file_format</item>
+        <item>@string/jps_file_format</item>
+    </string-array>
+    <string-array name="pref_photo_size_mode_choices">
+        <item>@string/settings_photo_size_mode_wide</item>
+        <item>@string/settings_photo_size_mode_regular</item>
+        <item>@string/settings_photo_size_mode_square</item>
+    </string-array>
+    <string-array name="pref_photo_size_mode_values">
+        <item>Wide</item>
+        <item>Regular</item>
+        <item>Square</item>
+    </string-array>
+    <string-array name="pref_camera_control_type_displayvalues">
+        <item>@string/settings_camera_control_mode_selfie</item>
+        <item>@string/settings_camera_control_mode_maincamera</item>
+        <item>@string/settings_camera_control_mode_lastcamera</item>
+    </string-array>
+    <string-array name="pref_camera_control_type_values">
+        <item>SELFIE</item>
+        <item>MAINCAMERA</item>
+        <item>LASTCAMERA</item>
+    </string-array>
+    <string-array name="pref_volume_control_type_displayvalues">
+        <item>@string/settings_volume_control_mode_None</item>
+        <item>@string/settings_volume_control_mode_capture</item>
+        <item>@string/settings_volume_control_mode_zoom</item>
+    </string-array>
+    <string-array name="pref_volume_control_type_values">
+        <item>None</item>
+        <item>Capture</item>
+        <item>Zoom</item>
+    </string-array>
+    <string-array name="pref_3D_file_format_values">
+        <item>mpo</item>
+        <item>jps</item>
+    </string-array>
+    <string-array name="pref_video_file_format_choices">
+        <item>@string/file_format_3gpp</item>
+        <item>@string/file_format_mp4</item>
+    </string-array>
+    <string-array name="pref_video_file_format_values">
+        <item>3gpp</item>
+        <item>mp4</item>
+    </string-array>
+    <string-array name="pref_quality_choices">
+        <item>@string/pref_quality_super</item>
+        <item>@string/pref_quality_fine</item>
+        <item>@string/pref_quality_normal</item>
+    </string-array>
+    <string-array name="pref_quality_values">
+        <item>_super</item>
+        <item>_fine</item>
+        <item>_normal</item>
+    </string-array>
+    <string-array name="pref_flash_choices">
+        <item>@string/auto</item>
+        <item>@string/on_capital</item>
+        <item>@string/off_capital</item>
+    </string-array>
+    <string-array name="pref_flash_values">
+        <item>auto</item>
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+    <string-array name="pref_flash_values_text">
+        <item>@string/main_bar_flash_auto</item>
+        <item>@string/main_bar_flash_on</item>
+        <item>@string/main_bar_flash_off</item>
+    </string-array>
+    <string-array name="pref_scene_text_sense_3_0">
+        <item>@string/scene_auto</item>
+        <item>@string/scene_whiteboard</item>
+        <item>@string/scene_portrait</item>
+        <item>@string/scene_landscape</item>
+        <item>@string/scene_sports</item>
+        <item>@string/scene_macro</item>
+        <item>@string/scene_backlight</item>
+        <item>@string/scene_beach</item>
+        <item>@string/scene_snow</item>
+        <item>@string/scene_sunset</item>
+        <item>@string/scene_candlelight</item>
+        <item>@string/scene_lowlight</item>
+    </string-array>
+    <string-array name="pref_scene_values_sense_3_0">
+        <item>auto</item>
+        <item>B_whiteboard</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>sports</item>
+        <item>flowers</item>
+        <item>backlight</item>
+        <item>beach</item>
+        <item>snow</item>
+        <item>sunset</item>
+        <item>candlelight</item>
+        <item>night</item>
+    </string-array>
+    <string-array name="pref_selftimer_choices">
+        <item>@string/off_capital</item>
+        <item>@string/time_2_seconds</item>
+        <item>@string/time_5_seconds</item>
+        <item>@string/time_10_seconds</item>
+    </string-array>
+    <string-array name="pref_selftimer_values">
+        <item>none</item>
+        <item>2s</item>
+        <item>5s</item>
+        <item>10s</item>
+    </string-array>
+    <string-array name="pref_faceNo_choices">
+        <item>@string/off_capital</item>
+        <item>@string/one_face</item>
+        <item>@string/two_faces</item>
+    </string-array>
+    <string-array name="pref_faceNo_values">
+        <item>none</item>
+        <item>1face</item>
+        <item>2faces</item>
+    </string-array>
+    <string-array name="pref_video_format_choices">
+        <item>@string/pref_video_format_h263</item>
+        <item>@string/pref_video_format_mpeg4</item>
+    </string-array>
+    <string-array name="pref_video_format_values">
+        <item>h263</item>
+        <item>mpeg4</item>
+    </string-array>
+    <string-array name="pref_recording_limit_choices">
+        <item>@string/pref_recording_limit_1mb</item>
+        <item>@string/pref_recording_limit_2mb</item>
+        <item>@string/pref_recording_limit_10s</item>
+        <item>@string/pref_recording_limit_30s</item>
+        <item>@string/pref_recording_limit_1min</item>
+        <item>@string/pref_recording_limit_3min</item>
+        <item>@string/no_limit</item>
+    </string-array>
+    <string-array name="pref_recording_limit_values">
+        <item>1mb</item>
+        <item>2mb</item>
+        <item>10s</item>
+        <item>30s</item>
+        <item>1min</item>
+        <item>3min</item>
+        <item>unlimited</item>
+    </string-array>
+    <string-array name="pref_metering_mode_choices">
+        <item>@string/pref_metering_mode_spot</item>
+        <item>@string/pref_metering_mode_center</item>
+        <item>@string/pref_metering_mode_average</item>
+    </string-array>
+    <string-array name="pref_metering_mode_values">
+        <item>_spot</item>
+        <item>_center_area</item>
+        <item>_average</item>
+    </string-array>
+    <string-array name="pref_flicker_choices">
+        <item>@string/auto</item>
+        <item>@string/pref_flicker_50</item>
+        <item>@string/pref_flicker_60</item>
+    </string-array>
+    <string-array name="pref_flicker_values">
+        <item>auto</item>
+        <item>50hz</item>
+        <item>60hz</item>
+    </string-array>
+    <string-array name="pref_iso_choices">
+        <item>@string/auto</item>
+        <item>@string/pref_iso_100</item>
+        <item>@string/pref_iso_200</item>
+        <item>@string/pref_iso_400</item>
+        <item>@string/pref_iso_800</item>
+        <item>@string/pref_iso_1200</item>
+    </string-array>
+    <string-array name="pref_iso_values">
+        <item>auto</item>
+        <item>ISO100</item>
+        <item>ISO200</item>
+        <item>ISO400</item>
+        <item>ISO800</item>
+        <item>ISO1250</item>
+    </string-array>
+    <string-array name="pref_wb_choices">
+        <item>@string/auto</item>
+        <item>@string/wb_incandescent</item>
+        <item>@string/wb_fluorescent</item>
+        <item>@string/wb_daylight</item>
+        <item>@string/wb_cloudy</item>
+    </string-array>
+    <string-array name="pref_wb_values">
+        <item>auto</item>
+        <item>incandescent</item>
+        <item>fluorescent</item>
+        <item>daylight</item>
+        <item>cloudy-daylight</item>
+    </string-array>
+    <string-array name="pref_effect_choices">
+        <item>@string/ui_effect_grayscale</item>
+        <item>@string/ui_effect_sepia</item>
+        <item>@string/ui_effect_negative</item>
+        <item>@string/ui_effect_solarize</item>
+        <item>@string/ui_effect_posterize</item>
+        <item>@string/ui_effect_blackboard</item>
+        <item>@string/ui_effect_aqua</item>
+        <item>@string/ui_effect_pastel</item>
+        <item>@string/ui_effect_mosaic</item>
+        <item>@string/ui_effect_redtint</item>
+        <item>@string/ui_effect_bluetint</item>
+        <item>@string/ui_effect_greentint</item>
+    </string-array>
+    <string-array name="pref_effect_values">
+        <item>mono</item>
+        <item>sepia</item>
+        <item>negative</item>
+        <item>solarize</item>
+        <item>posterize</item>
+        <item>blackboard</item>
+        <item>aqua</item>
+        <item>pastel</item>
+        <item>mosaic</item>
+        <item>red-tint</item>
+        <item>blue-tint</item>
+        <item>green-tint</item>
+    </string-array>
+    <string-array name="pref_effect_choices_interactive">
+        <item>@string/ui_none</item>
+        <item>@string/ui_effect_panorama</item>
+        <item>@string/ui_effect_hdr</item>
+        <item>@string/ui_effect_burst</item>
+        <item>@string/ui_effect_distortion</item>
+        <item>@string/ui_effect_vignette</item>
+        <item>@string/ui_effect_depth</item>
+        <item>@string/ui_effect_dots</item>
+        <item>@string/ui_effect_vintage_dark</item>
+        <item>@string/ui_effect_vintage_warm</item>
+        <item>@string/ui_effect_vintage_cold</item>
+    </string-array>
+    <string-array name="pref_effect_values_interactive">
+        <item>none</item>
+        <item>panorama</item>
+        <item>hdr</item>
+        <item>burst</item>
+        <item>distortion</item>
+        <item>vignette</item>
+        <item>depth</item>
+        <item>dots</item>
+        <item>vintage-high</item>
+        <item>vintage-red</item>
+        <item>vintage-green</item>
+    </string-array>
+    <string-array name="pref_storage_choices">
+        <item>@string/storage_card</item>
+        <item>@string/storage_phone</item>
+    </string-array>
+    <string-array name="pref_storage_values">
+        <item>sdcard</item>
+        <item>main_memory</item>
+    </string-array>
+    <string-array name="pref_zoe_capture_duration_choices">
+        <item>@string/zoe_capture_duration_1s</item>
+        <item>@string/zoe_capture_duration_2s</item>
+        <item>@string/zoe_capture_duration_4s</item>
+    </string-array>
+    <string-array name="pref_zoe_capture_duration_values">
+        <item>1s</item>
+        <item>2s</item>
+        <item>4s</item>
+    </string-array>
+    <string-array name="voice_capture_commands_list">
+        <item>Say Cheese</item>
+        <item>Capture</item>
+    </string-array>
+    <string-array name="voice_record_commands_list">
+        <item>Action</item>
+        <item>Rolling</item>
+    </string-array>
+    <string-array name="voice_capture_hidden_commands_list">
+        <item>Cheese</item>
+        <item>Chiz</item>
+        <item>Chise</item>
+        <item>Cheeth</item>
+        <item>Cheece</item>
+        <item>Cheesh</item>
+        <item>Ceeze</item>
+        <item>Sheeze</item>
+        <item>Chase</item>
+        <item>Captual</item>
+    </string-array>
+    <string-array name="voice_record_hidden_commands_list">
+        <item>Ection</item>
+        <item>Accsion</item>
+        <item>Eccsion</item>
+        <item>Eiction</item>
+        <item>loling</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_body_xs">16.0sp</dimen>
+    <dimen name="list_body_s">19.0sp</dimen>
+    <dimen name="list_body_xl">31.0sp</dimen>
+    <dimen name="separator_secondary_xs">16.0sp</dimen>
+    <dimen name="b_separator_secondary_xs">15.0sp</dimen>
+    <dimen name="label_off_m">14.0sp</dimen>
+    <dimen name="label_on_m">14.0sp</dimen>
+    <dimen name="toggle_primary_m">16.0sp</dimen>
+    <dimen name="b_toggle_primary_m">16.0sp</dimen>
+    <dimen name="time_pick_primary_s">35.0sp</dimen>
+</resources>

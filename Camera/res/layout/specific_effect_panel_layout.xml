@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/effect_list_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ListView android:id="@id/effect_list" android:padding="@dimen/effect_listview_padding" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="@dimen/effect_listview_width" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#00000000" android:headerDividersEnabled="false" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/effect_panel_button_container_width" android:layout_height="@dimen/effect_panel_button_container_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.htc.camera.widget.IconButton android:id="@id/effect_panel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/effect_panel_button_margin_bottom" android:layout_marginBottom="@dimen/margin_l" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/talkback_effect_panel_button" />
+    </RelativeLayout>
+</RelativeLayout>

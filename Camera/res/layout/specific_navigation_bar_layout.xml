@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:padding="@dimen/navigation_bar_dot_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_dot_dark" />
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:padding="@dimen/navigation_bar_dot_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_dot_dark" />
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:padding="@dimen/navigation_bar_dot_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_dot_dark" />
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

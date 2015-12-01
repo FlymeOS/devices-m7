@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/smile_capture_hint_layout" android:paddingLeft="@dimen/margin_l" android:paddingTop="@dimen/margin_xs_2" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_l" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/smile_capture_icon_imageview" android:paddingRight="@dimen/margin_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_indicator_smile_l" />
+    <TextView android:id="@id/smile_capture_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_auto_capture_smile_face" style="@style/text_style_bubble_toast_text" />
+</LinearLayout>

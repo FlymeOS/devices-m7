@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_xs_2" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.HtcProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_s" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/progress_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/progress" android:layout_alignParentLeft="true" style="@style/list_secondary_m" />
+    <TextView android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_s" android:layout_toRightOf="@id/progress_percent" android:layout_alignTop="@id/progress_percent" style="@style/list_secondary_m" />
+</RelativeLayout>

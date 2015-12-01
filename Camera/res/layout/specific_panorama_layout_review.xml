@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/panorama_sweep_indicator_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/panorama_spinner_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_spinner_line" android:layout_centerInParent="true" />
+        <com.htc.camera.widget.ColorMultiplyImageView android:id="@id/panorama_spinner_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_spinner" android:layout_centerInParent="true" />
+        <com.htc.camera.widget.PanoramaIndicatorView android:id="@id/panorama_sweep_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+    <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/panorama_review_image_container" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/panorama_review_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

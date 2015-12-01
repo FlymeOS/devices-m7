@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_widget_4x4_width">440.0px</dimen>
+    <dimen name="common_widget_4x4_height">452.0px</dimen>
+    <dimen name="common_widget_4x4_marginLeft">20.0px</dimen>
+    <dimen name="common_widget_4x4_marginTop">20.0px</dimen>
+    <dimen name="common_widget_4x4_headerheight">50.0px</dimen>
+    <dimen name="common_widget_4x4_footerheight">21.0px</dimen>
+    <dimen name="common_widget_4x4_footersmallheight">11.0px</dimen>
+    <dimen name="common_widget_actionbarheight">65.0px</dimen>
+    <dimen name="common_widget_actionbarwidth">182.0px</dimen>
+    <dimen name="common_widget_4x4_actionbarmarginTop">429.0px</dimen>
+    <dimen name="common_widget_4x4_actionbarmarginLeft">150.0px</dimen>
+    <dimen name="common_widget_4x2_width">440.0px</dimen>
+    <dimen name="common_widget_4x2_height">204.0px</dimen>
+    <dimen name="common_widget_4x2_marginLeft">20.0px</dimen>
+    <dimen name="common_widget_4x2_marginTop">20.0px</dimen>
+    <dimen name="common_widget_4x2_headerheight">50.0px</dimen>
+    <dimen name="common_widget_4x1_width">440.0px</dimen>
+    <dimen name="common_widget_4x1_height">90.0px</dimen>
+    <dimen name="common_widget_4x1_marginLeft">20.0px</dimen>
+    <dimen name="common_widget_4x1_marginTop">10.0px</dimen>
+    <dimen name="common_widget_4x1_headerheight">60.0px</dimen>
+</resources>

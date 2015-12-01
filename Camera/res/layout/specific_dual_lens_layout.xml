@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.camera.rotate.RotateRelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/common_dialogbox_full_dark" android:layout_width="@dimen/dual_lens_background_width" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/dual_lens_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dual_lens_margin_left" android:layout_marginBottom="@dimen/dual_lens_spacing" android:src="@drawable/camera_tips_second_lens_blocked" />
+        <TextView android:textSize="@dimen/dual_lens_text_size" android:id="@id/dual_lens_tips_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dual_lens_margin_left" android:layout_marginRight="@dimen/dual_lens_margin_left" android:layout_marginBottom="@dimen/dual_lens_margin_bottom" android:text="@string/lens_blocked_warning" />
+    </LinearLayout>
+</com.htc.camera.rotate.RotateRelativeLayout>

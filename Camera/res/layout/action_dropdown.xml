@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.ActionBarTextView android:ellipsize="marquee" android:id="@id/primary" android:clickable="false" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/leading" android:maxLines="1" android:layout_weight="1.0" style="@style/title_primary_m" />
+    <com.htc.lib1.cc.widget.ActionBarTextView android:id="@id/counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/leading" android:maxLines="1" android:layout_alignBaseline="@id/primary" android:layout_toEndOf="@id/primary" />
+    <com.htc.lib1.cc.widget.ActionBarImageView android:gravity="center" android:id="@id/arrow" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing" android:layout_marginTop="@dimen/margin_l" android:src="@drawable/common_arrow_down" android:scaleType="center" android:layout_alignBaseline="@id/primary" android:layout_toEndOf="@id/primary" />
+    <com.htc.lib1.cc.widget.ActionBarTextView android:ellipsize="marquee" android:id="@id/secondary" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_xs" android:maxLines="1" android:layout_alignParentBottom="true" style="@style/title_secondary_m" />
+</merge>

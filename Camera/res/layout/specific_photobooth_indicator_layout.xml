@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/photobooth_indicator_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_s_3" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/photobooth_indicator_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_l" android:src="@drawable/camera_photobooth_indicator_off" />
+        <ImageView android:id="@id/photobooth_indicator_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_l" android:src="@drawable/camera_photobooth_indicator_off" />
+        <ImageView android:id="@id/photobooth_indicator_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_l" android:src="@drawable/camera_photobooth_indicator_off" />
+        <ImageView android:id="@id/photobooth_indicator_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_photobooth_indicator_off" />
+    </LinearLayout>
+</RelativeLayout>

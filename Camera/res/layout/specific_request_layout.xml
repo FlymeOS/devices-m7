@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/request_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.camera.widget.CaptureBarButton android:id="@id/capture_new" android:background="@drawable/camera_btn_base_s" android:layout_width="@dimen/capture_bar_secondary_button_width" android:layout_height="@dimen/capture_bar_secondary_button_height" android:layout_marginTop="@dimen/capture_bar_secondary_button_margin_top_1" android:layout_marginRight="@dimen/capture_bar_secondary_button_margin_right" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.htc.camera.widget.CaptureBarButton android:id="@id/select_this" android:background="@drawable/camera_btn_base" android:layout_width="@dimen/capture_bar_primary_button_width" android:layout_height="@dimen/capture_bar_primary_button_height" android:layout_marginRight="@dimen/capture_bar_primary_button_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

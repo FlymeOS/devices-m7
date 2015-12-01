@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="zero_dummy_layout">@layout/alert_dialog</item>
+    <item type="layout" name="htc_list_item_dlna_1">false</item>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/editing_title_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/drop_down_list" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/img_txt_btn" android:background="@drawable/zero_dummy_asset" android:paddingLeft="2.0px" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center|top" android:id="@id/button_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/button_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/label_off_m" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/spacing" android:layout_toEndOf="@id/primary"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

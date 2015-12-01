@@ -1,0 +1,36 @@
+version: 2.0.3-8fee34-SNAPSHOT
+apkFileName: Camera.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '762001476'
+  versionName: 6.70.852519
+sharedLibrary: false
+unknownFiles:
+  HtcLib3-Customization.properties: '8'
+  HtcLib3-HDKUtil.properties: '8'
+  HtcLib3-HtcDebugFlag.properties: '8'
+  HtcLib3-HtcFingerprint.properties: '8'
+  HtcLib3-HtcIR.properties: '8'
+  HtcLib3-HtcIntentLib3.properties: '8'
+  HtcLib3-HtcReport.properties: '8'
+  HtcLib3-HtcWrapSQLite.properties: '8'
+  HtcLib3-HtcWrapWallpaperManager.properties: '8'
+  HtcLib3-HtcWrapWindowManager.properties: '8'
+  HtcLib3-HtcWrapandroidappadmin.properties: '8'
+  HtcLib3-HtcWrapandroidcontentpm.properties: '8'
+  HtcLib3-HtcWrapandroidos.properties: '8'
+  HtcLib3-HtcWrapdalviksystem.properties: '8'
+  HtcLib3-HtcZoeUtil.properties: '8'
+  HtcLib3-Media.properties: '8'
+  HtcLib3-MediaLinkSharedModule.properties: '8'
+  HtcLib3-PhoneContacts.properties: '8'
+doNotCompress:
+- arsc

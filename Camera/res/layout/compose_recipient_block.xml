@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/compose_recipient_block" android:background="@drawable/section_divider_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" style="@style/separator_primary_m" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_field" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.lib1.cc.widget.HtcAutoCompleteTextView android:gravity="center_vertical" android:id="@id/receiverList_inputfield_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:singleLine="true" android:textCursorDrawable="@null" style="@style/input_default_m" />
+    </LinearLayout>
+    <com.htc.lib1.cc.widget.recipientblock.ComposeRecipientArea android:orientation="vertical" android:id="@id/recipient_container_to" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_l" />
+</LinearLayout>

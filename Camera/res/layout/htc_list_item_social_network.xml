@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/message_container" android:background="@drawable/common_list_item_background" android:paddingBottom="@dimen/margin_m" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.QuickContactBadge android:gravity="left" android:layout_gravity="center|left" android:id="@id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_marginTop="@dimen/margin_m" android:scaleType="centerCrop" />
+    <TextView android:textColorLink="@color/all_hyperlink_color" android:id="@id/content" android:paddingTop="@dimen/margin_xs" android:paddingRight="@dimen/margin_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:bufferType="spannable" android:layout_toRightOf="@id/avatar" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/list_primary_s" />
+    <TextView android:id="@id/subcontent" android:paddingTop="@dimen/leading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/content" android:layout_alignLeft="@id/content" style="@style/list_secondary_s" />
+    <TextView android:id="@id/subcontent_ext" android:paddingTop="@dimen/leading" android:paddingRight="@dimen/margin_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/subcontent" android:layout_alignParentRight="true" style="@style/list_secondary_s" />
+</RelativeLayout>

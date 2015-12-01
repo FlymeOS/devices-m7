@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/split_video_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/split_video_left_right_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/split_video_left_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <ImageView android:id="@id/split_video_right_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5" />
+    </LinearLayout>
+    <ImageView android:id="@id/split_video_review_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/split_video_review_play_button" android:background="@drawable/common_media_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

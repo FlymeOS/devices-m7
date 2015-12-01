@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/review_animation_view" android:layout="@layout/main_review_animation_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/popup_menu_hint" android:layout="@layout/specific_popup_menu_hint_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/zoe_view" android:layout="@layout/main_zoe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/manual_capture_view" android:layout="@layout/specific_manual_capture_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/focus_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/panorama_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/panorama_plus_view" android:layout="@layout/specific_panorama_plus_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/smartshot_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/gif_mode_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/burst_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/effect_control_view" android:layout="@layout/specific_effect_control_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/seekbar_control_view" android:layout="@layout/specific_seekbar_control_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/specific_zoom_bar_layout" />
+    <ViewStub android:id="@id/bubble_toast_view" android:layout="@layout/main_bubble_toast_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/menu_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_s" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_l" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@id/menu_button_container_anchor" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/expandablemenu_item_height" android:layout_marginBottom="@dimen/mainbar_function_bar_item_margin_top_bottom" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <com.htc.lib1.cc.widget.HtcIconButton android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/menu_button_container" android:layout_width="wrap_content" android:layout_height="@dimen/expandablemenu_item_height" android:layout_marginBottom="@dimen/mainbar_function_bar_item_margin_top_bottom" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <com.htc.lib1.cc.widget.HtcIconButton android:id="@id/menu_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/expandable_menu_container" android:layout_width="fill_parent" android:layout_height="@dimen/expandablemenu_item_height" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <com.htc.camera.widget.ExpandableMenu android:id="@id/expandable_menu" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/function_bar_item_flash_container" android:layout_width="@dimen/expandablemenu_item_width" android:layout_height="@dimen/expandablemenu_item_width" android:layout_marginTop="@dimen/mainbar_function_bar_item_margin_top_bottom" android:layout_alignParentTop="true">
+            <com.htc.lib1.cc.widget.HtcIconButton android:id="@id/function_bar_item_flash" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:contentDescription="@string/talkback_flashlight" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/split_capture_expand_menu_view" android:layout="@layout/specific_split_capture_expand_menu_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_s" android:layout_marginBottom="@dimen/margin_l" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/human_joint_viewstub" android:layout="@layout/specific_human_joint_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_s" android:layout_marginBottom="@dimen/margin_l" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/camera_menu_btn_anchor" android:background="@drawable/camera_icon_default_base" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/camera_menu_btn_margin_right" android:layout_marginBottom="@dimen/camera_menu_btn_margin_bottom" android:src="@drawable/camera_icon_default_all_cameras" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:alpha="0.0" />
+        <com.htc.camera.widget.IconButton android:id="@id/camera_menu_btn" android:background="@drawable/camera_icon_default_base" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/camera_menu_btn_margin_right" android:layout_marginBottom="@dimen/camera_menu_btn_margin_bottom" android:src="@drawable/camera_icon_default_all_cameras" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/talkback_camera_gridview" />
+    </RelativeLayout>
+    <include layout="@layout/specific_thumbnail_layout" />
+    <include layout="@layout/specific_indicators_layout" />
+    <ViewStub android:id="@id/self_timer_view" android:layout="@layout/specific_self_timer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/recording_timer_view" android:layout="@layout/specific_recording_timer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/specific_effect_panel_layout" />
+    <ViewStub android:id="@id/handshake_view" android:layout="@layout/main_handshake_layout" android:inflatedId="@id/handshake_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dual_lens_view" android:layout="@layout/specific_dual_lens_layout" android:layout_width="@dimen/dual_lens_background_width" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/power_warning_view" android:layout="@layout/specific_power_warning_layout" android:inflatedId="@id/power_warning_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

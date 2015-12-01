@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="table_view_height">560.0px</dimen>
+    <dimen name="table_view_slide_offest">130.0px</dimen>
+    <dimen name="time_pick_picker_width">240.0px</dimen>
+    <dimen name="time_pick_picker_height">560.0px</dimen>
+    <dimen name="time_pick_picker_height_portrait">560.0px</dimen>
+    <dimen name="time_pick_picker_height_landscape">470.0px</dimen>
+    <dimen name="time_pick_text_view_height">234.0px</dimen>
+    <dimen name="time_pick_total_width">870.0px</dimen>
+    <item type="dimen" name="time_pick_top_margin">@dimen/margin_l</item>
+    <item type="dimen" name="time_pick_bottom_margin">@dimen/margin_xs_2</item>
+    <item type="dimen" name="time_pick_left_margin">@dimen/margin_m_2</item>
+    <item type="dimen" name="time_pick_right_margin">@dimen/margin_m_2</item>
+    <item type="dimen" name="time_pick_title_margin">@dimen/margin_xs</item>
+    <dimen name="time_pick_border_weight">6.0px</dimen>
+</resources>

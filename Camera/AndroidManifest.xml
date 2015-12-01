@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pluto="http://www.w3.org/2001/pluto.html" package="com.htc.camera">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="com.htc.permission.APP_MEDIA"/>
+    <uses-permission android:name="com.htc.trimslow.permission.EDIT"/>
+    <uses-permission android:name="com.htc.photoenhancer.permission.EDIT"/>
+    <uses-permission android:name="com.htc.permission.UBLS_WRITE_LOG"/>
+    <uses-permission android:name="com.htc.permission.APP_DEFAULT"/>
+    <uses-permission android:name="com.android.mms.permission.READ_DATA"/>
+    <uses-permission android:name="com.htc.camera.permission.NOTIFY_BI_REPORT"/>
+    <uses-permission android:name="com.htc.permission.APP_SHARED"/>
+    <uses-permission android:name="com.htc.permission.APP_PLATFORM"/>
+    <uses-permission android:name="com.htc.sense.permission.APP_HSP"/>
+    <uses-permission android:name="com.htc.sense.permission.album.GENERAL"/>
+    <uses-permission android:name="com.htc.sense.permission.MEDIAMANAGER.ACCESS_MM"/>
+    <uses-permission android:name="com.htc.permission.ACCESS_LUCY"/>
+    <permission android:name="com.htc.camera.permission.NOTIFY_BI_REPORT" android:protectionLevel="signature"/>
+    <permission android:name="com.htc.camera.permission.CONTROL" android:protectionLevel="signature"/>
+    <permission android:name="com.htc.camera.permission.RECEIVE_STATE_CHANGE" android:protectionLevel="signature"/>
+    <compatible-screens>
+        <screen android:screenDensity="480" android:screenSize="small"/>
+        <screen android:screenDensity="480" android:screenSize="normal"/>
+        <screen android:screenDensity="480" android:screenSize="large"/>
+        <screen android:screenDensity="480" android:screenSize="xlarge"/>
+    </compatible-screens>
+    <uses-feature android:name="com.htc.software.hdk"/>
+    <uses-feature android:name="com.htc.software.hdk2"/>
+    <application allowSkinChange="true" android:icon="@drawable/icon_launcher_camera" android:label="@string/camera_htc_private_app" android:largeHeap="true" android:name="com.htc.camera.CameraApplication" pluto:isThemeable="true">
+        <meta-data android:name="renamed" android:value="com.android.camera"/>
+        <receiver android:enabled="true" android:name="com.htc.camera.CustomizationChangeReceiver" android:permission="htc.permission.CUSTOMIZATION_CHANGE">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.CUSTOMIZATION_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.htc.camera.CameraButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.htc.camera.CamcorderButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.CAMCORDER_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.htc.camera.AlarmIntentReceiver" android:permission="com.htc.camera.permission.NOTIFY_BI_REPORT">
+            <intent-filter>
+                <action android:name="com.htc.camera.MEDIACOUNT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.htc.camera.IncomingPhoneCallIntentReceiver" android:permission="com.htc.permission.APP_SHARED">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.INCOMING_CALL_FOR_CAMERA"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/icon_launcher_camera" android:label="@string/camera_htc_private_app" android:launchMode="singleTask" android:name="com.htc.camera.CameraEntry" android:screenOrientation="landscape" android:taskAffinity="android.task.camera" android:theme="@style/_window">
+            <meta-data android:name="com.htc.android.settings.quicktips" android:value="com.htc.camera.swipecamera;com.htc.camera.zoe"/>
+            <intent-filter>
+                <action android:name="htc.intent.action.QUICK_TIPS"/>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value="*"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.htc.settings.category.APP_STORAGE_SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value="*"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/icon_launcher_camera" android:label="@string/camera_htc_private_app" android:name="com.htc.camera.CameraServiceEntry" android:screenOrientation="landscape" android:taskAffinity="android.task.Service" android:theme="@style/_window">
+            <meta-data android:name="com.htc.android.settings.quicktips" android:value="com.htc.camera.swipecamera;com.htc.camera.zoe"/>
+            <intent-filter>
+                <action android:name="htc.intent.action.QUICK_TIPS"/>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value="*"/>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/icon_launcher_camcorder" android:label="@string/camcorder_name" android:name="com.htc.camera.VideoServiceEntry" android:screenOrientation="landscape" android:taskAffinity="android.task.Service" android:theme="@style/_window">
+            <meta-data android:name="com.htc.android.settings.quicktips" android:value="com.htc.camera.swipecamera;com.htc.camera.zoe"/>
+            <intent-filter>
+                <action android:name="htc.intent.action.QUICK_TIPS"/>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value="*"/>
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="senseVersion" android:value="Sense 6.0"/>
+        <meta-data android:name="srcChangelist" android:value="852519"/>
+        <meta-data android:name="arsChangelist" android:value="840465"/>
+        <meta-data android:name="BuildTime" android:value="-1783605865"/>
+        <meta-data android:name="HDK_Lib1_API19_Sense60_Stable" android:value="19.Sense60.451777"/>
+        <meta-data android:name="HDK_Lib3_API19_2_Stable" android:value="19.2.401849"/>
+    </application>
+</manifest>

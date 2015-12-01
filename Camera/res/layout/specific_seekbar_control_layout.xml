@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/seek_control_bar_container0" android:visibility="visible" android:layout_width="@dimen/effect_control_bar_container_width" android:layout_height="@dimen/zoom_bar_container_height" android:layout_marginLeft="@dimen/effect_control_bar_container_margin_left" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <View android:id="@id/seek_control_bar_touch_receiver0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.camera.widget.VerticalSeekBar android:id="@id/seek_control_bar0" android:layout_width="@dimen/zoom_bar_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/seek_bar_margin_top_bottom" android:layout_marginBottom="@dimen/seek_bar_margin_top_bottom" android:thumb="@drawable/camera_zoom_indicator" android:thumbOffset="@dimen/zoom_bar_thumb_offset" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/seek_control_decrease0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:src="@drawable/camera_icon_sparkles_bar_down" android:scaleType="center" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/seek_control_increase0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:src="@drawable/camera_icon_sparkles_bar_up" android:scaleType="center" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/seek_control_bar_container1" android:visibility="visible" android:layout_width="@dimen/effect_control_bar_container_width" android:layout_height="@dimen/zoom_bar_container_height" android:layout_marginRight="@dimen/effect_control_bar_container_margin_left" android:layout_alignParentRight="true">
+        <View android:id="@id/seek_control_bar_touch_receiver1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/seek_bar_margin_top_bottom" android:layout_marginBottom="@dimen/seek_bar_margin_top_bottom" android:layout_centerHorizontal="true">
+            <com.htc.camera.widget.VerticalSeekBar android:id="@id/seek_control_bar1" android:layout_width="@dimen/zoom_bar_width" android:layout_height="fill_parent" android:thumb="@drawable/camera_zoom_indicator" android:thumbOffset="@dimen/zoom_bar_thumb_offset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/seek_control_decrease1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/effect_control_bar_button_outer_margin" android:src="@drawable/camera_icon_effect_bar_down" android:scaleType="center" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/seek_control_increase1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/effect_control_bar_button_outer_margin" android:src="@drawable/camera_icon_effect_bar_up" android:scaleType="center" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

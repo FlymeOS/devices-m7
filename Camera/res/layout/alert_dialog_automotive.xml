@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.htc.lib1.cc.widget.ShadowLinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:htc="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/common_dialogbox_header_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l">
+            <ImageView android:layout_gravity="top" android:id="@id/icon" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:ellipsize="end" android:id="@id/alertTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:layout_weight="1.0" style="@style/fixed_title_primary_m" />
+            <ProgressBar android:id="@android:id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/htcProgressBarStyleIndeterminateSmall" />
+        </LinearLayout>
+        <ImageView android:gravity="fill_horizontal" android:id="@id/titleDivider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@android:drawable/divider_horizontal_dark" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/message" android:paddingLeft="@dimen/margin_l" android:paddingTop="@dimen/spacing_2" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_xs_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_body_primary_m" />
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/customPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/custom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="@dimen/htc_footer_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/leftSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            <com.htc.lib1.cc.widget.HtcIconButton android:layout_gravity="center|left" android:id="@id/button2" android:paddingLeft="@dimen/margin_s" android:paddingRight="@dimen/margin_s" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" htc:backgroundMode="automotiveDark" style="@style/fixed_separator_secondary_m" />
+            <View android:id="@id/padding1" android:background="@drawable/common_div" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <com.htc.lib1.cc.widget.HtcIconButton android:layout_gravity="center" android:id="@id/button3" android:paddingLeft="@dimen/margin_s" android:paddingRight="@dimen/margin_s" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" htc:backgroundMode="automotiveDark" style="@style/fixed_separator_secondary_m" />
+            <View android:id="@id/padding3" android:background="@drawable/common_div" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <com.htc.lib1.cc.widget.HtcIconButton android:layout_gravity="center|right" android:id="@id/button1" android:paddingLeft="@dimen/margin_s" android:paddingRight="@dimen/margin_s" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" htc:backgroundMode="automotiveDark" style="@style/fixed_separator_secondary_m" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rightSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+</view>

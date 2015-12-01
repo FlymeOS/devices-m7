@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.CheckableHtcListItem android:layout_width="fill_parent" android:layout_height="wrap_content" htc:itemMode="automotiveMode"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:htc="http://schemas.android.com/apk/res-auto">
+    <com.htc.lib1.cc.widget.HtcListItemSingleText android:id="@android:id/text1" />
+    <com.htc.lib1.cc.widget.HtcCheckBox android:id="@android:id/checkbox" htc:backgroundMode="automotiveDark" />
+</com.htc.lib1.cc.widget.CheckableHtcListItem>

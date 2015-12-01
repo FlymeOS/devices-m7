@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/grid_view" android:layout="@layout/main_grid_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/panorama_review" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/panorama_plus_full_view" android:layout="@layout/specific_panorama_plus_full_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/photobooth_indicator_view" android:layout="@layout/specific_photobooth_indicator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/focus_indicator_view" android:layout="@layout/specific_focus_indicator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/switch_camera_sliding_top_of_land" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/switch_camera_sliding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/switch_camera_top_of_inverseland" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/switch_camera_sliding_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/split_video_full_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/split_photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/dual_cam_view" android:layout="@layout/specific_dual_cam_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/action_screen_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="ab_item_width_percent">14.699995%</fraction>
+    <fraction name="ab_automotive_item_width_percent">20.000004%</fraction>
+    <fraction name="listitem_top_margin_percent">29.999996%</fraction>
+    <fraction name="listitem_bottom_margin_percent">48.0%</fraction>
+    <fraction name="listitem_popupmenu_top_margin_percent">29.999996%</fraction>
+    <fraction name="listitem_popupmenu_bottom_margin_percent">48.0%</fraction>
+    <fraction name="listitem_automotive_top_margin_percent">29.999996%</fraction>
+    <fraction name="listitem_automotive_bottom_margin_percent">48.0%</fraction>
+</resources>

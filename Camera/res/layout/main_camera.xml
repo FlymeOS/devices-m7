@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.camera.widget.CameraRootLayout android:id="@id/camera_layout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_finder" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/camera_preview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.opengl.GLSurfaceView android:id="@id/gl_surface_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <SurfaceView android:id="@id/preview_animation_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/preview_filter_view" android:layout="@layout/main_preview_filter_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.htc.camera.autotest.AutoTestISREntry android:id="@id/isr_entry_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/camera_mode_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/fullscreen_capture_ui_container" android:layout="@layout/main_fullscreen_capture_ui_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/capture_ui_container" android:layout="@layout/main_capture_ui_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/specific_capture_bar_layout" />
+    <ViewStub android:id="@id/camera_menu" android:layout="@layout/specific_camera_menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/initial_camera_mode_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/screen_save" android:layout="@layout/specific_screen_save_layout" android:inflatedId="@id/screen_save_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/navigation_bar" android:layout="@layout/specific_navigation_bar_layout" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/processing_dialog_container" android:background="@color/processing_dialog_background_dim" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/processing_dialog" android:layout="@layout/specific_progress_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+    <View android:id="@id/full_screen_black" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.htc.camera.widget.CameraRootLayout>

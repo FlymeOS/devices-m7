@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/split_capture_expand_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.HtcIconButton android:id="@id/syn_async_switch_button" android:layout_width="@dimen/expandablemenu_item_width" android:layout_height="@dimen/expandablemenu_item_height" android:layout_marginRight="@dimen/margin_m" />
+    <com.htc.lib1.cc.widget.HtcIconButton android:id="@id/settings_menu_button" android:layout_width="@dimen/expandablemenu_item_width" android:layout_height="@dimen/expandablemenu_item_height" />
+</LinearLayout>

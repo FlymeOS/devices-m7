@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:visible="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_01" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_02" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_03" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_04" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_05" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_06" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_07" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_08" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_09" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_10" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_11" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_12" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_13" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_14" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_15" />
+    <item android:duration="100" android:drawable="@drawable/camera_arrow_left_16" />
+</animation-list>

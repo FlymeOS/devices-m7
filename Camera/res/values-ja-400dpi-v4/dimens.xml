@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fixed_list_body_xs">40.0px</dimen>
+    <dimen name="fixed_list_body_s">48.0px</dimen>
+    <dimen name="fixed_list_body_xl">77.0px</dimen>
+    <dimen name="fixed_separator_secondary_xs">40.0px</dimen>
+    <dimen name="fixed_b_separator_secondary_xs">37.0px</dimen>
+    <dimen name="fixed_label_off_m">35.0px</dimen>
+    <dimen name="fixed_label_on_m">35.0px</dimen>
+    <dimen name="fixed_toggle_primary_m">40.0px</dimen>
+    <dimen name="fixed_b_toggle_primary_m">40.0px</dimen>
+    <dimen name="fixed_time_pick_primary_s">88.0px</dimen>
+</resources>

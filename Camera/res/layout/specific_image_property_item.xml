@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/image_property_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginTop="@dimen/leading" android:layout_marginBottom="@dimen/margin_xs" style="@style/separator_primary_m" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_xs" android:layout_marginBottom="@dimen/margin_l">
+            <com.htc.lib1.cc.widget.HtcIconButton android:id="@id/button_minus" android:layout_width="@dimen/scalemeter_add_button_width" android:layout_height="wrap_content" />
+            <ImageView android:background="@drawable/common_list_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_marginTop="@dimen/degree_margintop" android:layout_marginRight="@dimen/margin_m">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <SeekBar android:id="@id/image_property_control_bar" android:layout_width="@dimen/image_property_base_width" android:layout_height="@dimen/image_property_base_height" android:progressDrawable="@android:color/transparent" android:thumb="@drawable/camera_slider_indicator" />
+                    <RelativeLayout android:orientation="horizontal" android:id="@id/index_column" android:layout_width="@dimen/image_property_base_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/leading">
+                        <TextView android:textSize="@dimen/degree_text_size" android:textColor="@color/settings_summary" android:id="@id/level_m2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_m2" android:layout_alignParentLeft="true" style="@style/fixed_camera_02" />
+                        <TextView android:textSize="@dimen/degree_text_size" android:textColor="@color/settings_summary" android:id="@id/level_m1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_m1" style="@style/fixed_camera_02" />
+                        <TextView android:textSize="@dimen/degree_text_size" android:textColor="@color/settings_summary" android:id="@id/level_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_0" style="@style/fixed_camera_02" />
+                        <TextView android:textSize="@dimen/degree_text_size" android:textColor="@color/settings_summary" android:id="@id/level_p1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_p1" style="@style/fixed_camera_02" />
+                        <TextView android:textSize="@dimen/degree_text_size" android:textColor="@color/settings_summary" android:id="@id/level_p2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_p2" android:layout_alignParentRight="true" style="@style/fixed_camera_02" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:id="@id/adjust_bar_touch_receiver" android:layout_width="@dimen/image_property_base_width" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <ImageView android:background="@drawable/common_list_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.htc.lib1.cc.widget.HtcIconButton android:id="@id/button_plus" android:layout_width="@dimen/scalemeter_add_button_width" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/manual_capture_background" android:background="@drawable/common_dialogbox_full_dark" android:layout_width="@dimen/manual_capture_background_width" android:layout_height="@dimen/manual_capture_background_height" android:layout_marginBottom="@dimen/manual_capture_button_container_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/manual_buttons_container" android:layout_width="@dimen/manual_capture_background_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/manual_capture_button_container_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.htc.camera.manualcapture.WBToggleButton android:id="@id/wb_toggle_button" android:layout_width="@dimen/manual_capture_button_width" android:layout_height="fill_parent" />
+        <View android:background="@color/manual_button_divider_background" android:layout_width="@dimen/manual_capture_button_divider_width" android:layout_height="@dimen/manual_capture_button_divider_height" android:layout_marginBottom="@dimen/manual_capture_button_divider_margin_bottom" />
+        <com.htc.camera.manualcapture.ExposureToggleButton android:id="@id/exposure_toggle_button" android:layout_width="@dimen/manual_capture_button_width" android:layout_height="fill_parent" />
+        <View android:background="@color/manual_button_divider_background" android:layout_width="@dimen/manual_capture_button_divider_width" android:layout_height="@dimen/manual_capture_button_divider_height" android:layout_marginBottom="@dimen/manual_capture_button_divider_margin_bottom" />
+        <com.htc.camera.manualcapture.ISOToggleButton android:id="@id/iso_toggle_button" android:layout_width="@dimen/manual_capture_button_width" android:layout_height="fill_parent" />
+        <View android:background="@color/manual_button_divider_background" android:layout_width="@dimen/manual_capture_button_divider_width" android:layout_height="@dimen/manual_capture_button_divider_height" android:layout_marginBottom="@dimen/manual_capture_button_divider_margin_bottom" />
+        <com.htc.camera.manualcapture.ShutterToggleButton android:id="@id/shutter_toggle_button" android:layout_width="@dimen/manual_capture_button_width" android:layout_height="fill_parent" />
+        <View android:background="@color/manual_button_divider_background" android:layout_width="@dimen/manual_capture_button_divider_width" android:layout_height="@dimen/manual_capture_button_divider_height" android:layout_marginBottom="@dimen/manual_capture_button_divider_margin_bottom" />
+        <com.htc.camera.manualcapture.FocusToggleButton android:id="@id/focus_toggle_button" android:layout_width="@dimen/manual_capture_button_width" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

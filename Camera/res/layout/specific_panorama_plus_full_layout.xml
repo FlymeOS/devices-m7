@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/panorama_plus_arrows_container" android:layout_width="@dimen/panoramaplus_arrows_container_width" android:layout_height="@dimen/panoramaplus_arrows_container_height" android:layout_centerInParent="true">
+        <ImageView android:id="@id/panorama_plus_left_arrow" android:visibility="gone" android:layout_width="@dimen/panoramaplus_arrows_width" android:layout_height="@dimen/panoramaplus_arrows_width" android:src="@drawable/panorama_left_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:scaleX="0.8" android:scaleY="0.8" />
+        <ImageView android:id="@id/panorama_plus_top_arrow" android:visibility="gone" android:layout_width="@dimen/panoramaplus_arrows_width" android:layout_height="@dimen/panoramaplus_arrows_width" android:src="@drawable/panorama_left_arrow" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:scaleX="0.8" android:scaleY="0.8" android:rotation="90.0" />
+        <ImageView android:id="@id/panorama_plus_right_arrow" android:visibility="gone" android:layout_width="@dimen/panoramaplus_arrows_width" android:layout_height="@dimen/panoramaplus_arrows_width" android:src="@drawable/panorama_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="0.8" android:scaleY="0.8" />
+        <ImageView android:id="@id/panorama_plus_bottom_arrow" android:visibility="gone" android:layout_width="@dimen/panoramaplus_arrows_width" android:layout_height="@dimen/panoramaplus_arrows_width" android:src="@drawable/panorama_right_arrow" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:scaleX="0.8" android:scaleY="0.8" android:rotation="90.0" />
+    </RelativeLayout>
+    <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/panorama_plus_review_image_container" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/panorama_plus_review_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/thumb_item_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cc="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/thumb_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/check_box_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.htc.lib1.cc.widget.HtcCheckBox android:id="@id/check_box" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" cc:backgroundMode="dark" />
+        </com.htc.camera.rotate.RotateRelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

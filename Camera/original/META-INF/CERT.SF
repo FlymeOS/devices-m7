@@ -1,0 +1,2779 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: mdoWv6x8PLt/ar8z7o5gAYRDYF4=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_32.png
+SHA1-Digest-Manifest: DVFSS/IyyvaBIUQKXG/ovB6MJs8=
+
+Name: res/drawable-xxhdpi/common_circle_pressed.png
+SHA1-Digest-Manifest: zJDFpL1u/SBoByk3t5FfUEKuzsI=
+
+Name: HtcLib3-HtcFingerprint.properties
+SHA1-Digest-Manifest: BU1TJzCAh0f4F3eQ+BirV/fck4k=
+
+Name: res/drawable/htcprogress_themeseven_category_two.xml
+SHA1-Digest-Manifest: C3Kh0f6av6jrVh+/v/loCOWl+6Y=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_07.png
+SHA1-Digest-Manifest: rvMFCr4ilJ3VIvViVpynRmIAoKQ=
+
+Name: res/anim/scale_grow_fade_in_from_bottom_west.xml
+SHA1-Digest-Manifest: fTt2clJmFUsI/vVqygnKbULhb5s=
+
+Name: res/drawable/htcprogress_full_themesix_category_four.xml
+SHA1-Digest-Manifest: CldUvME7lYCy0QKrGl5w6jLg/Zg=
+
+Name: res/drawable/common_list_item_vertical_divider.xml
+SHA1-Digest-Manifest: oLwreq01NL5BugJsG8QFOI6mC+o=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_04.png
+SHA1-Digest-Manifest: 3EBJwtzdgo7zRkhgidiPsDoErh4=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_04.png
+SHA1-Digest-Manifest: 2aoXQoXN4Gohp8xxy1haWq6J92w=
+
+Name: res/layout/seekbar_dialog.xml
+SHA1-Digest-Manifest: YOfjAlPHyS9kPoTfLcYlSNcun2A=
+
+Name: res/drawable/htcprogress_themeone.xml
+SHA1-Digest-Manifest: Dr1u2z2gtb7Ea0G2CwKyS1cz8Nw=
+
+Name: res/drawable-xxhdpi/camera_tips_panorama_plus.png
+SHA1-Digest-Manifest: +v8uDtV1Tm8ouJcr9zkxb/J6bzw=
+
+Name: res/layout/timer_table2.xml
+SHA1-Digest-Manifest: Ek8NyM49jUwDog7l0yuv1Ps1XYs=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_nash.png
+SHA1-Digest-Manifest: wUcq485BRMhdPiGe+6/tUnD4jto=
+
+Name: res/xml/ab_primary_pulldown.xml
+SHA1-Digest-Manifest: RCR7b40q/iH0oraoAYY5BoYc2M4=
+
+Name: res/anim/scale_grow_fade_in_west.xml
+SHA1-Digest-Manifest: hvS6Ezst/dMnmJJfnAFpKtnJgGE=
+
+Name: res/layout-nodpi/htc_list_item_divier.xml
+SHA1-Digest-Manifest: 8DsRbV1Hv6gwXDyWVKup3NasL9o=
+
+Name: res/drawable/htcprogress_full_category_two.xml
+SHA1-Digest-Manifest: 3Hv+z9Q9PAyeYZbH4+3iqbvNqVE=
+
+Name: res/drawable-xxhdpi/common_delete_on.png
+SHA1-Digest-Manifest: 4uHQJXVZbSPe43U1KRrn/uFCA/g=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_subtract_0_5.png
+SHA1-Digest-Manifest: wZL7ScJCCaT6hoVEwxEBlPc18N8=
+
+Name: res/drawable-xxhdpi/icon_launcher_camera.png
+SHA1-Digest-Manifest: D7xQAkcJDr7vs8SGwesnD1bmETs=
+
+Name: res/layout/wizard_radio_list_activity.xml
+SHA1-Digest-Manifest: uQ+abyW3A8WvSJZmDm6ZK4gNHg4=
+
+Name: res/drawable-xxhdpi/common_view_more_rest.png
+SHA1-Digest-Manifest: iaB7xAsgEtLXWDqqnFSCL2QaA0s=
+
+Name: res/drawable/htcprogress_b_category_four.xml
+SHA1-Digest-Manifest: 3DZOOYPPJ8yInPevn11i6paTDYk=
+
+Name: res/drawable-xxhdpi/common_b_inputfield_rest.9.png
+SHA1-Digest-Manifest: 21o3aZlVm9Jnta7FHlex/KHdstQ=
+
+Name: res/drawable-xxhdpi/automotive_common_circle_pressed.png
+SHA1-Digest-Manifest: fn8EGAP0ZeWntpYNh1hEeOTB2NQ=
+
+Name: res/drawable/camera_menu_shape_circle_solid.xml
+SHA1-Digest-Manifest: MkSm4wKatbzgdt5oScVtzSek8VU=
+
+Name: res/color/opt_date_picker_selector.xml
+SHA1-Digest-Manifest: Jk6xNgCcUnR1/Ekka1DNA2IY2Vk=
+
+Name: res/drawable-xxhdpi/automotive_common_checkbox_on.png
+SHA1-Digest-Manifest: t49FL0SiYFGIm2mzBMvF7ni5HwY=
+
+Name: res/drawable/htcprogress_themefour_category_four.xml
+SHA1-Digest-Manifest: 2KFUkeZY13B0dr5xY5up109okfM=
+
+Name: res/drawable-xxhdpi/camera_btn_base.png
+SHA1-Digest-Manifest: 7UbEIHlCeTJeQ4BINziYMEuqVO4=
+
+Name: res/drawable/htcprogress_b_themetwo_category_three.xml
+SHA1-Digest-Manifest: sERfXT/iXGhxw0BFUajf59Ouf2Q=
+
+Name: res/drawable-xxhdpi/icon_btn_edit_dark.png
+SHA1-Digest-Manifest: upzvEhFyvliCwwFLHTSfcw2NLA8=
+
+Name: res/anim/scale_shrink_fade_out_left.xml
+SHA1-Digest-Manifest: 72y9OAfDlIZqJsYI5L5GXbndhPE=
+
+Name: res/layout/specific_human_joint_layout.xml
+SHA1-Digest-Manifest: 8SXLWpzNHUBAyVsOhPfdTe31Uwo=
+
+Name: res/drawable-xxhdpi/common_dialogbox_center_dark.9.png
+SHA1-Digest-Manifest: 8EkvKNr0y68x2oYJWTMfwKO/TGI=
+
+Name: res/layout/opt_date_picker_view_animator.xml
+SHA1-Digest-Manifest: cQDjYHHda5IOgkbq6TI/oiNo4AI=
+
+Name: res/drawable/htcprogress_themenine_category_one.xml
+SHA1-Digest-Manifest: P06z0frIGLMCqFcT+Nu+U+Zbyak=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_02.png
+SHA1-Digest-Manifest: vo/ZWmrd1cjXVltiGOtfXmnViDk=
+
+Name: res/layout-mdpi/simple_list_item_1.xml
+SHA1-Digest-Manifest: 6dTwPVRhfGcRxtFQlTmuwFxaAU8=
+
+Name: res/drawable-xxhdpi/common_dialogbox_bottom_dark.9.png
+SHA1-Digest-Manifest: YtH40irThh9V3RwCN5avDb+iFcs=
+
+Name: res/drawable-xxhdpi/common_popupmenu.9.png
+SHA1-Digest-Manifest: wWuYHrldiyFSwvgxxxA7/ICrx4s=
+
+Name: res/drawable/htcprogress_b_themeseven_category_one.xml
+SHA1-Digest-Manifest: WAs4Q2GNr227p8ph96xA7frSm/M=
+
+Name: res/layout/specific_phone_call_popup_layout.xml
+SHA1-Digest-Manifest: QC4BD91Q/sxMKYLUK2QJBBEDoRI=
+
+Name: res/layout/specific_navigation_bar_layout.xml
+SHA1-Digest-Manifest: SVtbQezWSkynUsP04uQUia/coqo=
+
+Name: res/layout/editing_title_button.xml
+SHA1-Digest-Manifest: 7f6GAtGnZskcGgB/2nNR21l1l3w=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_negitive.png
+SHA1-Digest-Manifest: TvGBNElPFSJg7BuLNfVoQeLIItw=
+
+Name: res/layout/layout_quicktips.xml
+SHA1-Digest-Manifest: vQJAX+fCJtxnpdr7t0t0+3n3ScY=
+
+Name: res/xml/ab_follow_counter_baseline_automotive.xml
+SHA1-Digest-Manifest: XKbh7jXPY9zWP7DWBwB2eBs45XQ=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_11.png
+SHA1-Digest-Manifest: RXnmDcIUUiJinMwlQZDZ22ToJMA=
+
+Name: res/drawable-xxhdpi/icon_btn_done_dark.png
+SHA1-Digest-Manifest: RZnwBVyJWQPLa77rUW7MkckMLtc=
+
+Name: res/drawable-xxhdpi/camera_btn_record_base.png
+SHA1-Digest-Manifest: Ntqm5YVS7nxlDW7PI2GE9oxbpCM=
+
+Name: res/layout/main_second_layout.xml
+SHA1-Digest-Manifest: 5ifLvAVePvK4w656QV14Xmql+1c=
+
+Name: res/drawable/common_list_item_background_activated.xml
+SHA1-Digest-Manifest: zHl3fSne7A0RakXEBgIHTl4uU4I=
+
+Name: res/layout/specific_progress_dialog_layout.xml
+SHA1-Digest-Manifest: ti8I8gE1iVBA1I/H0yfkKYMd+RE=
+
+Name: res/drawable-xxhdpi/camera_icon_default_base.png
+SHA1-Digest-Manifest: 0v8Sd4mR5V3AMfQCOthq5msuNv0=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_01.png
+SHA1-Digest-Manifest: CZiCLLBfqqTQeeLshdkzyRFeS54=
+
+Name: res/color/list_body_read.xml
+SHA1-Digest-Manifest: xMnWoveFqP9WO5cHKPXlB+CHGLc=
+
+Name: res/drawable-xxhdpi/icon_btn_camcorder_dark_xl.png
+SHA1-Digest-Manifest: djeOVmWuSdQld+viZXNVwo7+3zQ=
+
+Name: res/layout/specific_lockscreen_buttonpanel_4.xml
+SHA1-Digest-Manifest: sNsiD6QTpo4Xg0bxP+AVGKG19q4=
+
+Name: res/drawable/htcthumb_b.xml
+SHA1-Digest-Manifest: Ga+1JWg1ph6feFzqT+jBSWM1UGA=
+
+Name: res/menu/common_gallery_single_photo_menu.xml
+SHA1-Digest-Manifest: SeiZM/TcWRyyLAB8tgpH2x3I7bU=
+
+Name: res/drawable-xxhdpi/automotive_common_dialogbox_bottom_medium.9.
+ png
+SHA1-Digest-Manifest: AHzh6UerHPvBvRbvNtcANKJqgbY=
+
+Name: res/layout/action_text.xml
+SHA1-Digest-Manifest: Y4J4HTt/rR9y/1fKxxTL4zCezqQ=
+
+Name: res/layout/htc_date_picker_dialog.xml
+SHA1-Digest-Manifest: Bznnz7Ab36hNPONCvINEezjjV1I=
+
+Name: res/drawable-xxhdpi/camera_grid_land.9.png
+SHA1-Digest-Manifest: YJurYV3NXQ8Gkbc1lQvjD3FCRdM=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_add_0_5.png
+SHA1-Digest-Manifest: OcRDS2b3Yi7NqbXA9GBRvHqdkQs=
+
+Name: res/anim/scale_shrink_fade_out_center.xml
+SHA1-Digest-Manifest: WMtdinTeRfKLodi4tGC5OH4BZgw=
+
+Name: res/layout-hdpi/simple_list_item_1.xml
+SHA1-Digest-Manifest: 0aH6FbTnGXF+AYs05rpH/W9gVsY=
+
+Name: res/anim/rightmost.xml
+SHA1-Digest-Manifest: Shm1utBHwZywg99Vb9/WAivZLNg=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_05.png
+SHA1-Digest-Manifest: R6HSLkzm8L6QfrLhoOIJFzo/v2E=
+
+Name: res/drawable/htcprogress_full_themeeight_category_one.xml
+SHA1-Digest-Manifest: 0S8jyt1f0hvZrH5WSqAD4ZIiu60=
+
+Name: res/layout/specific_cameratype_menu_item.xml
+SHA1-Digest-Manifest: u+LKs79jCCC38zAohROei9iK+Ws=
+
+Name: res/layout/specific_description_layout.xml
+SHA1-Digest-Manifest: idsN843Js+sSvX5eSpXZ2iHKmsQ=
+
+Name: res/drawable-xxhdpi/common_dialogbox_bottom_medium.9.png
+SHA1-Digest-Manifest: CdRLlCAa4mKNe5/zTndaOIjIgKw=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_02.png
+SHA1-Digest-Manifest: 0nd67mdkZ64bx66/kUzBSh62nuk=
+
+Name: res/raw/managecam_tap.ogg
+SHA1-Digest-Manifest: 6UkZhszVN4ImOjXJzGbSm8ZrvcY=
+
+Name: res/drawable/htcprogress_category_two.xml
+SHA1-Digest-Manifest: 5iRDuGQC3pOg5ywvtbPpEldNJZk=
+
+Name: res/layout/action_itemview.xml
+SHA1-Digest-Manifest: vkDPCKTzPIpqWZnAP3WplRX8yRY=
+
+Name: res/drawable-xxhdpi/icon_btn_settings_dark_l.png
+SHA1-Digest-Manifest: 9XFBqgv9iQ0NyymeV8CB3k3On6Y=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_15.png
+SHA1-Digest-Manifest: MhtCY0hHn0MBL3jBzQHogH/psq8=
+
+Name: res/drawable-xxhdpi/zero_dummy_asset.9.png
+SHA1-Digest-Manifest: jmcb/zd68JryRBHPtc/c0zLtg5A=
+
+Name: res/drawable/htcprogress_b_themenine.xml
+SHA1-Digest-Manifest: bBgrP584hpMlMSyF7DL6dP8qVTY=
+
+Name: res/drawable/htcprogress_full_category_three.xml
+SHA1-Digest-Manifest: J8s++gRlUbmxTaq1P/NxQj+ygvE=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_16.png
+SHA1-Digest-Manifest: C9cOCIhV1rknHX+ISse+8dUmOyk=
+
+Name: HtcLib3-HtcWrapandroidcontentpm.properties
+SHA1-Digest-Manifest: DY6iD1NiyT6G53aaAxDWr8JO5cQ=
+
+Name: res/drawable/htcprogress_full_themenine_category_two.xml
+SHA1-Digest-Manifest: RqE0TZQIcmDqh1dsOrAcOkkrEj0=
+
+Name: res/drawable-xxhdpi/common_footer.9.png
+SHA1-Digest-Manifest: EcTQk7FpyZswZCdFPLPpJjI2YwI=
+
+Name: res/layout/specific_split_video_full_layout.xml
+SHA1-Digest-Manifest: 33WWK8VH9nBECJtSrMu5O8EekOg=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_06.png
+SHA1-Digest-Manifest: Cj0naA4lfdyKevDjGFe0KWXMCUE=
+
+Name: res/drawable-xxhdpi/icon_btn_one_cam_dark_xxl.png
+SHA1-Digest-Manifest: 8gOI+CtNsPB1LfetHxbdGzIpyb0=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_11.png
+SHA1-Digest-Manifest: YjFQQycueIapH3/CqOEBuORa1qE=
+
+Name: res/anim/slide_in_right.xml
+SHA1-Digest-Manifest: mhKIwSetpwhpnpIcuZS8ECP0qyY=
+
+Name: res/drawable-xxhdpi/icon_indicator_camcorder_hd_l.png
+SHA1-Digest-Manifest: BQAW+FThe8Vs54D8k9Bz2TQFDxY=
+
+Name: res/drawable-xxhdpi/common_b_div_footer.9.png
+SHA1-Digest-Manifest: kiLdutTz1EyaIhXC1kay8eL5+tA=
+
+Name: res/layout/main_zoe_layout.xml
+SHA1-Digest-Manifest: 2Jq7ghoI5fID3sSsDtA8Cduq/I4=
+
+Name: res/drawable-xxhdpi/common_expand_small.png
+SHA1-Digest-Manifest: +dD4b0UWsx6C1COtvclx+vSydkA=
+
+Name: res/drawable-xxhdpi/camera_photobooth_indicator_off.png
+SHA1-Digest-Manifest: yNTuKy5qgKtEyAFqYp3vj9yPgqQ=
+
+Name: res/drawable/grid_selector_light.xml
+SHA1-Digest-Manifest: xspotl/30EdHHhaan1Gidc09gr0=
+
+Name: res/drawable/htcprogress_themefour_category_two.xml
+SHA1-Digest-Manifest: lUM/Waj+6cf0W6h2Ipx7qEmk7ig=
+
+Name: res/drawable/htcprogress_themethree_category_four.xml
+SHA1-Digest-Manifest: n0TneCoItQjxl9NQ1HZcUvcueCw=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_shutter_n_stop.png
+SHA1-Digest-Manifest: 30Zw5aoxnoJYK5OtrXerrmbFh9w=
+
+Name: res/layout/specific_camera_menu_layout.xml
+SHA1-Digest-Manifest: YLtVO/MTy8LGgvk2bPAI0aVPF2M=
+
+Name: res/drawable-xxhdpi/icon_btn_selfie_dark_xxl.png
+SHA1-Digest-Manifest: lxoelSItSx1iMMrZjwRA0K+ojV4=
+
+Name: res/layout/specific_smile_capture_hint_layout.xml
+SHA1-Digest-Manifest: SXqnUxkd1KZrqVM23vnPiQi0IEo=
+
+Name: res/drawable/common_list_item_background.xml
+SHA1-Digest-Manifest: UKav6ia8cljbKi9MT5x1zMe5Tuc=
+
+Name: res/drawable/htcprogress_b_themetwo_category_four.xml
+SHA1-Digest-Manifest: r7eRxiJaptlkW1JtTqetJb+huas=
+
+Name: res/drawable/htcprogress_full_themetwo_category_two.xml
+SHA1-Digest-Manifest: jk1LKM7s+zI5ZJU+PVC9hiQqv0I=
+
+Name: res/drawable/htcprogress_full_themenine_category_three.xml
+SHA1-Digest-Manifest: mGm6Kkoqp/go9rC5Qr+v6bYQNsY=
+
+Name: res/layout/preference_header_item.xml
+SHA1-Digest-Manifest: 5NALckqHvjY9CzuIxFJ3xn/vslk=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_15.png
+SHA1-Digest-Manifest: rU+wWva8LQvZUzTcpG9V6NvsV94=
+
+Name: res/layout/htc_activity_list.xml
+SHA1-Digest-Manifest: pxql2Og1iTIxvX3YrvPTJttJTOI=
+
+Name: res/layout/opt_year_label_text_view.xml
+SHA1-Digest-Manifest: HaQ02zPy27oQYd6ZrPLDkhB92LY=
+
+Name: res/drawable-xxhdpi/tips_arrow_bottom_right.png
+SHA1-Digest-Manifest: d2fk6eQNeqvQbRSo02gb8YKTNnk=
+
+Name: res/drawable/htcprogress_b_themethree_category_four.xml
+SHA1-Digest-Manifest: kovXnYj5Hx+rcD8bcNcvLNwF9uc=
+
+Name: res/drawable-xxhdpi/automotive_common_delete_on.png
+SHA1-Digest-Manifest: PlMoQKP+jOVNY2HdzUffOW8rntU=
+
+Name: res/drawable-xxhdpi/camera_switch_land_patch.9.png
+SHA1-Digest-Manifest: q9BzUbz2PcpmoQIzwtJoAvTlwRk=
+
+Name: res/drawable/htcprogress_full_themenine_category_one.xml
+SHA1-Digest-Manifest: +QvEilh9nD4wRmEGW3Qh3exsypU=
+
+Name: res/drawable/htcprogress_full_themenine_category_four.xml
+SHA1-Digest-Manifest: 7DAKjpeVXI3JR3zc+gcIBLwDpvs=
+
+Name: res/drawable-xxhdpi/common_app_bkg_down_full.9.png
+SHA1-Digest-Manifest: c9dVLlMV2aNXXP05T73r+u+3bgg=
+
+Name: res/layout/specific_scalemeter_item.xml
+SHA1-Digest-Manifest: LkWpmOXGlOGkGCiWiCfhqdkJAoc=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder_sec_15.png
+SHA1-Digest-Manifest: gYgPCLGXoGqbY+FzGsFWTe08yAI=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_400.png
+SHA1-Digest-Manifest: 8kIqO7dV4B7t3jh53APrrHAOG9M=
+
+Name: res/drawable-xxhdpi/camera_btn_base_s.png
+SHA1-Digest-Manifest: 94xR7RfDqUcu7/cAZ+NRtVul+fA=
+
+Name: res/drawable-xxhdpi/tips_arrow_top_right.png
+SHA1-Digest-Manifest: XnBbHZI3YAlOFc+aDc/BAK8pefs=
+
+Name: res/raw/camera_hdr.ogg
+SHA1-Digest-Manifest: KAtPCLucuie8A4uANHkondH2xwo=
+
+Name: res/drawable/popupwindow_bubbledrawable.xml
+SHA1-Digest-Manifest: MM1stGdWwGIc2SJW1DhuFNSkGSc=
+
+Name: res/drawable-xxhdpi/tips_arrow_down.png
+SHA1-Digest-Manifest: GLScqUeuYhE6zXC3czv9fdYMQpU=
+
+Name: res/layout/dialog_checkpanel_automotive.xml
+SHA1-Digest-Manifest: dTCseRdGuXsDF6xHxrPS6O4RDu0=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_photo_booth_01.png
+SHA1-Digest-Manifest: 3UCKXYy8k7xMv5WLaSVbWWhWwOs=
+
+Name: res/drawable-xxhdpi/icon_default_camera_xxl.jpg
+SHA1-Digest-Manifest: nc2ulZA3FA8Z2HBpwdszldwq2Vw=
+
+Name: res/drawable/htcprogress_b_themetwo_category_one.xml
+SHA1-Digest-Manifest: Z6G345IEJSaUKcT28PzoXzeLjlI=
+
+Name: res/drawable-xxhdpi/common_updates_light.png
+SHA1-Digest-Manifest: n8pwtdKRGA042D7vNMHKi8sza1U=
+
+Name: res/layout/htc_action_mode_view.xml
+SHA1-Digest-Manifest: BG8jK4YirVb6JSyyrVp1dKE41dA=
+
+Name: res/drawable/htcprogress_themeeight_category_three.xml
+SHA1-Digest-Manifest: fBajV6gvqY9InuxdndJK1phmVPU=
+
+Name: res/drawable-xxhdpi/tips_arrow_up.png
+SHA1-Digest-Manifest: lhrGiXqC1FqN4K5OPdIRRMMiRPw=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_08.png
+SHA1-Digest-Manifest: SVypNs1yqKy4GX6EDpimHl6CtSI=
+
+Name: res/drawable/htcprogress_b_category_one.xml
+SHA1-Digest-Manifest: DLIRdpencpTRiy34a6fuskn+5ic=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest-Manifest: 0oRDYl4wUOm0bMq8eVLJG09zkTg=
+
+Name: res/drawable-xxhdpi/automotive_common_app_bkg_top_src.9.png
+SHA1-Digest-Manifest: fffh18/325UnttB0slrU80y80oA=
+
+Name: res/drawable-xxhdpi/common_photo_frame_quick_contact_mask.9.png
+SHA1-Digest-Manifest: ESJFjXpfNywKdj4qQl9/wWM/cSI=
+
+Name: res/layout/specific_burst_thumb_item.xml
+SHA1-Digest-Manifest: by2cwLI7ngyW9NFurxkAHw7s3FY=
+
+Name: res/drawable/htcprogress_full_themethree_category_two.xml
+SHA1-Digest-Manifest: jfuxCPl4zvw2pR8siS470oK/wxo=
+
+Name: res/layout/specific_panorama_layout_normal.xml
+SHA1-Digest-Manifest: ZjaC1/ZBO2fcYJwsGLlE8X+jLWA=
+
+Name: res/color/shortcut_label.xml
+SHA1-Digest-Manifest: WyiIe+V5up/8IPmIhbuRzQHiU7k=
+
+Name: res/drawable-xxhdpi/common_scroller_grip.png
+SHA1-Digest-Manifest: UdtSsEvoDOYADZFLFZLZy47b5AY=
+
+Name: res/layout/specific_image_property_item.xml
+SHA1-Digest-Manifest: RAGPY4bhqRqcTdwhewW+5+BuUZM=
+
+Name: res/anim/camera_right_out.xml
+SHA1-Digest-Manifest: E7aRWCoMwWvsYtJio85LQNHPhj0=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_10.png
+SHA1-Digest-Manifest: Ij+7GDMldFGe6Y4vyxjJMcJ7nSs=
+
+Name: res/drawable-xxhdpi/icon_indicator_smile_l.png
+SHA1-Digest-Manifest: MS7/PIvqUZhTgY2fTkPXC098WcU=
+
+Name: res/xml/ab_arrow_follow_baseline.xml
+SHA1-Digest-Manifest: 5Wgwgbo9Nd+5K7/tB4qmFdYgjO0=
+
+Name: res/drawable/htcprogress_themeone_category_four.xml
+SHA1-Digest-Manifest: AjfuYFA2w2gACBjsbqcf/zu6wp8=
+
+Name: res/anim/mf_fade_in.xml
+SHA1-Digest-Manifest: zcR/WSvmJeXojtTT1BxOwbvuF3Y=
+
+Name: res/drawable-xxhdpi/icon_btn_camera_dark_xl.png
+SHA1-Digest-Manifest: /cAbxIV8Ma2zLJSiYAd/hLtJsdQ=
+
+Name: res/drawable-xxhdpi/camera_btn_indicator_timmer_10.png
+SHA1-Digest-Manifest: 4XCCTer0M68MlxCFXdW9PMgOnk4=
+
+Name: res/layout/specific_panorama_plus_full_layout.xml
+SHA1-Digest-Manifest: 2d6rIzkdZs2H1YcSeZI2s2BRAiM=
+
+Name: res/drawable/htcspinner.xml
+SHA1-Digest-Manifest: zqMXfhMKpOb2/edaWI3DlJKRH28=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest-Manifest: HJWVdRCXqdgpLGGDT6Uzb5hkqQE=
+
+Name: res/layout-nodpi/htc_widget_taskbar.xml
+SHA1-Digest-Manifest: 9JGwbmEp1RoeVutYY+LUOWH6iY8=
+
+Name: res/raw/rccountdown.ogg
+SHA1-Digest-Manifest: ql998074CYI0nJ0ZXfs2HYPneFk=
+
+Name: res/layout/specific_popup_menu_hint_layout.xml
+SHA1-Digest-Manifest: aLQ/kB8Tbhg5EtJx1l51lisN/j0=
+
+Name: res/layout/list_content.xml
+SHA1-Digest-Manifest: OFl45YFmRxmjatWOjG6y0BckyA4=
+
+Name: res/drawable-xxhdpi/camera_btn_indicator_timmer_2.png
+SHA1-Digest-Manifest: hZaqJ36PBnltKef8xPNwx2+wgCs=
+
+Name: res/drawable/htcprogress_b_themefour_category_three.xml
+SHA1-Digest-Manifest: 1cgt2OgC9W4RETnbGsK414zG8nc=
+
+Name: res/drawable-xxhdpi/icon_btn_one_cam_dark_xl.png
+SHA1-Digest-Manifest: hH67BOQTrRsHlNp9XvhnqV6pLbw=
+
+Name: res/layout/common_gallery_mainview_device_glance.xml
+SHA1-Digest-Manifest: nOXJxzSp23A0YaZgMCVLcoansJA=
+
+Name: res/drawable/htcprogress_full_themetwo_category_three.xml
+SHA1-Digest-Manifest: iN0dq0ZuvtHeYbWUMQ+pW895TMQ=
+
+Name: res/drawable-xxhdpi/camera_icon_sparkles_bar_up.png
+SHA1-Digest-Manifest: CbyV7PRS/QDOqRTAQXVERiny5u0=
+
+Name: res/drawable/htcprogress_b_themeone_category_four.xml
+SHA1-Digest-Manifest: VbjpRVwpbz9ZknHlf1ATYSaEK1E=
+
+Name: res/drawable/htcprogress_full_themeeight_category_four.xml
+SHA1-Digest-Manifest: jrS1a4FZxqe3+1poCZ6EZ6/WZEc=
+
+Name: res/drawable-xxhdpi/automotive_common_b_circle_outer.png
+SHA1-Digest-Manifest: CSgOoMKvwSxnGwmIVGgHQWaVWSk=
+
+Name: res/layout/ontop_event_items.xml
+SHA1-Digest-Manifest: SYcCZMSWmvH6gFOJMV/IPyUpyV0=
+
+Name: res/drawable-xxhdpi/common_list_divider.9.png
+SHA1-Digest-Manifest: ZxyAWoj36tx2Tlrqi99FUsWBU9g=
+
+Name: res/drawable-xxhdpi/automotive_common_dialogbox_bottom_dark.9.pn
+ g
+SHA1-Digest-Manifest: h+E1FRllou8HnlsOjtzIprmWkI8=
+
+Name: res/drawable/htcprogress_b_themefour_category_one.xml
+SHA1-Digest-Manifest: vPJycJnZMhWFKybd9kjZEuvMRWw=
+
+Name: res/color/bright_text_dark_focused.xml
+SHA1-Digest-Manifest: VEtDEuUQO43xl/WcvfUqen1CPPg=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder.png
+SHA1-Digest-Manifest: q5Uv0MkpL58/56o4rv/nyuwMHv8=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_03.png
+SHA1-Digest-Manifest: DUOFPWZ/X8VPoutVv7nwI+esJfQ=
+
+Name: res/drawable/htcprogress_b_themenine_category_four.xml
+SHA1-Digest-Manifest: Xml9ew2mzAeNmxrEU5H1SouZU6k=
+
+Name: res/drawable-xxhdpi/camera_indicator_icon_self_timmer_10_l.png
+SHA1-Digest-Manifest: 8kA8E3u+kX8l+XqQ5QoXUhJrh/A=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_macro.png
+SHA1-Digest-Manifest: L18kzifT6vsIDeh6BDcePDwvMeA=
+
+Name: res/layout/main_preview_filter_layout.xml
+SHA1-Digest-Manifest: LC5SEj5rHOOJE9v12tXgHZ9DwJE=
+
+Name: res/layout/htc_list_item_social_network.xml
+SHA1-Digest-Manifest: OC15wsrgTX91TfNbuinkpecJm38=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder_sec_6.png
+SHA1-Digest-Manifest: lRZee8F58bvAEQkZu/aRbdkqfVU=
+
+Name: res/drawable/htcprogress_themefive_category_two.xml
+SHA1-Digest-Manifest: g8fMYSMiiTYIdxAJBaBcmgh47Bc=
+
+Name: res/drawable/htcprogress_full_themetwo.xml
+SHA1-Digest-Manifest: 0X18hqxctb/EUfmOfjjUSkWZwYk=
+
+Name: res/raw/burst_click_short_5_plus.ogg
+SHA1-Digest-Manifest: zvHaZaO+qbq7P4zsTHL9XunAC9c=
+
+Name: res/drawable-xxhdpi/automotive_common_collect_rest.png
+SHA1-Digest-Manifest: K7YolWD3V8nQo39QAXaT3A1Pn3k=
+
+Name: res/layout/htc_tab_content.xml
+SHA1-Digest-Manifest: OILgq9D5RL1AO+lu3u64pZhubqY=
+
+Name: res/drawable/htcprogress_b_themeeight_category_four.xml
+SHA1-Digest-Manifest: sQu+Fic7ZfWitmr+J71sqP+I3Qs=
+
+Name: res/layout-land/wizard_button_activity.xml
+SHA1-Digest-Manifest: hv305T1q31G+dvqNsQFNxEYaCvw=
+
+Name: res/anim/scale_shrink_fade_out_east.xml
+SHA1-Digest-Manifest: ONEKtRRELcHYIwQ7IIKkoGIkdu0=
+
+Name: res/color/list_tab.xml
+SHA1-Digest-Manifest: MPiN1CcdeDdTK8ZwU6A4dw4iIbc=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_200.png
+SHA1-Digest-Manifest: vU9fP2ewT7iXv8xa5y3yVWQE8Bs=
+
+Name: res/drawable/htcprogress_b_themeseven_category_three.xml
+SHA1-Digest-Manifest: +/AnMU5OF2+jwus/E4kMWbG9K0c=
+
+Name: res/raw/rccountdownend.ogg
+SHA1-Digest-Manifest: 6/9Abi5/0Ik/lBlBOBEO0pHxwk8=
+
+Name: res/drawable/htcprogress_full_themeeight_category_two.xml
+SHA1-Digest-Manifest: de/ifJsQ3ksagEyNvnBIh2ybz5w=
+
+Name: res/drawable-xxhdpi/common_popupmenu_arrow.png
+SHA1-Digest-Manifest: UBD0J95NdIE27t+/4zTWxT1TQ5g=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_14.png
+SHA1-Digest-Manifest: Uk/Axw5h9OQbcG51nWA+Oubtf68=
+
+Name: res/xml/ab_counter_follow_secondary_automotive.xml
+SHA1-Digest-Manifest: ayhWXtagyk0IZzGyGDdQQNctb2U=
+
+Name: res/layout/dialog_listitem.xml
+SHA1-Digest-Manifest: RmRamk9PGyeGO8jPTjP11e0VRq4=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_03.png
+SHA1-Digest-Manifest: Zxtwz2Ip3LtmsuRVrp7LQv+qCcg=
+
+Name: res/xml/ab_counter_follow_primary.xml
+SHA1-Digest-Manifest: VGteNAYCq3NMKBm8KVEdCWjqPdU=
+
+Name: res/drawable/htcprogress_themesix.xml
+SHA1-Digest-Manifest: 5Y5/WSgo/7MU0r+/p1ouvNXQsLE=
+
+Name: res/drawable-xxhdpi/camera_tips_swipe_camera.png
+SHA1-Digest-Manifest: 0tdS3prYIpJzl6WX0viPRXfRp/E=
+
+Name: res/drawable/htcprogress_category_four.xml
+SHA1-Digest-Manifest: KS9J2vVjhXTnnUAh1ylhkAAFW2E=
+
+Name: res/color/b_separator_secondary.xml
+SHA1-Digest-Manifest: BB6mRTvx+i6HC8Yadq/P7pCPQ2s=
+
+Name: res/drawable-xxhdpi/common_div_footer.9.png
+SHA1-Digest-Manifest: Mvtv1XIwd9S49GyI20LRyva8iUo=
+
+Name: res/drawable-xxhdpi/common_feed_gradient.9.png
+SHA1-Digest-Manifest: /8I4hgdDTi0n7sVDHXlItfBobhs=
+
+Name: res/layout/specific_dual_cam_layout.xml
+SHA1-Digest-Manifest: Kix/WhlTL/2io1CtSI5VE8lyCMs=
+
+Name: res/layout/dialog_listitem_automotive.xml
+SHA1-Digest-Manifest: l//VPLi13JTHZN4OmyW1sx9bMxg=
+
+Name: res/layout/alert_dialog_progress.xml
+SHA1-Digest-Manifest: h6u6PJwlhdKBsFFR6yR9E2979zo=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_05.png
+SHA1-Digest-Manifest: lyfutLOp7EQidZUmSOheEA4ssAw=
+
+Name: res/drawable/htcprogress_full_themeone_category_one.xml
+SHA1-Digest-Manifest: o7+a66hIJGoUCCElFCA0cbC9HaQ=
+
+Name: res/drawable-xxhdpi/common_b_collapse.png
+SHA1-Digest-Manifest: iBDhKmj8mxIxKnmX7VGfK+qHi6M=
+
+Name: res/drawable-xxhdpi/common_list_div_top.9.png
+SHA1-Digest-Manifest: rXnM7Q0xux/jFnrEjTJ0tjMxGco=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_plus_1.png
+SHA1-Digest-Manifest: Oq0bAEVOz5eTdwBnuqqSZcLkfYs=
+
+Name: res/drawable/htcprogress_themefive.xml
+SHA1-Digest-Manifest: 0oKuQYDR7do33ur4ytj555XHKBo=
+
+Name: res/drawable/htcprogress_full_themeseven_category_one.xml
+SHA1-Digest-Manifest: 9xM2zbFhboPFNJHYHsciwSpes5w=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_10.png
+SHA1-Digest-Manifest: 8wlbcxKmu3rSC+zWueHNKlaKk00=
+
+Name: res/color/sensetv_title_secondary.xml
+SHA1-Digest-Manifest: lOViIQ1o1FldfFeAKkuD9c6ifJA=
+
+Name: res/color/label_off.xml
+SHA1-Digest-Manifest: NSLgLZ3GmJ3r4UcMg78jbuFlhjs=
+
+Name: res/layout/select_dialog_automotive.xml
+SHA1-Digest-Manifest: 5qKypBYLqT9SsLkEi1EajuIIJuI=
+
+Name: res/drawable-xxhdpi/camera_selfie_patch.9.png
+SHA1-Digest-Manifest: TSIOmx6RaQf+WeS3LxBkJkuGTfM=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_06.png
+SHA1-Digest-Manifest: TsENBSIR5gFEpyUBFAVITUDm/Pg=
+
+Name: res/xml/ab_primary_def_with_secondary.xml
+SHA1-Digest-Manifest: 1Q7mvaBEzm1mlE8RazJu2YrZQpk=
+
+Name: res/color/text_selector.xml
+SHA1-Digest-Manifest: 9ZCX6Sy/DL1XJjDkOlbuN5TwOwY=
+
+Name: res/drawable-xxhdpi/automotive_common_radio_rest_light.png
+SHA1-Digest-Manifest: HCSSz3pdRmCVx4SyrcDVgjpMnss=
+
+Name: res/drawable-xxhdpi/common_dialogbox_top_dark.9.png
+SHA1-Digest-Manifest: osFko1e2HUR8dfKyu2oiE4lNASA=
+
+Name: res/drawable-xxhdpi/effect_button.png
+SHA1-Digest-Manifest: yhp774rexl8xeji5UyxWoi/72Is=
+
+Name: res/raw/fallbackring_htc.ogg
+SHA1-Digest-Manifest: LIMMgYZM+4RmjDhrDMXHGVPlffE=
+
+Name: res/xml/ab_secondary_pulldown.xml
+SHA1-Digest-Manifest: BMiUBdrOku9hygJdwJBVRiYAFAU=
+
+Name: res/drawable-xxhdpi/icon_btn_delete_dark.png
+SHA1-Digest-Manifest: y6yigjCyMjpw239gQ9xbGurBFbw=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_grayscale.png
+SHA1-Digest-Manifest: zSAfcXe7WVY+cmS6abwQVGwIeTA=
+
+Name: res/color/list_primary.xml
+SHA1-Digest-Manifest: PKqrnGk51Jenws0noN50VDqVc1Q=
+
+Name: HtcLib3-HtcWrapandroidos.properties
+SHA1-Digest-Manifest: 4V567mLoXgzINkYzPwjfLRnuVNk=
+
+Name: res/drawable-xxhdpi/common_photo_frame.9.png
+SHA1-Digest-Manifest: 40l5sg7KgKTBEU3ILpcq+fCSBeM=
+
+Name: res/drawable/htcprogress_themeeight.xml
+SHA1-Digest-Manifest: /qJC+WKnqAyEQjsaj5vs3rJ1ELM=
+
+Name: res/drawable-xxhdpi/icon_indicator_self_timmer_2_l.png
+SHA1-Digest-Manifest: acKpndAarAhT+i1gyApEnlrEuhc=
+
+Name: res/color/darklist_secondary.xml
+SHA1-Digest-Manifest: Z8pHNkeY0H9ZS8IMDtC4CU8GGhA=
+
+Name: res/drawable/panorama_right_arrow_slow.xml
+SHA1-Digest-Manifest: dX+M8TFYaqu4vtje1tD+Kdj1DuI=
+
+Name: res/drawable-xxhdpi/camera_icon_synchronous.png
+SHA1-Digest-Manifest: OpHp3PCU8SZToWfo9SGiFFvoVqo=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_setting.png
+SHA1-Digest-Manifest: uOtT7O5B79yMj3KhxRAuE0eDH+4=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_delete.png
+SHA1-Digest-Manifest: DUQvT3vHrHtNQ57meEfR5BpHmCk=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_16.png
+SHA1-Digest-Manifest: X08La3g4UxoSonCldQ4cba+mvUk=
+
+Name: res/drawable-xxhdpi/icon_btn_up_dark_xl.png
+SHA1-Digest-Manifest: YX1pYiOlDz8jERk9aAyQp58y49Y=
+
+Name: res/drawable-xxhdpi/camera_tips_swipe_camera_land.png
+SHA1-Digest-Manifest: 3ZtGfo3RkDEezuBnUdCjjix3L7M=
+
+Name: res/drawable-xxhdpi/icon_btn_people_light.png
+SHA1-Digest-Manifest: 54fM0Ip7yHGirW35W5ws3L1Xwyw=
+
+Name: res/drawable-xxhdpi/icon_category_photo.jpg
+SHA1-Digest-Manifest: IxSA2pB5hte0nV7JmU0jW2qnpGk=
+
+Name: res/drawable-xxhdpi/icon_btn_share_dark.png
+SHA1-Digest-Manifest: WaRPBZIGEsHq40Ad2KdJNX6nutU=
+
+Name: res/color/darklist_primary.xml
+SHA1-Digest-Manifest: Zt1FA/bV3m88pQiYcnDRJor6Ocs=
+
+Name: res/layout-ar/wizard_activity.xml
+SHA1-Digest-Manifest: IQxxN9RmxZz2z/N3L/ZcB56rO40=
+
+Name: res/drawable-xxhdpi/camera_zoom_track_mono.9.png
+SHA1-Digest-Manifest: yrZWbFZu73Y30sqWnZdJ19dv6R4=
+
+Name: res/raw/focused.ogg
+SHA1-Digest-Manifest: Zukb/EN7jofX/MeSgHVLFQ1hTCI=
+
+Name: res/xml/ab_primary_updating_only_one.xml
+SHA1-Digest-Manifest: x1zp0PX46fNaHvh0m61HFzBFb2U=
+
+Name: res/layout/htc_grid_item_image_2text.xml
+SHA1-Digest-Manifest: IMplPByIkKY9g1SP4xNlBLg+IZI=
+
+Name: res/drawable/htcprogress_b_themenine_category_two.xml
+SHA1-Digest-Manifest: V5P6cwTu5YmRqgMzscMabpB/vM0=
+
+Name: res/drawable-xxhdpi/icon_indicator_camcorder_l.png
+SHA1-Digest-Manifest: 0UvuZnBceZDWKncOpqmCEO42L70=
+
+Name: res/drawable-xxhdpi/common_collapse.png
+SHA1-Digest-Manifest: 7hckIZIir8QmXsgRfLaSSgHjCe4=
+
+Name: res/drawable-xxhdpi/camera_grid.9.png
+SHA1-Digest-Manifest: 40PSjObMKzLwDBfE2hwOEDEI7Us=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_fluorescent.png
+SHA1-Digest-Manifest: y/7L37o6sy7UWK0M0rmysXZjYO4=
+
+Name: res/drawable-xxhdpi/common_preset_frame_pressed.9.png
+SHA1-Digest-Manifest: dnTSPTg8pR1Os+nBeurKwQ6Zi1Q=
+
+Name: res/drawable-xxhdpi/automotive_common_radio_rest_dark.png
+SHA1-Digest-Manifest: kJzHTo3YeF0gKNTfx17XYnHfYRc=
+
+Name: res/drawable/htcprogress_full_themeone_category_three.xml
+SHA1-Digest-Manifest: qs+8qwCEwZGfXhhGtaNL5+rSwBo=
+
+Name: res/drawable/panorama_right_arrow.xml
+SHA1-Digest-Manifest: I4vKsH/fPonLz7v1ltBTma3BgdA=
+
+Name: res/layout/opt_date_picker_header_view.xml
+SHA1-Digest-Manifest: aQpQKOjiDh7qAXkASNRJM6PdGaY=
+
+Name: res/drawable-xxhdpi/icon_btn_cancel_dark_s.png
+SHA1-Digest-Manifest: PfLfPrr+9jJUDd6a7rMNNtN53T4=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_100.png
+SHA1-Digest-Manifest: Thgqon2CeEthfQiL8y/d2ER8A2E=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_05.png
+SHA1-Digest-Manifest: htoqrS6BJjF7u9K4+V/6p7xBR/0=
+
+Name: res/drawable/htcprogress_b_themeeight_category_one.xml
+SHA1-Digest-Manifest: w6EMgwphkJoxNUjnq/tnoIKBihw=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_03.png
+SHA1-Digest-Manifest: Fx/fMyP4aeZmJm/DvRVous3jJnY=
+
+Name: res/drawable-xxhdpi/lockscreen_panel.9.png
+SHA1-Digest-Manifest: qyZa+b6/70SKI+SgkZMe1E0K21U=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_15.png
+SHA1-Digest-Manifest: poxIjMdeZqsRMksqDLugZU/r81w=
+
+Name: res/color/automotive_darklist_primary.xml
+SHA1-Digest-Manifest: hQTZkhBxwz41BoLEuBZawA6Foto=
+
+Name: res/drawable/htcprogress_full_themefive.xml
+SHA1-Digest-Manifest: DNYtJJIvG2S8IETLyI4BQ7fMDmg=
+
+Name: res/drawable-xxhdpi/camera_slider_indicator.png
+SHA1-Digest-Manifest: +hQyPO/z/4EiBTZyVOPLAqaWE/Y=
+
+Name: res/drawable-xxhdpi/icon_btn_camcorder_dark_xxl.png
+SHA1-Digest-Manifest: q7RxFemkWeimBm3sAcIEoQjpQZc=
+
+Name: res/color/dark_primaryfont.xml
+SHA1-Digest-Manifest: ZwxhdtoDhqNsgreJ3cccHAYDmZg=
+
+Name: res/color/label_on.xml
+SHA1-Digest-Manifest: Ir0IW2MFcJNlAEe9Hz7imVQSoBY=
+
+Name: res/drawable/htcprogress_themethree_category_one.xml
+SHA1-Digest-Manifest: OtSM/PU86L43AJUbeBKOwffVNng=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_16.png
+SHA1-Digest-Manifest: pCpSsiRUdB8rdQokixerFETsja0=
+
+Name: res/drawable/htcprogress_b_themesix_category_three.xml
+SHA1-Digest-Manifest: RgLdb1w58XsW2kN6a6FhE9+c0VI=
+
+Name: res/drawable-xxhdpi/section_b_divider.9.png
+SHA1-Digest-Manifest: GxV9gyb9bUJnY9dpYx/nF48JA1o=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_2_5.png
+SHA1-Digest-Manifest: 9voYJlLqhg35fe94KghjtmKDMUE=
+
+Name: res/drawable-xxhdpi/common_toggle_rest_dark.png
+SHA1-Digest-Manifest: ESfKmg7NSeq4LAK8ClKKOmt31Vo=
+
+Name: res/drawable-xxhdpi/common_notification_on.png
+SHA1-Digest-Manifest: ZsOlD/qx4/h3tA6ohi7AOUYGz64=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_landscape.png
+SHA1-Digest-Manifest: QVPHqzwZSSqoyxBe4ZTYRkuztGg=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_12.png
+SHA1-Digest-Manifest: 6tE9s5dpHCp13S3wQfET8lgT8MU=
+
+Name: res/layout-mdpi/header_bar_progress.xml
+SHA1-Digest-Manifest: /0PtCW0RUzqFGSz+POb646YIPzE=
+
+Name: res/drawable/htcprogress_themesix_category_two.xml
+SHA1-Digest-Manifest: gOOejNQ1NXHJr9aBYDZpBpFnWJo=
+
+Name: res/layout/action_dropdown.xml
+SHA1-Digest-Manifest: vF3YipbbGcv9XB3YgtrJW4CvrRQ=
+
+Name: res/drawable/htcprogress_b_category_two.xml
+SHA1-Digest-Manifest: BfxM7XLNRpPcFrQPJSnAtjGX3Rg=
+
+Name: res/drawable-xxhdpi/icon_btn_dual_capture_dark_xxl.png
+SHA1-Digest-Manifest: x+eeswnlbGoHNoDBwn741poj0DE=
+
+Name: res/drawable-xxhdpi/common_dialogbox_full_dark.9.png
+SHA1-Digest-Manifest: lpHJrd6IW3WgNGprk3U8i0L+67o=
+
+Name: res/layout/flyer_main.xml
+SHA1-Digest-Manifest: /Puw4aj3Kwo6u92Tp2kw7GoXrVo=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_mute.png
+SHA1-Digest-Manifest: ErVt2ZlgVN2vVUvR8OQvNwbF1eE=
+
+Name: res/layout/htc_tab_content_1.xml
+SHA1-Digest-Manifest: cDgNnLuFCeLyh1KfRcaulZLqdJ8=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_05.png
+SHA1-Digest-Manifest: NZUSwt68CEj0+OTRzbQjb6uv7iI=
+
+Name: res/color/automotive_title_primary.xml
+SHA1-Digest-Manifest: zqP4A3hcsj/kmb5akjAVE6QJdbE=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_09.png
+SHA1-Digest-Manifest: su78LGSIi9h/j1e/sxXJ/xfqU2s=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder_hd.png
+SHA1-Digest-Manifest: P9k/YWSKMwd3T91CojXehTZAuO0=
+
+Name: res/color/resolve_item_text.xml
+SHA1-Digest-Manifest: R8wW15AzzdS3FE2drU8s9KIysJQ=
+
+Name: res/drawable-xxhdpi/camera_icon_default_gallery.jpg
+SHA1-Digest-Manifest: hQiS0oE/54G9J80R/hWvj50jJqg=
+
+Name: res/drawable-xxhdpi/common_dialogbox_center_bright.9.png
+SHA1-Digest-Manifest: r35t/jUU+zqQqvZYA8hoZmFeKZM=
+
+Name: res/drawable-xxhdpi/common_collect_rest.png
+SHA1-Digest-Manifest: n8UllNpcnI6d037eb/6x9hPH3Io=
+
+Name: HtcLib3-HtcIntentLib3.properties
+SHA1-Digest-Manifest: hOTqaxtKeI5U9xW/WmWMx8PYe/8=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_subtract_1_5.png
+SHA1-Digest-Manifest: CYpIsqJKdZY0f05hXDuoyJ2vRck=
+
+Name: res/drawable-xxhdpi/common_popupmenu_arrow_land.png
+SHA1-Digest-Manifest: jBhRulLi/yx0abtOOUC/6YQwAWo=
+
+Name: res/drawable-xxhdpi/gallery_burst_frame.9.png
+SHA1-Digest-Manifest: g/R6H2WXq61dLeUb2xhIUWlXvsM=
+
+Name: res/layout/specific_screen_save_layout.xml
+SHA1-Digest-Manifest: rVRXtbODiNcaVRQgsnpwFsIt8D8=
+
+Name: res/drawable/htcprogress_full_themefour_category_one.xml
+SHA1-Digest-Manifest: UHK7ZBIpDmwxn9w+Y9mvxsuyhGQ=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_05.png
+SHA1-Digest-Manifest: 18V3X+nwzGLEw4mXyNolW6nqcdY=
+
+Name: res/layout/htc_recent_apps_icon.xml
+SHA1-Digest-Manifest: lmOtpXClOERlmqfpMxRDsHBETxc=
+
+Name: res/drawable-xxhdpi/common_view_more_on.png
+SHA1-Digest-Manifest: q9pvIVFAGqAzEJB4zFyaIFmlYJ4=
+
+Name: res/xml/ab_arrow_vertical_center.xml
+SHA1-Digest-Manifest: kMvptyfH2x8bmp46ffLTvepTzxI=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_01.png
+SHA1-Digest-Manifest: wlW9lunmy/gWJY+4brw6Y5oGfMs=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_13.png
+SHA1-Digest-Manifest: Q5sdKrMcNCd9rhhP6vcuBQ29FvY=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_anti_shake.png
+SHA1-Digest-Manifest: TVlmJ4a+1gYI/C+xE+JqN0w8Juw=
+
+Name: res/drawable/htcprogress_themeseven_category_three.xml
+SHA1-Digest-Manifest: nQ0meNUOlt4ypoPStx43VDrddU0=
+
+Name: res/drawable-xxhdpi/tips_arrow_shadow.png
+SHA1-Digest-Manifest: rHXpBp+j7mZufx5ydkLGi4Lv5kY=
+
+Name: res/drawable/htcprogress_full_themefive_category_three.xml
+SHA1-Digest-Manifest: NIyyps/6WzdtNi/dzhpCDUyKzoo=
+
+Name: res/drawable-xxhdpi/tips_indicator_on.png
+SHA1-Digest-Manifest: AhtFA9BzV3wnKbEvqjfJ5AYTHRA=
+
+Name: res/drawable-xxhdpi/icon_indicator_camera_l.png
+SHA1-Digest-Manifest: IImORKJNOWKlAkmIvYF23J2Ul04=
+
+Name: res/drawable/htcprogress_b_themethree_category_three.xml
+SHA1-Digest-Manifest: AcWf2KO8GZus0g/kM1rpItZMk3k=
+
+Name: res/layout/dialog_listitem_radio_automotive.xml
+SHA1-Digest-Manifest: iejR7GU0wH6JQvBbFuQgj3jwEn8=
+
+Name: res/layout/specific_capture_bar_layout.xml
+SHA1-Digest-Manifest: 0mTvxpT/1L+vsdPn1+OGCl/nnw8=
+
+Name: res/drawable-xxhdpi/common_inputfield_rest.9.png
+SHA1-Digest-Manifest: MpTYWi00BZM3ueOdkhXMzm/Qdps=
+
+Name: res/drawable-xxhdpi/home_page_indicator_off.png
+SHA1-Digest-Manifest: ax7V5WT9EcGBYnISmER8JmaQU1E=
+
+Name: res/drawable-xxhdpi/common_dialogbox_center_medium.9.png
+SHA1-Digest-Manifest: 5fywRS2dvxxuu9Yg6xX5Ph4JaCk=
+
+Name: res/drawable/htcprogress_themesix_category_one.xml
+SHA1-Digest-Manifest: WPSX94IyxNhIj01FPwnctR6Zxxk=
+
+Name: res/drawable-xxhdpi/common_flag_rest.png
+SHA1-Digest-Manifest: +nbsbcwWL6SQwbcjg+r///vYnKg=
+
+Name: res/drawable-xxhdpi/camera_indicator_icon_landscape_s.png
+SHA1-Digest-Manifest: qh3eVUWpxeYMcU32PHLqASdFgPU=
+
+Name: res/drawable-xxhdpi/camera_split_capture_patch.9.png
+SHA1-Digest-Manifest: f6DD8rKWLfSNemndBk0JbbjSm8Q=
+
+Name: res/raw/rccountdownm.ogg
+SHA1-Digest-Manifest: MPT6YBg5DgRc8KAsNRnZv9QB5hE=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_14.png
+SHA1-Digest-Manifest: 2XK1nSOiVe+YgpBcxOvzJoE8GlQ=
+
+Name: res/drawable/htcprogress_full_themeeight.xml
+SHA1-Digest-Manifest: 89iSc5aZM+DImNSIbeT4aVe+kK4=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_3_2.png
+SHA1-Digest-Manifest: XbLzPK0A1kWsgqstGYFTEHFOjcA=
+
+Name: res/drawable-xxhdpi/common_b_progress_empty.9.png
+SHA1-Digest-Manifest: BCR9sbWoQfYUZeJKDLV82NnUhl4=
+
+Name: res/drawable-xxhdpi/icon_btn_panorama_dark_xxl.png
+SHA1-Digest-Manifest: rUFb+oi2OvPQFx7yxAwKUDg7c0Y=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_4.png
+SHA1-Digest-Manifest: vyY/kdw5bCT+WIhlUoBVLdi/5mw=
+
+Name: res/drawable-xxhdpi/camcorder_patch.9.png
+SHA1-Digest-Manifest: ldmHI60hBt0ak+kt7Vwex69jsYE=
+
+Name: res/drawable-xxhdpi/icon_btn_subtract_light.png
+SHA1-Digest-Manifest: bbyWZZMtTDZMIOE7bdxQrjL0EAY=
+
+Name: res/anim/fade_out.xml
+SHA1-Digest-Manifest: lNyYoznht59X8YoJO/gWFW+dZT8=
+
+Name: res/layout/specific_dual_lens_layout.xml
+SHA1-Digest-Manifest: Pzmd7k2zop2lmUW36iOQhPHSK1M=
+
+Name: res/layout-nodpi/photo_button.xml
+SHA1-Digest-Manifest: gj3KRLcuE/5dRK6qpEGfuiIIB6w=
+
+Name: res/drawable/htclistitemseparator.xml
+SHA1-Digest-Manifest: t9RC9UK3lSc71+81eFann4SgXSY=
+
+Name: res/drawable-xxhdpi/camera_icon_effect_bar_up.png
+SHA1-Digest-Manifest: GaRDxLeWFcARD1XGyYFVw1BCW5w=
+
+Name: res/drawable-xxhdpi/common_list_divider_custom.9.png
+SHA1-Digest-Manifest: bErxBG5CFBJh7MIbv1RFwrZJwuM=
+
+Name: res/color/toggle_primary.xml
+SHA1-Digest-Manifest: sj9sEhF+PG6q/HVZmvgGRU9zeGE=
+
+Name: res/drawable-xxhdpi/camera_dual_camera_frame.9.png
+SHA1-Digest-Manifest: gzDe5s0wL9J1fZoA4OHt8l+B8Sc=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_13.png
+SHA1-Digest-Manifest: Cnghx3GX2oQmZaliMXRszxdV640=
+
+Name: res/layout/drm_http_authentication.xml
+SHA1-Digest-Manifest: UQSc5mY5dZ5g/SAv1z01LVYoeLc=
+
+Name: res/color/time_info.xml
+SHA1-Digest-Manifest: exS28kuWILzBltr1q8C5Q69Txcg=
+
+Name: res/drawable-xxhdpi/common_toggle_outer_dark.png
+SHA1-Digest-Manifest: wm1DfZxtQXwAtxvSshsSHRW5U6U=
+
+Name: res/drawable-xxhdpi/common_button_rest.9.png
+SHA1-Digest-Manifest: cKlZvHzGzm2MP49GMZzYm5ETdM0=
+
+Name: res/layout/specific_self_timer_layout.xml
+SHA1-Digest-Manifest: VIPKx7btCcUefEU3H/l6eQO64KI=
+
+Name: res/drawable/htcprogress_b_themethree_category_one.xml
+SHA1-Digest-Manifest: 4Sn6C7QCVqJJZzYcRA2D1n1K3+I=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_12.png
+SHA1-Digest-Manifest: TYRt0cM3x24N+JtmoleppseBrcc=
+
+Name: res/drawable/htcprogress_themeseven_category_four.xml
+SHA1-Digest-Manifest: F+SURce5kGWwLGIN9K4jUh0GlBI=
+
+Name: res/drawable-xxhdpi/common_b_div.9.png
+SHA1-Digest-Manifest: ZTCdNZ7qg9rgC6lkW9Qbjgs8nxg=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_depth_of_field.png
+SHA1-Digest-Manifest: ztanvl61z0MKOChWUHHyLQQS800=
+
+Name: res/color/opt_date_picker_year_selector.xml
+SHA1-Digest-Manifest: OUAcVdryee+7jUXj8Uh7gsWAXWg=
+
+Name: res/color/title_secondary.xml
+SHA1-Digest-Manifest: 5z7pf4e/9tJ4U74eqKF90WSZeE4=
+
+Name: res/color/list_body.xml
+SHA1-Digest-Manifest: sVfvwGiii086lZKv2Y2dEVP1jnQ=
+
+Name: res/drawable/htcprogress_b_themeone.xml
+SHA1-Digest-Manifest: zp+I3NMi1cKMHPZgmiyrP1kzRGs=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_menu.png
+SHA1-Digest-Manifest: Pv7J8FTDE6gBQzHKbVCm3yxhRLs=
+
+Name: res/layout-land/wizard_radio_list_activity.xml
+SHA1-Digest-Manifest: lgJl8gSdHxwplWCqlVEMvmefnPQ=
+
+Name: res/drawable/grid_selector_dark.xml
+SHA1-Digest-Manifest: NtmTxvvYBbfRch+ygWc9itFHHzY=
+
+Name: res/color/list_item_primary_text.xml
+SHA1-Digest-Manifest: PP4WuKst1rboo+YfpUNgFh/64pc=
+
+Name: res/layout/htc_time_picker_dialog.xml
+SHA1-Digest-Manifest: WvfSkJTDlOYiyf88X1+lWJSPXxQ=
+
+Name: res/drawable/camera_menu_shape_circle.xml
+SHA1-Digest-Manifest: P31GoIr/1F+dDRCEI5iB6LdHCOg=
+
+Name: HtcLib3-PhoneContacts.properties
+SHA1-Digest-Manifest: QdX4Y5XUgeOp77HvRboeEC63PB4=
+
+Name: res/drawable/htcprogress_full_themeseven.xml
+SHA1-Digest-Manifest: 2OvpVwv6B2s7Hvg0+Kny6q4rJ9k=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_tungsten.png
+SHA1-Digest-Manifest: /Abc+88eC8lUAQ5Oc2txjWlYWHI=
+
+Name: res/drawable/htcprogress_full.xml
+SHA1-Digest-Manifest: 46DoRKJPG3GsO8+xOGv9L0Owp48=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_warm.png
+SHA1-Digest-Manifest: 6Nw71tzhxVtJWRbPWcXHBM3YMPY=
+
+Name: res/drawable/htcprogress_b_themetwo.xml
+SHA1-Digest-Manifest: BXDZPyGOfbRdDgqdssn07O6/a8U=
+
+Name: res/drawable-xxhdpi/icon_btn_add_light.png
+SHA1-Digest-Manifest: xsrK4uy53STf7pJ4n9ohU9w67ag=
+
+Name: res/raw/zoe_click.ogg
+SHA1-Digest-Manifest: cIe36fXvwHAwE0XVKn7jiR3i7Rs=
+
+Name: res/xml/ab_counter_follow_primary_automotive.xml
+SHA1-Digest-Manifest: 9yUByymBewgwJEW9xvmDctbdhMY=
+
+Name: res/drawable-xxhdpi/icon_btn_pause_dark_s.png
+SHA1-Digest-Manifest: 6RM99qTQZnC6043+U85JfkIgZs4=
+
+Name: res/anim/scale_grow_fade_in_from_bottom.xml
+SHA1-Digest-Manifest: 0gsys7AIITl+U7fFUz42qA8JhqY=
+
+Name: res/drawable-xxhdpi/common_app_bkg_top_full.9.png
+SHA1-Digest-Manifest: Sh4/WGJG2zYFNKoYGQnTRXnF/tU=
+
+Name: res/layout/specific_panorama_plus_layout.xml
+SHA1-Digest-Manifest: IpV7su5LRHZAhppftRgt0FTfd2o=
+
+Name: res/layout/main_capture_ui_layout.xml
+SHA1-Digest-Manifest: PlLc0e6nox9/sf8y0Vv+RAKg9to=
+
+Name: res/drawable/htcprogress_b_themesix.xml
+SHA1-Digest-Manifest: soiMJ0vC7qwKEabW8yLH5AjZgug=
+
+Name: res/layout/more_expandable_list_footer.xml
+SHA1-Digest-Manifest: f9GBGMImDYG5dGt8vb8ZZ3jU6rk=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_auto.png
+SHA1-Digest-Manifest: GIlYyIwPuWN4R5z4mHSEENBw0Bk=
+
+Name: res/drawable/htcprogress_themetwo_category_two.xml
+SHA1-Digest-Manifest: GLzPGKT+mR77RC0n0vLC6p1tSmc=
+
+Name: res/drawable-xxhdpi/automotive_common_b_checkbox_rest.png
+SHA1-Digest-Manifest: cCu4xk0HFUomHVu27BVNeRb1bIU=
+
+Name: res/drawable/popupwindow_drawable.xml
+SHA1-Digest-Manifest: 3snkgTqqk9AT93/GR/Xk0dp5dCE=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_09.png
+SHA1-Digest-Manifest: 915VU6g6Q8sVTvEwL2NYil00P3M=
+
+Name: res/drawable/footerbkg.xml
+SHA1-Digest-Manifest: wH++DXDKQ7z9inEvkLEqhS0wYKI=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_posterize.png
+SHA1-Digest-Manifest: WMBsjemOQLV6cL2eKEwobGVjXdA=
+
+Name: res/drawable-xxhdpi/common_dropdown_background.9.png
+SHA1-Digest-Manifest: zZ8vr3n3if/HWpTquBTQsIHiG1A=
+
+Name: res/layout/action_menu_overflow_layout.xml
+SHA1-Digest-Manifest: MrM2/KGILAPFQnTuA4G+rqZdRtg=
+
+Name: res/layout-nodpi/htc_reorder_list_drag_item.xml
+SHA1-Digest-Manifest: kvC1DCBPU+YemxmIRIi87uADKVI=
+
+Name: res/anim/fadein.xml
+SHA1-Digest-Manifest: SjTBFCknC9baMuB8pkfLUenTGb8=
+
+Name: res/drawable/htcprogress_full_category_one.xml
+SHA1-Digest-Manifest: Ib7QuNq2UeAzZSZEedAmFp5gslY=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_dual_capture.png
+SHA1-Digest-Manifest: DF2Vg/AfrHAE3ZfcDNdWDOrqIkw=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_11.png
+SHA1-Digest-Manifest: Y24dGCv3O62r7CAB99s96utKvsc=
+
+Name: res/drawable-xxhdpi/common_rating_rest.png
+SHA1-Digest-Manifest: xUM0NQ1bLFjQwH+hkqvQSKNUIR0=
+
+Name: res/anim/slide_in_right2.xml
+SHA1-Digest-Manifest: bZNn4yxKsY7mRgDYVMi17Hh9Cww=
+
+Name: res/layout/main.xml
+SHA1-Digest-Manifest: /jSGTgzi1dcxmF8uDRzj+WOf3aA=
+
+Name: res/drawable-xxhdpi/icon_btn_camera_dark.png
+SHA1-Digest-Manifest: H2j42Y633ipu6RkkQuA/cVrLEH0=
+
+Name: res/drawable/htcprogress_full_themefive_category_one.xml
+SHA1-Digest-Manifest: WZH7zloQQagyZl0uUgIiZPcNmo4=
+
+Name: res/raw/recstart.ogg
+SHA1-Digest-Manifest: ewTwSkLHhwRD8MYMiBr4C+RVljs=
+
+Name: res/layout/specific_request_layout.xml
+SHA1-Digest-Manifest: pk2QarkaKNXzB/tesNAHf3lqeo8=
+
+Name: res/drawable-xxhdpi/automotive_common_arrow_down.png
+SHA1-Digest-Manifest: 3ArmjE/girN1cTpuVrAqYPtcfrw=
+
+Name: res/drawable-xxhdpi/common_toggle_rest.png
+SHA1-Digest-Manifest: TjbOBYZucNZpGuiYqbSFwj9J01I=
+
+Name: res/drawable-xxhdpi/sense_input_icon_dot_dark.png
+SHA1-Digest-Manifest: c/SmOq74D/GMkKQdBx4Bf143UOM=
+
+Name: res/layout/common_menu_item_layout_end_of_checkbox.xml
+SHA1-Digest-Manifest: eNJkE11X6D/SsfvQpduchSvMllE=
+
+Name: res/drawable-xxhdpi/tips_indicator_rest.png
+SHA1-Digest-Manifest: rirHP4XdWhECUYSPLmZcn7BtTrU=
+
+Name: res/drawable-xxhdpi/common_b_inputfield_pressed.9.png
+SHA1-Digest-Manifest: c7O8grHwMA5N0BIf2YJ6yapJP4Q=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_02.png
+SHA1-Digest-Manifest: uUe9IEI6Mrac/Mq7tdUhCZQ+P3c=
+
+Name: res/anim/camera_flashlight.xml
+SHA1-Digest-Manifest: +yL+iyu/bPH37l920AIJo0hsQ2M=
+
+Name: res/drawable/htcprogress_full_themefive_category_two.xml
+SHA1-Digest-Manifest: jXogzL6zdH8MKNbTFdevxfVTl64=
+
+Name: res/anim/grow_fade_in.xml
+SHA1-Digest-Manifest: egyGrqBcG5+AIxLJbD5UWH6D55k=
+
+Name: res/layout-hdpi/preference_list_content_single.xml
+SHA1-Digest-Manifest: 5ESkTAS2ErpD4Zx+Yn570hfALaw=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_cloudy.png
+SHA1-Digest-Manifest: 4pRIKLC4RZYrji2wYD2e//tAJcA=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_dots.png
+SHA1-Digest-Manifest: Cpbt+GyPPz3sXqsRWGeRS8PHX+c=
+
+Name: res/drawable-xxhdpi/camera_icon_zoom_bar_out.png
+SHA1-Digest-Manifest: bl53p3iaC+GvSmGCF1K04atlE6Q=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_04.png
+SHA1-Digest-Manifest: tTynZS1CHdErCadh+M6Kh1jCKd8=
+
+Name: res/drawable-xxhdpi/common_feed_gradient_tall.9.png
+SHA1-Digest-Manifest: 2nVQJrk72XpxF3kXCuvExfnK1wQ=
+
+Name: HtcLib3-HtcWrapWindowManager.properties
+SHA1-Digest-Manifest: 1r3hoCSIcyTafwEIk1Zc2YYLCgQ=
+
+Name: res/layout-nodpi/htc_widget_actionbar.xml
+SHA1-Digest-Manifest: UhXzWJSfGewOEZdqRRZJn+Bh9cg=
+
+Name: res/drawable-xxhdpi/common_app_bkg_down_src.9.png
+SHA1-Digest-Manifest: GFl3Zn9QBXKJkDx2GyU5QKzYmMo=
+
+Name: res/drawable/camera_menu_shape_circle_highlight.xml
+SHA1-Digest-Manifest: ozUrVsVrJExvJ3pBm7FhyKw+b88=
+
+Name: res/layout-xhdpi/header_bar_progress.xml
+SHA1-Digest-Manifest: /eMLfsNsux6paBq2ewGXJe7jqic=
+
+Name: res/anim/scale_shrink_fade_out_from_bottom.xml
+SHA1-Digest-Manifest: ne83pE7EoOGiKisjD3BDVo3pCBA=
+
+Name: res/drawable/zero_dummy_asset.xml
+SHA1-Digest-Manifest: UNEN0MpX7BX7NnkWzBIxXyF46t0=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_07.png
+SHA1-Digest-Manifest: 6z9/JcWdZTdXzx/kT7FlyQsj7HI=
+
+Name: res/drawable-xxhdpi/common_header.9.png
+SHA1-Digest-Manifest: ve/p35hZ/cva44A3h+p0K99SL/s=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_cold.png
+SHA1-Digest-Manifest: HeCrfixpeDMHKUkUhz9IteGf/Ww=
+
+Name: res/color/random_access.xml
+SHA1-Digest-Manifest: EAfm+QALNq/Q8fpl7hrlh2/+bnM=
+
+Name: res/layout/specific_scene_hint_layout.xml
+SHA1-Digest-Manifest: 7V32LimtZzGMSsiWZBQl8LG0woE=
+
+Name: res/layout/htc_date_time_text.xml
+SHA1-Digest-Manifest: H8nyhaoFFaw8B/e1WKbaK90MKqE=
+
+Name: res/raw/camera_click.ogg
+SHA1-Digest-Manifest: QghUh9x/n1GcixaefMquTUlCUc8=
+
+Name: res/drawable/htcprogress_themeeight_category_one.xml
+SHA1-Digest-Manifest: vcybf29dcDRiyBBoU1gKRA14sj8=
+
+Name: res/drawable-xxhdpi/camera_indicator_camera_only.png
+SHA1-Digest-Manifest: 3P704/d0GbxjuCOEHRQbch2a0SA=
+
+Name: res/drawable-xxhdpi/camera_btn_indicator_timmer_off.png
+SHA1-Digest-Manifest: XXC/UVCslcpxN3HR7/7ZC/Wub0A=
+
+Name: res/drawable/common_b_div_land_overlay.xml
+SHA1-Digest-Manifest: jjvdNcKmH5fAG8lFnDZNKpb+X28=
+
+Name: res/drawable-xxhdpi/common_expand.png
+SHA1-Digest-Manifest: fW6Z9ZDw2pxlAmAf9fMqW/MB6Bw=
+
+Name: res/drawable/child_view_selector.xml
+SHA1-Digest-Manifest: v3zhnp9DLCC/nGx7vDDil8wyzr4=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest-Manifest: 73TZoa+3ApYPkY+wbmr1XiAso58=
+
+Name: res/drawable/htcprogress_b_themeone_category_one.xml
+SHA1-Digest-Manifest: CirBCp4WMtxFR0OiUNwVcUcsqyk=
+
+Name: res/interpolator/decelerate_cubic.xml
+SHA1-Digest-Manifest: cq7cdQAvb4NqEy/Ew5VgHgQU1lY=
+
+Name: res/xml/ab_before_textview_vertical_center.xml
+SHA1-Digest-Manifest: uYM9jDvc/+XfUiWZO1m080HAd7Q=
+
+Name: res/anim/camera_left_out.xml
+SHA1-Digest-Manifest: wyIkRDKQ3XUkdC7zw8s/+m79jjA=
+
+Name: res/layout-nodpi/number_table.xml
+SHA1-Digest-Manifest: 1+uPL32x8lQg7Hw8AfvMvRB36GE=
+
+Name: res/drawable-xxhdpi/common_circle_outer.png
+SHA1-Digest-Manifest: qK6KjvHwVrj5W6f00KT5SbLvYXU=
+
+Name: res/drawable/list_selector_light.xml
+SHA1-Digest-Manifest: pF1TKihkHByeovFAaT+nMyyPehc=
+
+Name: res/drawable-xxhdpi/camera_zoom_indicator.png
+SHA1-Digest-Manifest: LKtwWoAHAenq18xWPX0EEfZFuP4=
+
+Name: res/anim/mf_window_enter.xml
+SHA1-Digest-Manifest: ca2cseGC0ZobaC1oTSVGdRKjGAg=
+
+Name: res/anim/scale_grow_fade_in_east.xml
+SHA1-Digest-Manifest: GYALhoSDBIxTEnA04reP7qV6CP0=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camera_only.png
+SHA1-Digest-Manifest: tDpysmPszwmxblauXpfGBiP69B4=
+
+Name: res/drawable/htcprogress_b_themeeight_category_three.xml
+SHA1-Digest-Manifest: i6EjzeYf0WPTsVbZJz0ZvXJNoSE=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_mono.png
+SHA1-Digest-Manifest: ZYxp3frilQyQvnMtywbkj+cTkAk=
+
+Name: res/layout/more_expandable_list_shadow.xml
+SHA1-Digest-Manifest: 96kQe/w5M1cl38TE2b04QvEDWAI=
+
+Name: res/drawable-xxhdpi/icon_btn_settings_light_l.png
+SHA1-Digest-Manifest: qzFgZK4+B8XIxZQ22EtNyHLx5w8=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_03.png
+SHA1-Digest-Manifest: 1h/O9m1USWsfoFGSRMyu1FgEGQA=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_02.png
+SHA1-Digest-Manifest: PUa2whEBJuEQv1Fb2Jvexv1V3Po=
+
+Name: res/drawable/htcprogress_full_themenine.xml
+SHA1-Digest-Manifest: tqzbKgoNPOQ15VLBbJuS5EozpD4=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_dark.png
+SHA1-Digest-Manifest: KLUv/cp51gnC7X1hjT/PoXB62l4=
+
+Name: res/drawable/htcprogress_full_themefour.xml
+SHA1-Digest-Manifest: g6qB8cV6nOHJO89bmbdNFdN8wlk=
+
+Name: res/drawable/htcprogress_full_themesix_category_two.xml
+SHA1-Digest-Manifest: hbWI3wYviPa6YF5mysoIlSxjO70=
+
+Name: res/layout/specific_split_capture_expand_menu_layout.xml
+SHA1-Digest-Manifest: +Hhzn5nXhf/PNdKcUf4mP1/r+uw=
+
+Name: res/layout/main_bubble_toast_layout.xml
+SHA1-Digest-Manifest: B6NmpXbA5T3pGXPk7yF5qntlN0c=
+
+Name: res/drawable/htcprogress_themesix_category_four.xml
+SHA1-Digest-Manifest: 03zWBTHVUFK++ZvsimA3bUxTqvY=
+
+Name: res/layout/wizard_radio_listitem.xml
+SHA1-Digest-Manifest: y1GI86yQVe//IMT+Zoly3Pizb4Q=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_10.png
+SHA1-Digest-Manifest: AOELmtR4EQVAiUbWn8vurodyuIc=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_plus_2.png
+SHA1-Digest-Manifest: SjUyDvE/qZvnvhYTZuAeN4pgxgY=
+
+Name: res/drawable-xxhdpi/gallery_checkbox_rest.png
+SHA1-Digest-Manifest: 6b1COA3zdpI7kgaueBIIDp2+gjI=
+
+Name: res/layout/specific_photobooth_indicator_layout.xml
+SHA1-Digest-Manifest: OiA9AhbOB91m3FxNEBdVyCYE/SA=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_shutter_s.png
+SHA1-Digest-Manifest: jA5ktTZNsIKUYiv8oGa/iTX+xqY=
+
+Name: res/drawable/htcprogress_b_themefour.xml
+SHA1-Digest-Manifest: f85mYZ7S2f/uQucTmwADim1SR2Q=
+
+Name: res/layout-xhdpi/header_bar_text.xml
+SHA1-Digest-Manifest: mGvZ8oC9WLgjNT+Dnk+yq7tFgxo=
+
+Name: res/layout-iw/wizard_activity.xml
+SHA1-Digest-Manifest: QqVLM+UFANBgeFs6wb9AjnotUSA=
+
+Name: res/layout/htc_tab_content_fragment.xml
+SHA1-Digest-Manifest: hz47tb8Eyk+/wU1B08P1F+6DLYU=
+
+Name: res/raw/recend.ogg
+SHA1-Digest-Manifest: uUhXtaO7brlF9wAptTgnSbfVgs8=
+
+Name: res/color/automotive_darklist_secondary.xml
+SHA1-Digest-Manifest: mQJ50V/hQF8cJjB0YtEfj03Ou6o=
+
+Name: res/drawable-xxhdpi/icon_btn_split_capture_dark_xxl.png
+SHA1-Digest-Manifest: Ap90OgxoK/H2LqIgb61UNsFZQv8=
+
+Name: res/color/b_separator_primary.xml
+SHA1-Digest-Manifest: CtmgmkEUej4n3vQIxKzmQpUpFd8=
+
+Name: HtcLib3-HtcWrapWallpaperManager.properties
+SHA1-Digest-Manifest: yYEBspRTfJ/YoFjSMn0Rfaym7Ww=
+
+Name: res/drawable/htcprogress_category_one.xml
+SHA1-Digest-Manifest: gpnN+SQmppcI+xybQSkWqWUmlSc=
+
+Name: res/xml/ab_secondary_automotive.xml
+SHA1-Digest-Manifest: LO+fVpVkuD3lYmYQ55MCVpdVAuY=
+
+Name: res/layout/timer_table3.xml
+SHA1-Digest-Manifest: dDXlZhgJccPpAtwxlYUvdYaoyk4=
+
+Name: res/layout/specific_manual_capture_layout.xml
+SHA1-Digest-Manifest: e75eZ8cWgXkjWHBr6/XJuSwxbX4=
+
+Name: HtcLib3-HDKUtil.properties
+SHA1-Digest-Manifest: OWuQCrPa1i6BNy9AqV+Qppk6TF0=
+
+Name: res/drawable-xxhdpi/camera_icon_photo_effects_fx.png
+SHA1-Digest-Manifest: pw0ZTqa6egN6NeBdw3U/sX8zhPU=
+
+Name: HtcLib3-HtcZoeUtil.properties
+SHA1-Digest-Manifest: qMwgkL5A19nDNlBRpfTAk0OFpiY=
+
+Name: res/drawable-xxhdpi/camera_btn_indicator_timmer_5.png
+SHA1-Digest-Manifest: Tv/TXh87dLQBhhZC13NCXd5eVVY=
+
+Name: res/drawable/htcprogress_themeeight_category_two.xml
+SHA1-Digest-Manifest: A0bxklzd/Ke3AFWAIWvfL+wgWEo=
+
+Name: res/drawable-xxhdpi/common_updates_dark.png
+SHA1-Digest-Manifest: f5dvFh2UukkyVgAQ2Uq2qB7CtxM=
+
+Name: res/drawable/htcprogress_b_themenine_category_one.xml
+SHA1-Digest-Manifest: DnDRc7YKPquS2/AcjY+f6u+9C+g=
+
+Name: res/layout/specific_camera_menu_item.xml
+SHA1-Digest-Manifest: 0zGfjgrbp6UsJD3xBnoXGZx+UWQ=
+
+Name: res/drawable/htcprogress_full_themefour_category_four.xml
+SHA1-Digest-Manifest: iRNUiu2srQDJLHxOHPdkqpqoS0w=
+
+Name: res/raw/managecam_pagination.ogg
+SHA1-Digest-Manifest: aKejffdCtYk7acKb052i5PbUNtM=
+
+Name: res/drawable-xxhdpi/common_feed_bkg_src.png
+SHA1-Digest-Manifest: CX3JTEAIEB9KB0PD06YP58+DriA=
+
+Name: res/drawable/htcprogress_b_themenine_category_three.xml
+SHA1-Digest-Manifest: rkcOkzitASPAGUY11/IYG/7P/n0=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_01.png
+SHA1-Digest-Manifest: 12u4D8+eRkTzeT0JfWefIBWGlgY=
+
+Name: res/drawable/htcprogress_full_themetwo_category_four.xml
+SHA1-Digest-Manifest: wKkN4rr7yjtZQ6gEbPLH8sH3Jrw=
+
+Name: res/drawable/htcprogress_small.xml
+SHA1-Digest-Manifest: zdusJYKKeSjUSXmPeuS9P1WCrto=
+
+Name: res/layout/htc_gridview_element.xml
+SHA1-Digest-Manifest: UL7XRBFGQH0aj33yRqY7aFmNOZc=
+
+Name: res/drawable/htcprogress_full_themethree.xml
+SHA1-Digest-Manifest: kiT37ixTuFD6PQDKynpxFHmCjMw=
+
+Name: res/layout-iw/wizard_radio_listitem.xml
+SHA1-Digest-Manifest: YOsA1IIPcv5OdMEvLJl5+rjcAlg=
+
+Name: res/drawable/htcprogress_b_themefive_category_two.xml
+SHA1-Digest-Manifest: 8zIYWCPZn88PvIIF7PAk5TPNJ48=
+
+Name: res/xml/ab_counter_vertical_center.xml
+SHA1-Digest-Manifest: Sf7tz7DpExXZpp0B5WcGsHn/vA8=
+
+Name: res/drawable/htcprogress_category_three.xml
+SHA1-Digest-Manifest: zSOlyetIopU7bwPfSTEAzfaiglQ=
+
+Name: res/drawable-xxhdpi/icon_indicator_self_timmer_5_l.png
+SHA1-Digest-Manifest: e3nDsHYmPs0Rm5G39EGDB+eZuF8=
+
+Name: res/drawable/common_footer_divider.xml
+SHA1-Digest-Manifest: 8Nl5eLtLEFSUfFaRWUQ+8uwg8k0=
+
+Name: res/layout/main_lockscreen_reminderview.xml
+SHA1-Digest-Manifest: mpKFFUqcTd8wPq8bVTu2Ecl+kZ4=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_distortion.png
+SHA1-Digest-Manifest: kOqfYXYq2i0DuxAUskAWDB3XlE4=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_add_1_5.png
+SHA1-Digest-Manifest: JLE757/zLsKX2+spVps6aZDGMAA=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_06.png
+SHA1-Digest-Manifest: evXPhGF+txcIcu7b2xl97h5J7GI=
+
+Name: res/layout/drm_acquire_rights.xml
+SHA1-Digest-Manifest: 6GwfnzMjxRu9SgxMIlrpUDXUam0=
+
+Name: res/drawable-xxhdpi/common_b_expand.png
+SHA1-Digest-Manifest: G8/f3G9bfcbnzszWKHA2Gv2TTig=
+
+Name: res/drawable/htcprogress_full_themeone.xml
+SHA1-Digest-Manifest: 4RsUaPPWsMr1dgPnD35g0G8E4WQ=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_07.png
+SHA1-Digest-Manifest: jr2kGLpGwvyVkPDAYAss+q400pE=
+
+Name: res/drawable-xxhdpi/common_scroller.png
+SHA1-Digest-Manifest: CUbfm6h5Fc+27pIkLAswICSsDCM=
+
+Name: res/drawable/htcprogress_b_themeone_category_three.xml
+SHA1-Digest-Manifest: IefqQLsPDyrVIPzlS4gZTURjjXU=
+
+Name: res/layout/timer_table.xml
+SHA1-Digest-Manifest: qU3UQeBvBh+qduJWy0b6GZcGqf8=
+
+Name: res/layout/dialog_listitem_check.xml
+SHA1-Digest-Manifest: CJEPdQhdenWPsVeYf8EYs+CvxZk=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_share.png
+SHA1-Digest-Manifest: CiyRWifcbgRmHX/iUsrnCegvbKk=
+
+Name: res/drawable-xxhdpi/camera_zoom_track.9.png
+SHA1-Digest-Manifest: K9+Xtiyx4OvElU2E9dlhvM4nSmU=
+
+Name: res/drawable-xxhdpi/icon_launcher_camcorder.png
+SHA1-Digest-Manifest: 7TX+J1qUtR8LNKX7I1BlvcwJSR4=
+
+Name: res/drawable-xxhdpi/icon_btn_back_dark_xl.png
+SHA1-Digest-Manifest: DJVAJJ9tU3/qa5D+WerQYupqgLo=
+
+Name: res/drawable/htcprogress_full_themeeight_category_three.xml
+SHA1-Digest-Manifest: w1ieElH1M0+LGb58D6ZQnE7WA68=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_s.png
+SHA1-Digest-Manifest: UkkCkTD4lN4ny52Pk7SHwLIqUx8=
+
+Name: res/layout/progress_dialog.xml
+SHA1-Digest-Manifest: 8MJALyd/pa+dw/iaZKhOi/X0NLY=
+
+Name: res/drawable/inset_list_divider.xml
+SHA1-Digest-Manifest: UhsXVZp+IWuYoVzLS0Db34pFc/4=
+
+Name: res/anim/mf_window_exit.xml
+SHA1-Digest-Manifest: UmX23+ovS4wbVCkzKmDlAx+jclM=
+
+Name: res/anim/scale_grow_fade_in_from_bottom_east.xml
+SHA1-Digest-Manifest: APemgC/dPvOkG4+QfFBiCkHWNkI=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_04.png
+SHA1-Digest-Manifest: wkWV6Cvpdk5sQqbO+cbwMG1pGkA=
+
+Name: res/drawable/common_popupmenu_triangle.xml
+SHA1-Digest-Manifest: JlUPvUmk0Kab6qUleZ6xXEBh82U=
+
+Name: res/layout/compose_recipient_block.xml
+SHA1-Digest-Manifest: X1jjfvAusL62Pw4NHu6M5rVIA3c=
+
+Name: HtcLib3-HtcIR.properties
+SHA1-Digest-Manifest: 1z2TsMPINB+vLaNCjkJJNvQAaII=
+
+Name: res/drawable-ldpi/ic_launcher.png
+SHA1-Digest-Manifest: TB4XdYTW7s/2mhlcM0mxs9QSd9s=
+
+Name: res/drawable/htcprogress_full_themefour_category_three.xml
+SHA1-Digest-Manifest: xLcvDYzvh099DWQKarMi6Og0Q8E=
+
+Name: res/drawable-xxhdpi/common_app_bkg_down_land_src.9.png
+SHA1-Digest-Manifest: Ba81el6XfdnCs9UvvwTb6GyNRGY=
+
+Name: res/layout/recipient_item.xml
+SHA1-Digest-Manifest: va8rFc3uwtIP6bhp1GHKwRV8izM=
+
+Name: res/anim/fadeout.xml
+SHA1-Digest-Manifest: ++FhZxp3euIRtmhD4ixOJ6wWa+k=
+
+Name: res/layout-hdpi/status_bar_two_line.xml
+SHA1-Digest-Manifest: kEopUFoI85zTW+MEQjGYz9aOvPM=
+
+Name: res/menu/common_gallery_single_photo_menu_online.xml
+SHA1-Digest-Manifest: rPLL1MoM39+oFU9H3zcCy7IeNAM=
+
+Name: res/drawable-xxhdpi/icon_btn_camcorder_fhd_dark.png
+SHA1-Digest-Manifest: 55bRLfAM8fDsyQTUduilanRd7ak=
+
+Name: HtcLib3-HtcReport.properties
+SHA1-Digest-Manifest: ovzgCRI+lUSB27pcAewiwRBvbpI=
+
+Name: HtcLib3-Media.properties
+SHA1-Digest-Manifest: J5Svx17NAlS1wcT5h4gzQuyqS3A=
+
+Name: res/drawable-xxhdpi/icon_btn_crop_me_in_dark_xxl.png
+SHA1-Digest-Manifest: 8if0BMDgsGnkhxnDyQLLztluwNc=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_03.png
+SHA1-Digest-Manifest: uozX5syWKD9RuQ/O2BeZ9RmEHG0=
+
+Name: res/drawable/htcprogress_full_themesix_category_one.xml
+SHA1-Digest-Manifest: JHiZ+TzAPFzLt29V75+kUugVSIo=
+
+Name: res/drawable/htcprogress_themeone_category_three.xml
+SHA1-Digest-Manifest: UWLas7ae50oBpO7wkAOC/Vns+tQ=
+
+Name: res/drawable/htcprogress_b_themefive.xml
+SHA1-Digest-Manifest: YU67tan4C0rq7NpxyxjwU6DTtl0=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_photo_booth_02.png
+SHA1-Digest-Manifest: jCFZHQYOSdBNzn8CTOnKH7HY4x8=
+
+Name: res/layout/opt_time_picker_dialog.xml
+SHA1-Digest-Manifest: HWSN7GMkOI1YuWpNWw6uMt6wYxo=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_backlight.png
+SHA1-Digest-Manifest: gW9YVu3/JeZPPG+BqJzHYPk1Zaw=
+
+Name: res/drawable/htcprogress_b_themetwo_category_two.xml
+SHA1-Digest-Manifest: 8YbVSoQYAPFRLmsxnXXKGUGNPWE=
+
+Name: res/drawable-xxhdpi/common_inputfield_full_rest.9.png
+SHA1-Digest-Manifest: LIdWmNJ/6Lc15lRTpaCO0KZSVjk=
+
+Name: res/layout/opt_date_picker_dialog.xml
+SHA1-Digest-Manifest: /vQ+J/Wlb1UwZ7UzyGBEEFIanqY=
+
+Name: res/drawable/htcprogress_themeone_category_one.xml
+SHA1-Digest-Manifest: 10HXtac+s2wzuBRuT2sM7A37hxE=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_gif.png
+SHA1-Digest-Manifest: TGMcwftwGEatwNIilFR2ZuLzYJ8=
+
+Name: res/anim/review_fadeout.xml
+SHA1-Digest-Manifest: hOrmPStY03ALSZz5DhsKnDpF8a0=
+
+Name: res/raw/rccountdownzero.ogg
+SHA1-Digest-Manifest: 92lmqN2hXdmuBLXX2552CkxQIbg=
+
+Name: res/drawable-xxhdpi/common_collapse_small.png
+SHA1-Digest-Manifest: lMPBb5dj6W2D45R7MNKw+loq6qA=
+
+Name: res/layout/specific_lockscreen_buttonpanel_3.xml
+SHA1-Digest-Manifest: Tqsnf0K8eizSM9iZ/xKTYLeVxk0=
+
+Name: res/drawable-xxhdpi/automotive_common_checkbox_rest.png
+SHA1-Digest-Manifest: LW6vnrquy/5yeiSgiSFW09mroDg=
+
+Name: res/layout/common_menu_item_layout_end_of_radio_button.xml
+SHA1-Digest-Manifest: r9BNCu55Lga0yO+9EtR3Jiw6+O0=
+
+Name: res/drawable/htcdatetimepicker_background.xml
+SHA1-Digest-Manifest: hz7SBzPTNZl+jnmLWSA/YvixRMY=
+
+Name: res/drawable/htcprogress_full_themeone_category_four.xml
+SHA1-Digest-Manifest: uPW49OvY1cB9tZ8zt8uf+fwDw/k=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_photo_booth_01_land.png
+SHA1-Digest-Manifest: lIk5RYMfE1lI1p7JNy/KFqEoOUM=
+
+Name: res/anim/mf_window_no.xml
+SHA1-Digest-Manifest: uWczAdHBjgLajZ4FErNAYK7d614=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_08.png
+SHA1-Digest-Manifest: r7XqrybMw8FmV9WY9i7N/j2DXwQ=
+
+Name: res/color/automotive_list_body_primary.xml
+SHA1-Digest-Manifest: We8qBbXXBTaURTH60NPulVBWgLs=
+
+Name: res/drawable/htcprogress_b_themethree_category_two.xml
+SHA1-Digest-Manifest: wIUjToLD0eo+ASyJsSR8J2gxm10=
+
+Name: res/anim/slide_in_left.xml
+SHA1-Digest-Manifest: 85u8If3gyeBJV79Ysq3N11AdfPM=
+
+Name: res/drawable-xxhdpi/common_flag_on.png
+SHA1-Digest-Manifest: 5DPUG93wZ8E71BlFRskKyf8Qiww=
+
+Name: res/drawable/group_list_item_background_selector.xml
+SHA1-Digest-Manifest: vqScqf3ycRVvlJ0sOsoRRo53xPw=
+
+Name: res/drawable-xxhdpi/tips_close_btn.png
+SHA1-Digest-Manifest: hxIPlCmBFX1Hio4q3h9oaVVkZsw=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_13.png
+SHA1-Digest-Manifest: PbaMz127XbxtKhtTBBJHIm7JF/A=
+
+Name: res/drawable/focus_animation.xml
+SHA1-Digest-Manifest: /KlWZUlmSWVU1ij+jzp3iOoO/EY=
+
+Name: res/drawable-xxhdpi/common_toggle_on.png
+SHA1-Digest-Manifest: p2kYiRdPk0bvegDurhPDWSs2u4w=
+
+Name: res/drawable-xxhdpi/tips_panel_shadow.9.png
+SHA1-Digest-Manifest: 51cdlTOeSloha5t/Jqv2IFbfk9E=
+
+Name: res/color/input_default.xml
+SHA1-Digest-Manifest: pExrC40xw24Sc1PIKt4CTYm3GzY=
+
+Name: res/drawable-xxhdpi/camera_icon_dragger.png
+SHA1-Digest-Manifest: xJNUF5K8s2fF14yK4ioHuRJriCo=
+
+Name: res/raw/managecam_enterexit.ogg
+SHA1-Digest-Manifest: Ngkwg43T6UD6f7pLPcAZANQTW4I=
+
+Name: res/drawable-xxhdpi/icon_btn_video_trimming_dark_l.png
+SHA1-Digest-Manifest: AJOIZWZjnDEy3JiOnBu5x40KyyU=
+
+Name: res/color/notification_info.xml
+SHA1-Digest-Manifest: V7Cf8v/d7sDQEQSmr7KB851/B9E=
+
+Name: AndroidManifest.xml
+SHA1-Digest-Manifest: 3X+vw77j88qkEbBAfzjehfqYhwc=
+
+Name: res/drawable/htcprogress_themeeight_category_four.xml
+SHA1-Digest-Manifest: 3Q5yW88SXmUbfRunL2VbEggAyH8=
+
+Name: res/layout-ar/wizard_radio_listitem.xml
+SHA1-Digest-Manifest: pEWVUBsBL4ku9bFy40OOKKa5V8I=
+
+Name: res/layout/dlna_expand_listview_item.xml
+SHA1-Digest-Manifest: R37ni/phfKTV2Nkzy35o7LUxawA=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_whiteboard.png
+SHA1-Digest-Manifest: 9Uthu+gggQORKy+zLBWxHjbMuAU=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_01.png
+SHA1-Digest-Manifest: S7O3+SuM6S6arqc/6GjxgRoDAFI=
+
+Name: res/drawable/htcprogress_full_themefive_category_four.xml
+SHA1-Digest-Manifest: qf9Fngha/JVTUcIL30VovOZ/1Us=
+
+Name: res/drawable/htcprogress_themesix_category_three.xml
+SHA1-Digest-Manifest: EPEhW/3yxRQw/rXQTI5ghGESKBI=
+
+Name: res/drawable-xxhdpi/common_checkbox_on.png
+SHA1-Digest-Manifest: 36r5SZTKTNk8iMcRCPoV+HDwk8I=
+
+Name: res/drawable-xxhdpi/htc_logo.png
+SHA1-Digest-Manifest: 8wRJQ2veZDZ2XgwflxRdjw/49kg=
+
+Name: classes.dex
+SHA1-Digest-Manifest: VLXlqNMppqDSU35eilzsfr2iqBU=
+
+Name: res/drawable-xxhdpi/automotive_common_dialogbox_top_dark.9.png
+SHA1-Digest-Manifest: 8iACgDzBHoDghlZF3/MTPp2ICpw=
+
+Name: res/drawable/htcprogress_themefour_category_one.xml
+SHA1-Digest-Manifest: VXnb1qBvW6pOaSDeMoc/8TDY6QA=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_07.png
+SHA1-Digest-Manifest: V0C9G3fbM811xS4w4x9kLySycGI=
+
+Name: res/layout-xhdpi/status_bar_two_line.xml
+SHA1-Digest-Manifest: PL2jRfK70iohfzzeuC9cabj3uI8=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder_fhd.png
+SHA1-Digest-Manifest: c/9YDlFe8+k04qZ0v31+FcAMQCk=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_minus_1.png
+SHA1-Digest-Manifest: 3/f4y3fUs3NcLOLgFXh+2BHwEN4=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_14.png
+SHA1-Digest-Manifest: KH3I8Z97B82Tg2zBrvk954UQq5g=
+
+Name: res/drawable/htcprogress_b_themesix_category_one.xml
+SHA1-Digest-Manifest: R9bQXmRFlCUlS2piJRDIfeUwZOk=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_flash_off.png
+SHA1-Digest-Manifest: ixc4YOLBWYQ5bBrJj2QiarX6J6Q=
+
+Name: res/drawable/popupbg_inset.xml
+SHA1-Digest-Manifest: A3hn3hKDrVtT/zkTeYbccOA792Q=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_06.png
+SHA1-Digest-Manifest: I+Mgay7IKFkuw9ypRgj848k2Sq8=
+
+Name: res/layout/specific_gif_mode_layout.xml
+SHA1-Digest-Manifest: rCK8OLkMaIOe+IaWBjMpbujDRIQ=
+
+Name: res/drawable-xxhdpi/icon_btn_done_dark_xl.png
+SHA1-Digest-Manifest: J78X5wTB5niXrYUqJT+g5FtITNM=
+
+Name: res/drawable-xxhdpi/icon_btn_panorama_plus_dark_xxl.png
+SHA1-Digest-Manifest: Vcw34d7YNbabR+SxUDSYwy0/ils=
+
+Name: res/layout/wizard_button_activity.xml
+SHA1-Digest-Manifest: ZpDo0Zh9tQPd3kW4p4fT6Tk39ww=
+
+Name: res/drawable-xxhdpi/camera_indicator_icon_self_timmer_2_l.png
+SHA1-Digest-Manifest: 4eVu/BhC0fr1PuQW40ONFTzocAk=
+
+Name: res/layout/htc_action_bar_view.xml
+SHA1-Digest-Manifest: bZKyj11ItX0jziS4G7BouhW56VU=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_64.png
+SHA1-Digest-Manifest: UioY1mZYBeJWjam7eEJQu4c37Qg=
+
+Name: res/interpolator/decelerate_quint.xml
+SHA1-Digest-Manifest: kM+V/grvmNmupK/DPsaah95ZWn8=
+
+Name: res/anim/scale_shrink_fade_out_from_bottom_east.xml
+SHA1-Digest-Manifest: SRSHEpNTVyixVpPq0d8keBFFXxU=
+
+Name: res/color/automotive_title_secondary.xml
+SHA1-Digest-Manifest: v7W+ZgXtdzdmFoFDj6fi21l5NOA=
+
+Name: res/drawable-xxhdpi/camera_panorama_divider.png
+SHA1-Digest-Manifest: r6ADwrw7XQu+0Q7GlMPazM0pPnk=
+
+Name: res/drawable-xxhdpi/icon_btn_menu_dark.png
+SHA1-Digest-Manifest: fTzi70UtVHvGyRzXhaUIngL/x6E=
+
+Name: res/layout/specific_split_photo_layout.xml
+SHA1-Digest-Manifest: a4A8VbYd/DKfRi3d6JrHDur2DFg=
+
+Name: res/drawable-xxhdpi/camera_panorama_preview_frame.9.png
+SHA1-Digest-Manifest: JSjfBL7CGlelQH+DP+FcMx0qt+s=
+
+Name: res/drawable-xxhdpi/camera_icon_default_all_cameras.png
+SHA1-Digest-Manifest: pYnMQp6wdDNF29yNb6dlbUMLzqk=
+
+Name: res/drawable-xxhdpi/common_b_circle_outer.png
+SHA1-Digest-Manifest: ZDVkUC/Td6qQywdnK3KBiElTiIw=
+
+Name: res/layout/specific_focus_indicator_layout.xml
+SHA1-Digest-Manifest: UhVAisbDRTpS9O0VATx9FrxRKGU=
+
+Name: res/layout/multiple_seekbar_dialog.xml
+SHA1-Digest-Manifest: mcBeMxUrUjxvcmfD+4xCmSJbtHg=
+
+Name: res/anim/scale_shrink_fade_out_right.xml
+SHA1-Digest-Manifest: BK6HkzUlEAHOK4QGQh9DQRXkTQg=
+
+Name: res/drawable-xxhdpi/icon_btn_previous_dark.png
+SHA1-Digest-Manifest: U+bnoxdmgD6fOuDM0yHnllB4WMY=
+
+Name: res/layout/main_review_animation_layout.xml
+SHA1-Digest-Manifest: tGZkOtwuIrjQp8+8GLBI7wH+ONo=
+
+Name: res/drawable-xxhdpi/common_media_play.png
+SHA1-Digest-Manifest: p5VTvjS9oa/kXRuCWSJ5q/AfaAA=
+
+Name: res/drawable-xxhdpi/common_dialogbox_top_bright.9.png
+SHA1-Digest-Manifest: B1A5tDRdBckMq0+argv6NgCaIUQ=
+
+Name: HtcLib3-Customization.properties
+SHA1-Digest-Manifest: /mOjFj0y0LaVUJt6Ms4T4egTEdo=
+
+Name: res/drawable-xxhdpi/common_b_div_land.9.png
+SHA1-Digest-Manifest: 0ojo4uH9FIJ80i50yFb7fx9NPNA=
+
+Name: res/layout-nodpi/dropdown_list_with_arrow.xml
+SHA1-Digest-Manifest: kOHePwgRzmAJRJEkn4Y5YWtgy4g=
+
+Name: res/drawable-xxhdpi/tips_arrow_bottom_left.png
+SHA1-Digest-Manifest: DINe4VBrYWyRN+7MjhNtM6by4oc=
+
+Name: res/color/info_primary.xml
+SHA1-Digest-Manifest: SZQ/nZ+nm9yH3iuDeaVxLOq+AYI=
+
+Name: res/drawable-xxhdpi/automotive_common_circle_outer.png
+SHA1-Digest-Manifest: XvLgg+HYdT6nyyz8fj7l59pAcXA=
+
+Name: res/drawable-xxhdpi/icon_btn_retake_dark.png
+SHA1-Digest-Manifest: bvmZLq3Yb7Ihn+QOqGJXHx7hNR8=
+
+Name: res/drawable/htcprogress_b_themefive_category_four.xml
+SHA1-Digest-Manifest: WVARFtEXHKRu+JxM02y1+eYRCr0=
+
+Name: res/drawable-xxhdpi/common_arrow_down.png
+SHA1-Digest-Manifest: 7rdZhZdbRCc3Kvnw2jjzHKY+4XI=
+
+Name: res/color/b_button_primary.xml
+SHA1-Digest-Manifest: mGLSgyxFsnOH+BnpKU45CdU+598=
+
+Name: res/drawable-xxhdpi/automotive_common_dialogbox_center_dark.9.pn
+ g
+SHA1-Digest-Manifest: Ysn9J9kfRu7PTjnmlIVaWB7MFmc=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_plus_0.png
+SHA1-Digest-Manifest: sWceMF/jSjo2o/Z6FWsnBAEBVms=
+
+Name: res/drawable/htcprogress_themenine_category_three.xml
+SHA1-Digest-Manifest: q4RJ9MNZ45BQkfz2DqW12kzgwjI=
+
+Name: res/drawable/htcprogress_themefour.xml
+SHA1-Digest-Manifest: aRUKGJBPEmwlufN6g2ic9mmT0SI=
+
+Name: HtcLib3-HtcWrapdalviksystem.properties
+SHA1-Digest-Manifest: e6E6jyQykRTUVjwyizJwUC+bn04=
+
+Name: res/drawable-xxhdpi/common_preset_frame_rest.9.png
+SHA1-Digest-Manifest: Gsom9Fo7nabpkkCfFlD1I27XKss=
+
+Name: res/layout/wizard_activity.xml
+SHA1-Digest-Manifest: Pv09gjsWx+wJily8c86W7nsbXio=
+
+Name: res/drawable-xxhdpi/camera_switch_patch.9.png
+SHA1-Digest-Manifest: 6vRlLIWegcEwde97TnUAcEzclM0=
+
+Name: res/drawable/htcprogress.xml
+SHA1-Digest-Manifest: 20kviIwO35xkOjqX5nKupK3imhM=
+
+Name: res/layout/opt_date_picker_done_button.xml
+SHA1-Digest-Manifest: 1otjr2eKb39J8nXyFUu+rTKCork=
+
+Name: res/drawable/htcprogress_full_themeseven_category_three.xml
+SHA1-Digest-Manifest: PEq+ZSluemhpw0IEgykRfImggj0=
+
+Name: HtcLib3-HtcWrapandroidappadmin.properties
+SHA1-Digest-Manifest: J+v+zzOiO8iBcvOL40wzEj0clpU=
+
+Name: res/drawable-xxhdpi/home_page_indicator_on.png
+SHA1-Digest-Manifest: irftDmW4sA76s6OuXw01AKILjjM=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_1600.png
+SHA1-Digest-Manifest: RC3NJyZH1Osup5sKWswFrZ/L33Y=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_02.png
+SHA1-Digest-Manifest: WLWWE8hu6aezwrGLResHXwzyBzo=
+
+Name: res/drawable-nodpi/widget_list_divider.9.png
+SHA1-Digest-Manifest: gg3XoFDQgpfSr2ZXb1aACrL+H8Q=
+
+Name: res/drawable-xxhdpi/common_rearrange_rest.png
+SHA1-Digest-Manifest: fSamsT1gA4AYtXiscMxWoZC/Vjg=
+
+Name: res/color/list_secondary.xml
+SHA1-Digest-Manifest: JcjK93far+iVirRC1eWwSkGw8XM=
+
+Name: res/anim/popup_fade_in.xml
+SHA1-Digest-Manifest: FOQH/lFVkJTf4VC7rM8pwloykqc=
+
+Name: res/drawable-xxhdpi/icon_indicator_self_timmer_10_l.png
+SHA1-Digest-Manifest: zV6y48Nv4id9TSJOnLg7pEUHh/w=
+
+Name: res/layout-hdpi/header_bar_text.xml
+SHA1-Digest-Manifest: uSd8YWUE9jKrDmLRFBAFlthCuQ8=
+
+Name: res/layout/dialog_checkpanel.xml
+SHA1-Digest-Manifest: pjce0I6pae8v6iOTtL66WV/S1Ho=
+
+Name: res/drawable/htcprogress_themethree_category_three.xml
+SHA1-Digest-Manifest: fHSxFJk1OWkrLzSaRSvwRtNWCDU=
+
+Name: res/drawable/htcprogress_full_themethree_category_three.xml
+SHA1-Digest-Manifest: 1YIrCYoW241uD9owczP5aRBbhoU=
+
+Name: res/drawable-xxhdpi/common_dialogbox_bottom_bright.9.png
+SHA1-Digest-Manifest: T0S6y1t8ZNa+CZKnfVXs4Jdv1Qw=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_vignette.png
+SHA1-Digest-Manifest: M21Xh4dOeaeHT1Q+0FqVtHW0xBY=
+
+Name: res/layout/dialog_listitem_check_automotive.xml
+SHA1-Digest-Manifest: y4UceHx8U5Uu8wlhWiYMG1pFWj0=
+
+Name: res/drawable/htcthumb.xml
+SHA1-Digest-Manifest: DskllNHnqCBac6vHvUsNSWqN8LI=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_12.png
+SHA1-Digest-Manifest: xsd5uSn7P+mnzLRyIMWrXN4YbtM=
+
+Name: res/drawable/htcprogress_b.xml
+SHA1-Digest-Manifest: R+SLIQ4rvnzpVj6JnLDKVTULK80=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_daylight.png
+SHA1-Digest-Manifest: K3z4LgdWIhw8gV6FbIGCQ3AUhr0=
+
+Name: res/layout/htc_recent_apps_icon_page.xml
+SHA1-Digest-Manifest: 5BA+RmMUddxPVLghDTV1kVoNVII=
+
+Name: res/xml/ab_primary_pulldown_with_secondary.xml
+SHA1-Digest-Manifest: o6TSuZm3zzt6pTgx/QywWKJ5D44=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_12.png
+SHA1-Digest-Manifest: Rt2V+N/RGxjOFFD/feHPJJjCkzQ=
+
+Name: res/drawable-xxhdpi/icon_indicator_loading.png
+SHA1-Digest-Manifest: fzUws7v/2g81HPzdx8EpqMszHgM=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_8.png
+SHA1-Digest-Manifest: w9GZFQ1FZWZXE5IvE9FyOWTTb5A=
+
+Name: res/drawable-xxhdpi/camera_indicator_icon_self_timmer_5_l.png
+SHA1-Digest-Manifest: FI9XtDedhp9qB7JDfXQIXGkZgfQ=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_awb.png
+SHA1-Digest-Manifest: ASijFzzZxfxoqSEwvnuUNXAU49A=
+
+Name: res/drawable/htcprogress_b_themeseven_category_four.xml
+SHA1-Digest-Manifest: cey/9k4EXe0dNlkiWud9mfFMa78=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_14.png
+SHA1-Digest-Manifest: KrjN1l7kZMXULqHx+GqbkY1A4ik=
+
+Name: res/drawable/htcprogress_themetwo_category_four.xml
+SHA1-Digest-Manifest: Zy3eTktFjKIiWNqLCUFsVQvcnkA=
+
+Name: res/layout/specific_zoom_bar_layout.xml
+SHA1-Digest-Manifest: SFVFOrevoJqk/Uly7eePhM7U2Lg=
+
+Name: res/drawable/action_bar_progress_spinner.xml
+SHA1-Digest-Manifest: yC04mmNR87y3QY8EoFAVPrKn0Uc=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_iso_800.png
+SHA1-Digest-Manifest: AbchddN2Ywr/9iIqE00OhwT2Yz4=
+
+Name: res/anim/common_gallery_filmstrip_entry.xml
+SHA1-Digest-Manifest: cW98iiK9yGumlMT5/rxLcMgnD6U=
+
+Name: res/drawable-xxhdpi/icon_btn_people_dark_xxl.png
+SHA1-Digest-Manifest: juiUhd4jTbpCovl3x7FdM6LNnrE=
+
+Name: res/drawable/htcprogress_full_themeone_category_two.xml
+SHA1-Digest-Manifest: +STEmfPAqWuxFzwqFc4qrdtNFII=
+
+Name: res/color/automotive_b_separator_primary.xml
+SHA1-Digest-Manifest: Zk9RCrs8hLBbT9HnIn5uGbgI+kE=
+
+Name: res/xml/ab_follow_counter_baseline.xml
+SHA1-Digest-Manifest: 1qwyOxx0Rh8EXJVeZRa+i+J7gSI=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_10.png
+SHA1-Digest-Manifest: m7TjPzFcHu6IvAY6O5UqLwi57/U=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_night.png
+SHA1-Digest-Manifest: d6BMh/+kEcaqL9C1hN9u75BCpyk=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_aqua.png
+SHA1-Digest-Manifest: 6/1BNdkYvkTxcpUtiDk/z7GieK0=
+
+Name: res/xml/ab_before_textview_baseline.xml
+SHA1-Digest-Manifest: Y6LUd1atsJXqqsA0dPWTYMViHEg=
+
+Name: HtcLib3-MediaLinkSharedModule.properties
+SHA1-Digest-Manifest: JzSAoIlqH2jQT4gy/aBxbugIy54=
+
+Name: res/drawable-xxhdpi/icon_indicator_hdr_l.png
+SHA1-Digest-Manifest: VOMbSa6UDTmwhz7mDYhSv7NjaBY=
+
+Name: res/anim/scale_shrink_fade_out_from_bottom_west.xml
+SHA1-Digest-Manifest: 2jcUHyoiShm7RtTc7bDIgpQ6ETI=
+
+Name: res/color/title_primary.xml
+SHA1-Digest-Manifest: dujLce2Bp6TyIu+TTnFJ1auyNy0=
+
+Name: res/drawable/capture_button_recording_background.xml
+SHA1-Digest-Manifest: GoyA721SEtJSjeMNL6m3IUTakwo=
+
+Name: res/drawable/htcprogress_themethree_category_two.xml
+SHA1-Digest-Manifest: Io/R7u9kDAR2tgkzdbTXbqvgoGc=
+
+Name: res/drawable/htcprogress_full_themeseven_category_four.xml
+SHA1-Digest-Manifest: naec0Nd574fvOCkGCy3+zemZwtM=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_auto.png
+SHA1-Digest-Manifest: obh/BssPlhkiKEebfXi8tJkiZow=
+
+Name: res/layout/dialog_listitem_radio.xml
+SHA1-Digest-Manifest: Dh4rgoc1T2s1LkbtLFNAqAbmJMg=
+
+Name: res/drawable-xxhdpi/camera_icon_zoom_bar_in.png
+SHA1-Digest-Manifest: np/NHxXJ1ewylO1YcUXafsCYoXk=
+
+Name: res/anim/mf_fade_out.xml
+SHA1-Digest-Manifest: M33DrOuet4ku0YWSLgJcWGJgX7k=
+
+Name: res/drawable/common_list_item_gradient.xml
+SHA1-Digest-Manifest: 3KJXOa2HEZZUSb2QRybN73MoIbk=
+
+Name: res/drawable/htcprogress_full_category_four.xml
+SHA1-Digest-Manifest: Y2phsCUteyk2ZgyV+zVmzR66uzs=
+
+Name: res/drawable/htcprogress_full_themethree_category_one.xml
+SHA1-Digest-Manifest: 7N0Bo5ebgDYkrFayvOF/Da5KbKo=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_6.png
+SHA1-Digest-Manifest: z/dbqQbkpuVSHHLslJPQ8FF+OeQ=
+
+Name: res/color/button_primary.xml
+SHA1-Digest-Manifest: Llx9jzLuAhHwRElAP5eLnL1WwCw=
+
+Name: res/layout/specific_effect_item.xml
+SHA1-Digest-Manifest: QO7JsFfYpXm+4xXqTmvONNEFW80=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_hdr.png
+SHA1-Digest-Manifest: eH6dGjGWeInBbAYvlwYyV8Z24KI=
+
+Name: res/drawable/htcprogress_full_themeseven_category_two.xml
+SHA1-Digest-Manifest: SEYoBxvpaBsEiSvJEv0ET1wq06s=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_13.png
+SHA1-Digest-Manifest: MRE6crMrtO/6sSkaHJdJA/IFLeM=
+
+Name: res/layout-xhdpi/simple_list_item_1.xml
+SHA1-Digest-Manifest: Q+wFIx+++efeoZa4bMb5YuAf0Fw=
+
+Name: res/drawable/htcprogress_b_themesix_category_two.xml
+SHA1-Digest-Manifest: GVVw2MVtTCmXT89eoiRHfsLNGME=
+
+Name: res/layout/specific_effect_panel_layout.xml
+SHA1-Digest-Manifest: qRxNYgtToU5Rde6HW9Z9l+UnJUE=
+
+Name: res/drawable/htcprogress_themefour_category_three.xml
+SHA1-Digest-Manifest: bVW/wfIdkbPDM+yTZjGqtrZpA4U=
+
+Name: res/drawable/htcprogress_full_themethree_category_four.xml
+SHA1-Digest-Manifest: DPdO3BnG9GYqfNEYc0BOPtMs5RM=
+
+Name: res/drawable/htcprogress_themeseven_category_one.xml
+SHA1-Digest-Manifest: g9FY78oXY9NbLyLRUOLfjj1s2m8=
+
+Name: res/drawable-xxhdpi/icon_btn_stop_dark.png
+SHA1-Digest-Manifest: KO6hcha82rsksqKYAFns3359/yc=
+
+Name: res/drawable-xxhdpi/camera_btn_record_base_s.png
+SHA1-Digest-Manifest: M1Ig539ze/tFwMHj4bzafkCGeWY=
+
+Name: res/xml/ab_secondary_update.xml
+SHA1-Digest-Manifest: W1oc5k2D7W4eFZRCVb6xwy6uQXU=
+
+Name: res/drawable-xxhdpi/camera_panorama_preview_bg.9.png
+SHA1-Digest-Manifest: 05k/6xyxObhk/0LgDl4+dXy3DXA=
+
+Name: res/xml/ab_arrow_follow_counter_vertical_center.xml
+SHA1-Digest-Manifest: tBe4npgJ/3v9RBPLcvN3Tu8AC3w=
+
+Name: res/drawable/inset_list_divider_custom.xml
+SHA1-Digest-Manifest: QEg50p5JbHZuVp7cM0yor/VwNEQ=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_08.png
+SHA1-Digest-Manifest: uWgJT+VA5MK6Ez+km7I8K6+hTPc=
+
+Name: res/drawable-xxhdpi/camera_icon_sparkles_bar_down.png
+SHA1-Digest-Manifest: KeAajTPHaMDITarILWjTWL2kaHk=
+
+Name: res/layout/main_fullscreen_capture_ui_layout.xml
+SHA1-Digest-Manifest: CcJe7ic4Ec6EeALGXHnVHNPyGew=
+
+Name: res/layout-mdpi/status_bar_two_line.xml
+SHA1-Digest-Manifest: ZWHVcAwj5nvX/3EfVaGAMnS8C+w=
+
+Name: res/layout/specific_recording_timer_layout.xml
+SHA1-Digest-Manifest: hhlh2FlMxC42RICcdDx1yhA+kHU=
+
+Name: res/drawable/htcprogress_b_themeeight.xml
+SHA1-Digest-Manifest: /v8EcKfdkXztcRO7fK6AKnlz4o0=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_08.png
+SHA1-Digest-Manifest: dWAshQHjv2zGWKjTWfyk8HeIXXY=
+
+Name: res/layout/specific_indicators_layout.xml
+SHA1-Digest-Manifest: UOb5TjCQyNx8vdjceOxCUMCfdIw=
+
+Name: res/layout-hdpi/preference_list_content.xml
+SHA1-Digest-Manifest: xPEH4KUESbyjP677TsOXNdSKGWA=
+
+Name: res/layout-nodpi/header_bar_dropdown.xml
+SHA1-Digest-Manifest: T+wpaSqga7GUYvNDIgpjGdETHJo=
+
+Name: res/drawable-xxhdpi/icon_indicator_slow_motion_l.png
+SHA1-Digest-Manifest: ZVcAJa9ys9S78M6OhwJorX0P/JI=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_panorama.png
+SHA1-Digest-Manifest: ar7Gxupsg/Yk7y6/k5+Crm1riuA=
+
+Name: res/drawable/common_list_divider_overlay.xml
+SHA1-Digest-Manifest: 5VYAyR0C9RYGoss2CKAzzlHJSS8=
+
+Name: res/layout/specific_common_action_screen_layout.xml
+SHA1-Digest-Manifest: f5lDmr3+JvP9RkgtCxx/806dRFs=
+
+Name: res/raw/camera_click_5_plus.ogg
+SHA1-Digest-Manifest: SAQGlkP1jzrKzJUDKciHSIj7Xco=
+
+Name: res/color/separator_secondary.xml
+SHA1-Digest-Manifest: YGQj805p/7sVxGlYfnRHU3iPMaA=
+
+Name: res/drawable/htcprogress_b_themesix_category_four.xml
+SHA1-Digest-Manifest: dKDvN2eX6Xuqw5PDO05tJPk8xfE=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_sepia.png
+SHA1-Digest-Manifest: MAufvLb4/74ayyV7BNaPw1+3Cv8=
+
+Name: res/drawable/list_selector_dark.xml
+SHA1-Digest-Manifest: 6eX/y43bzbH03riCCc/YKTyqBuQ=
+
+Name: res/layout/action_refresh.xml
+SHA1-Digest-Manifest: CjYkIOSW3LEq2fgEQ0bbjQO0MoA=
+
+Name: res/drawable-xxhdpi/common_focused.9.png
+SHA1-Digest-Manifest: 66MnfbOr8Bcz5MswVBI9BiEms3g=
+
+Name: res/drawable-xxhdpi/common_b_checkbox_rest.png
+SHA1-Digest-Manifest: tHHnPeLr9UFXY5BlrFCBIo5vi2g=
+
+Name: res/drawable/htcprogress_b_themeseven.xml
+SHA1-Digest-Manifest: RW4SPB0AoaMN/YZJHh9tCRJJfsw=
+
+Name: res/drawable/htcprogress_medium.xml
+SHA1-Digest-Manifest: WxJYUjCYjnU3AIS1rlAaHWsLCeM=
+
+Name: res/raw/updating.ogg
+SHA1-Digest-Manifest: K8qYWjT1NlanjR2GqlYjrfWPUC0=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_set_as.png
+SHA1-Digest-Manifest: oRJyUJ0denp2uWbkUhr0+BiiVPw=
+
+Name: res/anim/scale_grow_fade_in.xml
+SHA1-Digest-Manifest: Ip9fGJhuElN4fKRJbzb9I816VVM=
+
+Name: res/drawable/htcprogress_themetwo.xml
+SHA1-Digest-Manifest: tn4rgdcfBYU9SBDCRSb+I+uNfD8=
+
+Name: res/drawable/htcprogress_full_themesix_category_three.xml
+SHA1-Digest-Manifest: QReFdwv/fKKb87ErpFzRUF6TN5g=
+
+Name: res/xml/ab_secondary_def.xml
+SHA1-Digest-Manifest: MRTgvMJbHLhM3kChuATKjj0YPY0=
+
+Name: res/drawable/icon_btn_delete_dark.xml
+SHA1-Digest-Manifest: H0DP/+WrLY5IjbuzNkCBVCCtEnE=
+
+Name: res/drawable-xxhdpi/common_panel_dark.9.png
+SHA1-Digest-Manifest: mMY4+F8cqGhuJyLmApsdf4rWq5g=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_photo_effects.png
+SHA1-Digest-Manifest: D6CMlBJHlUXk2o58gd4ZYtI8uuw=
+
+Name: res/layout/alert_dialog_automotive.xml
+SHA1-Digest-Manifest: y2g5Z5hmt8vSX2mHfovRDVlt6Bg=
+
+Name: res/layout/main_camera.xml
+SHA1-Digest-Manifest: +ogQeMtOMf0/rW1+ZpmtKD6DtdU=
+
+Name: res/drawable-xxhdpi/common_timer_tumblers.9.png
+SHA1-Digest-Manifest: 2D470t7pHvC9yn+S0ckkcOqI9FY=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_none.png
+SHA1-Digest-Manifest: O8sPIl5OeMeE4ZVCaE2NIRiX3Nw=
+
+Name: res/color/b_toggle_primary.xml
+SHA1-Digest-Manifest: o9JKbDZEpcD6Ky7VaRhoWia7cs8=
+
+Name: res/layout/alert_dialog.xml
+SHA1-Digest-Manifest: 5uM2lL2WSk+EkdeiYWIl+ZmJP/o=
+
+Name: res/layout/specific_seekbar_control_layout.xml
+SHA1-Digest-Manifest: 3Z9jxXVxlD64PrB3pdZ6uQGmojQ=
+
+Name: res/drawable/htcprogress_themeseven.xml
+SHA1-Digest-Manifest: Y7VXowtfcXPD21WcVK7GA7tHLRA=
+
+Name: res/raw/burst_click_long.ogg
+SHA1-Digest-Manifest: rxSCtjATqO/TTEzA+SA1X7pvqIM=
+
+Name: res/drawable/htcprogress_b_themefour_category_four.xml
+SHA1-Digest-Manifest: cIxjheZGnQ9pfm3x1HZ9zbzwHSI=
+
+Name: res/drawable-xxhdpi/common_radio_rest_light.png
+SHA1-Digest-Manifest: jph1baUXY/ZPPtZHU1IuganH2Uw=
+
+Name: res/drawable-xxhdpi/camera_photo_preset_solarize.png
+SHA1-Digest-Manifest: jXPdoL4wBCaYUWbo4D5/QwpX/ww=
+
+Name: res/layout/common_on_screen_submenu_item.xml
+SHA1-Digest-Manifest: M5e7hzaLcP+/MEQTnIkt307qZlA=
+
+Name: HtcLib3-HtcWrapSQLite.properties
+SHA1-Digest-Manifest: swgjj0eQU9peJ/ph4uqxyvfL/OY=
+
+Name: res/layout/specific_power_warning_layout.xml
+SHA1-Digest-Manifest: TGUJBBGalov5qrPp9rumFQowwqY=
+
+Name: res/drawable/htcpreference_seekbar_progress.xml
+SHA1-Digest-Manifest: HF1Cw93nc8z9aVk7YyWLtEPM1gM=
+
+Name: res/drawable-xxhdpi/common_rearrange_frame.9.png
+SHA1-Digest-Manifest: wcOBLa+XA6ND7+sJXhuDq9rZOos=
+
+Name: res/raw/zoe_click_5_plus.ogg
+SHA1-Digest-Manifest: FIVaNg/j5+uJbGOvYlhIZTU3JZk=
+
+Name: res/drawable-xxhdpi/section_b_divider_top.9.png
+SHA1-Digest-Manifest: qxVWQThVMwm4fqsK5yNbkY1U5Sw=
+
+Name: res/drawable/common_popupmenu_left_triangle.xml
+SHA1-Digest-Manifest: svJFyT96pYFM6NpVAhXHQNf/YCk=
+
+Name: res/layout/opt_date_picker_selected_date.xml
+SHA1-Digest-Manifest: 2L8NHCo5zJzZXJ7ExIdk2EU3unI=
+
+Name: res/drawable/htcprogress_b_themeseven_category_two.xml
+SHA1-Digest-Manifest: HUhPrlvHrqidGWdjpGw7gKR4aIU=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_10.png
+SHA1-Digest-Manifest: I4rus1kmXZJHYzIkne0AfY1ZTgw=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_01.png
+SHA1-Digest-Manifest: 1UoAoOZCQcT0LSlVIOF32sT7kUc=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_flash_on.png
+SHA1-Digest-Manifest: wXz07cJjtzNxT2rBUz7LelP3/LU=
+
+Name: res/drawable-xxhdpi/common_toggle_outer.png
+SHA1-Digest-Manifest: AEebuX9reMsZFsYAfuZFdSynMB0=
+
+Name: res/drawable-xxhdpi/camera_icon_asynchronous.png
+SHA1-Digest-Manifest: 2KJsulJoRJLNBViMBw/oDWmE0Bs=
+
+Name: res/drawable-xxhdpi/section_divider_top.9.png
+SHA1-Digest-Manifest: maNEjHSu/09jR7RzxpVvROfUQUY=
+
+Name: res/drawable-xxhdpi/camera_arrow_left_09.png
+SHA1-Digest-Manifest: kbF51NmlnZt3uxdZnkRCkI/U3Zs=
+
+Name: res/anim/scale_grow_fade_in_right.xml
+SHA1-Digest-Manifest: AMVHP5YuSXJpTBpXwRnHCWF5MPk=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_15.png
+SHA1-Digest-Manifest: Silrpb5kD89QmJOnWlYUsJoPMpM=
+
+Name: res/anim/shrink_fade_out.xml
+SHA1-Digest-Manifest: AlVm/nYQyXfiu3wuVhzhWKvZ9LQ=
+
+Name: res/drawable-xxhdpi/camera_tips_panorama.png
+SHA1-Digest-Manifest: gYDL2ikxM4FU4QbvMc0NP3rsbxw=
+
+Name: res/drawable-xxhdpi/common_radio_rest_dark.png
+SHA1-Digest-Manifest: AQAPuk31ohm3LywwR+jrhXXs3oc=
+
+Name: res/raw/burst_click_short.ogg
+SHA1-Digest-Manifest: XQlmFSX3bZpeYkH08QbSr7ZvW5Y=
+
+Name: res/drawable/htcprogress_b_themeone_category_two.xml
+SHA1-Digest-Manifest: KjlG0PpNcgzZ+BoKYqGuxFW1LSw=
+
+Name: res/color/separator_primary.xml
+SHA1-Digest-Manifest: qfbbhUDz6gk/KInJ6eWgcnRDZ2I=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_08.png
+SHA1-Digest-Manifest: gxV5gQEDlN2akPYO1zvl/ge5UyI=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_16.png
+SHA1-Digest-Manifest: QV6p7RJZq0zE2tpV4ReV1ChXOdY=
+
+Name: res/color/light_primaryfont.xml
+SHA1-Digest-Manifest: vgqJNfS9/Tv4dG0eRPrCMbvG4kc=
+
+Name: res/layout/main_handshake_layout.xml
+SHA1-Digest-Manifest: E5uI3dKQwE6lzJuDHVvd9Nhuzwo=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_photo_booth_03.png
+SHA1-Digest-Manifest: uWde3pkMmSMJzlGALrGF7aZOVGA=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_photo_booth_02_land.png
+SHA1-Digest-Manifest: UIPI+CKFKxNxwJMRYZzBMjrNedk=
+
+Name: res/drawable/htcprogress_themetwo_category_three.xml
+SHA1-Digest-Manifest: 09jf4xrGfn6Ug0MSa+cyQHkTImg=
+
+Name: res/drawable-xxhdpi/common_inputfield_pressed.9.png
+SHA1-Digest-Manifest: QZjMk70Zl2H0/qO6Rn+n4tNii0A=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_minus_2.png
+SHA1-Digest-Manifest: /5DyBBet52+6G1wkgRTIa1Zfx/s=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_07.png
+SHA1-Digest-Manifest: Sr4/L59h0KCSi2DbYBXrIhplHts=
+
+Name: res/raw/camera_burst.ogg
+SHA1-Digest-Manifest: jirFDnJ9x3J3lyqWmmjbk0Ca/RQ=
+
+Name: res/drawable-xxhdpi/common_tab_div.9.png
+SHA1-Digest-Manifest: ZhmiqxCOxphzSutJ/BY1qROnv9A=
+
+Name: res/color/opt_done_text_color.xml
+SHA1-Digest-Manifest: /OdhzwAnb3Wczhmh1tqxX0YFXuU=
+
+Name: res/drawable-xxhdpi/icon_btn_camera_dark_xxl.png
+SHA1-Digest-Manifest: feBGxZJ4NSvnSN+wvg+tvmA7LuE=
+
+Name: res/drawable/htcprogress_b_category_three.xml
+SHA1-Digest-Manifest: 1u6cRWdGPSM40stti+YwGpu8nns=
+
+Name: res/drawable/htcprogress_themefive_category_four.xml
+SHA1-Digest-Manifest: OmqUgZc/KQlPtHtd/aOnPmeKqPI=
+
+Name: res/drawable-xxhdpi/lockscreen_shadow.9.png
+SHA1-Digest-Manifest: fKUJvU4jSdcqVP+aB5SbECY4NC4=
+
+Name: res/anim/overlay.xml
+SHA1-Digest-Manifest: wc2iemqNIQe5uCjW5iG7Mqqlcu4=
+
+Name: res/drawable-xxhdpi/camera_spinner_line.png
+SHA1-Digest-Manifest: WxzfroRkm5c/torsGEW3A2CnXhU=
+
+Name: res/drawable/htcprogress_themenine.xml
+SHA1-Digest-Manifest: e0CHE3txnmq+FCsH6YotkVPvH8s=
+
+Name: res/layout/more_expandable_list_indicator.xml
+SHA1-Digest-Manifest: h7O0ZzpsRwfe/4H/b3yxxFYod0E=
+
+Name: res/layout-fa/wizard_radio_listitem.xml
+SHA1-Digest-Manifest: oLYKVfJ702dSAxX/gS3w4ODduR0=
+
+Name: res/anim/leftmost.xml
+SHA1-Digest-Manifest: +4oZnEP7qxl/49Cq6F75dS3zTm0=
+
+Name: res/drawable-xxhdpi/icon_indicator_scroll_up_dark_s.png
+SHA1-Digest-Manifest: nhxZb7PILCeEkz2l13K706ljrqg=
+
+Name: res/drawable-xxhdpi/icon_btn_camcorder_dark.png
+SHA1-Digest-Manifest: vkV/F26bftkef2kAplPloWdh2qE=
+
+Name: res/drawable-xxhdpi/camera_icon_effect_bar_down.png
+SHA1-Digest-Manifest: A6d4xOd9eKt9ghBDn/FoTyqQpHA=
+
+Name: res/layout/list_content_fragment.xml
+SHA1-Digest-Manifest: fvXJxJmz1ULMlOdn2z3yF6bcXa0=
+
+Name: res/layout/common_menu_item_layout_end_of_indicator_button.xml
+SHA1-Digest-Manifest: ox7Yy7/yuAzgZXZeHvqzbRfHEQU=
+
+Name: res/drawable/panorama_left_arrow_slow.xml
+SHA1-Digest-Manifest: b3H1tOYZiryFHM4LGMJjJDJBhlw=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder_hdr.png
+SHA1-Digest-Manifest: X58iKt1nDPdEbR2jKutXrdHggHo=
+
+Name: res/drawable/htcprogress_full_themesix.xml
+SHA1-Digest-Manifest: UjhNjwY77RKBB5s4Kuh5LeP4NHM=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_11.png
+SHA1-Digest-Manifest: Yn0mM5Wizns5szzM6p6zyji7Otc=
+
+Name: res/color/automotive_input_default.xml
+SHA1-Digest-Manifest: P4WQaBmc1i1dKwI6t7lckgRnP/Q=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_portrait.png
+SHA1-Digest-Manifest: XVyYs2S/sdq1bgxgyYYzMrTvgHg=
+
+Name: HtcLib3-HtcDebugFlag.properties
+SHA1-Digest-Manifest: 2v40WZaqtB9Q/CwPDA9AnMbnCN8=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_flash_auto.png
+SHA1-Digest-Manifest: HZkn5UZgTTUSnboJ0ANXSP488GI=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_slow_motion.png
+SHA1-Digest-Manifest: HQkWLkYg2bOVppEAJLcju1r4T6o=
+
+Name: resources.arsc
+SHA1-Digest-Manifest: z3qmvGHZWnSBKE5R3/sAS8aZ/oQ=
+
+Name: res/drawable-xxhdpi/camera_spinner.png
+SHA1-Digest-Manifest: RPClJoNirp31yjNuKbg3bAEAWLA=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_04.png
+SHA1-Digest-Manifest: Mo7+04YrcZ71zubaI8VIFpou4DQ=
+
+Name: res/drawable/htcprogress_b_themefive_category_three.xml
+SHA1-Digest-Manifest: m8PVUEpOe5UCSYnqgn7qUfARoOE=
+
+Name: res/raw/pulldown.ogg
+SHA1-Digest-Manifest: hRlIm1J7sltvwPEhFjwfhMPe6hQ=
+
+Name: res/drawable-xxhdpi/tips_arrow_rearrange.png
+SHA1-Digest-Manifest: o/ZqiKSwAIDhB9G6wccN4WS9fyQ=
+
+Name: res/drawable-xxhdpi/common_checkbox_rest.png
+SHA1-Digest-Manifest: HFRP99rN7CWSlAvUp4ydsIPabMk=
+
+Name: res/drawable/htcprogress_themenine_category_two.xml
+SHA1-Digest-Manifest: vHKCZwl4GS9qcc952oXDnnyz1XM=
+
+Name: res/drawable/background.xml
+SHA1-Digest-Manifest: grEP/+uRyWmhD3Ouf6nQUclMNwY=
+
+Name: res/drawable/htcprogress_b_themefive_category_one.xml
+SHA1-Digest-Manifest: SdvRcXI2WClRx5MEhscK6R159LU=
+
+Name: res/drawable/htcprogress_b_themeeight_category_two.xml
+SHA1-Digest-Manifest: 1zEcrjKkWA2LCqtL77n0/TXr/Z4=
+
+Name: res/drawable-xxhdpi/icon_indicator_one_cam_l.png
+SHA1-Digest-Manifest: 0FsbXOXB/pBfrntN/50iJc6/poc=
+
+Name: res/drawable/htcprogress_themefive_category_three.xml
+SHA1-Digest-Manifest: wGZn5/U4uOv8eq+8rKG1BMX+gLc=
+
+Name: res/drawable-xxhdpi/icon_btn_add_dark_xxl.png
+SHA1-Digest-Manifest: TeFClekAisaEedZ4bbTOXaWw6Yo=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_16.png
+SHA1-Digest-Manifest: 73wzHYNpJ+Nn2w2pD0zVg5My3fc=
+
+Name: res/drawable-xxhdpi/common_b_button_rest.9.png
+SHA1-Digest-Manifest: JL26Z5YsQkmb3aoBv8mXuwtUFg0=
+
+Name: res/drawable-xxhdpi/common_gridview_delete.png
+SHA1-Digest-Manifest: ACkz7V0fprFcU8FyVLuqAgqc5kM=
+
+Name: res/layout/specific_panorama_layout_review.xml
+SHA1-Digest-Manifest: FzowSjgYzArh5MbbvIM9TpZwR8M=
+
+Name: res/drawable/htcprogress_themetwo_category_one.xml
+SHA1-Digest-Manifest: lrW9s1xlr+uffJXmL/NghcII/HE=
+
+Name: res/drawable-xxhdpi/icon_indicator_loading_s.png
+SHA1-Digest-Manifest: cRI6rNaKipDhJ1GizUHgzB2SLBQ=
+
+Name: res/drawable-xxhdpi/camera_icon_dot_dark.png
+SHA1-Digest-Manifest: OZg8+9x8WQJrIlhR7nNo7tqJFvM=
+
+Name: res/drawable-xxhdpi/icon_indicator_sec_2.png
+SHA1-Digest-Manifest: g4qRXo6Gv3WiBYyeRySC7b60drc=
+
+Name: res/xml/ab_arrow_follow_baseline_automotive.xml
+SHA1-Digest-Manifest: E4NchR3/bEpVbKyq2TrQeldX/dk=
+
+Name: res/drawable-xxhdpi/common_media_play_small.png
+SHA1-Digest-Manifest: jGjPJPYbiL86ej1X/5lJlPgnDNI=
+
+Name: res/layout/specific_lockscreen_buttonpanel_2.xml
+SHA1-Digest-Manifest: c3dHKiHKhp5T4RHVMEBWRoXVc9g=
+
+Name: res/drawable/effect_item_background_selector.xml
+SHA1-Digest-Manifest: ayjNI38/Ymly8CuQUpEHmBwprPg=
+
+Name: res/raw/camera_hdr_5_plus.ogg
+SHA1-Digest-Manifest: KZKVdmSa9vR5xngrkBzD8umVbUo=
+
+Name: res/drawable-xxhdpi/camera_tips_second_lens_blocked.png
+SHA1-Digest-Manifest: DbracrWplJGLZDhGWoYPwTtC+Kw=
+
+Name: res/drawable-xxhdpi/camera_autofocus_focusing_11.png
+SHA1-Digest-Manifest: q9FshiDsJjn6z8CJQ8MYH5jOB3c=
+
+Name: res/layout/select_dialog.xml
+SHA1-Digest-Manifest: 6Vo+jEscTp+NL/L0whcUmEQ+Eso=
+
+Name: res/drawable/htcprogress_themethree.xml
+SHA1-Digest-Manifest: sMgl65x5Shx1DZjUv0jZn7KA6Co=
+
+Name: res/drawable/transparent_selector.xml
+SHA1-Digest-Manifest: Yo/t+SxW2+Fr7oRHSiOqHag+EsE=
+
+Name: res/drawable/htcprogress_themefive_category_one.xml
+SHA1-Digest-Manifest: Wik5UD/WweH1gwsfTKtj2KnDVgs=
+
+Name: res/layout/opt_time_header_label.xml
+SHA1-Digest-Manifest: +R2l1DYxZhlL0ZgvukLWl5e1Zus=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_right_06.png
+SHA1-Digest-Manifest: mSbK0FckXopv8AKYadAJespkjyk=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_09.png
+SHA1-Digest-Manifest: 7Yz8aC4n6+6EuRQMspYGGWvLreU=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_15.png
+SHA1-Digest-Manifest: 3yDhVHL0GJY07PjE4WAEPZqIA34=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_manual.png
+SHA1-Digest-Manifest: MtXPNZDaAijeQT7ASOYC8hoQFHY=
+
+Name: res/raw/focusing.ogg
+SHA1-Digest-Manifest: 1jZTgf1zxzldN/k9EbPJIkRi8II=
+
+Name: res/anim/scale_grow_fade_in_left.xml
+SHA1-Digest-Manifest: xE7WR2424q7Aul87kD8jMdmmPZs=
+
+Name: res/raw/beep.ogg
+SHA1-Digest-Manifest: p8owDc/Z2E9hJ2m4Bi7vmL0hUHg=
+
+Name: res/anim/scale_shrink_fade_out.xml
+SHA1-Digest-Manifest: g+DDFHN/Eky4Y/WcXKddIC9eZP0=
+
+Name: res/drawable-xxhdpi/common_dialogbox_full_bright.9.png
+SHA1-Digest-Manifest: 3VDiaZRtrue1WN+cDVruYuho2X8=
+
+Name: res/drawable/htcprogress_full_themefour_category_two.xml
+SHA1-Digest-Manifest: lP+vHVCDQfRgrg3tyiXTeraLf3E=
+
+Name: res/drawable/htcprogress_b_themefour_category_two.xml
+SHA1-Digest-Manifest: xdh+Uy/Bcs516sBP04tXrCOrjU0=
+
+Name: res/drawable/htcprogress_themeone_category_two.xml
+SHA1-Digest-Manifest: w4fwtzGiknQIC1EXl8NI2x7BK6I=
+
+Name: res/layout/number_picker.xml
+SHA1-Digest-Manifest: lOdklwpGQPIWKT0LWfTmr1Mi+Uo=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_dual_capture_new.png
+SHA1-Digest-Manifest: tNU2KxjIdhcqfkmveC6O0rGgQeI=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_refocus_s.png
+SHA1-Digest-Manifest: ng4xjHh72dD/I5JO3DZ7AVVgbGI=
+
+Name: res/drawable-xxhdpi/camera_indicator_icon_macro_s.png
+SHA1-Digest-Manifest: zfqRA4xKkUPq/VKJ65o1S00lxP8=
+
+Name: res/layout-fa/wizard_activity.xml
+SHA1-Digest-Manifest: oT2CQ59vlTRX47ly4LuEZPRk7Ww=
+
+Name: res/layout-hdpi/header_bar_progress.xml
+SHA1-Digest-Manifest: 4rCLJpoOJNTdq5M6YCeuqK7O9sY=
+
+Name: res/drawable-xxhdpi/common_app_bkg_top_full_land.9.png
+SHA1-Digest-Manifest: Cg/H9uNqiWrLlcpXjS81riiGCnY=
+
+Name: res/drawable-xxhdpi/camera_split_arrow_left_09.png
+SHA1-Digest-Manifest: uEwTuZdUyz3940IGrBeJlu++Yac=
+
+Name: res/drawable/htcprogress_full_themetwo_category_one.xml
+SHA1-Digest-Manifest: 4GnHXImLDVTKOPj0ZTAcbh05wRY=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_camcorder_slow_motion.png
+SHA1-Digest-Manifest: 96RZr1wf3XSGCa1+UR3I+uUjQEE=
+
+Name: res/drawable-xxhdpi/icon_default_video.png
+SHA1-Digest-Manifest: elCtPbsD2rY2djg8NpKrz0jLNBU=
+
+Name: res/layout/specific_thumbnail_layout.xml
+SHA1-Digest-Manifest: cKVBAcQunic6EP6r8YeTOUAUZMw=
+
+Name: res/drawable/htcprogress_themenine_category_four.xml
+SHA1-Digest-Manifest: 9H3u7vZrzIEmsiIt+8HHJKCT8Qw=
+
+Name: res/drawable-xxhdpi/camera_patch.9.png
+SHA1-Digest-Manifest: gS/y6GcXExBym4MLm1XuXTXjgLk=
+
+Name: res/drawable-xxhdpi/camera_crop_me_in_patch.9.png
+SHA1-Digest-Manifest: ac4lECvVivdrCa0fYYjcSu/oDqg=
+
+Name: res/anim/scale_grow_fade_in_center.xml
+SHA1-Digest-Manifest: JUOkFo3KIZSrSynftUS+dS+Ux74=
+
+Name: res/drawable-xxhdpi/camera_manual_slider_indicator.png
+SHA1-Digest-Manifest: 4oXxvyaSb5gq5kEotYJ1fGcrqT0=
+
+Name: res/xml/ab_primary_only_one.xml
+SHA1-Digest-Manifest: /PYDkTlBGUZNynE22nfhQiJKGdQ=
+
+Name: res/layout-mdpi/header_bar_text.xml
+SHA1-Digest-Manifest: pF+C4/ZrIPDdZQOXUudGnTRr70o=
+
+Name: res/drawable-xxhdpi/common_app_bkg_down_full_land.9.png
+SHA1-Digest-Manifest: +U+TRlfUvyZf2UsntPgzbLRF6Hs=
+
+Name: res/layout/specific_effect_control_layout.xml
+SHA1-Digest-Manifest: Z3WmbrUJiEQK0lZ2jGIEaZ/qrfE=
+
+Name: res/drawable-xxhdpi/effect_popupmenu_arrow.png
+SHA1-Digest-Manifest: 1fyJ6eijatrp4eOgPKUWOypd5rU=
+
+Name: res/drawable-xxhdpi/icon_indicator_camcorder_fhd_l.png
+SHA1-Digest-Manifest: WCLmILuEyNRWTS0ZPUao/HwLRE8=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_exposure_s.png
+SHA1-Digest-Manifest: ygXTBN2kOX3emDYI24KUHkiM/q8=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_panorama_plus.png
+SHA1-Digest-Manifest: FaqqLSIZ+C5rW+g/lvIgjbO2P58=
+
+Name: res/anim/scale_shrink_fade_out_west.xml
+SHA1-Digest-Manifest: L4H37vjJ4ykjclxeEDJZhlLfqAM=
+
+Name: res/xml/ab_primary_automotive_with_secondary.xml
+SHA1-Digest-Manifest: wpqOssJOINE7xOirQY92PwPat+4=
+
+Name: res/anim/popup_fade_out.xml
+SHA1-Digest-Manifest: EqAVY1w161E71E4hyOmwuoq1Uz4=
+
+Name: res/drawable/panorama_left_arrow.xml
+SHA1-Digest-Manifest: JLxX6LYmus68pwznS2oDevzZFaQ=
+
+Name: res/drawable-xxhdpi/icon_btn_photo_booth_dark_xxl.png
+SHA1-Digest-Manifest: Yy0XOxTyJsQ9u+4VVlywBI4Fd88=
+
+Name: res/drawable-xxhdpi/common_div.9.png
+SHA1-Digest-Manifest: 3z2KsP6WcUNcF+9iOYAbH67dXNg=
+
+Name: res/layout-hdpi/dimen_setupwizard.xml
+SHA1-Digest-Manifest: f6MGuKv5rurOrtmUWyVMdVjLrbg=
+
+Name: res/drawable-xxhdpi/camera_arrow_right_12.png
+SHA1-Digest-Manifest: nBHBGByX1b3Q/L3x6jtoKAakUoA=
+
+Name: res/drawable-xxhdpi/camera_photobooth_indicator_on.png
+SHA1-Digest-Manifest: 2M3BNK4ZqLxuEfunwGb2SXrxsCE=
+
+Name: res/drawable-xxhdpi/camera_icon_btn_white_balance_s.png
+SHA1-Digest-Manifest: xrYKI4b30ix6kbsNu/6f7/f4V3E=
+
+Name: res/drawable/htcprogress_b_themethree.xml
+SHA1-Digest-Manifest: 5sb2WoUantafPIoG2nzFG/WOuhU=
+
+Name: res/xml/ab_counter_follow_secondary.xml
+SHA1-Digest-Manifest: GOhrHEaOnwkaeQQBPeCWiLfO9vQ=
+
+Name: res/drawable/inset_list_divider_dark.xml
+SHA1-Digest-Manifest: ejIdWkJMhvpzOZ1Z9ybVtFwgDYY=
+
+Name: res/drawable-xxhdpi/common_inputfield_full_pressed.9.png
+SHA1-Digest-Manifest: l24M3xkpGj9taOZOwmupr5gRHhk=
+
+Name: res/color/list_item_secondary_text.xml
+SHA1-Digest-Manifest: C6dqDK4Z0NJCjof9vPsGUygwqyU=
+
+Name: res/drawable-xxhdpi/tips_arrow_top_left.png
+SHA1-Digest-Manifest: pzDxpC0eQ96OA2B/CrPBr4kXoKI=
+
+Name: res/layout/action_menu_item_layout.xml
+SHA1-Digest-Manifest: hJwlzqeeAmsMXEPlIRi0/YUMJyk=
+
+Name: res/layout/main_grid_layout.xml
+SHA1-Digest-Manifest: 4ST7yt6TLFMyiSF9gQT3gHcu1K4=
+
+Name: res/anim/fade_in.xml
+SHA1-Digest-Manifest: qezYFpnfq8uXp2/J9p10sfyMXVU=
+

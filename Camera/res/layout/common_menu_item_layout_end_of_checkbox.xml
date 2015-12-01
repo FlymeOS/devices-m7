@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcListItem android:id="@id/htcListItem" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" cc:itemMode="popupMenuMode"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cc="http://schemas.android.com/apk/res-auto">
+    <com.htc.lib1.cc.widget.HtcRadioButton android:id="@id/leftRadioButton" android:focusable="false" android:visibility="gone" android.clickable="false" />
+    <com.htc.lib1.cc.widget.HtcListItem2LineText android:id="@id/textViews" android:focusable="false" cc:textMode="darklist" />
+    <com.htc.lib1.cc.widget.HtcCheckBox android:id="@id/checkBox" android:focusable="false" android:visibility="gone" android.clickable="false" />
+</com.htc.lib1.cc.widget.HtcListItem>

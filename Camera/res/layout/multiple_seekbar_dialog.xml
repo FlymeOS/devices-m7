@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="86.0px" android:layout_height="fill_parent" android:scaleType="center" />
+    <ImageView android:id="@id/vertical_divider" android:background="@drawable/common_b_div" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_s" android:layout_marginBottom="@dimen/margin_s" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/text" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xs" android:layout_marginBottom="@dimen/leading" android:singleLine="true" android:layout_weight="1.0" style="@style/b_button_primary_m" />
+        <com.htc.lib1.cc.widget.HtcSeekBar android:id="@id/seekbar" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_3" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

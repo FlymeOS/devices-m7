@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.camera.rotate.RotateRelativeLayout android:id="@id/bubble_toast_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bubble_toast" android:background="@drawable/common_dialogbox_full_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.htc.camera.rotate.RotateRelativeLayout>

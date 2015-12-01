@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_menu_item_view" android:focusable="true" android:layout_width="@dimen/camera_menu_item_width" android:layout_height="@dimen/camera_menu_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/menu_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_menu_item_imageview_margin_top" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center" android:id="@id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_menu_item_textview_margin_top" android:layout_below="@id/menu_item" style="@style/fixed_title_secondary_s" />
+</RelativeLayout>

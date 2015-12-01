@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/panorama_arrows_container" android:layout_width="@dimen/panorama_arrows_container_width" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/panorama_left_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panorama_left_arrow" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/panorama_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panorama_right_arrow" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </com.htc.camera.rotate.RotateRelativeLayout>
+    <com.htc.camera.widget.CaptureBarButton android:id="@id/panorama_shutter_btn" android:background="@drawable/camera_btn_base" android:layout_width="@dimen/capture_bar_primary_button_width" android:layout_height="@dimen/capture_bar_primary_button_height" android:layout_marginRight="@dimen/capture_bar_primary_button_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.htc.camera.rotate.RotateRelativeLayout android:id="@id/panorama_sweep_thumb_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.camera.widget.SweepPanoramaThumbnailView android:id="@id/panorama_sweep_thumb_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

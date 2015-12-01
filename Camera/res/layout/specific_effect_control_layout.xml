@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.camera.widget.EffectControlCircle android:id="@id/effect_circle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/effect_control_bar_container" android:layout_width="@dimen/effect_control_bar_container_width" android:layout_height="@dimen/zoom_bar_container_height" android:layout_marginLeft="@dimen/effect_control_bar_container_margin_left" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <View android:id="@id/effect_control_bar_touch_receiver" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.camera.widget.VerticalSeekBar android:id="@id/effect_control_bar" android:layout_width="@dimen/zoom_bar_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/seek_bar_margin_top_bottom" android:layout_marginBottom="@dimen/seek_bar_margin_top_bottom" android:thumb="@drawable/camera_zoom_indicator" android:thumbOffset="@dimen/zoom_bar_thumb_offset" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/effect_control_decrease" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/effect_control_bar_button_outer_margin" android:src="@drawable/camera_icon_effect_bar_down" android:scaleType="center" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/effect_control_increase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/effect_control_bar_button_outer_margin" android:src="@drawable/camera_icon_effect_bar_up" android:scaleType="center" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

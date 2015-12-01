@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:id="@id/imageButton" android:background="@null" android:focusable="true" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:adjustViewBounds="true" />
+    <Button android:ellipsize="marquee" android:gravity="center|top" android:id="@id/textButton" android:background="@null" android:paddingTop="0.0px" android:paddingBottom="0.0px" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/leading" android:layout_marginRight="@dimen/leading" android:singleLine="true" style="@style/label_off_m" />
+</merge>

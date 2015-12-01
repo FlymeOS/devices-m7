@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/common_list_divider" />
+    <item android:drawable="@drawable/common_b_div" />
+    <item android:drawable="@drawable/section_divider_top" />
+    <item android:drawable="@drawable/section_b_divider_top" />
+    <item android:drawable="@drawable/section_b_divider" />
+</layer-list>

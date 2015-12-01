@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.reminder.ui.footer.ReminderPanel android:id="@id/reminder_panel" android:background="@drawable/lockscreen_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.htc.lib1.cc.widget.reminder.ui.ForegroundContainer android:id="@id/foreground_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/reminder_panel" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/background_color_status_bar" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="@dimen/background_color_status_bar_height" android:layout_alignParentTop="true" android:alpha="0.3" />
+        <ImageView android:background="@drawable/lockscreen_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/background_color_widget_height" android:layout_below="@id/background_color_status_bar" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/tile_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.htc.lib1.cc.widget.reminder.ui.HintView android:id="@id/hintview" android:layout_width="fill_parent" android:layout_height="@dimen/hint_view_height" android:layout_marginLeft="@dimen/hint_view_margin_left" android:layout_marginRight="@dimen/hint_view_margin_right" android:layout_marginBottom="@dimen/hint_view_margin_bottom" android:layout_above="@id/tile_container">
+            <com.htc.lib1.cc.widget.reminder.ui.SWLayerTextView android:ellipsize="end" android:gravity="center" android:id="@id/hintlabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/fixed_lockscreen_01" />
+        </com.htc.lib1.cc.widget.reminder.ui.HintView>
+        <RelativeLayout android:id="@id/two_tile_middle_gap" android:background="#ffffffff" android:visibility="gone" android:layout_width="@dimen/two_tile_middle_gap_width" android:layout_height="@dimen/two_tile_middle_gap_height" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:alpha="0.2" />
+    </com.htc.lib1.cc.widget.reminder.ui.ForegroundContainer>
+</merge>

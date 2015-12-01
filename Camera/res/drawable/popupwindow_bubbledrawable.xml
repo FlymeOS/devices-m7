@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BubbleDrawable android:background="@drawable/common_dialogbox_full_dark" android:drawable="@drawable/effect_popupmenu_arrow"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

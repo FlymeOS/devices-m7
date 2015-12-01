@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcGridViewElement android:id="@id/main" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/overlay" android:layout_width="53.0px" android:layout_height="53.0px" />
+</com.htc.lib1.cc.widget.HtcGridViewElement>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/month_coat" android:layout_width="@dimen/time_pick_picker_width" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <com.htc.lib1.cc.widget.HtcNumberPicker android:id="@id/month" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false" />
+        <TextView android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/month_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/time_pick_title_margin" android:text="@string/label_month" android:singleLine="true" android:layout_below="@id/month" style="@style/fixed_list_secondary" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/day_coat" android:layout_width="@dimen/time_pick_picker_width" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.htc.lib1.cc.widget.HtcNumberPicker android:id="@id/day" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false" />
+        <com.htc.lib1.cc.widget.HtcNumberPicker android:id="@id/day_31" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false" />
+        <com.htc.lib1.cc.widget.HtcNumberPicker android:id="@id/day_29" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false" />
+        <com.htc.lib1.cc.widget.HtcNumberPicker android:id="@id/day_28" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false" />
+        <TextView android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/day_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/time_pick_title_margin" android:text="@string/label_day" android:singleLine="true" android:layout_below="@id/day" style="@style/fixed_list_secondary" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/year_coat" android:layout_width="@dimen/time_pick_picker_width" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.htc.lib1.cc.widget.HtcNumberPicker android:id="@id/year" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false" />
+        <TextView android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/year_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/time_pick_title_margin" android:text="@string/label_year" android:singleLine="true" android:layout_below="@id/year" style="@style/fixed_list_secondary" />
+    </RelativeLayout>
+</merge>
