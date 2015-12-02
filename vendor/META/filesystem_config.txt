@@ -2167,9 +2167,9 @@ system/priv-app/Calendar/.fota_apk 0 0 644 selabel=u:object_r:system_file:s0 cap
 system/priv-app/CalendarProvider 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/CalendarProvider/CalendarProvider.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/CalendarProvider/.fota_apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/Camera 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/Camera/Camera.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/Camera/.fota_apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/HtcCamera 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/HtcCamera/HtcCamera.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/HtcCamera/.fota_apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/CheckinProvider 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/CheckinProvider/CheckinProvider.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/CheckinProvider/.fota_apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
