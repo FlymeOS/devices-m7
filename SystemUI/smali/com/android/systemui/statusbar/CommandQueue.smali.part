@@ -1,0 +1,13 @@
+.method public killFlashlight()V
+    .locals 0
+
+    .prologue
+    return-void
+.end method
+
+.method public showSearchPanel()V
+    .locals 0
+
+    .prologue
+    return-void
+.end method
