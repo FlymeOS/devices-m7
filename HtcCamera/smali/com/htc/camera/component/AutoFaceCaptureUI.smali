@@ -2681,6 +2681,9 @@
 
     const/4 v6, 0x0
 
+    # return false, for rely on the htc vendor app com.htc.HTCSpeaker
+    return v6
+
     .line 1264
     .line 1266
     invoke-static {}, Lcom/htc/camera/DisplayDevice;->isSmallRamDevice()Z

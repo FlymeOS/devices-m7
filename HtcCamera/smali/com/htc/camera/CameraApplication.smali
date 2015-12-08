@@ -406,6 +406,8 @@
 
     move-result-object v0
 
+    if-eqz v0, :cond_flyme_0
+
     .line 713
     const/4 v2, 0x0
 
@@ -445,6 +447,7 @@
 
     .line 765
     :cond_0
+    :cond_flyme_0
     if-eqz v0, :cond_1
 
     .line 766
