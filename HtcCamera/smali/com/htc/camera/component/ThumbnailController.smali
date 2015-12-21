@@ -876,6 +876,8 @@
 
     move-result-object v11
 
+    const/4 v11, 0x0
+
     .line 370
     const/4 v10, 0x1
 
@@ -924,6 +926,8 @@
     move-result-object v4
 
     aput-object v4, v10, v22
+
+    const/4 v10, 0x0
 
     .line 373
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1056,6 +1060,8 @@
 
     move-result-object v12
 
+    const/4 v12, 0x0
+
     .line 378
     invoke-virtual/range {p0 .. p0}, Lcom/htc/camera/component/ThumbnailController;->getCameraActivity()Lcom/htc/camera/HTCCamera;
 
@@ -1090,11 +1096,13 @@
 
     move-object/from16 v3, v26
 
-    invoke-virtual {v9, v0, v1, v2, v3}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+    #invoke-virtual {v9, v0, v1, v2, v3}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    move-result-object v4
+    #move-result-object v4
+
+    const/4 v4, 0x0
 
     .line 387
     :goto_3
@@ -1202,7 +1210,7 @@
     move-result-object v4
 
     .line 423
-    const/16 v6, 0x9
+    const/16 v6, 0x7
 
     new-array v6, v6, [Ljava/lang/String;
 
@@ -1234,27 +1242,27 @@
 
     const-string v25, "favorite"
 
-    aput-object v25, v6, v9
+    #aput-object v25, v6, v9
 
     const/4 v9, 0x5
 
     const-string v25, "htc_type"
 
-    aput-object v25, v6, v9
+    #aput-object v25, v6, v9
 
-    const/4 v9, 0x6
+    const/4 v9, 0x4
 
     const-string v25, "orientation"
 
     aput-object v25, v6, v9
 
-    const/4 v9, 0x7
+    const/4 v9, 0x5
 
     const-string v25, "width"
 
     aput-object v25, v6, v9
 
-    const/16 v9, 0x8
+    const/16 v9, 0x6
 
     const-string v25, "height"
 
@@ -1375,13 +1383,15 @@
     .line 477
     const-string v5, "favorite"
 
-    invoke-interface {v11, v5}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    #invoke-interface {v11, v5}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
-    move-result v5
+    #move-result v5
 
-    invoke-interface {v11, v5}, Landroid/database/Cursor;->getInt(I)I
+    #invoke-interface {v11, v5}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v16
+    #move-result v16
+
+    const/16 v16, 0x0
 
     .line 478
     const-string v5, "orientation"
