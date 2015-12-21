@@ -611,6 +611,10 @@
     .param p3, "recordNumber"    # Ljava/lang/String;
 
     .prologue
+    const/4 v7, 0x1
+
+    return v7
+
     .line 1467
     const/4 v9, 0x1
 
@@ -809,6 +813,10 @@
     .param p1, "recordNumber"    # Ljava/lang/String;
 
     .prologue
+    const/4 v5, 0x1
+
+    return v5
+
     .line 1643
     const/4 v7, 0x1
 
